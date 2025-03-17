@@ -1,0 +1,16 @@
+\contentsline {section}{\numberline {I}Statistics of weakly nonlinear waves}{2}{section.0.1}%
+\contentsline {subsection}{\numberline {\textsection 1.1}Hamiltonian description of waves in continuous media}{2}{subsection.0.1.1}%
+\contentsline {subsection}{\numberline {\textsection 1.2}Perturbation Theory}{5}{subsection.0.1.2}%
+\contentsline {subsection}{\numberline {\textsection 1.3}Random Phase Approximation}{8}{subsection.0.1.3}%
+\contentsline {subsection}{\numberline {\textsection 1.4}Statistics over the actions and the thermodynamic limit}{11}{subsection.0.1.4}%
+\contentsline {subsection}{\numberline {\textsection 1.5}Main properties of the kinetic equation}{13}{subsection.0.1.5}%
+\contentsline {subsection}{\numberline {\textsection 1.6}Equilibrium stationary state}{15}{subsection.0.1.6}%
+\contentsline {subsection}{\numberline {\textsection 1.7}Out of equilibrium stationary states}{16}{subsection.0.1.7}%
+\contentsline {section}{\numberline {II}Beyond the leading order}{24}{section.0.2}%
+\contentsline {subsection}{\numberline {\textsection 2.1}Path integral formulation of weak turbulence theory}{24}{subsection.0.2.1}%
+\contentsline {subsection}{\numberline {\textsection 2.2}Feynman rules}{28}{subsection.0.2.2}%
+\contentsline {subsection}{\numberline {\textsection 2.3}Two points functions}{31}{subsection.0.2.3}%
+\contentsline {subsection}{\numberline {\textsection 2.4}4-points functions}{33}{subsection.0.2.4}%
+\contentsline {subsection}{\numberline {\textsection 2.5}Higher order kinetic equation}{38}{subsection.0.2.5}%
+\contentsline {section}{\numberline {III}A one dimensional model for Wave Turbulence}{39}{section.0.3}%
+\contentsline {section}{\numberline {IV}Numerical study of the Wave Kinetic Equation}{40}{section.0.4}%

@@ -1,0 +1,989 @@
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2024.9.26)  3 FEB 2025 12:29
+ restricted system commands enabled.
+ file:line:error style messages enabled.
+**/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1
+(/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+Lua module: luaotfload 2023-08-31 3.26 Lua based OpenType font support
+Lua module: lualibs 2023-07-13 2.76 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2023-07-13 2.76 ConTeXt Lua libraries -- extended collection.
+luaotfload | conf : Root cache directory is "/home/greg/.texlive2023/texmf-var/luatex-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2023-08-19.lua" from kpse-resolved path "/usr/share/texlive/texmf-dist/tex/luatex/luaotfload/fontloader-2023-08-19.lua".
+Lua-only attribute luaotfload@noligature = 1
+luaotfload | init : Context OpenType loader version 3.133
+Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 2
+luaotfload | conf : Root cache directory is "/home/greg/.texlive2023/texmf-var/luatex-cache/generic/names".
+Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
+Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
+Inserting `luaotfload.harf.glyphstream' in `glyph_stream_provider'.
+Inserting `luaotfload.harf.finalize_vlist' in `post_linebreak_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 3
+Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
+Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
+Inserting `tracingstacklevels' in `input_level_string'.
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:3: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \phantom{}
+            
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:4: Undefined control sequence.
+l.4 \section
+          {Tutti Morimmo a Stento}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:5: Undefined control sequence.
+l.5 \subsection
+             {Il Cantico dei Drogati}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 7.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 7.
+luaotfload | db : Font names database loaded from /home/greg/.texlive2023/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:7: Undefined control sequence.
+\@footnotetext ...tins {\reset@font \footnotesize 
+                                                  \interlinepenalty \interfo...
+l.7 ...bubu, when i wake up yes i know i'm gonna be}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:7: Undefined control sequence.
+\@footnotetext ...}\color@begingroup \@makefntext 
+                                                  {\rule \z@ \footnotesep \i...
+l.7 ...bubu, when i wake up yes i know i'm gonna be}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (22.23pt too wide) in paragraph at lines 7--7
+[][]\TU/lmr/m/n/10 Yada
+ []
+
+
+Overfull \hbox (20.56pt too wide) in paragraph at lines 7--7
+\TU/lmr/m/n/10 yada
+ []
+
+
+Overfull \hbox (23.34pt too wide) in paragraph at lines 7--7
+\TU/lmr/m/n/10 yada,
+ []
+
+
+Overfull \hbox (58.37997pt too wide) in paragraph at lines 7--7
+\TU/lmr/m/n/10 bububububu,
+ []
+
+
+Overfull \hbox (22.78pt too wide) in paragraph at lines 7--7
+\TU/lmr/m/n/10 when
+ []
+
+
+Overfull \hbox (2.78pt too wide) in paragraph at lines 7--7
+\TU/lmr/m/n/10 i
+ []
+
+
+Overfull \hbox (21.38pt too wide) in paragraph at lines 7--7
+\TU/lmr/m/n/10 wake
+ []
+
+
+Overfull \hbox (11.12pt too wide) in paragraph at lines 7--7
+\TU/lmr/m/n/10 up
+ []
+
+
+Overfull \hbox (13.38pt too wide) in paragraph at lines 7--7
+\TU/lmr/m/n/10 yes
+ []
+
+
+Overfull \hbox (2.78pt too wide) in paragraph at lines 7--7
+\TU/lmr/m/n/10 i
+ []
+
+
+Overfull \hbox (22.78pt too wide) in paragraph at lines 7--7
+\TU/lmr/m/n/10 know
+ []
+
+
+Overfull \hbox (13.89pt too wide) in paragraph at lines 7--7
+\TU/lmr/m/n/10 i’m
+ []
+
+
+Overfull \hbox (26.12pt too wide) in paragraph at lines 7--7
+\TU/lmr/m/n/10 gonna
+ []
+
+
+Overfull \hbox (10.28pt too wide) in paragraph at lines 7--7
+\TU/lmr/m/n/10 be| 
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 3--9
+[][]
+ []
+
+
+Overfull \hbox (4.483pt too wide) in paragraph at lines 3--9
+Rosenhaus[]
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 3--9
+\OT1/cmr/m/n/10 4$
+ []
+
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:10: LaTeX Error: Environment multline undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \begin{multline}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:11: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11     \frac{\partial}{\partial t}
+                                  n_k(t) = 4\pi \int_{-\infty}^{+\infty}dk_1...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:11: Missing $ inserted.
+<inserted text> 
+$
+l.11     \frac{\partial}{\partial t}
+                                  n_k(t) = 4\pi \int_{-\infty}^{+\infty}dk_1...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:11: Extra }, or forgotten $.
+\frac  #1#2->{\begingroup #1\endgroup \over #2}
+                                               
+l.11     \frac{\partial}{\partial t}
+                                  n_k(t) = 4\pi \int_{-\infty}^{+\infty}dk_1...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:14: Undefined control sequence.
+l.14       \times\left\{  \dfrac
+                              {\Re(\lambda_{23k1}\lambda_{k145}\lambda_{4523...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:18: Undefined control sequence.
+l.18         + 4\left[\dfrac
+                          {\Re(\lambda_{23k1}\lambda_{k524}\lambda_{1435})}{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:23: LaTeX Error: \begin{document} ended by \end{multline}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \end{multline}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:23: Missing $ inserted.
+<inserted text> 
+$
+l.23 \end{multline}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:23: Missing } inserted.
+<inserted text> 
+}
+l.23 \end{multline}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (1418.47185pt too wide) in paragraph at lines 11--24
+[]\OML/cmm/m/it/10 @$[]$ 
+ []
+
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:26: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 \noindent
+             one can substitute the specific interaction coefficient \cite{g...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\citation{goossens93}
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:26: Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.26 ...ic interaction coefficient \cite{goossens93}
+                                                   of the MMT model
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `goossens93' on page  undefined on input line 26.
+
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:27: LaTeX Error: Environment equation* undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \begin{equation*}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:28: Missing $ inserted.
+<inserted text> 
+$
+l.28   \lambda_
+             {k123} = (kk_1k_2k_3)^{\beta/4}.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:29: LaTeX Error: \begin{document} ended by \end{equation*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \end{equation*}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:29: Missing $ inserted.
+<inserted text> 
+$
+l.29 \end{equation*}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 26--30
+[[]]
+ []
+
+
+Overfull \hbox (33.26743pt too wide) in paragraph at lines 26--30
+\OML/cmm/m/it/10 $[][] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (58.63043pt too wide) in paragraph at lines 26--30
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 kk[]k[]k[]\OT1/cmr/m/n/10 )[]\OML/cmm/m/it/10 :$ 
+ []
+
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:31: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31 \noindent
+             The resulting equation, making $\omega_{k1,23} = \omega_k + \om...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (36.0336pt too wide) in paragraph at lines 31--32
+\OML/cmm/m/it/10 ![] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (18.9225pt too wide) in paragraph at lines 31--32
+\OML/cmm/m/it/10 ![] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (18.48846pt too wide) in paragraph at lines 31--32
+\OML/cmm/m/it/10 ![] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (18.48846pt too wide) in paragraph at lines 31--32
+\OML/cmm/m/it/10 ![] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (10.71066pt too wide) in paragraph at lines 31--32
+\OML/cmm/m/it/10 ![]$
+ []
+
+
+Overfull \hbox (4.483pt too wide) in paragraph at lines 31--32
+explicit[]with
+ []
+
+
+Overfull \hbox (21.70021pt too wide) in paragraph at lines 31--32
+\OML/cmm/m/it/10 ![] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (17.37924pt too wide) in paragraph at lines 31--32
+\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 k\OMS/cmsy/m/n/10 j[]$
+ []
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:33: Undefined control sequence.
+\@footnotetext ...tins {\reset@font \footnotesize 
+                                                  \interlinepenalty \interfo...
+l.33 \footnotetext{example for a footnote}
+                                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:33: Undefined control sequence.
+\@footnotetext ...}\color@begingroup \@makefntext 
+                                                  {\rule \z@ \footnotesep \i...
+l.33 \footnotetext{example for a footnote}
+                                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (13.05pt too wide) in paragraph at lines 33--33
+[][]\TU/lmr/m/n/10 ex-
+ []
+
+
+Overfull \hbox (16.66pt too wide) in paragraph at lines 33--33
+\TU/lmr/m/n/10 am-
+ []
+
+
+Overfull \hbox (12.78pt too wide) in paragraph at lines 33--33
+\TU/lmr/m/n/10 ple
+ []
+
+
+Overfull \hbox (11.98pt too wide) in paragraph at lines 33--33
+\TU/lmr/m/n/10 for
+ []
+
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 33--33
+\TU/lmr/m/n/10 a
+ []
+
+
+Overfull \hbox (20.56pt too wide) in paragraph at lines 33--33
+\TU/lmr/m/n/10 foot-
+ []
+
+
+Overfull \hbox (18.89pt too wide) in paragraph at lines 33--33
+\TU/lmr/m/n/10 note| 
+ []
+
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:34: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 \begin{equation}
+                   
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 34--34
+[] 
+ []
+
+
+Overfull \hbox (468.64366pt too wide) detected at line 38
+[]\OML/cmm/m/it/10 n[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = 4\OML/cmm/m/it/10  [][] dk[]dk[]dk[]\OT1/cmr/m/n/10 [1 + \OML/cmm/m/it/10 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 k; k[]; k[]; k[]\OT1/cmr/m/n/10 )]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 kk[]k[]k[]\OMS/cmsy/m/n/10 j[]\OML/cmm/m/it/10 n[]n[]n[]n[] [] []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ![]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;[]
+ []
+
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:40: LaTeX Error: Environment multline undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40 \begin{multline}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:41: Missing $ inserted.
+<inserted text> 
+$
+l.41   \sigma(k,k_
+                1,k_2,k_3) =  16 \int_{-\infty}^{+\infty}dk_4dk_5n_4n_5|k_4k...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:46: LaTeX Error: \begin{document} ended by \end{multline}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 \end{multline}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:46: Missing $ inserted.
+<inserted text> 
+$
+l.46 \end{multline}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (52.91783pt too wide) in paragraph at lines 38--47
+\OML/cmm/m/it/10 \nullfont (k,k$[][]\OML/cmm/m/it/10 ; k[]; k[]\OT1/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (123.79955pt too wide) in paragraph at lines 38--47
+\OT1/cmr/m/n/10 16 [][] \OML/cmm/m/it/10 dk[]dk[]n[]n[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 k[]k[]\OMS/cmsy/m/n/10 j[][] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 38--47
+\OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (289.29456pt too wide) in paragraph at lines 38--47
+[] \OML/cmm/m/it/10 :[]$ 
+ []
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:48: Undefined control sequence.
+l.48 \subsection
+              {La Ballata degli Impiccati}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:48: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.48 \subsection{L
+                a Ballata degli Impiccati}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 48--49
+[]La
+ []
+
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:50: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 T
+    he NLO WKE originates from the sum of 3 NLO diagrams (s,t,u channels), w...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:51: Undefined control sequence.
+l.51 ...d was used to make it more compact in \eqref
+                                                  {NLOeq}. Recovering it and...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:53: LaTeX Error: Environment multline* undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53   \begin{multline*}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:54: Missing $ inserted.
+<inserted text> 
+$
+l.54     \sigma(k,k_
+                  1,k_2,k_3) =  16 \int_{-\infty}^{+\infty}dk_4dk_5n_4n_5|k_...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:60: LaTeX Error: \begin{document} ended by \end{multline*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60   \end{multline*}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:60: Missing $ inserted.
+<inserted text> 
+$
+l.60   \end{multline*}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:62: Undefined control sequence.
+l.62   Under the exchange $k \text
+                                {,} k_1 \leftrightarrow k_2 \text{,} k_3$  w...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:62: Undefined control sequence.
+l.62 ...ge $k \text{,} k_1 \leftrightarrow k_2 \text
+                                                  {,} k_3$  we obtain
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:63: LaTeX Error: Environment multline* undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63   \begin{multline*}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:64: Missing $ inserted.
+<inserted text> 
+$
+l.64     \sigma(k,k_
+                  1,k_2,k_3) =  16 \int_{-\infty}^{+\infty}dk_4dk_5n_4n_5|k_...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:70: LaTeX Error: \begin{document} ended by \end{multline*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70   \end{multline*}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:70: Missing $ inserted.
+<inserted text> 
+$
+l.70   \end{multline*}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:72: LaTeX Error: Environment multline* undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.72   \begin{multline*}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:73: Missing $ inserted.
+<inserted text> 
+$
+l.73     \sigma(k,k_
+                  1,k_2,k_3) =  16 \int_{-\infty}^{+\infty}dk_4dk_5n_4n_5|k_...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:79: LaTeX Error: \begin{document} ended by \end{multline*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.79   \end{multline*}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:79: Missing $ inserted.
+<inserted text> 
+$
+l.79   \end{multline*}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 50--82
+[]The
+ []
+
+
+Overfull \hbox (22.4699pt too wide) in paragraph at lines 50--82
+\OML/cmm/m/it/10 k[] \OMS/cmsy/m/n/10 $
+ []
+
+
+Overfull \hbox (9.69217pt too wide) in paragraph at lines 50--82
+\OML/cmm/m/it/10 k[]$
+ []
+
+
+Overfull \hbox (9.69217pt too wide) in paragraph at lines 50--82
+\OML/cmm/m/it/10 k[]$\nullfont ,
+ []
+
+
+Overfull \hbox (9.69217pt too wide) in paragraph at lines 50--82
+\OML/cmm/m/it/10 k[]$
+ []
+
+
+Overfull \hbox (61.7813pt too wide) in paragraph at lines 50--82
+\OML/cmm/m/it/10 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 k; k[]; k[]; k[]\OT1/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (52.91783pt too wide) in paragraph at lines 50--82
+\OML/cmm/m/it/10 \nullfont (k,k$[][]\OML/cmm/m/it/10 ; k[]; k[]\OT1/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (261.31348pt too wide) in paragraph at lines 50--82
+\OT1/cmr/m/n/10 16 [][] \OML/cmm/m/it/10 dk[]dk[]n[]n[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 k[]k[]\OMS/cmsy/m/n/10 j[] [] [] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 50--82
+\OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (235.919pt too wide) in paragraph at lines 50--82
+\OT1/cmr/m/n/10 4 [] [] [] 
+ []
+
+
+Overfull \hbox (197.40465pt too wide) in paragraph at lines 50--82
+[] \OML/cmm/m/it/10 :$
+ []
+
+
+Overfull \hbox (22.4699pt too wide) in paragraph at lines 50--82
+\OML/cmm/m/it/10 k[] \OMS/cmsy/m/n/10 $
+ []
+
+
+Overfull \hbox (9.69217pt too wide) in paragraph at lines 50--82
+\OML/cmm/m/it/10 k[]$
+ []
+
+
+Overfull \hbox (30.76852pt too wide) in paragraph at lines 50--82
+\OML/cmm/m/it/10 k[]k[] \OMS/cmsy/m/n/10 $
+ []
+
+
+Overfull \hbox (22.16212pt too wide) in paragraph at lines 50--82
+\OML/cmm/m/it/10 k[][]k[]$
+ []
+
+
+Overfull \hbox (52.91783pt too wide) in paragraph at lines 50--82
+\OML/cmm/m/it/10 \nullfont (k,k$[][]\OML/cmm/m/it/10 ; k[]; k[]\OT1/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (257.57962pt too wide) in paragraph at lines 50--82
+\OT1/cmr/m/n/10 16 [][] \OML/cmm/m/it/10 dk[]dk[]n[]n[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 k[]k[]\OMS/cmsy/m/n/10 j[] [] [] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 50--82
+\OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (235.919pt too wide) in paragraph at lines 50--82
+\OT1/cmr/m/n/10 4 [] [] [] 
+ []
+
+
+Overfull \hbox (189.93694pt too wide) in paragraph at lines 50--82
+[] \OML/cmm/m/it/10 ;$
+ []
+
+
+Overfull \hbox (14.36111pt too wide) in paragraph at lines 50--82
+\OML/cmm/m/it/10 ! \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (21.26617pt too wide) in paragraph at lines 50--82
+\OML/cmm/m/it/10 ![] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (18.48846pt too wide) in paragraph at lines 50--82
+\OML/cmm/m/it/10 ![] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (10.71066pt too wide) in paragraph at lines 50--82
+\OML/cmm/m/it/10 ![]$
+ []
+
+
+Overfull \hbox (13.29865pt too wide) in paragraph at lines 50--82
+\OML/cmm/m/it/10 k \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (20.24768pt too wide) in paragraph at lines 50--82
+\OML/cmm/m/it/10 k[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (17.46997pt too wide) in paragraph at lines 50--82
+\OML/cmm/m/it/10 k[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (9.69217pt too wide) in paragraph at lines 50--82
+\OML/cmm/m/it/10 k[]$
+ []
+
+
+Overfull \hbox (52.91783pt too wide) in paragraph at lines 50--82
+\OML/cmm/m/it/10 \nullfont (k,k$[][]\OML/cmm/m/it/10 ; k[]; k[]\OT1/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (261.31348pt too wide) in paragraph at lines 50--82
+\OT1/cmr/m/n/10 16 [][] \OML/cmm/m/it/10 dk[]dk[]n[]n[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 k[]k[]\OMS/cmsy/m/n/10 j[] [] [] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 50--82
+\OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (235.919pt too wide) in paragraph at lines 50--82
+\OT1/cmr/m/n/10 4 [] [] [] 
+ []
+
+
+Overfull \hbox (197.40465pt too wide) in paragraph at lines 50--82
+[] \OML/cmm/m/it/10 ;$
+ []
+
+
+Overfull \hbox (72.3368pt too wide) in paragraph at lines 50--82
+\OML/cmm/m/it/10 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 k; k[]; k[]; k[]\OT1/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (72.3368pt too wide) in paragraph at lines 50--82
+\OML/cmm/m/it/10 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 k[]; k[]; k; k[]\OT1/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (61.7813pt too wide) in paragraph at lines 50--82
+\OML/cmm/m/it/10 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 k; k[]; k[]; k[]\OT1/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (7.95831pt too wide) in paragraph at lines 50--82
+\OML/cmm/m/it/10 E$
+ []
+
+
+Overfull \hbox (9.12497pt too wide) in paragraph at lines 50--82
+\OML/cmm/m/it/10 N$
+ []
+
+
+/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/body/chapter_1/chapter_1.tex:83: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 L
+    ista di roba da inserire:
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 83--84
+[]Lista
+ []
+
+)
+! Emergency stop.
+<*> ...Scrittura_tesi/Thesis/body/chapter_1/chapter_1
+                                                  
+*** (job aborted, no legal \end found)
+
+
+
+Here is how much of LuaTeX's memory you used:
+ 40 strings out of 476553
+ 100000,1977958 words of node,token memory allocated 42852 words of node memory still in use:
+   1198 hlist, 169 vlist, 138 rule, 2 ins, 4 disc, 17 local_par, 1 dir, 30 math, 811 glue, 377 kern, 119 penalty, 2712 glyph, 1 page_insert, 439 attribute, 39 glue_spec, 439 attribute_list, 3 write nodes
+   avail lists: 2:3,3:396,4:44,5:12,7:43,8:401,10:43
+ 22148 multiletter control sequences out of 65536+600000
+ 27 fonts using 1608431 bytes
+ 23i,5n,30p,278b,104s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!

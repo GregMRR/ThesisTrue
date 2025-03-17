@@ -1,0 +1,334 @@
+\documentclass[11pt,twoside,a4paper]{report}
+
+%here the thesis is composed
+
+%to handle svg files and graphics
+\usepackage{svg}  
+\usepackage{graphicx}  
+\usepackage{transparent}
+
+%for feynman diagrams 
+\usepackage[compat=1.1.0]{tikz-feynman}
+%to comment figures
+\usepackage{float}
+%to wrap figure in text
+\usepackage{wrapfig}
+%to handle overlaying text
+\usepackage[absolute,overlay]{textpos} 
+
+%to highlight stuff
+\usepackage{color,soul}
+
+% to eliminate the box and change the font color of links
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor=black,
+    citecolor=black,
+    urlcolor={blue!80!black}
+}
+
+%to have the fourier font (very nice) without it uses computern modern
+\usepackage{fourier}
+%\usepackage{newtxtext,newtxtext}
+
+%to set the old school smooth p22 font (locally sourced)
+
+%\usepackage{fontspec}
+%\setmainfont{P22MayflowerSmooth}[
+%    Path = ./fontchosen/,
+%    Extension = .ttf
+%]
+
+%to comment mutiple lines
+\usepackage{comment}
+%%%%%%%%%%%MATH SETTINGS%%%%%%%%%%%%%%%%%
+%to have better math formatting
+\usepackage{amsmath}
+%adding the section number to the equation
+\numberwithin{equation}{section}
+
+%to have math font serif
+\usepackage{amsfonts}
+\usepackage[mathscr]{euscript}
+%\usepackage[mathrm=sym]{unicode-math}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%to manage the geometry of the page 
+\usepackage[a4paper, twoside, bindingoffset=1cm, headsep=1.2 cm, top=3.5 cm, bottom=3 cm, left=3 cm,right=3 cm]{geometry}
+
+%to manage itemize lists
+\usepackage{enumitem}
+%\setlist[itemize,1]{label=\textbf{*}}
+
+%to remove indentation
+\setlength{\parindent}{0pt}
+
+%what does it do?
+\usepackage{bookmark}
+\frenchspacing % To avoid double spacing after punctuation
+
+%%%%%FOOTNOTES SETTINGS%%%%%%%%
+%to reset the footnote counter each page
+\usepackage{perpage}
+\MakePerPage[2]{footnote}
+%to have symbols instead of numbers
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+%to erase the footnote rule
+%\renewcommand\footnoterule{}
+
+%%%%%%%%%%%SECTION SETTINGS%%%%%%%%%%%%%%%%%%%%
+%to start subsections with the old section symbol
+\renewcommand{\thesubsection}{\textsection \arabic{section}.\arabic{subsection}}
+%to add roman numerals to section
+\renewcommand{\thesection}{\Roman{section}}
+
+
+%%%%%%%%%%HEADERS%%%%%%%%%%%%%
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+%to clear all previous settings
+\fancyhf{} 
+%to add the section number and the page number to the header
+\fancyhead[C]{\small \bfseries{CHAPTER} \thesection}
+\fancyhead[L]{} 
+\fancyhead[LE,RO]{\thepage}
+%to remove the black line
+\renewcommand{\headrulewidth}{0pt}
+
+%to change also the style used by Tableofcontents and bibliography
+\fancypagestyle{plain}{
+    \fancyhf{}
+    \fancyhead[R]{\thepage}
+    \fancyfoot{}
+}
+
+%to have a custom header for the introduction first page
+\fancypagestyle{intro1}{
+    \fancyhf{}  
+    \fancyhead[C]{}  
+    \fancyhead[R]{\thepage}  
+    \renewcommand{\headrulewidth}{0pt}  
+}
+%to have a custom header for the introduction other pages
+\fancypagestyle{intro2}{
+    \fancyhf{}  
+    \fancyhead[C]{\small \bfseries{INTRODUCTION}}  
+    \fancyhead[R]{\thepage}  
+    \renewcommand{\headrulewidth}{0pt}  
+}
+
+%to recover normal header style (NOT USED FOR NOW)
+\fancypagestyle{normal}{
+    \fancyhf{}  
+    \fancyhead[C]{\small \bfseries{diobon}}  
+    \fancyhead[R]{\thepage}  
+    \renewcommand{\headrulewidth}{0pt}  
+}
+
+
+%NOT DEFINITIVE to have the section title 3 cm down with respect to the header, but it applies to every page
+%\setlength{\headsep}{3cm}
+\setlength{\headheight}{15pt}
+
+%to define the standard for sections titles and subtitles
+\usepackage[explicit]{titlesec}
+\titleformat{\section}{\centering\huge\bfseries}{}{6pt}{#1}
+\titleformat{\subsection}{\bfseries}{\upshape\thesubsection}{6pt}{#1}
+%\itshape for italics
+%to adjust the spacing of the section (i call them chapters) header
+%Add a \vphantom{} before each title section otherwise it does not consider the spacing from the header
+\titlespacing{\section}{0pt}{2.5cm}{3cm}
+
+
+%%%%%%%Bibliography and table of contents%%%%%%%%%%
+\usepackage{cite}
+%not cited articles are not included
+%to center CONTENTS and BIBLIOGRAPHY
+\renewcommand{\contentsname}{\centering Contents}   % For TOC title
+\renewcommand{\bibname}{\centering Bibliography}   % For report/book
+
+%%%%%%%%%%COVER%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%positions of feynman diagrams
+\newcommand\yone{0}
+\newcommand\ytwo{-2.5}
+\newcommand\y{-6}
+
+%%custom symbols
+\newcommand{\anorm}{a^{}}
+\newcommand{\ak}{a_k^{}}
+\newcommand{\aone}{a_1^{}}
+\newcommand{\atwo}{a_2^{}}
+\newcommand{\athree}{a_3^{}}
+\newcommand{\afour}{a_4^{}}
+\newcommand{\afive}{a_5^{}}
+\newcommand{\asix}{a_6^{}}
+\newcommand{\astar}{a^{*}}
+\newcommand{\akstar}{a_k^{*}}
+\newcommand{\aonestar}{a_1^{*}}
+\newcommand{\atwostar}{a_2^{*}}
+\newcommand{\athreestar}{a_3^{*}}
+\newcommand{\afourstar}{a_4^{*}}
+\newcommand{\afivestar}{a_5^{*}}
+\newcommand{\asixstar}{a_6^{*}}
+\newcommand{\akt}{\tilde{a}_k^{}}
+\newcommand{\aonet}{\tilde{a}_1^{}}
+\newcommand{\atwot}{\tilde{a}_2^{}}
+\newcommand{\athreet}{\tilde{a}_3^{}}
+\newcommand{\afourt}{\tilde{a}_4^{}}
+\newcommand{\afivet}{\tilde{a}_5^{}}
+\newcommand{\asixt}{\tilde{a}_6^{}}
+\newcommand{\astart}{\tilde{a}^{*}}
+\newcommand{\akstart}{\tilde{a}_k^{*}}
+\newcommand{\aonestart}{\tilde{a}_1^{*}}
+\newcommand{\atwostart}{\tilde{a}_2^{*}}
+\newcommand{\athreestart}{\tilde{a}_3^{*}}
+\newcommand{\afourstart}{\tilde{a}_4^{*}}
+\newcommand{\afivestart}{\tilde{a}_5^{*}}
+\newcommand{\asixstart}{\tilde{a}_6^{*}}
+
+%placeholder citations
+\newcommand{\cit}{CITAZIONE}
+
+%partial derivative with respect to time
+\newcommand{\pt}{\frac{\partial}{\partial t}}
+
+%total derivative with respect to time
+\newcommand{\dt}{\frac{d}{dt}}
+
+%hamiltonian
+\newcommand{\Ham}{\mathrm{H}}
+%lagrangian
+\newcommand{\Lag}{L}
+%wave action
+\newcommand{\Nwav}{\mathrm{N}}
+%Entropy
+\newcommand{\Ent}{\mathrm{S}}
+%Energy
+\newcommand{\Ewav}{\mathrm{E}}
+\newcommand{\Edens}{\mathscr{E}}
+\newcommand{\Edensis}{\tilde{\mathscr{E}}}
+%Flux
+\newcommand{\Pflux}{\mathrm{P}}
+\newcommand{\Qflux}{\mathrm{Q}}
+%interaction term
+\newcommand{\Tint}{\mathrm{T}}
+\newcommand{\Vint}{\mathrm{V}}
+
+%forcing variance
+\newcommand{\F}{\mathrm{F}}
+%functional integration
+\newcommand{\D}{\mathrm{D}}
+%shorthand in feynman diagrams
+\newcommand{\G}{\mathrm{G}}
+%covderivative
+\newcommand{\Dcov}{\mathcal{D}}
+\newcommand{\Dcovd}{\bar{\mathcal{D}}}
+%eqs of motion
+\newcommand{\Ef}{\mathrm{E}_f^{}}
+\newcommand{\Efstar}{\mathrm{E}_f^*}
+\newcommand{\Efz}{\mathrm{E}_{f=0}^{}}
+\newcommand{\Efstarz}{\mathrm{E}_{f=0}^*}
+%action coordinates
+\newcommand{\mathgreg}{\mathrm}
+\newcommand{\Ia}{\mathgreg{I}^{}}
+\newcommand{\Iaz}{\mathgreg{I}^{(0)}}
+\newcommand{\Iao}{\mathgreg{I}^{(1)}}
+\newcommand{\Iat}{\mathgreg{I}^{(2)}}
+\newcommand{\Iab}{\bar{\mathgreg{I}^{}}}
+
+%angle coordinates
+\newcommand{\tha}{\theta^{}}
+\newcommand{\thaz}{\theta^{(0)}}
+\newcommand{\thao}{\theta^{(1)}}
+\newcommand{\that}{\theta^{(2)}}
+\newcommand{\thab}{\bar{\theta}^{}}
+
+%omega
+\newcommand{\omga}{\omega^{}}
+\newcommand{\omgatt}{\tilde{\omega}^{}}
+%Omega
+\newcommand{\Omga}{\Omega^{}}
+\newcommand{\Omgaz}{\Omega^{(0)}}
+
+%delta of thetas
+\newcommand{\deltheta}{\Delta\theta}
+\newcommand{\delthetab}{\Delta\bar{\theta}}
+%delta of Omegas
+\newcommand{\delOmegab}{\Delta\bar{\Omega}}
+%delta of omegas
+\newcommand{\delomega}{\Delta{\omega}}
+\newcommand{\delomegatt}{\Delta{\tilde{\omega}}}
+%n
+\newcommand{\nb}{\bar{n}}
+%collisional integral
+\newcommand{\coll}{\mathtt{I}\left\{n_k\right\}}
+\newcommand{\collad}{\tilde{\mathtt{I}}}
+
+%to double space
+\usepackage{setspace}
+%doublespacing
+
+\begin{document}
+%to manage space above and below equations
+\abovedisplayskip=0.7cm
+\abovedisplayshortskip=0.5cm
+\belowdisplayskip=0.7cm
+\belowdisplayshortskip=0.5cm
+
+
+%frontmatter uncomment to include
+%\input{head/frontmatter.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%TABLE OF CONTENTS%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  .tex files are included with \input , to compile always this main file it is important 
+%  to include  !TEX root = path/to/main.tex in every file
+%  in this case  !TEX root = ../../thesis.tex 
+
+%introduction
+%bad solutions to have different header for the intro si to manually change eat each page
+%\thispagestyle{intro1}
+%\input{body/Introduction/Introduction.tex}
+
+%CHAPTERS
+%chapter1
+\input{body/chapter_1/chapter_1.tex}
+
+%chapter2
+\input{body/chapter_2/chapter_2.tex}
+
+%chapter3
+\input{body/chapter_3/chapter_3.tex}
+
+%chapter4
+\input{body/chapter_4/chapter_4.tex}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%BIBLIOGRAPHY%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+%without biblatex package:
+\bibliographystyle{siam}  
+\bibliography{bibliog}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%APPENDIX%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+
+
+
+
+
+
