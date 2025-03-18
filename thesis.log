@@ -1,8 +1,8 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2024.9.26)  17 MAR 2025 23:59
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2024.9.26)  18 MAR 2025 18:14
  restricted system commands enabled.
  file:line:error style messages enabled.
-**/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/thesis
-(/home/greg/Desktop/TESI/Scrittura_tesi/Thesis/thesis.tex
+**/home/greg/Desktop/TESI/Scrittura_tesi/ThesisTrue/thesis
+(/home/greg/Desktop/TESI/Scrittura_tesi/ThesisTrue/thesis.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 Lua module: luaotfload 2023-08-31 3.26 Lua based OpenType font support
@@ -864,7 +864,21 @@ LaTeX Font Info:    Redeclaring math accent \widetilde on input line 276.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(./thesis.toc
+(./head/frontmatter.tex
+<images/Unito-logo.pdf, id=7, 511.96896pt x 512.41632pt>
+File: images/Unito-logo.pdf Graphic file (type pdf)
+<use images/Unito-logo.pdf>
+Package luatex.def Info: images/Unito-logo.pdf  used on input line 7.
+(luatex.def)             Requested size: 796.67722pt x 797.41936pt.
+
+Overfull \hbox (398.33861pt too wide) in paragraph at lines 7--8
+ [][]
+ []
+
+
+LaTeX Warning: Float too large for page by 194.22092pt on input line 8.
+
+) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}<./images/Unito-logo.pdf>] (./thesis.toc
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line 1.
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
@@ -892,18 +906,18 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write5
 
 \openout5 = thesis.toc
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+ [2
 
 
-] (./body/chapter_1/chapter_1.tex
+] (./body/Introduction/Introduction.tex
+LaTeX Font Info:    Trying to load font information for TS1+futs on input line 9.
+ (/usr/share/texlive/texmf-dist/tex/latex/fourier/ts1futs.fd
+File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
+)) (./body/chapter_1/chapter_1.tex [3]
 Underfull \hbox (badness 10000) in paragraph at lines 7--15
 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+futs on input line 28.
-(/usr/share/texlive/texmf-dist/tex/latex/fourier/ts1futs.fd
-File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
-)
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 8.27998pt on input line 29.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
@@ -912,7 +926,7 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 8.27998pt on input line 29.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.99199pt on input line 29.
- [2]
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 38--46
 
  []
@@ -920,12 +934,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--46
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3]
+ [5]
 Underfull \hbox (badness 10000) in paragraph at lines 92--97
 
  []
 
-[4]
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 100--108
 
  []
@@ -933,7 +947,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--108
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5]
+ [7]
 Underfull \hbox (badness 10000) in paragraph at lines 146--153
 
  []
@@ -951,7 +965,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 158--162
 
 Underfull \vbox (badness 2980) has occurred while \output is active []
 
- [6]
+ [8]
 Underfull \hbox (badness 10000) in paragraph at lines 172--178
 
  []
@@ -964,12 +978,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 190--192
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7]
+ [9]
 Underfull \hbox (badness 10000) in paragraph at lines 222--224
 
  []
 
-[8]
+[10]
 Overfull \hbox (40.31296pt too wide) detected at line 266
  []$[]   [][] \FMS/futm/m/n/10.95  [][]  [] [][] \FML/futmi/m/it/10.95 e[]e[]e[]e[]d[]d[]d[]d[] \FMS/futm/m/n/10.95  \T1/futs/m/n/10.95 0$ []  
  []
@@ -979,12 +993,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 266--269
 
  []
 
-[9]
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 318--330
 
  []
 
-[10]
+[12]
 Overfull \hbox (0.33902pt too wide) in paragraph at lines 342--345
 \T1/futs/m/n/10.95 The ac-tion vari-ables and in-ter-ac-tion co-ef-fif-i-cents be-come func-tions of the now con-tin-u-ous
  []
@@ -999,7 +1013,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 355--358
 
  []
 
-[11]
+[13]
 Overfull \hbox (9.68257pt too wide) in paragraph at lines 359--362
 []\T1/futs/m/n/10.95 Our equa-tion is still de-ter-min-is-tic re-gard-ing the ac-tion func-tion. We shall as-sume a stochas-
  []
@@ -1014,16 +1028,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 400--410
 
  []
 
-[12]
+[14]
 LaTeX Font Info:    Trying to load font information for U+eus on input line 440.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueus.fd
 File: ueus.fd 2013/01/14 v3.01 Euler Script
-) [13]
+) [15]
 Underfull \hbox (badness 10000) in paragraph at lines 444--446
 
  []
 
-[14]
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 489--491
 
  []
@@ -1031,18 +1045,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 489--491
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15]
+ [17]
 Underfull \hbox (badness 10000) in paragraph at lines 515--526
 
  []
 
 Excluding 'comment' comment.
-<images/Fjortoft.pdf, id=285, 425.18332pt x 440.84062pt>
+<images/Fjortoft.pdf, id=302, 425.18332pt x 440.84062pt>
 File: images/Fjortoft.pdf Graphic file (type pdf)
 <use images/Fjortoft.pdf>
 Package luatex.def Info: images/Fjortoft.pdf  used on input line 549.
 (luatex.def)             Requested size: 199.1693pt x 206.50226pt.
- [16]
+ [18]
 Overfull \hbox (4.66411pt too wide) in paragraph at lines 553--557
 []\T1/futs/m/n/10.95 To be-gin an-swer-ing the first ques-tion we may start with a generic ar-gu-ment due to Fjortoft.
  []
@@ -1052,7 +1066,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 553--557
 
  []
 
-[17<./images/Fjortoft.pdf>]
+[19<./images/Fjortoft.pdf>]
 Overfull \hbox (0.97466pt too wide) in paragraph at lines 585--593
 \T1/futs/m/n/10.95 and mono-ton-i-cal dis-per-sion re-la-tion, if some mech-a-nism al-low for in-jec-tion of con-served
  []
@@ -1070,13 +1084,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 600--604
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18]
+ [20]
 Underfull \vbox (badness 5652) has occurred while \output is active []
 
- [19] [20]
+ [21] [22]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21]
+ [23]
 Underfull \hbox (badness 10000) in paragraph at lines 721--723
 
  []
@@ -1086,18 +1100,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 724--732
 
  []
 
-) [22] (./body/chapter_2/chapter_2.tex [23]
+) [24] (./body/chapter_2/chapter_2.tex [25]
 Underfull \hbox (badness 10000) in paragraph at lines 6--20
 
  []
 
-[24] [25] Excluding 'comment' comment.
+[26] [27] Excluding 'comment' comment.
 Underfull \vbox (badness 1221) has occurred while \output is active []
 
- [26]
+ [28]
 Underfull \vbox (badness 8075) has occurred while \output is active []
 
- [27]
+ [29]
 Underfull \hbox (badness 10000) in paragraph at lines 174--177
 
  []
@@ -1110,7 +1124,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 192--200
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28]
+ [30]
 Underfull \hbox (badness 10000) in paragraph at lines 219--222
 
  []
@@ -1118,7 +1132,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 219--222
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29]
+ [31]
 Underfull \hbox (badness 10000) in paragraph at lines 257--259
 
  []
@@ -1133,8 +1147,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 320--330
 
  []
 
-[30]
-<images/2pointsoneloop.jpg, id=509, 4517.87875pt x 1718.42pt>
+[32]
+<images/2pointsoneloop.jpg, id=528, 4517.87875pt x 1718.42pt>
 File: images/2pointsoneloop.jpg Graphic file (type jpg)
 <use images/2pointsoneloop.jpg>
 Package luatex.def Info: images/2pointsoneloop.jpg  used on input line 337.
@@ -1142,7 +1156,7 @@ Package luatex.def Info: images/2pointsoneloop.jpg  used on input line 337.
 
 Underfull \vbox (badness 2726) has occurred while \output is active []
 
- [31<./images/2pointsoneloop.jpg>]
+ [33<./images/2pointsoneloop.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 381--388
 
  []
@@ -1150,78 +1164,124 @@ Underfull \hbox (badness 10000) in paragraph at lines 381--388
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [32]
-<images/quarticvertex.jpg, id=541, 3153.7825pt x 3042.36626pt>
+ [34]
+<images/quarticvertex.jpg, id=558, 3153.7825pt x 3042.36626pt>
 File: images/quarticvertex.jpg Graphic file (type jpg)
 <use images/quarticvertex.jpg>
 Package luatex.def Info: images/quarticvertex.jpg  used on input line 393.
 (luatex.def)             Requested size: 159.33301pt x 153.65916pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 415--417
+Underfull \hbox (badness 10000) in paragraph at lines 417--419
 
  []
 
 
 Underfull \vbox (badness 3965) has occurred while \output is active []
 
- [33<./images/quarticvertex.jpg>]
-<images/schanneloneloop.jpg, id=554, 4517.87875pt x 3651.6425pt>
+ [35<./images/quarticvertex.jpg>]
+<images/schanneloneloop.jpg, id=571, 4517.87875pt x 3651.6425pt>
 File: images/schanneloneloop.jpg Graphic file (type jpg)
 <use images/schanneloneloop.jpg>
-Package luatex.def Info: images/schanneloneloop.jpg  used on input line 422.
+Package luatex.def Info: images/schanneloneloop.jpg  used on input line 424.
 (luatex.def)             Requested size: 159.33301pt x 128.76778pt.
-<images/tchanneloneloop.jpg, id=555, 4517.87875pt x 3651.6425pt>
+<images/tchanneloneloop.jpg, id=572, 4517.87875pt x 3651.6425pt>
 File: images/tchanneloneloop.jpg Graphic file (type jpg)
 <use images/tchanneloneloop.jpg>
-Package luatex.def Info: images/tchanneloneloop.jpg  used on input line 423.
+Package luatex.def Info: images/tchanneloneloop.jpg  used on input line 425.
 (luatex.def)             Requested size: 159.33301pt x 128.76778pt.
-<images/uchanneloneloop.jpg, id=556, 4517.87875pt x 3618.51875pt>
+<images/uchanneloneloop.jpg, id=573, 4517.87875pt x 3618.51875pt>
 File: images/uchanneloneloop.jpg Graphic file (type jpg)
 <use images/uchanneloneloop.jpg>
-Package luatex.def Info: images/uchanneloneloop.jpg  used on input line 424.
+Package luatex.def Info: images/uchanneloneloop.jpg  used on input line 426.
 (luatex.def)             Requested size: 159.33301pt x 127.59973pt.
- [34<./images/schanneloneloop.jpg><./images/tchanneloneloop.jpg><./images/uchanneloneloop.jpg>]
-Overfull \hbox (0.62749pt too wide) in paragraph at lines 461--464
+ [36<./images/schanneloneloop.jpg><./images/tchanneloneloop.jpg><./images/uchanneloneloop.jpg>]
+Overfull \hbox (0.62749pt too wide) in paragraph at lines 463--466
 \T1/futs/m/n/10.95 us-ing iden-ti-ties []-[], is a te-dious but straight-for-ward pro-cess. []FORSE[] [][][]AG[]-[]GIUNGI[]
  []
 
 
-Overfull \hbox (12.65811pt too wide) detected at line 477
+Overfull \hbox (12.65811pt too wide) detected at line 479
  []$[] [] \FML/futmi/m/it/10.95 :$ []  
  []
 
-[35]
-Overfull \hbox (13.4719pt too wide) detected at line 502
+[37]
+Overfull \hbox (13.4719pt too wide) detected at line 504
  []$[] [] \FML/futmi/m/it/10.95 :$ []  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 502--505
+Underfull \hbox (badness 10000) in paragraph at lines 504--507
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 506--508
+Underfull \hbox (badness 10000) in paragraph at lines 508--510
 
  []
 
-<images/sexticdiagram.jpg, id=589, 4517.87875pt x 1762.585pt>
+<images/sexticdiagram.jpg, id=606, 4517.87875pt x 1762.585pt>
 File: images/sexticdiagram.jpg Graphic file (type jpg)
 <use images/sexticdiagram.jpg>
-Package luatex.def Info: images/sexticdiagram.jpg  used on input line 511.
+Package luatex.def Info: images/sexticdiagram.jpg  used on input line 513.
 (luatex.def)             Requested size: 199.1693pt x 77.6992pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36<./images/sexticdiagram.jpg>]
-Overfull \hbox (3.40038pt too wide) detected at line 583
+ [38<./images/sexticdiagram.jpg>]
+Overfull \hbox (3.40038pt too wide) detected at line 587
 [][][][][]
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [37]) (./body/chapter_3/chapter_3.tex [38]) (./body/chapter_4/chapter_4.tex [39]) [40] (./thesis.bbl) [41
+ [39]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40]
+Overfull \hbox (4.20625pt too wide) detected at line 648
+ []$[]  []\FMS/futm/m/n/10.95 h\FML/futmi/m/it/10.95 a[]\T1/futs/m/n/10.95 (\FML/futmi/m/it/10.95 t\T1/futs/m/n/10.95 )\FML/futmi/m/it/10.95 a[]\T1/futs/m/n/10.95 (\FML/futmi/m/it/10.95 t\T1/futs/m/n/10.95 )\FMS/futm/m/n/10.95 i  []\FML/futmi/m/it/10.95 n[]\T1/futs/m/n/10.95 (\FML/futmi/m/it/10.95 t\T1/futs/m/n/10.95 ) \FMS/futm/m/n/10.95  \T1/futs/m/n/10.95 4\FML/futmi/m/it/10.95  [] [] dk[]\FMS/futm/m/n/10.95 j\T1/futs/m/n/10.95 T[]\FMS/futm/m/n/10.95 j[]\FML/futmi/m/it/10.95 n[]n[]n[]n[] [] \T1/futs/m/n/10.95 (\FML/futm/m/it/10.95 \FML/futmi/m/it/10.95 ![]\T1/futs/m/n/10.95 )$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 648--655
+
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 656--307
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41] (./body/chapter_3/chapter_3.tex [42]
+Underfull \hbox (badness 10000) in paragraph at lines 7--10
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--18
+
+ []
+
+
+Overfull \hbox (11.32507pt too wide) in paragraph at lines 20--23
+\T1/futs/m/n/10.95 Discuti con-ver-genza del fre-quency shift es-plici-ta-mente. di-ver-genza e di-mostrazione dell'es-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--23
+
+ []
+
+) [43] [44] (./thesis.bbl) [45
 
 
 Missing character: There is no – (U+2013) in font futr8t!
@@ -1236,14 +1296,14 @@ L3 programming layer <2024-01-22>
 )
 
 Here is how much of LuaTeX's memory you used:
- 29084 strings out of 476553
+ 29143 strings out of 476553
  125016,1977958 words of node,token memory allocated
- 2416 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 36 glue, 4 kern, 29 sub_mlist, 43 glyph, 325 attribute, 57 glue_spec, 325 attribute_list, 2 write nodes
-   avail lists: 1:8,2:2646,3:1025,4:436,5:802,6:85,7:6799,8:106,9:2261,10:10,11:502
- 49803 multiletter control sequences out of 65536+600000
- 133 fonts using 8085487 bytes
- 94i,14n,97p,838b,1885s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 2390 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 36 glue, 4 kern, 28 sub_mlist, 34 glyph, 335 attribute, 57 glue_spec, 335 attribute_list, 2 write nodes
+   avail lists: 1:8,2:2626,3:1026,4:436,5:800,6:74,7:6808,8:106,9:2261,10:12,11:502
+ 49830 multiletter control sequences out of 65536+600000
+ 142 fonts using 8696511 bytes
+ 94i,14n,97p,842b,1885s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 warning  (pdf backend): unreferenced destination with name 'Hfootnote.33'
 
@@ -1311,10 +1371,10 @@ warning  (pdf backend): unreferenced destination with name 'Hfootnote.2'
 
 warning  (pdf backend): unreferenced destination with name 'Hfootnote.1'
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on thesis.pdf (41 pages, 6033543 bytes).
+Output written on thesis.pdf (45 pages, 6098714 bytes).
 
-PDF statistics: 745 PDF objects out of 1000 (max. 8388607)
- 671 compressed objects within 7 object streams
- 265 named destinations out of 1000 (max. 131072)
- 144 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 808 PDF objects out of 1000 (max. 8388607)
+ 728 compressed objects within 8 object streams
+ 279 named destinations out of 1000 (max. 131072)
+ 176 words of extra memory for PDF output out of 10000 (max. 100000000)
 

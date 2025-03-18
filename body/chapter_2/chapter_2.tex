@@ -406,12 +406,14 @@ As we are interested in the time domain let us antitransform the four point func
 \begin{equation}
     \langle\aone(t) \atwo(t) \athreestar(t) \afourstar(t) \rangle_0 = \int \frac{d\omgatt_1}{2\pi}\frac{d\omgatt_2}{2\pi}\frac{d\omgatt_2}{2\pi}\frac{d\omgatt_2}{2\pi}
     e^{i(\omgatt_1 + \omgatt_2  -\omgatt_3 - \omgatt_4)t} \langle \aonet \atwot \athreestart\afourstart \rangle_{0}.
+    \label{antitransform4}
 \end{equation}
 We substitute \eqref{4pointfreq} into it and use the delta function over frequencies to solve one of the three integrals. Then the remaning three integrals may 
 be performed by properly closing the integration path and using the residue theorem. The result, again using \eqref{freenwav}, is
 \begin{equation}
     \langle\aone(t) \atwo(t) \athreestar(t) \afourstar(t) \rangle_0 = 2\Tint_{1234}n_1 n_2 n_3 n_4\left( \frac{1}{n_1}+\frac{1}{n_2}-\frac{1}{n_3}-\frac{1}{n_4} \right)
     \frac{1}{\delomega^{34}_{12} + i\gamma_{1234}},
+    \label{fourpointtree}
 \end{equation}  
 where $\gamma_{1234} = \gamma_1 + \gamma_2 + \gamma_3 + \gamma_4$. \\
 
@@ -551,23 +553,24 @@ This term would manifest itself, at this order of perturbation theory, in a diag
 yealding exactly the same contribution as \eqref{shiftsextic}. As we did for the diagram in figure \ref{fig:oneloop2}, we can ignore this contribution by including
 the frequency shift into the final result. \\
 We notice that the second part of \eqref{sexticfullcontribution} diverges in the $\F_k \rightarrow 0$ limit. Looking at the diverging contributions of 
-\eqref{schannelfullcontribution}, \eqref{tchannelfullcontribution} and \eqref{tchannelfullcontribution}($3 \leftrightarrow 4$), we see that their sum is
+\eqref{schannelfullcontribution}, \eqref{tchannelfullcontribution} and \eqref{tchannelfullcontribution}($3 \leftrightarrow 4$), we see that their sum is\\
+\hl{FROM HER ON ADD DELTAS NEXT TO INTERACTION TERMS}
 \begin{equation}
     4\pi\delta(\delomegatt^{12}_{34})\D_1^0\D_2^0\D_3^0\D_4^0\sum_{56}\left( \frac{n_5}{\F_6} + \frac{n_6}{\F_5}\right)\left(
     \Tint_{5634}\Tint_{1256} + 2 \Tint_{2546}\Tint_{6135} + 2\Tint_{2536}\Tint_{6145}
     \right).
 \end{equation}
 Since $k_5$ and $k_6$ are integrated over, it is easy to show that this term exactly cancels the diverging part of \eqref{sexticfullcontribution}.\\
-Finally the full four points correlator up to order $\Tint^2$ is obtained by summing the finite parts of the expressions calculated from figure \ref{fig:quarticoneloop}.
+Finally the full contribution to order $\Tint^2$ is obtained by summing the finite parts of the expressions calculated from figure \ref{fig:quarticoneloop}.
 To recover the original nonlinear theory we remove the forcing and dissipating terms by taking the limit $F_k, \gamma_k \rightarrow 0$ while keeping their ratio constant
 (as to have $n_k$ finite). We shall keep the $\gamma_k$ terms in the denominator as $\varepsilon$ quantities to aid with the future Fourier antitransform. The result is 
 \begin{equation}
     \begin{aligned}
-    \langle\aonet &\atwot\athreestart\afourstart \rangle = 
+    \langle\aonet &\atwot\athreestart\afourstart \rangle_1 = 
     \\
-    -&2\pi i \delta(\delomegatt^{12}_{34})\Tint_{1234}\D^0_1\D^0_2\D^0_3\D^0_4\left(
-    \dfrac{1}{\G_1^*\F_1^{}}+\dfrac{1}{\G_2^*\F_2^{}}-\dfrac{1}{\G_3^{}\F_3^{}}-\dfrac{1}{\G_4^{}\F_4^{}}\right) 
-    \\
+    %-&2\pi i \delta(\delomegatt^{12}_{34})\Tint_{1234}\D^0_1\D^0_2\D^0_3\D^0_4\left(
+    %\dfrac{1}{\G_1^*\F_1^{}}+\dfrac{1}{\G_2^*\F_2^{}}-\dfrac{1}{\G_3^{}\F_3^{}}-\dfrac{1}{\G_4^{}\F_4^{}}\right) 
+    %\\
     -&4\pi \delta(\delomegatt^{12}_{34})\D^0_1\D^0_2\D^0_3\D^0_4 \times
     \\
       \sum_{56}&\left[\Tint_{5634}\Tint_{1256}
@@ -580,14 +583,84 @@ To recover the original nonlinear theory we remove the forcing and dissipating t
     -\dfrac{1}{\G_4^{}\F_4^{}}\right)\left( \omgatt_3 + \omgatt_4 - \omga_5 - \omga_6\right)}{\left( \omgatt_1 + \omga_6 - \omgatt_3 - \omga_5\right)^2 + \gamma^2_{56}}
     + \left( 3 \longleftrightarrow 4 \right) \right].
     \end{aligned}
+    \label{transformedfourpoint}
 \end{equation}
-To Fourier transform this expression is a rather straightforward but cumbersome task. In doing so it is useful to have kept the $gamma$ denominator the denominator. 
+To Fourier transform this expression is a rather straightforward but cumbersome task. In doing so it is useful to have kept the $gamma$ in the denominator. 
 By sending them to zero uniformely in $k$-space one can substitute $\gamma_k= \frac{\varepsilon}{4}$ and avoid singularities on the integration path. It is however important 
-to check that the integral is converging without the $\varepsilon$ term. The result of the transform can be found in \cite{Rosenhaus2023}.\\
-\hl{INSERT FINAL FORM ON NOTES OF THE FOURIER TRANSFORM}
+to check that the integral is converging without the $\varepsilon$ term. Transforming in the same fashion as \eqref{antitransform4}, we obtain 
+\begin{multline}
+    \langle \ak(t) \aone(t) \atwostar(t)\athreestar(t) \rangle_{1} = 2\sum_{56} \left( \Tint_{5634}\Tint_{1256}  V(1,2,3,4,5,6) - \right.\\
+    2\Tint_{2546}\Tint_{6135}
+    \left.V(1,-3,-2,4,5,-6) - 2\Tint_{2536}\Tint_{6145} V(1,-4,-2,3,5,-6)  \right),
+\end{multline}
+where 
+\begin{equation}
+    \begin{aligned}
+        V(1,2,3,4,5,6) =&
+        \\
+        -\prod_{j=1}^{6}n_j\left[ \vphantom{\frac{1}{n_7}} \right.
+        &\left( \frac{1}{n_1} +\frac{1}{n_2} \right) \left( \frac{1}{n_3} +\frac{1}{n_4} \right)
+        \left( \frac{1}{\delomega^{34}_{56} + i\varepsilon}\frac{1}{\delomega^{56}_{12} + i\varepsilon} - \pi^2\delta(\delomega^{34}_{56})\delta(\delomega^{56}_{12})\right)-  
+        \\
+        &\left( \frac{1}{n_1} +\frac{1}{n_2} \right) \left( \frac{1}{n_5} +\frac{1}{n_6} \right)
+        \frac{1}{\delomega^{34}_{12} + i\varepsilon}\frac{1}{\delomega^{34}_{56} + i\varepsilon} -
+        \\
+        &\left( \frac{1}{n_3} +\frac{1}{n_4} \right) \left( \frac{1}{n_5} +\frac{1}{n_6} \right)
+        \frac{1}{\delomega^{34}_{12} + i\varepsilon}\left.\frac{1}{\delomega^{56}_{12} + i\varepsilon}
+        \right]
+    \end{aligned}
+\end{equation}
+
 \subsection{Higher order kinetic equation}
 
-\hl{CHIACCHERA SU EQ CINETICA, SCRIVILA E PROPRIETA', COMMENTI A VOCE SU DIVERGENCE}
+Having calculated the four point function up to $\Tint^2$ order, we may use it in conjunction with \eqref{kineticprototype} to derive an higher order kinetic equation.\\
+It is straightforward to see that substituting \eqref{fourpointtree} into \eqref{kineticprototype}, and using the known identity
+\begin{equation}
+    \frac{1}{f(x) + i\varepsilon} = \frac{1}{f(x)} -i\pi\delta(x),
+    \label{deltaidentity}
+\end{equation}
+the usual kinetic equation \eqref{kinetic} is recovered. \\
+In \eqref{deltaidentity} the integral of $\frac{1}{f(x)}$ has to be intended in the principal value sense, but must nontheless be converging. For example it is possible to say that the principal value 
+of 
+\begin{equation}
+    \int_{-\infty}^{\infty}\frac{dx}{x}
+\end{equation} 
+is null. However it is not possible to assign finite value to 
+\begin{equation}
+    \int_{-\infty}^{\infty} \frac{dx}{x^2}.
+\end{equation}
+We stress this fact as it will be of importance in the next chapter. \\
+Substituting instead \eqref{transformedfourpoint} into \eqref{kineticprototype}, after some lenghty manipulations described in the appendix of \cite{Rosenhaus2023},
+we obtain Rosenhaus and Smolkin's kinetic equation (we also recover explicit integrations $\sum_5 \rightarrow \int dk_5$)
+\begin{multline}
+        \pt \langle \ak(t) \akstar(t) \rangle = \pt n_k(t) = 4\pi \int \prod_{j=1}^{3} dk_j|\Tint_{k123}|^2n_kn_1n_2n_3\left(\frac{1}{n_k} +\frac{1}{n_1}-
+        \frac{1}{n_2}-\frac{1}{n_3}\right)\delta(\delomega^{k1}_{23}) \\
+          + 16\pi\int \prod_{j=1}^{5} dk_j\delta(\delomega^{k1}_{23})n_kn_1n_2n_3n_4n_5 \\
+          \times \left\{  \dfrac{\text{Re}(\Tint_{23k1}\Tint_{k145}\Tint_{4523})}{\delomega^{23}_{45}}
+          \left(\frac{1}{n_k} +\frac{1}{n_1} -\frac{1}{n_2} - \frac{1}{n_3}\right)\left(\frac{1}{n_4}+\frac{1}{n_5}\right)  \right. \\
+          + \frac{3}{2}\pi\text{Im}(\Tint_{23k1}\Tint_{k145}\Tint_{4523})\delta(\delomega^{23}_{45})\left(\frac{1}{n_k}+\frac{1}{n_1}\right)\left(\frac{1}{n_2}
+          +\frac{1}{n_3}\right) \\
+            + 4\left[\dfrac{\text{Re}(\Tint_{23k1}\Tint_{k524}\Tint_{1435})}{\delomega^{35}_{14}}
+            \left(\frac{1}{n_k} +\frac{1}{n_1} -\frac{1}{n_2} - \frac{1}{n_3}\right)\left(\frac{1}{n_4}-\frac{1}{n_5}\right)\right. \\
+            + \left. \left. \frac{3}{2}\pi\text{Im}(\Tint_{23k1}\Tint_{k524}\Tint_{1435})\delta(\delomega^{35}_{14})\left(\frac{1}{n_k}-
+            \frac{1}{n_2}\right)\left(\frac{1}{n_1}-\frac{1}{n_3}\right)  \right]\right\}.
+            \label{NLOkinetic}
+\end{multline}
+Up until here $n_k = \frac{\F_k}{2\gamma_k}$ was only the name given to a finite ratio, but as we saw from equation \eqref{freenwav} it is also the value of the 
+wave density at first order in perturbation theory. We may consequently close the equation we just obtained by the substitution $n_i \rightarrow n_i(t) = n_i$. 
+As in the first chapter, this assumption holds provided that the interaction term is truly perturbative. If this is the case, it is reasonable (but not trivial) 
+to expect the theory to stay close enough to a free one as to make \eqref{NLOkinetic} valid at any time. \\ 
+Into this new kinetic equation every frequency should be assumed to be shifted by the quantity $\delta\omega$, to account for the contributions of 
+figure \ref{fig:oneloop2} and \ref{fig:sexticoneloop}.\\
 
-
-
+It is easy to see that solution \eqref{Gibbs} remains an equilibrium state even for \eqref{NLOkinetic}. The same cannot be said for 
+KZ states. Rosenhaus and Falkovich studied the convergence of \eqref{NLOkinetic} when one of the KZ solutions of \eqref{kinetic} is substituted into it, 
+as it could be expected that if a stationary solution exist it should be close to \eqref{KZPsol} or \eqref{KZQsol}. Under some very general assumptions on the 
+scaling properties of the dispersion relation and the interaction term, they found that a locality window is not to be usually expected. This implies that even if 
+a solution is found for a given theory, some integral in the equation will diverge either in the infrared (IR) region or in the ultraviolet (UV) one. The only way to
+heal such divergencies, that they argue become worse at higher perturbative order, is to impose IR and UV cutoffs based on the underlying physics of the problem
+under consideration. This would imply that the pumping an dissipating scales influence the form of eventual cascade solutions. \\
+They even managed to resum part of the most divergent diagrams, obtaining a UV convergent, but still IR divergent, kinetic equation. It is however an open question 
+how much insight can be extracted about the strong turbulence regime, as it is often the case that nonperturbative effects in strongly nonlinear theories are hidden
+from the point of view of perturbation theory. It is also an incognita wether the closure needed to obtain the WKE is self consistent in the case of non negligible contributions 
+from the nonlinear part of the Hamiltonian. \\

@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: thesis.aux
+The style file: siam.bst
+Database file #1: bibliog.bib
+Warning--to sort, need author or key in 1991
+Warning--empty author in 1991
+Warning--empty title in 1991
+Warning--empty journal in Bjorken:1965zz
+Warning--empty journal in Rosenhaus:2025mgj
+You've used 13 entries,
+            2030 wiz_defined-function locations,
+            587 strings with 5600 characters,
+and the built_in function-call counts, 3961 in all, are:
+= -- 392
+> -- 135
+< -- 0
++ -- 56
+- -- 42
+* -- 256
+:= -- 576
+add.period$ -- 13
+call.type$ -- 13
+change.case$ -- 59
+chr.to.int$ -- 0
+cite$ -- 18
+duplicate$ -- 241
+empty$ -- 285
+format.name$ -- 42
+if$ -- 883
+int.to.chr$ -- 0
+int.to.str$ -- 13
+missing$ -- 15
+newline$ -- 42
+num.names$ -- 22
+pop$ -- 65
+preamble$ -- 1
+purify$ -- 49
+quote$ -- 0
+skip$ -- 225
+stack$ -- 0
+substring$ -- 188
+swap$ -- 120
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 48
+warning$ -- 5
+while$ -- 32
+width$ -- 15
+write$ -- 110
+(There were 5 warnings)
