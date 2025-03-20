@@ -4,25 +4,165 @@
 \newpage
 \vphantom{}
 \section{A one dimensional model for Wave Turbulence}
-    mini intro su storia MMT e outline capitolo \\
-    tutto quello che riusciamo a trovare come previsione teorica \\
-    \hl{INTRO}\\
+    The Majda-McLaughlin-Tabak (MMT) family of models was introduced in \cite{Majda1997} to test the prediction of weak turbulence theory. The idea is to have a 1D system manifesting
+    the main phenomenology of nonlinear physics while at the same time being relatively easy to numerically simulate with a fine grid. Its study was then continued in
+    \cite{Cai2001} and \cite{Zakharov2001}, and resulted in a better understanding of how coherent phenomena (like solitons or quasisolitons) influence the applicability 
+    of wave turbulence theory. This two parameters family of models has since been a traditional benchmark on which to test new techniques and ideas in the world of turbulence. \\
+    In this chapter we briefly introduce the MMT family of differential equations and discuss its salient features and associated WKE, mainly inspired by the account in 
+    \cite{ZAKHAROV2004}. We then 
+    move to the analysis of its higher order kinetic equation, proving that energy and wave action are still conserved quantities. Unexpectedly  we find
+    ulterior divergences, neither UV or IR, due to nonlocal interactions. We prove that for all nontrivial members of the MMT family of
+    models this divergences exist, and must be accounted for. Our original idea was to perform numerical simulations of the higher order WKE, to check the form of eventual
+    out of equilibrium stationary states. This newly found diverging integrals didn't allow us to do so. Nontheless we introduce the basic workings of WavKinS,
+    a newly developed solver for WKEs introduced in \cite{Giorgio1} and \cite{Giorgio2} by Krstulovic. We end the chapter by discussing a few simulations obtained 
+    through it. \\  
     \subsection{The MMT model and its wave kinetic equation}
 
-    MMT model con beta generico e sua WKE\\
-    \subsection{Out of equilibrium stationary solutions}
-
-    MMT nlo, qunatità ancora conservate e discussioni sulla sua convergenza e sulla natura delle correzioni\\
-    trasformata di Zakharov (se già introdotta in chap 1 solo usarla) e controllo convergenza LO integrando\\
-    commmenti su validita WKE data la presenza di solitoni e quasisolitoni (devi studiarla prima bro)\\
+    In coordinate space the model consists in the two parameters family of differential equations
+    \begin{equation}
+        i\pt \Psi = \left|\px\right|^\alpha \Psi + \lambda \left|\px\right|^{\frac{\beta}{4}}
+        \left( \left|\left|\px\right|^{\frac{\beta}{4}}\Psi\right|\left|\px\right|^{\frac{\beta}{4}}\Psi \right).
+        \label{MMTPOS}
+    \end{equation}
+    where $\Psi = \Psi(x,t)$ is a complex function, $\lambda = \pm 1$ and $\alpha, \beta \in \mathbb{R}$. Positive $\lambda$ 
+    corresponds to the defocusing case whereas negative $\lambda$ to the focusing one.\\
+    We interpret the fractional derivatives in \eqref{MMTPOS} through their action in Fourier space, namely 
+    \begin{equation}
+        \left|\px\right|^\alpha \Psi = \frac{1}{2\pi} \int dk |k|^{\alpha} \ak e^{-ikx},
+    \end{equation} 
+    where $\ak = \anorm(k,t)$ is the Fourier transform of $\Psi$. A rigorous definition can be found in the appendix of \cite{ZAKHAROV2004}\\
+    Time translational symmetry implies that the energy
+    \begin{equation}
+        \Ewav = \int dx \left( \left|\left|\px\right|^\frac{\alpha}{2}\Psi\right|^2 + \frac{1}{2}\lambda\left|\left|\px\right|^\frac{\beta}{4}\Psi\right|^4 \right)
+    \end{equation}
+    is conserved. Phase and translational symmetries corresponds instead to the conservation of wave action/number and momentum, with formulas
+    \begin{equation}
+        \Nwav = \int dx \left| \Psi \right|^2 \hspace{1cm} \textrm{M} = \frac{i}{2}\int dx \left( \Psi \px \Psi^* - \Psi^* \px \Psi \right).
+    \end{equation}
+    Tranforming \eqref{MMTPOS} to Fourier space we find
+    \begin{equation}
+        i\pt \ak = \omga_k \ak  + \int dk_1dk_2dk_3 \Tint_{k123}\aone \atwo \athreestar \delta^{k1}_{23}.
+    \end{equation}
+    There, to have uniform notations with the previous chapters, we defined $\omga_k = |k|^\alpha$ and $\Tint_{k123} = \lambda|kk_1k_2k_3|^\frac{\beta}{4}$. It is easy to see that
+    $\Tint$ satisfies the symmetries generally required in chapter 1, allowing for the Hamiltonian treatment of the system. \\
+    This system by construction only posseses a four wave interaction. In one dimension the resonance condition is
+    \begin{equation}
+        \begin{aligned}
+            k + k_1 &= k_2 + k_3 \\
+            |k|^\alpha + |k_1|^\alpha &= |k_2|^\alpha + |k_3|^\alpha.
+        \end{aligned}
+    \end{equation}
+    In \cite{Majda1997} it was proved that the only way nontrivial solution exists\footnote{
+        A nontrivial solution is a solution which does not make the collisional integral null, and thus result in an exchange of energy among modes. 
+        For example $k=k_2$ and $k_1=k_3$ is always a solution, but the term 
+        $\left(\frac{1}{n_k} +\frac{1}{n_1} -\frac{1}{n_2}-\frac{1}{n_3} \right)$ kills the collisional integral in that point of the resonance manifold.
+    } is if $\alpha < 1$. \hl{COULD ADD PROOF} We shall then adopt $\alpha = \frac{1}{2}$ to mimic the dispersion relation of surface gravity waves, in which case $\omga = |gk|^\frac{1}{2}$ 
+    with $g$ being the acceleration of gravity.\\
+    By direct substitution of MMT's dispersion relation and interaction term into $\eqref{kinetic}$, the WKE to the leading order is 
+    \begin{equation}
+        \pt n_k = 4 \pi\int dk_1 dk_2 dk_3 \\
+        |kk_1k_2k_3|^\frac{\beta}{2}n_kn_1n_2n_3
+    \left(\frac{1}{n_k} + \frac{1}{n_1} - \frac{1}{n_2}- \frac{1}{n_3}  \right)
+    \delta(\delomega^{k1}_{23})\delta^{k1}_{23}.
+    \end{equation}
+    From the discussion in chapter 1 we now that the two possible out of equilibrium solutions for this equation are 
+    \begin{equation}
+        \begin{aligned}
+        &n_k^P \propto k^{\frac{2}{3}\beta + 1}, \\
+        &n_k^Q \propto k^{\frac{2}{3}\beta + \frac{5}{6}}.
+        \end{aligned}
+        \label{MMTKZ}
+    \end{equation}
+    \hl{ADD PROOF OF LOCALITY WINDOW}\\
+    Since the interaction term appears squared in the WKE, weak turbulence theory provides the same prediction in both the focusing and defocusing cases. 
+    However \eqref{MMTPOS} presents different behaviours in those two cases. 
+    In the focusing case stable solitonic solutions are possible, as well as wave collapses
+    (\cite{Zakharov2001}). It was seen in numerical simulations of the primitive equation that, under incoherent forcing, the wave density spectrum stabilizes in a state
+    with opposite wave action flux respect to the WT prediction. The energy flux sign corresponds to predictions, but only in the high $k$ limit the slope can be 
+    described through a KZ state.\\
+    In the defocusing case the spectrum qualitatevely corresponds to the expected one, but with a steeper slope in the inertial range. This discrepancy could be justified 
+    by the presence of quasi solitons, approximate solutions of \eqref{MMTPOS} dissipating in finite time. The study of their impact on stationary states is called 
+    quasisolitonic turbulence. \\
+    This considerations show that the range of applicability of WT is quite narrow, and very much influenced by the choerent structures characteristic of the system. 
+    Our goal in this thesis is not to discuss the validity of WT, but instead check the consistency and consequences of higher order terms into the 
+    WKE of a simple system. \\
     \subsection{The higher order kinetic equation}
+
+    By directly substituting our chosen dispersion relation and interaction term into \eqref{NLOkinetic}, the next to leading order kinetic equation for the MMT 
+    model is 
+    \begin{multline}
+        \frac{\partial}{\partial t}n_k(t) = 4\pi \int dk_1dk_2dk_3[1 + \sigma(k,k_1,k_2,k_3)]\\
+        \times |kk_1k_2k_3|^{\beta/2} n_kn_1n_2n_3 \left(\frac{1}{n_k} +\frac{1}{n_1}-
+        \frac{1}{n_2}-\frac{1}{n_3}\right)\delta_{23}^{k1}\delta(\delomega^{k1}_{23}), 
+        \label{wke_nlo}
+    \end{multline}
+    where 
+    \begin{multline}
+        \sigma(k,k_1,k_2,k_3) =  4 \int dk_4dk_5n_4n_5|k_4k_5|^{\beta/2} \\
+        \times \left[\left( \frac{1}{n_4}+\frac{1}{n_5} \right) 
+        \frac{\delta_{23}^{45}}{\sqrt{k_2}+\sqrt{k_3}-\sqrt{k_4}-\sqrt{k_5}} + 4\left( \frac{1}{n_4}-\frac{1}{n_5} \right) 
+        \frac{\delta_{14}^{35}}{\sqrt{k_3}+\sqrt{k_5}-\sqrt{k_1}-\sqrt{k_4}}\right].
+        \label{sigma}
+    \end{multline}
+    We rewrote the equation in this fashion to highlight the contributions of higher perturbative orders as modifications to the effective interaction term in the WKE.
+    If we imagine the leading order WKE as accounting for all possible scatterings among waves, the $\sigma$ term here introduced accounts for secondary scatterings 
+    mediated by some virtual waves $k_4$ and $k_5$. The full effect is to either suppress or enhance the interaction, resulting in a new coupling 
+    $|kk_1k_2k_3|^{\beta/2} \longrightarrow [1 + \sigma(k,k_1,k_2,k_3)]|kk_1k_2k_3|^{\beta/2} $. \\
+
+    The leading order WKE conserves energy and wave action as consequences of the symmetries of $\Tint_{k123}$. To show that even the corrected equation 
+    conserves the same quantities, as it is expected, we shall just check that the same symmetries hold for $\sigma$.\\
+    The symmetry under the exchange $k_2 \leftrightarrow k_3$ is built-in but not explicit, as already commented in the previous chapter. The contribution of the 
+    first diagram in figure \ref{fig:quarticoneloop}is obviously symmetric and the other two contribution are mapped into each other by the exchange. It was used to make
+    \eqref{NLOkinetic} more compact. \\
+    Recovering it and manipulating the dummy variables, 
+    $\sigma$ becomes
+    \begin{multline}
+      \sigma(k,k_1,k_2,k_3) =  4 \int dk_4dk_5n_4n_5|k_4k_5|^{\beta/2} 
+       \left[\left( \frac{1}{n_4}+\frac{1}{n_5} \right) 
+      \frac{\delta_{23}^{45}}{\sqrt{k_2}+\sqrt{k_3}-\sqrt{k_4}-\sqrt{k_5}} \right. \\
+      + \left( \frac{1}{n_4}-\frac{1}{n_5} \right) \left(\frac{\delta_{14}^{35}}{\sqrt{k_3}+\sqrt{k_5}-\sqrt{k_1}-\sqrt{k_4}} - \frac{\delta_{15}^{34}}{\sqrt{k_3} 
+       +\sqrt{k_4}-\sqrt{k_1}-\sqrt{k_5}}  \right. \\
+      \left. \left. +\frac{\delta_{14}^{25}}{\sqrt{k_2}+\sqrt{k_5}-\sqrt{k_1}-\sqrt{k_4}} -\frac{\delta_{15}^{24}}{\sqrt{k_2}
+      +\sqrt{k_4}-\sqrt{k_1}-\sqrt{k_5}}\right)\right].
+    \end{multline}
+    Under the exchange $(k \text{,} k_1) \leftrightarrow (k_2 \text{,} k_3)$  we obtain
+    \begin{multline*}
+      \sigma(k,k_1,k_2,k_3) =  4 \int_{-\infty}^{+\infty}dk_4dk_5n_4n_5|k_4k_5|^{\beta/2} 
+       \left[\left( \frac{1}{n_4}+\frac{1}{n_5} \right) 
+      \frac{\delta_{1k}^{45}}{\sqrt{k}+\sqrt{k_1}-\sqrt{k_4}-\sqrt{k_5}} \right. \\
+      + 4\left( \frac{1}{n_4}-\frac{1}{n_5} \right) 
+      \left(\frac{\delta_{34}^{15}}{\sqrt{k_1}+\sqrt{k_5}-\sqrt{k_3}-\sqrt{k_4}} - \frac{\delta_{35}^{14}}{\sqrt{k_1} +\sqrt{k_4}-\sqrt{k_3}-\sqrt{k_5}}  \right. \\
+      \left. \left. +\frac{\delta_{34}^{k5}}{\sqrt{k}+\sqrt{k_5}-\sqrt{k_3}-\sqrt{k_4}} -\frac{\delta_{35}^{k4}}{\sqrt{k}+\sqrt{k_4}-\sqrt{k_3}-\sqrt{k_5}}\right)\right].
+    \end{multline*}
+    Imposing $\omega + \omega_1 = \omega_2 +\omega_3$ and $k + k_1 = k_2 + k_3$ results in
+    \begin{multline*}
+      \sigma(k,k_1,k_2,k_3) =  44 \int dk_4dk_5n_4n_5|k_4k_5|^{\beta/2} 
+       \left[\left( \frac{1}{n_4}+\frac{1}{n_5} \right) 
+      \frac{\delta_{1k}^{45}}{\sqrt{k_2}+\sqrt{k_3}-\sqrt{k_4}-\sqrt{k_5}} \right. \\
+      + \left( \frac{1}{n_4}-\frac{1}{n_5} \right) 
+      \left(\frac{\delta_{34}^{15}}{\sqrt{k_1}+\sqrt{k_5}-\sqrt{k_3}-\sqrt{k_4}} - \frac{\delta_{35}^{14}}{\sqrt{k_1} +\sqrt{k_4}-\sqrt{k_3}-\sqrt{k_5}}  \right. \\
+      \left. \left. +\frac{\delta_{25}^{14}}{\sqrt{k_2}+\sqrt{k_5}-\sqrt{k_1}-\sqrt{k_4}} -\frac{\delta_{24}^{15}}{\sqrt{k_2}+\sqrt{k_4}-\sqrt{k_1}-\sqrt{k_5}}\right)\right],
+    \end{multline*}
+    showing that $\sigma(k,k_1,k_2,k_3) = \sigma(k_2,k_3,k,k_1) = \sigma(k,k_1,k_3,k_2)$ and thus that $E$ and $N$ are conserved\footnote{
+        The two symmetries we proved togheter imply the one under exchange of $k$ and $k_1$}.\\ 
+    There are two integrations in \eqref{wke_nlo}, an external one (three integration measures with two deltas) and an internal one (two measures with one delta). 
+    To assess the validity of a possible stationary solution one should check the convergence of both integrals in all possible regimes of their arguments. One could
+    slightly deform one of solutions \eqref{mMMTKZ}, and assess qualitatively the contribution of $\sigma$ to the KZ spectrum. This line of thought 
+    was explored for the NLS equation in \cite{Rosenhaus:2025mgj}. We shall not discuss this points here however. Even before thinking about specific solutions 
+    the integrals have to converge for a generic $n_k$, allowing for non pathological time evolution. We shall not concern ourselves with IR and UV divergencies,
+    as those are easily healed through cutoffs. Those cutoffs may be inspired by the underlying physics of the system under consideration, for example 
+    finite size imposes a natural UV cutoff and granularity of the medium imposes an IR one. They could be even imposed by the interactions of the system with 
+    the environment, a dissipative interaction in the low $k$ region denies the transfer of energy or wave action across it domain. \\
+    We shall instead focus our attention on the denominators of $\sigma$. Their integration should be intended in the principal value sense, but this only allows to 
+    assign a value to usually indeterminate integrals. We have to explicitely check that this value is finite. We shall turn to this problem for the remaining part 
+    of the section.\\
 
     MMT nlo, qunatità ancora conservate e discussioni sulla sua convergenza e sulla natura delle correzioni\\
     Discuti convergenza del frequency shift esplicitamente.
     divergenza e dimostrazione dell'esistenza della divergenza per $\alpha < 1$\\
     \subsection{Numerical simulations through WavKinS}
 
-    Spiega struttura codice, mostra simulazioni per vari tipi di cascate con i loro parametri e discutile
+    Spiega struttura codice, conto per esplicitare delta function, mostra simulazioni per vari tipi di cascate con i loro parametri e discutile
     \subsection{Future work}
     
     Possibilità per curare divergenza, possibile introduzione di frequency renomalization (che diverge sempre)

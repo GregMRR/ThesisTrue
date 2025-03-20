@@ -1,52 +1,52 @@
 This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
-The style file: siam.bst
+The style file: plain.bst
 Database file #1: bibliog.bib
 Warning--to sort, need author or key in 1991
 Warning--empty author in 1991
 Warning--empty title in 1991
 Warning--empty journal in Bjorken:1965zz
 Warning--empty journal in Rosenhaus:2025mgj
-You've used 13 entries,
-            2030 wiz_defined-function locations,
-            587 strings with 5600 characters,
-and the built_in function-call counts, 3961 in all, are:
-= -- 392
-> -- 135
+You've used 19 entries,
+            2118 wiz_defined-function locations,
+            625 strings with 6812 characters,
+and the built_in function-call counts, 5689 in all, are:
+= -- 530
+> -- 267
 < -- 0
-+ -- 56
-- -- 42
-* -- 256
-:= -- 576
-add.period$ -- 13
-call.type$ -- 13
-change.case$ -- 59
++ -- 107
+- -- 86
+* -- 431
+:= -- 973
+add.period$ -- 53
+call.type$ -- 19
+change.case$ -- 97
 chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 241
-empty$ -- 285
-format.name$ -- 42
-if$ -- 883
+cite$ -- 24
+duplicate$ -- 200
+empty$ -- 461
+format.name$ -- 86
+if$ -- 1156
 int.to.chr$ -- 0
-int.to.str$ -- 13
-missing$ -- 15
-newline$ -- 42
-num.names$ -- 22
-pop$ -- 65
+int.to.str$ -- 19
+missing$ -- 19
+newline$ -- 94
+num.names$ -- 36
+pop$ -- 99
 preamble$ -- 1
-purify$ -- 49
+purify$ -- 81
 quote$ -- 0
-skip$ -- 225
+skip$ -- 141
 stack$ -- 0
-substring$ -- 188
-swap$ -- 120
+substring$ -- 350
+swap$ -- 17
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 48
+type$ -- 72
 warning$ -- 5
-while$ -- 32
-width$ -- 15
-write$ -- 110
+while$ -- 49
+width$ -- 21
+write$ -- 195
 (There were 5 warnings)

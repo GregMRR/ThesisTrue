@@ -1,42 +1,94 @@
 \begin{thebibliography}{10}
 
 \bibitem{1991}
-Proceedings of the Royal Society of London. Series A: Mathematical and Physical Sciences, 434 (1991), p.~9–13.
+{\em Proceedings of the Royal Society of London. Series A: Mathematical and Physical Sciences}, 434(1890):9–13, July 1991.
 
 \bibitem{Bjorken:1965zz}
-{\sc J.~D. Bjorken and S.~D. Drell}, {\em {Relativistic quantum fields}},  (1965).
+James~D. Bjorken and Sidney~D. Drell.
+\newblock {Relativistic quantum fields}.
+\newblock 1965.
+
+\bibitem{Cai2001}
+David Cai, Andrew~J. Majda, David~W. McLaughlin, and Esteban~G. Tabak.
+\newblock Dispersive wave turbulence in one dimension.
+\newblock {\em Physica D: Nonlinear Phenomena}, 152–153:551–572, May 2001.
 
 \bibitem{Gurarie:1994ut}
-{\sc V.~Gurarie}, {\em {Probability density, diagrammatic technique, and epsilon expansion in the theory of wave turbulence}}, Nucl. Phys. B, 441 (1995), pp.~569--594.
+V.~Gurarie.
+\newblock {Probability density, diagrammatic technique, and epsilon expansion in the theory of wave turbulence}.
+\newblock {\em Nucl. Phys. B}, 441:569--594, 1995.
+
+\bibitem{Giorgio1}
+Vincent Labarre, Giorgio Krstulovic, and Sergey Nazarenko.
+\newblock Wave-kinetic dynamics of forced-dissipated turbulent internal gravity waves, 2024.
+
+\bibitem{Majda1997}
+A.~J. Majda, D.~W. McLaughlin, and E.~G. Tabak.
+\newblock A one-dimensional model for dispersive wave turbulence.
+\newblock {\em Journal of Nonlinear Science}, 7(1):9–44, February 1997.
 
 \bibitem{Nazarenko2011}
-{\sc S.~Nazarenko}, {\em Wave Turbulence}, Springer Berlin Heidelberg, 2011.
+Sergey Nazarenko.
+\newblock {\em Wave Turbulence}.
+\newblock Springer Berlin Heidelberg, 2011.
 
 \bibitem{Onorato2020}
-{\sc M.~Onorato and G.~Dematteis}, {\em A straightforward derivation of the four-wave kinetic equation in action-angle variables}, Journal of Physics Communications, 4 (2020), p.~095016.
+M~Onorato and G~Dematteis.
+\newblock A straightforward derivation of the four-wave kinetic equation in action-angle variables.
+\newblock {\em Journal of Physics Communications}, 4(9):095016, September 2020.
 
 \bibitem{Rosenhaus:2023pdj}
-{\sc V.~Rosenhaus and G.~Falkovich}, {\em {Interaction Renormalization and Validity of Kinetic Equations for Turbulent States}}, Phys. Rev. Lett., 133 (2024), p.~244002.
+Vladimir Rosenhaus and Gregory Falkovich.
+\newblock {Interaction Renormalization and Validity of Kinetic Equations for Turbulent States}.
+\newblock {\em Phys. Rev. Lett.}, 133(24):244002, 2024.
 
 \bibitem{Rosenhaus:2025mgj}
-\leavevmode\vrule height 2pt depth -1.6pt width 23pt, {\em {Weak and strong turbulence in self-focusing and defocusing media}},  (2025).
+Vladimir Rosenhaus and Gregory Falkovich.
+\newblock {Weak and strong turbulence in self-focusing and defocusing media}.
+\newblock 1 2025.
 
 \bibitem{Rosenhaus:2023sik}
-{\sc V.~Rosenhaus, D.~Schubring, M.~S.~J. Shuvo, and M.~Smolkin}, {\em {Loop diagrams in the kinetic theory of waves}}, JHEP, 06 (2024), p.~025.
+Vladimir Rosenhaus, Daniel Schubring, Md~Shaikot~Jahan Shuvo, and Michael Smolkin.
+\newblock {Loop diagrams in the kinetic theory of waves}.
+\newblock {\em JHEP}, 06:025, 2024.
 
 \bibitem{Rosenhaus2023}
-{\sc V.~Rosenhaus and M.~Smolkin}, {\em Feynman rules for forced wave turbulence}, Journal of High Energy Physics, 2023 (2023).
+Vladimir Rosenhaus and Michael Smolkin.
+\newblock Feynman rules for forced wave turbulence.
+\newblock {\em Journal of High Energy Physics}, 2023(1), January 2023.
 
 \bibitem{Rosenhaus:2022uwa}
-\leavevmode\vrule height 2pt depth -1.6pt width 23pt, {\em {Wave turbulence and the kinetic equation beyond leading order}}, Phys. Rev. E, 109 (2024), p.~064127.
+Vladimir Rosenhaus and Michael Smolkin.
+\newblock {Wave turbulence and the kinetic equation beyond leading order}.
+\newblock {\em Phys. Rev. E}, 109(6):064--127, 2024.
 
 \bibitem{Zakharov}
-{\sc G.~F. VE.~Zakharov and V.~LVov}, {\em Kolmogorov Spectra of Turbulence I}, Springer-Verlag, 1992.
+G.~Falkovich VE.~Zakharov and VS. LVov.
+\newblock {\em Kolmogorov Spectra of Turbulence I}.
+\newblock Springer-Verlag, 1992.
+
+\bibitem{ZAKHAROV2004}
+V~ZAKHAROV, F~DIAS, and A~PUSHKAREV.
+\newblock One-dimensional wave turbulence.
+\newblock {\em Physics Reports}, 398(1):1–65, August 2004.
 
 \bibitem{Zakharov1965}
-{\sc V.~E. Zakharov}, {\em Weak turbulence in media with a decay spectrum}, Journal of Applied Mechanics and Technical Physics, 6 (1965), p.~22–24.
+V.~E. Zakharov.
+\newblock Weak turbulence in media with a decay spectrum.
+\newblock {\em Journal of Applied Mechanics and Technical Physics}, 6(4):22–24, July 1965.
 
 \bibitem{Zakharov1975}
-{\sc V.~E. Zakharov and V.~S. L’vov}, {\em Statistical description of nonlinear wave fields}, Radiophysics and Quantum Electronics, 18 (1975), p.~1084–1097.
+V.~E. Zakharov and V.~S. L’vov.
+\newblock Statistical description of nonlinear wave fields.
+\newblock {\em Radiophysics and Quantum Electronics}, 18(10):1084–1097, October 1975.
+
+\bibitem{Zakharov2001}
+V.E. Zakharov, P.~Guyenne, A.N. Pushkarev, and F.~Dias.
+\newblock Wave turbulence in one-dimensional models.
+\newblock {\em Physica D: Nonlinear Phenomena}, 152–153:573–619, May 2001.
+
+\bibitem{Giorgio2}
+Ying Zhu, Giorgio Krstulovic, and Sergey Nazarenko.
+\newblock Turbulence and far-from-equilibrium equation of state of bogoliubov waves in bose-einstein condensates, 2024.
 
 \end{thebibliography}

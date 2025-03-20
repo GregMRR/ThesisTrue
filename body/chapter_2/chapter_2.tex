@@ -592,6 +592,7 @@ to check that the integral is converging without the $\varepsilon$ term. Transfo
     \langle \ak(t) \aone(t) \atwostar(t)\athreestar(t) \rangle_{1} = 2\sum_{56} \left( \Tint_{5634}\Tint_{1256}  V(1,2,3,4,5,6) - \right.\\
     2\Tint_{2546}\Tint_{6135}
     \left.V(1,-3,-2,4,5,-6) - 2\Tint_{2536}\Tint_{6145} V(1,-4,-2,3,5,-6)  \right),
+    \label{finalfourpoint}
 \end{multline}
 where 
 \begin{equation}
@@ -607,10 +608,11 @@ where
         \\
         &\left( \frac{1}{n_3} +\frac{1}{n_4} \right) \left( \frac{1}{n_5} +\frac{1}{n_6} \right)
         \frac{1}{\delomega^{34}_{12} + i\varepsilon}\left.\frac{1}{\delomega^{56}_{12} + i\varepsilon}
-        \right]
+        \right].
     \end{aligned}
 \end{equation}
-
+To obtain higher order corrections one only has to evaluate diagrams with a growing number of loops, the time consume of the task increases with the perturbation order becoming
+gradually more cumbersome. The calculations are lenghty but straightforward. \\
 \subsection{Higher order kinetic equation}
 
 Having calculated the four point function up to $\Tint^2$ order, we may use it in conjunction with \eqref{kineticprototype} to derive an higher order kinetic equation.\\
@@ -646,6 +648,10 @@ we obtain Rosenhaus and Smolkin's kinetic equation (we also recover explicit int
             \frac{1}{n_2}\right)\left(\frac{1}{n_1}-\frac{1}{n_3}\right)  \right]\right\}.
             \label{NLOkinetic}
 \end{multline}
+In the kinetic equation $k_2$ and $k_3$ are integrated over. Consequently the contributions from the last two diagrams of figure \ref{fig:quarticoneloop}, 
+differing only through the exchange of $k_2$ and $k_3$\footnote{
+    $k_3$ and $k_4$ with the variables we used in \eqref{finalfourpoint}.
+}, were summed. One has however to remember that the integrand is in general symmetric under said exchange not only when integrated over.\\  
 Up until here $n_k = \frac{\F_k}{2\gamma_k}$ was only the name given to a finite ratio, but as we saw from equation \eqref{freenwav} it is also the value of the 
 wave density at first order in perturbation theory. We may consequently close the equation we just obtained by the substitution $n_i \rightarrow n_i(t) = n_i$. 
 As in the first chapter, this assumption holds provided that the interaction term is truly perturbative. If this is the case, it is reasonable (but not trivial) 

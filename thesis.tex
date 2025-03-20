@@ -144,11 +144,11 @@
 
 %%%%%%%Bibliography and table of contents%%%%%%%%%%
 \usepackage{cite}
+%\usepackage[dashed=false]{biblatex}
 %not cited articles are not included
 %to center CONTENTS and BIBLIOGRAPHY
 \renewcommand{\contentsname}{\centering Contents}   % For TOC title
 \renewcommand{\bibname}{\centering Bibliography}   % For report/book
-
 %%%%%%%%%%COVER%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -197,6 +197,8 @@
 %partial derivative with respect to time
 \newcommand{\pt}{\frac{\partial}{\partial t}}
 
+%partial derivative with respect to space
+\newcommand{\px}{\frac{\partial}{\partial x}}
 %total derivative with respect to time
 \newcommand{\dt}{\frac{d}{dt}}
 
@@ -286,6 +288,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%TABLE OF CONTENTS%%%%%%%%%%%%%%%%%%%%%%
+\thispagestyle{empty}
 \tableofcontents
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -294,6 +297,8 @@
 %  in this case  !TEX root = ../../thesis.tex 
 
 %introduction
+%resetting page numbering
+\pagenumbering{arabic}
 %bad solutions to have different header for the intro si to manually change eat each page
 \thispagestyle{intro1}
 \input{body/Introduction/Introduction.tex}
@@ -318,7 +323,7 @@
 %%%%%%%%%%%%%%%%%%%BIBLIOGRAPHY%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 %without biblatex package:
-\bibliographystyle{siam}  
+\bibliographystyle{plain}  
 \bibliography{bibliog}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
