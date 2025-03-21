@@ -11,7 +11,7 @@ part of the corrections was investigated instead in \cite{Rosenhaus:2025mgj}. \\
 The focus of this chapter is to introduce the computational tools to consistently derive kinetic equations with contributions from higher powers of the coupling. 
 The methods of \cite{Rosenhaus2023} are discussed in a generic four wave system. First we show \hl{MAYBE CITE SIGGIA ROSEN MARTIN} how to map the derivation of the kinetic equation into
 the task of evaluating correlators in a Quantum Field Theory model. The basic idea is that a nonlinear system coupled to a random forcing may be regarded as 
-a statistical theory were the normal variables of the orginal system inherit the stochastic properties of the forcing. If the system spectrum in Fourier space is continous
+a statistical theory were the normal variables of the orginal system inherit the stochastic properties of the forcing. If the system spectrum in Fourier space is continuous
 a path integral approach may be implemented, allowing for the usage of the well developed machinery of QFT perturbation theory.\\
 After introducing and commenting the Feynman rules of the model, we calculate two and four points 
 correlation functions up to the first nontrivial higher order to derive the corresponding kinetic equation. The resulting theory can be said to account 
@@ -22,42 +22,41 @@ of this corrected equations for the KZ spectra. \\
 There are many ways to derive the kinetic equation for weakly interactive waves. One of them is by looking at the late time behaviour of the same nonlinear system
 coupled to a complex gaussian forcing and some dissipation, as in \cite{Zakharov1975} we write the modified e.o.m.s (already in the continuum limit)
 \begin{equation}
-    \pt a_k + i \omga_k a_k = -i \sum_{123}\Tint_{k123} \aonestar\atwo\athree \delta^{k1}_{23} + f_k(t) - \gamma_k a_k
+    \pt a_k + i \omga_k a_k = -i \int dk_1 dk_2 dk_3 \Tint_{k123} a_1^*a_2^{}a_3^{} \delta^{k1}_{23} + f_k(t) - \gamma_k a_k.
     \label{eoms}
 \end{equation}
-
-and impose guassian statistics on the forcing
+In this chapter we will not represent vectors in boldface, but instead $k$ will stand for all $d$ components. This is to at least partially match the 
+notation of the articles we discuss. For the duration of the chapter sums over wave vectors will stand for integrations over all components. \\ 
+We impose guassian statistics on the forcing
 \begin{equation}
     \langle f_k(t)f_p(t')\rangle = \F_k \delta(k-p)\delta(t-t').
 \end{equation}
-solving the system perturbatively and looking at a big enough $t$, equation \eqref{kinetic} is recovered. \\
+Solving the system perturbatively and looking at a big enough $t$, equation \eqref{kinetic} is recovered. \\
 The forcing and dissipation introduced this way are not of physical importance and have nothing to do with the $\Gamma_k$ term responsible 
 for the energy and wave action cascades. The contribution of $f_k$ is to introduce randomness into the system, in place of the explicit RPA assumption. 
 The last step of the derivation then removes this nonphysical elements by taking the limit of both $\F_k$ and $\gamma_k$ to zero, while keeping their ratio finite as
 to obtain a finite wave density $n_k$. \\  
-\hl{SCRIVI CONTO SE C'E' TEMPO} \\
 This is the starting point adopted by Rosenhaus and Smolkin in \cite{Rosenhaus2023} to access, with manageable calculation, higher orders in perturbation theory. We will 
 follow their method in this section.\\
-The basic idea is to reformulate the theory in the language of path integrals, to then move the statistics from the forcing to the canonical variables $\ak$. We start by
+The basic idea is to reformulate the theory in the language of path integrals, to then move the statistics from the forcing to the canonical variables $a_k^{}$. We start by
 explicitly writing the probability distribution for a given $f_k(t)$ functional form as 
 \begin{equation}  
     \mathrm{P}[f] \sim e^{-\int dt \sum_k \frac{|f_k(t)|^2}{\F_k}},
 \end{equation}
-Where instead of an integration on $k$, even if we are in the continuum limit, we write a sum. This choice is to improve clarity in the cumbersome formulas 
-we will later write, but sums should always be intended as integrals. We write the expectation value of a general composition of variables $O(a)$ \footnote{
-    In general it could be the composition of various $\ak = ak(t)$ at different wave numbers and different times.
+We can then write the expectation value of a general composition of variables $O(a)$ \footnote{
+    In general it could be the composition of various $a_k^{} = ak(t)$ at different wave numbers and different times.
 } as 
 \begin{equation}
     \langle O(a) \rangle = \frac{1}{\mathrm{Z}}\int \D f \D f^* \mathrm{P}[f] O(a), 
 \end{equation}
-where the integration measure $\D f$ is a formal sum over all possible functions $f_k(t) = f(k,t)$ and $\mathrm{Z}$ is a normalization constant. If $k$ and $t$ instead of continous variables were discrete labels $i$ and $j$,
+where the integration measure $\D f$ is a formal sum over all possible functions $f_k(t) = f(k,t)$ and $\mathrm{Z}$ is a normalization constant. If $k$ and $t$ instead of continuous variables were discrete labels $i$ and $j$,
 the integration measure would be the product $\prod_{ij}d f_{ij}$, running over all the possible values of the labels. \\
 We want the $a$ variables to satisfy the equations of motion, we may impose so by first defining a function $\Ef$ as
 \begin{equation}
-    \Ef = \pt a_k + i \omga_k a_k +i \sum_{123}\Tint_{k123} \aonestar\atwo\athree \delta^{k1}_{23} - f_k(t) + \gamma_k a_k,
+    \Ef = \pt a_k + i \omga_k a_k +i \sum_{123}\Tint_{k123} a_1^*a_2^{}a_3^{} \delta^{k1}_{23} - f_k(t) + \gamma_k a_k,
     \label{Eeffe}
 \end{equation}  
-so that the requirement that $\ak$ is a solution of the e.o.m.s may be expressed through a functional $\delta$ imposing $\Ef = 0$. We also need to add an integration measure
+so that the requirement that $a_k^{}$ is a solution of the e.o.m.s may be expressed through a functional $\delta$ imposing $\Ef = 0$. We also need to add an integration measure
 $\D \Ef \D \Efstar$ to guarantee the normalization of the probability distribution. The result for a generical expectation value is
 \begin{equation}
     \langle O(a) \rangle = \frac{1}{\mathrm{Z}}\int \D f \D f^* \D \Ef \D \Efstar \mathrm{P}[f] O(a)\delta(\Ef)\delta(\Efstar).
@@ -179,19 +178,19 @@ may turn it into a Quantum Field Theory, where the machinery of Feynman diagrams
 
 Our objective is still the kinetic equation. Starting from the original equations of motions \eqref{eoms}, without forcing and dissipation
 \begin{equation}
-    \pt a_k + i \omga_k a_k = -i \sum_{123}\Tint_{k123} \aonestar\atwo\athree \delta^{k1}_{23},
+    \pt a_k + i \omga_k a_k = -i \sum_{123}\Tint_{k123} a_1^*a_2^{}a_3^{} \delta^{k1}_{23},
 \end{equation}
-multiplying it for $\akstar$ and summing its complex conjugate we obtain
+multiplying it for $a_k^*$ and summing its complex conjugate we obtain
 \begin{equation}
-    \pt \ak \akstar = -2 \text{Im}\left( \sum_{123}\Tint_{k123}\ak \aone \atwostar \athreestar \delta^{k1}_{34} \right).
+    \pt a_k^{} a_k^* = -2 \text{Im}\left( \sum_{123}\Tint_{k123}a_k^{} a_1^{} a_2^* a_3^* \delta^{k1}_{34} \right).
 \end{equation} 
 By averaging over all possible realizations and expliciting the time dependences we find
 \begin{equation}
-    \pt \langle \ak(t) \akstar(t) \rangle = -2 \text{Im}\left( \sum_{123}\Tint_{k123}\langle\ak(t) \aone (t)\atwostar(t) \athreestar (t)\rangle\delta^{k1}_{34} \right),
+    \pt \langle a_k^{}(t) a_k^*(t) \rangle = -2 \text{Im}\left( \sum_{123}\Tint_{k123}\langle a_k^{}(t) a_1^{} (t)a_2^*(t) a_3^* (t)\rangle\delta^{k1}_{34} \right),
     \label{kineticprototype}
 \end{equation}
 where on the l.h.s. we can see the definition of $n_k(t)$ given in \eqref{wavdef}. We notice from this equation how any order of the kinetic equation can be obtained 
-by evaluating four points functions at equal times, togheter with the RPA assumption. Those four points function can be evaluated by the path integral statistical theory 
+by evaluating four points functions at equal times, together with the RPA assumption. Those four points function can be evaluated by the path integral statistical theory 
 derived in the last section, where the RPA assumption is recovered through the gaussian statistics over the forcing. Of course we will have to properly 
 switch off the contributions form the forcing variance $\F_k$ and the dissipation $\gamma_k$ to obtain results consistent with the first chapter. \\
 The good news is that through Feynman diagrams we can calculate four point functions with relative ease. In this section we will write and explain the Feynman rules. 
@@ -200,7 +199,7 @@ the variety of existing books (for example \cite{Bjorken:1965zz}). \\
 
 We start by expliciting writing $\Lag$ as
 \begin{equation}
-    \Lag = \sum_k \frac{|\Efz|^2}{\F_k} = \sum_k \frac{1}{\F_k} \left| \pt a_k + i \omga_k a_k + i \sum_{123}\Tint_{k123} \aonestar\atwo\athree \delta^{k1}_{23} \right|^2.
+    \Lag = \sum_k \frac{|\Efz|^2}{\F_k} = \sum_k \frac{1}{\F_k} \left| \pt a_k + i \omga_k a_k + i \sum_{123}\Tint_{k123} a_1^*a_2^{}a_3^{} \delta^{k1}_{23} \right|^2.
 \end{equation} 
 Regrouping the different terms order by order $\Lag$ becomes 
 \begin{equation}
@@ -210,15 +209,15 @@ with, by extensive usage of the symmetries of $\Tint$ and dummy variables,
 \begin{align}
     \Lag_0 &= \sum_k\frac{1}{\F_k} \left| \Dcov_k a_k  \right|^2, \\
     \Lag_1 &= \frac{i}{2}\sum_{k123}\Tint_{k123}\left( \frac{\Dcovd_k}{\F_k} + \frac{\Dcovd_1}{\F_1} - \frac{\Dcov_2}{\F_2} - \frac{\Dcov_3}{\F_3} \right)
-    \akstar \aonestar \atwo \athree, \\
-    \Lag_2 &= \sum_{k123456} \frac{1}{\F_k}\Tint_{123k}\Tint_{k456}\aonestar \atwostar \athree \afourstar \afive \asix. 
+    a_k^* a_1^* a_2^{} a_3^{}, \\
+    \Lag_2 &= \sum_{k123456} \frac{1}{\F_k}\Tint_{123k}\Tint_{k456}a_1^* a_2^* a_3^{} a_4^* a_5^{} a_6^{}. 
 \end{align}
 In this last set of equations we defined 
 \begin{equation}
-    \Dcov_k a_k = \left(\pt + i\omga_k+ \gamma_k\right)\ak
+    \Dcov_k a_k = \left(\pt + i\omga_k+ \gamma_k\right)a_k^{}
 \end{equation} 
-and $\Dcovd_k \akstar$ is its complex conjugate. Moreover in every expression 
-like $\frac{\Dcovd_1}{\F_1}\akstar \aonestar \atwo \athree$ the $\Dcovd_k$ always acts only on the normal variable bearing its own argument. \\
+and $\Dcovd_k a_k^*$ is its complex conjugate. Moreover in every expression 
+like $\frac{\Dcovd_1}{\F_1}a_k^* a_1^* a_2^{} a_3^{}$ the $\Dcovd_k$ always acts only on the normal variable bearing its own argument. \\
 
 We shall directly write the Feynman rules in frequency space, as the calculations are easier this way. We will need to transform back to $t$-space every 
 correlator we obtain.\\
@@ -227,14 +226,14 @@ fourier transform frequency will be named $\omgatt$ . Therefore the fourier tran
 transform of a function of $t_i$ will be a function of $\omgatt_i$. \\
 The propagator of the free theory may be obtained inverting the quadratic part of the Lagrangian ($\Lag_0$), yealding 
 \begin{equation}
-    G_{k1}(t_1 - t_2) = \langle \akstar(t_1)\aone(t_2)\rangle = \F_k \delta(k-k_1)\int \frac{d \omgatt}{2\pi}\frac{e^{i\omgatt(t_1 - t_2)}}
+    G_{k1}(t_1 - t_2) = \langle a_k^*(t_1)a_1^{}(t_2)\rangle = \F_k \delta(k-k_1)\int \frac{d \omgatt}{2\pi}\frac{e^{i\omgatt(t_1 - t_2)}}
     {\left(\omgatt -\omga_k + i\gamma_k \right)\left(\omgatt -\omga_k-i \gamma_k\right)}. 
     \label{propspace}
 \end{equation}
 It is instructive to look at its explicit form. We use Jordan's lemma to close the integration path in the upward or downward half of the complex plane, obtained by 
 making the variable $\omgatt$ complex, depending on the sign of $t_1 - t_2$. We then use the residue theorem to give an explicit form to the propagator, obtaining
 \begin{multline}
-    G_{k1}(t_1 - t_2) = \langle \akstar(t_1)\aone(t_2)\rangle = \\
+    G_{k1}(t_1 - t_2) = \langle a_k^*(t_1)a_1^{}(t_2)\rangle = \\
     \frac{\F_k}{2\gamma_k}\delta(k-k_1)\left(\theta(t_1-t_2)e^{i(\omga_k + i\gamma_k)(t_1 - t_2)}
     +\theta(t_2-t_1)e^{i(\omga_k - i\gamma_k)(t_1 - t_2)}\right),
 \end{multline}  
@@ -318,7 +317,7 @@ The full Feynman rules in frequency space are\\
 where $ \delomegatt^{124}_{356} = \omgatt_1 + \omgatt_2 + \omgatt_4 - \omgatt_3 - \omgatt_5 - \omgatt_6$. \\
 
 In the QFT interpretation the deltas over $\omgatt$ and $k_i$ enforce conservation of energy and momentum in any given process. To calculate an $n$-points 
-correlation function one has to draw all topologically inequivalent connected diagrams with $n$ external legs, i.e all diagrams that cannot be continously deformed into each other.
+correlation function one has to draw all topologically inequivalent connected diagrams with $n$ external legs, i.e all diagrams that cannot be continuously deformed into each other.
 Those diagrams may be assembled only through the vertices present in the Feynman rules. To every line composing a diagram a number $i$ is associated,
 meaning that every mathematical expression represented by that line is a function of $k_i$ and $\omgatt_i$. Every vertex corresponds to the mathematical expressions 
 written above, every external or internal line corresponds to the insertion of a propagator in fourier space $(k, \omgatt)$. For every internal line bearing a number 
@@ -385,7 +384,7 @@ as $\D_i$ the propagator with the shifted frequency.\\
 To find some nontrivial dynamics for the two point function we would need to go to higher loop orders, instead we will find the less cumbersome way of using 
 \eqref{kineticprototype}. Thanks to this instead of evaluating two loop diagrams for the two point function, we have instead to evaluate one loop diagrams for the 
 four points one. The next section is devoted to this task.\\  
-\subsection{4-points functions}
+\subsection{Four points functions}
 
 Let us start with the lowest order contribution to the four point function. The only possible diagram is the one in figure \ref{fig:treefourpoints}.
 \begin{figure}[ht]
@@ -396,7 +395,7 @@ Let us start with the lowest order contribution to the four point function. The 
 \end{figure}
 The corresponding expression is
 \begin{equation}
-    \langle \aonet \atwot \athreestart\afourstart \rangle_{0} = -4\frac{i}{2} \Tint_{1234}\left(\dfrac{1}{\G_1^*\F_1^{}}+\dfrac{1}{\G_2^*\F_2^{}}-\dfrac{1}{\G_3^{}\F_3^{}}
+    \langle \tilde{a}_1^{} \tilde{a}_2^{} \tilde{a}_3^{*}\tilde{a}_4^{*} \rangle_{0} = -4\frac{i}{2} \Tint_{1234}\left(\dfrac{1}{\G_1^*\F_1^{}}+\dfrac{1}{\G_2^*\F_2^{}}-\dfrac{1}{\G_3^{}\F_3^{}}
     -\dfrac{1}{\G_4^{}\F_4^{}}\right)\D_1^0\D_2^0\D_3^0\D_4^0 2\pi \delta(\delomegatt^{12}_{34})\delta^{12}_{34},
     \label{4pointfreq}
 \end{equation}
@@ -404,17 +403,18 @@ where $\tilde{a}_i^{}$ is the Fourier transform of $a_i^{}(t_i)$ and the factor 
 propagators to the vertex.\\
 As we are interested in the time domain let us antitransform the four point function, already fixing $t_1 = t_2 = t_3 = t_4 = t$. The objective is
 \begin{equation}
-    \langle\aone(t) \atwo(t) \athreestar(t) \afourstar(t) \rangle_0 = \int \frac{d\omgatt_1}{2\pi}\frac{d\omgatt_2}{2\pi}\frac{d\omgatt_2}{2\pi}\frac{d\omgatt_2}{2\pi}
-    e^{i(\omgatt_1 + \omgatt_2  -\omgatt_3 - \omgatt_4)t} \langle \aonet \atwot \athreestart\afourstart \rangle_{0}.
+    \langle a_1^{}(t) a_2^{}(t) a_3^*(t) a_4^*(t) \rangle_0 = \int \frac{d\omgatt_1}{2\pi}\frac{d\omgatt_2}{2\pi}\frac{d\omgatt_2}{2\pi}\frac{d\omgatt_2}{2\pi}
+    e^{i(\omgatt_1 + \omgatt_2  -\omgatt_3 - \omgatt_4)t} \langle \tilde{a}_1^{} \tilde{a}_2^{} \tilde{a}_3^{*}\tilde{a}_4^{*} \rangle_{0}.
     \label{antitransform4}
 \end{equation}
 We substitute \eqref{4pointfreq} into it and use the delta function over frequencies to solve one of the three integrals. Then the remaning three integrals may 
 be performed by properly closing the integration path and using the residue theorem. The result, again using \eqref{freenwav}, is
-\begin{equation}
-    \langle\aone(t) \atwo(t) \athreestar(t) \afourstar(t) \rangle_0 = 2\Tint_{1234}n_1 n_2 n_3 n_4\left( \frac{1}{n_1}+\frac{1}{n_2}-\frac{1}{n_3}-\frac{1}{n_4} \right)
+\begin{multline}
+    \langle a_1^{}(t) a_2^{}(t) a_3^*(t) a_4^*(t) \rangle_0 = \\
+    2\Tint_{1234}\delta^{12}_{34}n_1 n_2 n_3 n_4\left( \frac{1}{n_1}+\frac{1}{n_2}-\frac{1}{n_3}-\frac{1}{n_4} \right)
     \frac{1}{\delomega^{34}_{12} + i\gamma_{1234}},
     \label{fourpointtree}
-\end{equation}  
+\end{multline}  
 where $\gamma_{1234} = \gamma_1 + \gamma_2 + \gamma_3 + \gamma_4$. \\
 
 There are four  one loop diagrams contributing to the four point function. Three of them, in figure \ref{fig:quarticoneloop}, are composed from two quartic vertices.
@@ -459,12 +459,14 @@ on the upper half plane (UHP) or the lower one (LHP). They are
 \end{align}  
 Now let us move to the full integral. There is a common factor of
 \begin{equation*}
-    -4\pi\delta(\delomegatt^{34}_{12})\sum_{56}\Tint_{5634}\Tint_{1256}\D_1^0\D_2^0\D_3^0\D_4^0
+    -4\pi\delta(\delomegatt^{34}_{12})\sum_{56}\Tint_{5634}\Tint_{1256}\delta^{56}_{34}
+    \delta^{12}_{56}\D_1^0\D_2^0\D_3^0\D_4^0
 \end{equation*}
 in front of the integral. Then there is the $d\omgatt_5$ integration of 16 terms. Integrating them, using identities \eqref{identity1}-\eqref{identity6},
 is a tedious but straightforward process. \hl{FORSE AGGIUNGI IN APPENDICE CONTI} The complete result is 
 \begin{multline}
-    -4\pi\delta(\delomegatt^{34}_{12})\sum_{56}\Tint_{5634}\Tint_{1256}\D_1^0\D_2^0\D_3^0\D_4^0 \left\{ -\frac{n_6}{\F_5}-\frac{n_5}{\F_6}\right. + 
+    -4\pi\delta(\delomegatt^{34}_{12})\sum_{56}\Tint_{5634}\Tint_{1256}\delta^{56}_{34}
+    \delta^{12}_{56}\D_1^0\D_2^0\D_3^0\D_4^0 \left\{ -\frac{n_6}{\F_5}-\frac{n_5}{\F_6}\right. + 
     \frac{1}{\left( \omgatt_3 + \omgatt_4 - \omga_5 - \omga_6\right)^2 + \gamma^2_{56}}\\
     \times \left[
     i(n_5 + n_6)\left(\dfrac{1}{\G_1^*\F_1^{}}+\dfrac{1}{\G_2^*\F_2^{}}-\dfrac{1}{\G_3^{}\F_3^{}}
@@ -489,7 +491,8 @@ The second diagram in figure \ref{fig:quarticoneloop} contains the same elements
 The ways to compose the diagram are 32, resulting in a symmetry factor of 16. Integrating through 
 identities similar to \eqref{identity1}-\eqref{identity6}, the expression becomes
 \begin{multline}
-    -8\pi\delta(\delomegatt^{34}_{12})\sum_{56}\Tint_{2546}\Tint_{6135}\D_1^0\D_2^0\D_3^0\D_4^0 \left\{ -\frac{n_6}{\F_5}-\frac{n_5}{\F_6}\right. +
+    -8\pi\delta(\delomegatt^{34}_{12})\sum_{56}\Tint_{2546}\Tint_{6135}\delta^{25}_{46}
+    \delta^{35}_{16}\D_1^0\D_2^0\D_3^0\D_4^0 \left\{ -\frac{n_6}{\F_5}-\frac{n_5}{\F_6}\right. +
     \frac{1}{\left( \omgatt_1 + \omga_6 - \omgatt_3 - \omga_5\right)^2 + \gamma^2_{56}}\\
     \times \left(
     i(n_6-n_5)\left(\dfrac{1}{\G_1^*\F_1^{}}+\dfrac{1}{\G_2^*\F_2^{}}-\dfrac{1}{\G_3^{}\F_3^{}}
@@ -514,7 +517,7 @@ The last contribution to be considered at order $\Tint^2$ is the one in figure \
     \caption{Sextic one loop diagram.}
     \label{fig:sexticoneloop}
 \end{figure}
-We have again to consider all possible ways of attaching lines to vertices, there are \\$3!\cdot3! = 36$. However in this case different ways of building the diagram do not correspond to 
+We have again to consider all possible ways of attaching lines to vertices, there are  $3!\cdot3! = 36$. However in this case different ways of building the diagram do not correspond to 
 equal mathematical expressions. In the case of the first diagram in figure \ref{fig:quarticoneloop} the exchange of incoming lines would result in a term $\Tint_{2156}$
 instead of $\Tint_{1256}$. Thanks to the symmetry properites of $\Tint$ the two contributions are equal and all possible permutations are accounted for in the symmetry factor.
 This generalizes to quartic diagrams as the permutations always involve indexes under whose exchange the coupling $\Tint$ is symmetryc.\\ 
@@ -555,43 +558,44 @@ the frequency shift into the final result. \\
 We notice that the second part of \eqref{sexticfullcontribution} diverges in the $\F_k \rightarrow 0$ limit. Looking at the diverging contributions of 
 \eqref{schannelfullcontribution}, \eqref{tchannelfullcontribution} and \eqref{tchannelfullcontribution}($3 \leftrightarrow 4$), we see that their sum is\\
 \hl{FROM HER ON ADD DELTAS NEXT TO INTERACTION TERMS}
-\begin{equation}
-    4\pi\delta(\delomegatt^{12}_{34})\D_1^0\D_2^0\D_3^0\D_4^0\sum_{56}\left( \frac{n_5}{\F_6} + \frac{n_6}{\F_5}\right)\left(
-    \Tint_{5634}\Tint_{1256} + 2 \Tint_{2546}\Tint_{6135} + 2\Tint_{2536}\Tint_{6145}
+\begin{multline}
+    4\pi\delta(\delomegatt^{12}_{34})\D_1^0\D_2^0\D_3^0\D_4^0\sum_{56}
+     \left( \frac{n_5}{\F_6} + \frac{n_6}{\F_5}\right)\\ \times\left(
+    \Tint_{5634}\Tint_{1256}\delta^{56}_{34}\delta^{12}_{56} + 2 \Tint_{2546}\Tint_{6135}\delta^{25}_{46}\delta^{61}_{35} + 2\Tint_{2536}\Tint_{6145}\delta^{25}_{36}\delta^{61}_{45}
     \right).
-\end{equation}
+\end{multline}
 Since $k_5$ and $k_6$ are integrated over, it is easy to show that this term exactly cancels the diverging part of \eqref{sexticfullcontribution}.\\
 Finally the full contribution to order $\Tint^2$ is obtained by summing the finite parts of the expressions calculated from figure \ref{fig:quarticoneloop}.
 To recover the original nonlinear theory we remove the forcing and dissipating terms by taking the limit $F_k, \gamma_k \rightarrow 0$ while keeping their ratio constant
 (as to have $n_k$ finite). We shall keep the $\gamma_k$ terms in the denominator as $\varepsilon$ quantities to aid with the future Fourier antitransform. The result is 
 \begin{equation}
     \begin{aligned}
-    \langle\aonet &\atwot\athreestart\afourstart \rangle_1 = 
+    \langle\tilde{a}_1^{} &\tilde{a}_2^{}\tilde{a}_3^{*}\tilde{a}_4^{*} \rangle_1 = 
     \\
     %-&2\pi i \delta(\delomegatt^{12}_{34})\Tint_{1234}\D^0_1\D^0_2\D^0_3\D^0_4\left(
     %\dfrac{1}{\G_1^*\F_1^{}}+\dfrac{1}{\G_2^*\F_2^{}}-\dfrac{1}{\G_3^{}\F_3^{}}-\dfrac{1}{\G_4^{}\F_4^{}}\right) 
     %\\
     -&4\pi \delta(\delomegatt^{12}_{34})\D^0_1\D^0_2\D^0_3\D^0_4 \times
     \\
-      \sum_{56}&\left[\Tint_{5634}\Tint_{1256}
+      \sum_{56}&\left[\Tint_{5634}\Tint_{1256}\delta^{56}_{34}\delta^{12}_{56}
     \frac{i(n_5 + n_6)\left(\dfrac{1}{\G_1^*\F_1^{}}+\dfrac{1}{\G_2^*\F_2^{}}-\dfrac{1}{\G_3^{}\F_3^{}}
     -\dfrac{1}{\G_4^{}\F_4^{}}\right)\left( \omgatt_3 + \omgatt_4 - \omga_5 - \omga_6\right)}{\left( \omgatt_3 + \omgatt_4 - \omga_5 - \omga_6\right)^2 + \gamma^2_{56}}
     +  \right.
     \\
-    &\hspace{2mm}\left. \Tint_{2546}\Tint_{6135}
+    &\hspace{2mm}\left. \Tint_{2546}\Tint_{6135}\delta^{25}_{46}\delta^{61}_{35}
     \frac{i(n_6 - n_5)\left(\dfrac{1}{\G_1^*\F_1^{}}+\dfrac{1}{\G_2^*\F_2^{}}-\dfrac{1}{\G_3^{}\F_3^{}}
     -\dfrac{1}{\G_4^{}\F_4^{}}\right)\left( \omgatt_3 + \omgatt_4 - \omga_5 - \omga_6\right)}{\left( \omgatt_1 + \omga_6 - \omgatt_3 - \omga_5\right)^2 + \gamma^2_{56}}
     + \left( 3 \longleftrightarrow 4 \right) \right].
     \end{aligned}
     \label{transformedfourpoint}
 \end{equation}
-To Fourier transform this expression is a rather straightforward but cumbersome task. In doing so it is useful to have kept the $gamma$ in the denominator. 
+To Fourier transform this expression is a rather straightforward but cumbersome task. In doing so it is useful to have kept the $\gamma$ in the denominator. 
 By sending them to zero uniformely in $k$-space one can substitute $\gamma_k= \frac{\varepsilon}{4}$ and avoid singularities on the integration path. It is however important 
 to check that the integral is converging without the $\varepsilon$ term. Transforming in the same fashion as \eqref{antitransform4}, we obtain 
 \begin{multline}
-    \langle \ak(t) \aone(t) \atwostar(t)\athreestar(t) \rangle_{1} = 2\sum_{56} \left( \Tint_{5634}\Tint_{1256}  V(1,2,3,4,5,6) - \right.\\
-    2\Tint_{2546}\Tint_{6135}
-    \left.V(1,-3,-2,4,5,-6) - 2\Tint_{2536}\Tint_{6145} V(1,-4,-2,3,5,-6)  \right),
+    \langle a_k^{}(t) a_1^{}(t) a_2^*(t)a_3^*(t) \rangle_{1} = 2\sum_{56} \left( \Tint_{5634}\Tint_{1256}\delta^{56}_{34}\delta^{12}_{56}  V(1,2,3,4,5,6) - \right.\\
+    2\Tint_{2546}\Tint_{6135}\delta^{25}_{46}\delta^{61}_{35}
+    \left.V(1,-3,-2,4,5,-6) - 2\Tint_{2536}\Tint_{6145}\delta^{25}_{36}\delta^{61}_{45} V(1,-4,-2,3,5,-6)  \right),
     \label{finalfourpoint}
 \end{multline}
 where 
@@ -635,14 +639,14 @@ We stress this fact as it will be of importance in the next chapter. \\
 Substituting instead \eqref{transformedfourpoint} into \eqref{kineticprototype}, after some lenghty manipulations described in the appendix of \cite{Rosenhaus2023},
 we obtain Rosenhaus and Smolkin's kinetic equation (we also recover explicit integrations $\sum_5 \rightarrow \int dk_5$)
 \begin{multline}
-        \pt \langle \ak(t) \akstar(t) \rangle = \pt n_k(t) = 4\pi \int \prod_{j=1}^{3} dk_j|\Tint_{k123}|^2n_kn_1n_2n_3\left(\frac{1}{n_k} +\frac{1}{n_1}-
-        \frac{1}{n_2}-\frac{1}{n_3}\right)\delta(\delomega^{k1}_{23}) \\
+        \pt \langle a_k^{}(t) a_k^*(t) \rangle = \pt n_k(t) = 4\pi \int \prod_{j=1}^{3} dk_j|\Tint_{k123}|^2n_kn_1n_2n_3\left(\frac{1}{n_k} +\frac{1}{n_1}-
+        \frac{1}{n_2}-\frac{1}{n_3}\right)\delta(\delomega^{k1}_{23})\delta^{k1}_{23} \\
           + 16\pi\int \prod_{j=1}^{5} dk_j\delta(\delomega^{k1}_{23})n_kn_1n_2n_3n_4n_5 \\
-          \times \left\{  \dfrac{\text{Re}(\Tint_{23k1}\Tint_{k145}\Tint_{4523})}{\delomega^{23}_{45}}
+          \times \left\{  \dfrac{\text{Re}(\Tint_{23k1}\Tint_{k145}\Tint_{4523})}{\delomega^{23}_{45}}\delta^{56}_{34}\delta^{12}_{56}
           \left(\frac{1}{n_k} +\frac{1}{n_1} -\frac{1}{n_2} - \frac{1}{n_3}\right)\left(\frac{1}{n_4}+\frac{1}{n_5}\right)  \right. \\
           + \frac{3}{2}\pi\text{Im}(\Tint_{23k1}\Tint_{k145}\Tint_{4523})\delta(\delomega^{23}_{45})\left(\frac{1}{n_k}+\frac{1}{n_1}\right)\left(\frac{1}{n_2}
           +\frac{1}{n_3}\right) \\
-            + 4\left[\dfrac{\text{Re}(\Tint_{23k1}\Tint_{k524}\Tint_{1435})}{\delomega^{35}_{14}}
+            + 4\left[\dfrac{\text{Re}(\Tint_{23k1}\Tint_{k524}\Tint_{1435})}{\delomega^{35}_{14}}\delta^{25}_{46}\delta^{61}_{35}
             \left(\frac{1}{n_k} +\frac{1}{n_1} -\frac{1}{n_2} - \frac{1}{n_3}\right)\left(\frac{1}{n_4}-\frac{1}{n_5}\right)\right. \\
             + \left. \left. \frac{3}{2}\pi\text{Im}(\Tint_{23k1}\Tint_{k524}\Tint_{1435})\delta(\delomega^{35}_{14})\left(\frac{1}{n_k}-
             \frac{1}{n_2}\right)\left(\frac{1}{n_1}-\frac{1}{n_3}\right)  \right]\right\}.
@@ -651,14 +655,14 @@ we obtain Rosenhaus and Smolkin's kinetic equation (we also recover explicit int
 In the kinetic equation $k_2$ and $k_3$ are integrated over. Consequently the contributions from the last two diagrams of figure \ref{fig:quarticoneloop}, 
 differing only through the exchange of $k_2$ and $k_3$\footnote{
     $k_3$ and $k_4$ with the variables we used in \eqref{finalfourpoint}.
-}, were summed. One has however to remember that the integrand is in general symmetric under said exchange not only when integrated over.\\  
+}, were summed. One has however to remember that the integrand is in general symmetric under said exchange not only when integrated over.  
 Up until here $n_k = \frac{\F_k}{2\gamma_k}$ was only the name given to a finite ratio, but as we saw from equation \eqref{freenwav} it is also the value of the 
 wave density at first order in perturbation theory. We may consequently close the equation we just obtained by the substitution $n_i \rightarrow n_i(t) = n_i$. 
 As in the first chapter, this assumption holds provided that the interaction term is truly perturbative. If this is the case, it is reasonable (but not trivial) 
 to expect the theory to stay close enough to a free one as to make \eqref{NLOkinetic} valid at any time. \\ 
 Into this new kinetic equation every frequency should be assumed to be shifted by the quantity $\delta\omega$, to account for the contributions of 
-figure \ref{fig:oneloop2} and \ref{fig:sexticoneloop}.\\
-
+figure \ref{fig:oneloop2} and \ref{fig:sexticoneloop}. \hl{COMMENTO SUL POERCHÈ SI POSSONO IGNORARE?}\\
+In equation \eqref{NLOkinetic} we committed a slight abuse of notation, as the $n_k$ in the l.h.s. should be multiplied by a delta function with argument zero\footnote{Coming from the definition of $n_k$ in the continuous from the two point function.}. We balanced this by removing one of the deltas in the r.h.s. at each order, as when imposed together one of them always ends up with argument zero. This division on both side by $\infty$ should be justified through a derivation starting by the system in a box, and removing the corresponding Kroenecker's deltas before taking the continous limit.\\
 It is easy to see that solution \eqref{Gibbs} remains an equilibrium state even for \eqref{NLOkinetic}. The same cannot be said for 
 KZ states. Rosenhaus and Falkovich studied the convergence of \eqref{NLOkinetic} when one of the KZ solutions of \eqref{kinetic} is substituted into it, 
 as it could be expected that if a stationary solution exist it should be close to \eqref{KZPsol} or \eqref{KZQsol}. Under some very general assumptions on the 
@@ -668,5 +672,7 @@ heal such divergencies, that they argue become worse at higher perturbative orde
 under consideration. This would imply that the pumping an dissipating scales influence the form of eventual cascade solutions. \\
 They even managed to resum part of the most divergent diagrams, obtaining a UV convergent, but still IR divergent, kinetic equation. It is however an open question 
 how much insight can be extracted about the strong turbulence regime, as it is often the case that nonperturbative effects in strongly nonlinear theories are hidden
-from the point of view of perturbation theory. It is also an incognita wether the closure needed to obtain the WKE is self consistent in the case of non negligible contributions 
+from the point of view of perturbation theory. It is also an incognita wether the closure needed to obtain the WKE is self consistent in 
+the case of non negligible contributions 
 from the nonlinear part of the Hamiltonian. \\
+

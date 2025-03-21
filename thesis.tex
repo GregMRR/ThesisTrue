@@ -1,4 +1,4 @@
-\documentclass[11pt,twoside,a4paper]{report}
+\documentclass[12pt,twoside,a4paper]{report}
 
 %here the thesis is composed
 
@@ -18,6 +18,8 @@
 
 %to highlight stuff
 \usepackage{color,soul}
+%uncomment to remove from pdf the highlighted things
+\renewcommand{\hl}[1]{}
 
 % to eliminate the box and change the font color of links
 \usepackage{hyperref}
@@ -29,8 +31,8 @@
     urlcolor={blue!80!black}
 }
 
-%to have the fourier font (very nice) without it uses computern modern
-\usepackage{fourier}
+%to have the fourier font (very nice) without it uses computern modern, it should be fourier-otf with lualatex
+\usepackage{fourier-otf}
 %\usepackage{newtxtext,newtxtext}
 
 %to set the old school smooth p22 font (locally sourced)
@@ -46,6 +48,9 @@
 %%%%%%%%%%%MATH SETTINGS%%%%%%%%%%%%%%%%%
 %to have better math formatting
 \usepackage{amsmath}
+%to change the font size of equations to 11
+\everymath{\fontsize{11}{13}\selectfont}
+
 %adding the section number to the equation
 \numberwithin{equation}{section}
 
@@ -60,7 +65,7 @@
 
 %to manage itemize lists
 \usepackage{enumitem}
-%\setlist[itemize,1]{label=\textbf{*}}
+%\setlist[itemize,1]{label=\mathbf{*}}
 
 %to remove indentation
 \setlength{\parindent}{0pt}
@@ -160,36 +165,36 @@
 
 %%custom symbols
 \newcommand{\anorm}{a^{}}
-\newcommand{\ak}{a_k^{}}
-\newcommand{\aone}{a_1^{}}
-\newcommand{\atwo}{a_2^{}}
-\newcommand{\athree}{a_3^{}}
-\newcommand{\afour}{a_4^{}}
-\newcommand{\afive}{a_5^{}}
-\newcommand{\asix}{a_6^{}}
+\newcommand{\ak}{a_\mathbf{k}^{}}
+\newcommand{\aone}{a_\mathbf{1}^{}}
+\newcommand{\atwo}{a_\mathbf{2}^{}}
+\newcommand{\athree}{a_\mathbf{3}^{}}
+\newcommand{\afour}{a_\mathbf{4}^{}}
+\newcommand{\afive}{a_\mathbf{5}^{}}
+\newcommand{\asix}{a_\mathbf{6}^{}}
 \newcommand{\astar}{a^{*}}
-\newcommand{\akstar}{a_k^{*}}
-\newcommand{\aonestar}{a_1^{*}}
-\newcommand{\atwostar}{a_2^{*}}
-\newcommand{\athreestar}{a_3^{*}}
-\newcommand{\afourstar}{a_4^{*}}
-\newcommand{\afivestar}{a_5^{*}}
-\newcommand{\asixstar}{a_6^{*}}
-\newcommand{\akt}{\tilde{a}_k^{}}
-\newcommand{\aonet}{\tilde{a}_1^{}}
-\newcommand{\atwot}{\tilde{a}_2^{}}
-\newcommand{\athreet}{\tilde{a}_3^{}}
-\newcommand{\afourt}{\tilde{a}_4^{}}
-\newcommand{\afivet}{\tilde{a}_5^{}}
-\newcommand{\asixt}{\tilde{a}_6^{}}
+\newcommand{\akstar}{a_\mathbf{k}^{*}}
+\newcommand{\aonestar}{a_\mathbf{1}^{*}}
+\newcommand{\atwostar}{a_\mathbf{2}^{*}}
+\newcommand{\athreestar}{a_\mathbf{3}^{*}}
+\newcommand{\afourstar}{a_\mathbf{4}^{*}}
+\newcommand{\afivestar}{a_\mathbf{5}^{*}}
+\newcommand{\asixstar}{a_\mathbf{6}^{*}}
+\newcommand{\akt}{\tilde{a}_\mathbf{k}^{}}
+\newcommand{\aonet}{\tilde{a}_\mathbf{1}^{}}
+\newcommand{\atwot}{\tilde{a}_\mathbf{2}^{}}
+\newcommand{\athreet}{\tilde{a}_\mathbf{3}^{}}
+\newcommand{\afourt}{\tilde{a}_\mathbf{4}^{}}
+\newcommand{\afivet}{\tilde{a}_\mathbf{5}^{}}
+\newcommand{\asixt}{\tilde{a}_\mathbf{6}^{}}
 \newcommand{\astart}{\tilde{a}^{*}}
-\newcommand{\akstart}{\tilde{a}_k^{*}}
-\newcommand{\aonestart}{\tilde{a}_1^{*}}
-\newcommand{\atwostart}{\tilde{a}_2^{*}}
-\newcommand{\athreestart}{\tilde{a}_3^{*}}
-\newcommand{\afourstart}{\tilde{a}_4^{*}}
-\newcommand{\afivestart}{\tilde{a}_5^{*}}
-\newcommand{\asixstart}{\tilde{a}_6^{*}}
+\newcommand{\akstart}{\tilde{a}_\mathbf{k}^{*}}
+\newcommand{\aonestart}{\tilde{a}_\mathbf{1}^{*}}
+\newcommand{\atwostart}{\tilde{a}_\mathbf{2}^{*}}
+\newcommand{\athreestart}{\tilde{a}_\mathbf{3}^{*}}
+\newcommand{\afourstart}{\tilde{a}_\mathbf{4}^{*}}
+\newcommand{\afivestart}{\tilde{a}_\mathbf{5}^{*}}
+\newcommand{\asixstart}{\tilde{a}_\mathbf{6}^{*}}
 
 %placeholder citations
 \newcommand{\cit}{CITAZIONE}
@@ -268,12 +273,14 @@
 %n
 \newcommand{\nb}{\bar{n}}
 %collisional integral
-\newcommand{\coll}{\mathtt{I}\left\{n_k\right\}}
+\newcommand{\coll}{\mathtt{I}\left\{n_\mathbf{k}\right\}}
+\newcommand{\collmod}{\mathtt{I}\left\{n_k\right\}}
 \newcommand{\collad}{\tilde{\mathtt{I}}}
 
-%to double space
+%to double space or manage linespacing
 \usepackage{setspace}
-%doublespacing
+%-\renewcommand{\baselinestretch}{1.2}
+%\doublespacing
 
 \begin{document}
 %to manage space above and below equations
@@ -287,9 +294,16 @@
 \input{head/frontmatter.tex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%TABLE OF CONTENTS%%%%%%%%%%%%%%%%%%%%%%
+%White page after front matter 
+\clearpage
+\newpage
 \thispagestyle{empty}
+\
+\newpage
+%%%%%%%%%%%%%%%%%TABLE OF CONTENTS%%%%%%%%%%%%%%%%%%%%%%
 \tableofcontents
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+\pagenumbering{gobble}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  .tex files are included with \input , to compile always this main file it is important 

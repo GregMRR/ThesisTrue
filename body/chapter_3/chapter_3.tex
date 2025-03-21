@@ -10,10 +10,9 @@
     of wave turbulence theory. This two parameters family of models has since been a traditional benchmark on which to test new techniques and ideas in the world of turbulence. \\
     In this chapter we briefly introduce the MMT family of differential equations and discuss its salient features and associated WKE, mainly inspired by the account in 
     \cite{ZAKHAROV2004}. We then 
-    move to the analysis of its higher order kinetic equation, proving that energy and wave action are still conserved quantities. Unexpectedly  we find
+    move to the analysis of its higher order kinetic equation, proving that energy and wave action are still conserved quantities. Unexpectedly  we find 
     ulterior divergences, neither UV or IR, due to nonlocal interactions. We prove that for all nontrivial members of the MMT family of
-    models this divergences exist, and must be accounted for. Our original idea was to perform numerical simulations of the higher order WKE, to check the form of eventual
-    out of equilibrium stationary states. This newly found diverging integrals didn't allow us to do so. Nontheless we introduce the basic workings of WavKinS,
+    models this divergences exist, and must be accounted for. Our original idea was to perform numerical simulations of the higher order WKE, to check the form of eventual out of equilibrium stationary states. This newly found diverging integrals didn't allow us to do so. Nontheless we introduce the basic workings of WavKinS,
     a newly developed solver for WKEs introduced in \cite{Giorgio1} and \cite{Giorgio2} by Krstulovic. We end the chapter by discussing a few simulations obtained 
     through it. \\  
     \subsection{The MMT model and its wave kinetic equation}
@@ -65,17 +64,19 @@
     \left(\frac{1}{n_k} + \frac{1}{n_1} - \frac{1}{n_2}- \frac{1}{n_3}  \right)
     \delta(\delomega^{k1}_{23})\delta^{k1}_{23}.
     \end{equation}
+    Given that the model is one dimensional we will refer with $k$ to the value of the only component of the wave vector, when talking about its modulus we shall use $|k|$ instead. The isotropy assumptions would corresponds in one dimension
+    to the reflection symmetry $k \rightarrow -k$.\\ 
     From the discussion in chapter 1 we now that the two possible out of equilibrium solutions for this equation are 
     \begin{equation}
         \begin{aligned}
-        &n_k^P \propto k^{\frac{2}{3}\beta + 1}, \\
-        &n_k^Q \propto k^{\frac{2}{3}\beta + \frac{5}{6}}.
+        &n_k^P \propto |k|^{\frac{2}{3}\beta + 1}, \\
+        &n_k^Q \propto |k|^{\frac{2}{3}\beta + \frac{5}{6}}.
         \end{aligned}
         \label{MMTKZ}
     \end{equation}
     \hl{ADD PROOF OF LOCALITY WINDOW}\\
     Since the interaction term appears squared in the WKE, weak turbulence theory provides the same prediction in both the focusing and defocusing cases. 
-    However \eqref{MMTPOS} presents different behaviours in those two cases. 
+    However \eqref{MMTPOS} presents different behaviours depending on the sign of the interaction. 
     In the focusing case stable solitonic solutions are possible, as well as wave collapses
     (\cite{Zakharov2001}). It was seen in numerical simulations of the primitive equation that, under incoherent forcing, the wave density spectrum stabilizes in a state
     with opposite wave action flux respect to the WT prediction. The energy flux sign corresponds to predictions, but only in the high $k$ limit the slope can be 
@@ -85,7 +86,8 @@
     quasisolitonic turbulence. \\
     This considerations show that the range of applicability of WT is quite narrow, and very much influenced by the choerent structures characteristic of the system. 
     Our goal in this thesis is not to discuss the validity of WT, but instead check the consistency and consequences of higher order terms into the 
-    WKE of a simple system. \\
+    WKE of a simple system. We shall direct the reader looking for a proper discussion of 
+    coherent phenomena in the MMT model to the review \cite{ZAKHAROV2004}. \\
     \subsection{The higher order kinetic equation}
 
     By directly substituting our chosen dispersion relation and interaction term into \eqref{NLOkinetic}, the next to leading order kinetic equation for the MMT 
@@ -107,8 +109,9 @@
     We rewrote the equation in this fashion to highlight the contributions of higher perturbative orders as modifications to the effective interaction term in the WKE.
     If we imagine the leading order WKE as accounting for all possible scatterings among waves, the $\sigma$ term here introduced accounts for secondary scatterings 
     mediated by some virtual waves $k_4$ and $k_5$. The full effect is to either suppress or enhance the interaction, resulting in a new coupling 
-    $|kk_1k_2k_3|^{\beta/2} \longrightarrow [1 + \sigma(k,k_1,k_2,k_3)]|kk_1k_2k_3|^{\beta/2} $. \\
-
+    \begin{equation*}
+    |kk_1k_2k_3|^{\beta/2} \longrightarrow [1 + \sigma(k,k_1,k_2,k_3)]|kk_1k_2k_3|^{\beta/2} . 
+    \end{equation*}
     The leading order WKE conserves energy and wave action as consequences of the symmetries of $\Tint_{k123}$. To show that even the corrected equation 
     conserves the same quantities, as it is expected, we shall just check that the same symmetries hold for $\sigma$.\\
     The symmetry under the exchange $k_2 \leftrightarrow k_3$ is built-in but not explicit, as already commented in the previous chapter. The contribution of the 
@@ -124,6 +127,7 @@
        +\sqrt{k_4}-\sqrt{k_1}-\sqrt{k_5}}  \right. \\
       \left. \left. +\frac{\delta_{14}^{25}}{\sqrt{k_2}+\sqrt{k_5}-\sqrt{k_1}-\sqrt{k_4}} -\frac{\delta_{15}^{24}}{\sqrt{k_2}
       +\sqrt{k_4}-\sqrt{k_1}-\sqrt{k_5}}\right)\right].
+      \label{eqsym}
     \end{multline}
     Under the exchange $(k \text{,} k_1) \leftrightarrow (k_2 \text{,} k_3)$  we obtain
     \begin{multline*}
@@ -144,26 +148,96 @@
       \left. \left. +\frac{\delta_{25}^{14}}{\sqrt{k_2}+\sqrt{k_5}-\sqrt{k_1}-\sqrt{k_4}} -\frac{\delta_{24}^{15}}{\sqrt{k_2}+\sqrt{k_4}-\sqrt{k_1}-\sqrt{k_5}}\right)\right],
     \end{multline*}
     showing that $\sigma(k,k_1,k_2,k_3) = \sigma(k_2,k_3,k,k_1) = \sigma(k,k_1,k_3,k_2)$ and thus that $E$ and $N$ are conserved\footnote{
-        The two symmetries we proved togheter imply the one under exchange of $k$ and $k_1$}.\\ 
+    We do not need to prove directly symmetry under $k \leftrightarrow k_1$, as it is implied by the other two combined.}.\\ 
     There are two integrations in \eqref{wke_nlo}, an external one (three integration measures with two deltas) and an internal one (two measures with one delta). 
-    To assess the validity of a possible stationary solution one should check the convergence of both integrals in all possible regimes of their arguments. One could
-    slightly deform one of solutions \eqref{mMMTKZ}, and assess qualitatively the contribution of $\sigma$ to the KZ spectrum. This line of thought 
-    was explored for the NLS equation in \cite{Rosenhaus:2025mgj}. We shall not discuss this points here however. Even before thinking about specific solutions 
-    the integrals have to converge for a generic $n_k$, allowing for non pathological time evolution. We shall not concern ourselves with IR and UV divergencies,
-    as those are easily healed through cutoffs. Those cutoffs may be inspired by the underlying physics of the system under consideration, for example 
+    To assess the validity of a possible stationary solution one should check the convergence of both integrals in all possible regimes of their arguments.\\ One could also
+    slightly deform one of solutions \eqref{MMTKZ}, and assess qualitatively the contribution of $\sigma$ to the KZ spectrum. This line of thought 
+    was explored for the NLS equation in \cite{Rosenhaus:2025mgj}. We shall not discuss this points here. Even before thinking about specific solutions 
+    the integrals have to converge for a generic $n_k$, allowing for non pathological time evolution.\\
+    In this thesis we shall not concern ourselves with IR and UV divergencies,
+    as those are easily healed through cutoffs. Those cutoffs may derive from the underlying physics of the system under consideration, for example 
     finite size imposes a natural UV cutoff and granularity of the medium imposes an IR one. They could be even imposed by the interactions of the system with 
-    the environment, a dissipative interaction in the low $k$ region denies the transfer of energy or wave action across it domain. \\
+    the environment, for example a dissipative interaction in the low $k$ region denies the transfer of energy or wave action across its domain. \\
     We shall instead focus our attention on the denominators of $\sigma$. Their integration should be intended in the principal value sense, but this only allows to 
     assign a value to usually indeterminate integrals. We have to explicitely check that this value is finite. We shall turn to this problem for the remaining part 
-    of the section.\\
+    of this section.\\
 
-    MMT nlo, qunatità ancora conservate e discussioni sulla sua convergenza e sulla natura delle correzioni\\
-    Discuti convergenza del frequency shift esplicitamente.
-    divergenza e dimostrazione dell'esistenza della divergenza per $\alpha < 1$\\
-    \subsection{Numerical simulations through WavKinS}
+    Let us look at the first term in \eqref{sigma}
+    \begin{equation}
+        \frac{\delta_{23}^{45}}{\sqrt{k_2}+\sqrt{k_3}-\sqrt{k_4}-\sqrt{k_5}},
+    \end{equation} 
+    as we already said we can interpret the $\sigma$ term as the exchange of virtual waves among different modes.
+    $k$ and $k_1$ produce two virtual waves ($k_4$ and $k_5$) that rescatter into $k_2$ and $k_3$.
+    Being virtual they do not need to be resonant, but the closer to resonant they are, the bigger their contribution to the process, as the denominator suggests.   
+    We recast it by using the delta function in the numerator, removing in the process the $k_5$ integration, and rename $k_4=q$. Remember that $\sigma$ arguments $k\dots k_3$ have to be part of the resonant manifold, hereby called external, implying  
+    \begin{equation}
+      D = \sqrt{k_2} + \sqrt{k_3} -\sqrt{q} - \sqrt{k_2 + k_3 - q} = \sqrt{k} + \sqrt{k_1} -\sqrt{q} - \sqrt{k + k_1 - q}.
+    \end{equation}
+    It is easy to see that this expression has four zeroes corresponing to $q$ equal to any of the external wavenumbers. \\
+    As long as $k \neq k_1$ or $k_2 \neq k_3$ the zeroes are singles. For example let's look at $q = k$. We rename $p = q-k$ and expand around $p=0$:
+    \begin{align*}
+      \sqrt{|k|} + \sqrt{|k_1|} -\sqrt{|p+k|} - \sqrt{|k_1 - p|} \underset{p \rightarrow 0}{\approx} \frac{1}{2} p \left(\frac{\text{sign}(k)}{\sqrt{|k|}} - \frac{\text{sign}(k_1)}{\sqrt{k_1}}\right).
+    \end{align*}
+    In this case $\int dp\frac{1}{D}$ would behave close to $p=0$ as $\int_{-\epsilon}^{+\epsilon}\frac{dp}{p}$, whose Cauchy principal value is 0. \\
+    If $k_1 = k$ we have to move to second order in the expansion, finding 
+    \begin{equation}
+      2\sqrt{|k|} -\sqrt{|p+k|} - \sqrt{|k - p|} \underset{p \rightarrow 0}{\approx} \frac{1}{2}|k|^{-\frac{3}{2}} p^2.
+    \end{equation}
+    This is a problem, as the principal value of $\int_{-\epsilon}^{+\epsilon}\frac{1}{p^2}$ diverges.\\
+    We must remember that the $\sigma$ term is multiplied to $\frac{1}{n_k} + \frac{1}{n_1} -\frac{1}{n_2} -\frac{1}{n_3}$ in the full kinetic equation. This means that if in the external manifold $k = k_1$ implies $k_2 = k_3$, the divergence in $\sigma$ can be healed by a zero in the kinetic equation. If instead there are nontrivial points where $k=k_1$ corresponds to $k_2 \neq k_3$, we are looking at a true divergence.\\
+    We set $k_1=k$ in the equations defining the external resonant manifold, the system to solve is thus
+    \begin{equation}
+        \begin{aligned}
+            &2k = k_2 + k_3 \\
+            &2\sqrt{|k|} = \sqrt{|k_2|} + \sqrt{|k_3|}
+        \end{aligned}
+        \label{resmanifold}
+    \end{equation}
+    Assuming $k>0$ there is the trivial solution ($k_2 = k_3 = k$) and two nontrivial ones,
+    $k_2 = -\frac{k}{4} \hspace{1mm} \& \hspace{1mm}k_3 = \frac{9k}{4} $ and $k_3 = -\frac{k}{4} \hspace{1mm}\& \hspace{1mm}k_2 = \frac{9k}{4} $ that can be found by direct substitution of the first equation into the second. The sign of the integrand is the same in both cases not allowing for possible cancellations.  This confirms our fears, making the $\sigma$ term divergent.\\
+    One may wonder if with a different dispersion relation the situation changes. We shall approach the problem geometrically.
+    With generic $\alpha$ the second equation turns into 
+    \begin{equation}
+      2|k|^{\alpha} = |k_2|^{\alpha} +|k_3|^{\alpha}.
+      \label{frequency}
+    \end{equation} 
+    The first equation in \eqref{resmanifold} can be tought of as a line $k_3 = -k_2 + 2k$, with $k_2$ on the $x$ axis, $k_3$ on the $y$ one and $2k$ a constant. The second equation implicitly defines  a curve, specular under both $k_2 \rightarrow -k_2$ and $k_3 \rightarrow -k_3$. The line intersect the deformed sphere in the trivial solution of the system $k_2 = k_3 = k$, that depending on the sign of $k$ can be either in the upper right quadrant or in the lower left one. Using Dini's theorem on implicit functions, we can evaluate the first derivative of $k_3$ as a function of $k_2$. The result is 
+    \begin{equation}
+        \frac{d k_2}{dk_3} = -\frac{\text{sign}(k_2)|k_2|^{\alpha-1}}{\text{sign}(k_3)|k_3|^{\alpha-1}}.
+        \label{firstderivative}
+    \end{equation}
+    Substituting the trivial solution we see that the first derivative is $-1$ in the intersection point, same as the line's slope, meaning they are tangent in that point. We can also see from \eqref{firstderivative} that in each quadrant the implicit function defined by \eqref{frequency} is monotonical. This gives us a way to check if nontrivial solutions are possible. If the curve is 
+    convex in each quadrant there are no other possible intersections with the line, as moving away from the trivial one will keep increasing the distance between the curve and the line, with the curve being closer to the origin. When the curve reaches one of the other quadrants the derivative changes sign, bringing the curve even far away from the prosecution of the line in that quadrant. If instead the curve is concave the inverse is true, as the curve will grow farther from the origin than the line. This will impose two intersections in the adjacent quadrants, where the derivative changes sign.\\
+    Using an extension of Dini's theorem, we can evaluate the second derivative. We do so in the upper right quadrant, as the reflection symmetry of the problem extend the result to the lower left one. We obtain 
+    \begin{equation}
+        \frac{d^2k_3}{dk_2^2} = \frac{(1-\alpha)k_2^{\alpha-2}k_3^{2\alpha-2} + (1-\alpha)k_3^{\alpha-2}k_2^{2\alpha-2}}{k_3^{3\alpha-3}}.
+    \end{equation}   
+    We see from this result that the second derivative sign does not change throughout the quadrant and is positive when $\alpha < 1 $, making the curve concave and allowing nontrivial solutions, and negative when $\alpha > 1$, forbidding solutions other than $k_3 = k_2 = k$ . Since the resonant manifold is empty for $\alpha>1$, the aforementioned divergences are always present for the nontrivial set of MMT models.\\
+    This line of reasoning does hold for $k_2 = k_3$ as well.\\
 
-    Spiega struttura codice, conto per esplicitare delta function, mostra simulazioni per vari tipi di cascate con i loro parametri e discutile
-    \subsection{Future work}
+    Moving to the second denominator, and again exploiting the delta function and renaming $k_4 = q$, we study
+    \begin{equation}
+      D = \sqrt{k} - \sqrt{k_2} - \sqrt{|q|} + \sqrt{|k_2-k + q|} = \sqrt{k_3} - \sqrt{k_1} - \sqrt{|q|} + \sqrt{|k_1-k_3 + q|}
+    \end{equation}
+    we see that it is null for $q = k_3$ and $q = k$. Recovering the symmetryc part as in \eqref{eqsym} we would find as similar expression with divergencies in $q = k_1$ and $q = k_2$. \\
+    Again when no external wavenumbers collide the divergent part goes as $\int_{-\epsilon}^{+\epsilon}\frac{1}{p}$ and its principal value is null. When $k_1 = k_3$ or $k = k_3$ there is yet another singularity whose principal value diverges. This one is however balanced by the term $\frac{1}{n_k} + \frac{1}{n_1} -\frac{1}{n_2} -\frac{1}{n_3}$ in the kinetic equation, healing the divergence\footnote{
+    when $k = k_3$ the only possible solution to the system defining the resonant manifold is $k_1 = k_2$.
+    In general any time one of the incoming wave vectors is equal to one of the outgoing ones the other two must be equal}.\\
+    We conclude that the only problematic term of $\sigma$ is the first one, associated to the first diagram in figure \ref{fig:quarticoneloop}. \\
     
-    Possibilità per curare divergenza, possibile introduzione di frequency renomalization (che diverge sempre)
+    One could ask if accounting for the frequency shift could somewhat help avoiding these uncurable divergencies. In the case
+    $\beta = 0$ mimicking the NLS equation this is surely not the case, as the frequency shift would be
+    \begin{equation}
+        \delta \omga_k = 2\int dk' n_{k'} = 2 \Nwav. 
+    \end{equation}
+    Aside from the possible presence of IR and UV divergencies, the contribution is a constant factor that would cancel out in all
+    the problematic denominators.\\
+    We have not undertaken the study of this situation for a generic $\beta$, but our naive intuition is that divergencies would survive. The perturbative nature of the term  should not drastically change the geometrical picture we just presented to the point of forbidding the nontrivial resonances causing the problem.\\
+    
+    %\subsection{Numerical simulations through WavKinS}
 
+    %Spiega struttura codice, conto per esplicitare delta function, mostra simulazioni per vari tipi di cascate con i loro parametri e discutile
+    %\subsection{Future work}
+    
+    \hl{SIMULAZIONI CON CUTOFF DENOMINATORE, STUDIO TEORICO IN SISTEMI A TRE ONDE, STUDIO CONTRIBUTI ORDINI SUPERIORI}
+    

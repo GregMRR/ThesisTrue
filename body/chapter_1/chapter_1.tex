@@ -20,26 +20,27 @@ we greatly borrow from the exceptional treatment in \cite{Zakharov}. \\
 Whatever the initial physical space system (in a box $\Lambda = [0,L]^d$), we can without loss of generality assume the Fourier transform of the first few orders in 
 perturbation theory, for small wave amplitudes and in canonical coordinates, to be
 \begin{equation}
-    \Ham = \sum_k \omga_k \akstar \ak + \sum_{k12} \left( \Vint_{k12} \akstar\aone\atwo + c.c.  \right)\delta^{k}_{12} \\
-    +\frac{1}{2}\sum_{k123} \Tint_{k123} \akstar\aonestar\atwo\athree\delta^{k1}_{23},
+    \Ham = \sum_\mathbf{k} \omga_\mathbf{k} \akstar \ak + \sum_{\mathbf{k12}} \left( \Vint_{\mathbf{k12}}^{} \akstar\aone\atwo + c.c.  \right)\delta^{k}_{12} \\
+    +\frac{1}{2}\sum_{\mathbf{k123}} \Tint_{\mathbf{k123}} \akstar\aonestar\atwo\athree\delta^{k1}_{23},
     \label{HamOrig}
 \end{equation}
-where an oppurtune canonical transformation was performed to have an explicit dispersion relation in the linear term, said relation must be positive definite 
+where an oppurtune canonical transformation was performed in order to make the dispersion relation explicit in the linear term, said relation must be positive definite 
 as to guarantee the stability of the medium\footnote{A negative dispersion relation would imply the spontaneus growth of oscillations, even when the nonlinear
 term is null.}, a reasonable physical assumption given we wish to study weak waves. The canonical coordinates are usually obtained from the generalized position
 variables $\Phi_k$ and their conjugate momenta $\pi_k$ by
 \begin{align*}
-    \Phi_k &= \frac{1}{\sqrt{2\omga_k}}\left(\ak + \akstar\right) , \\
-    \pi_k &= \frac{1}{\sqrt{2\omga_k}}\left(\ak - \akstar \right) .
+    \Phi_\mathbf{k} &= \frac{1}{\sqrt{2\omga_{\mathbf{k}}}}\left(\ak + \akstar\right) , \\
+    \pi_\mathbf{k} &= \frac{1}{\sqrt{2\omga_{\mathbf{k}}}}\left(\ak - \akstar \right) .
 \end{align*}
-In the Hamiltonian the summations are intended over the wave numbers belonging to the discrete Fourier space 
+In the Hamiltonian the summations are intended over all wave numbers belonging to the discrete Fourier space 
 \begin{equation}
     \Lambda^* = \frac{2\pi}{L}\mathbb{Z},
 \end{equation}
-the vector signs are suppressed for notational cleanliness and reintroduced when necessary, every function argument is represented as a subscript $f(k)=f_k$ and wave number vector are 
-represented only through their own subscript $f(k_1)=f_1$. The notation $\delta^{i\dots n}_{j \dots m}$ signifies $d$ Kroenecker delta functions over the components of 
+d-dimensional vectors are in boldface, every function argument is represented as a subscript $f(\mathbf{k})=f_\mathbf{k}$ and wave number vectors are 
+represented only through their own subscript $f(\mathbf{k}_1)=f_\mathbf{1}$. The notation $\delta^{i\dots n}_{j \dots m}$ signifies $d$ Kroenecker delta functions over the components of 
 wave numbers, 
-the argument superscripts appear with a positive sign and subscripts with a negative one, for example $\delta^{k1_23} = \delta_{k + k_1 - k_2 - k_3}$.\\
+the argument superscripts appear with a positive sign and subscripts with a negative one, for example $\delta^{k1}_{23} = \delta_{\mathbf{k} + \mathbf{k}_1 - 
+\mathbf{k}_2 - \mathbf{k}_3}$.\\
 Terms cubic in the wave amplitudes $\ak$ are called three wave interactions and those quartic in them are called four wave interactions. The vast majority of physical 
 settings are dominated by one of this two kind of terms, even if for some notable exceptions one has to account for five or six wave interactions\footnote{An example would be
 Langmuir wave turbulence in plasma.}. \\
@@ -48,8 +49,8 @@ We assume another canonical transformation has been performed to obtain \eqref{H
 pushing to higher perturbative order all nonresonant interaction terms. In the truly most general fashion all possible combinations of $a$ and $a^*$ 
 would appear at each order in the Hamiltonian with proper coefficent, the resonance condition for an N wave such term consists in
 \begin{align}
-    &\pm \omga_k \pm \omga_1 \dots \pm \omga_{N-1} = 0, \label{resonance}\\
-    &\pm \vec{k} \pm \vec{k_1} \dots \pm \vec{k}_{N-1} = 0,
+    &\pm \omga_{\mathbf{k}} \pm \omga_\mathbf{1} \dots \pm \omga_\mathbf{N-1} = 0, \label{resonance}\\
+    &\pm \mathbf{k} \pm \mathbf{k}_1 \dots \pm \mathbf{k}_{N-1} = 0,
 \end{align}
 where the sign is decided by whether or not a variable appears in an amplitude or its complex conjugate. If there is no nontrivial solution to this system the corresponding 
 interaction term is said to be nonresonant and a proper canonical transformation will remove it from its perturbation order\footnote{
@@ -59,24 +60,26 @@ making the transformation degenerate when solutions to the system exist.
 with only $a$ or only $a^*$ as \eqref{resonance} surely has no solution other then the origin when all the signs are equal.\\
 We will give instead a plausible explanation for this phenomenon, let us write the equation of motion considering only the three wave terms
 \begin{equation}
-    \dt \ak + i \omga_k \ak = -i\sum_{12} \left( \Vint_{k12} \aone \atwo \delta^{k}_{12} + 2 \Vint^*_{k12}\aone \atwostar \delta^{k2}_{1}  \right).
+    \dt \ak + i \omga_{\mathbf{k}} \ak = -i\sum_{\mathbf{12}} \left( \Vint_{\mathbf{k12}}^{} \aone \atwo \delta^{k}_{12} + 2 
+    \Vint^*_\mathbf{k12}\aone \atwostar \delta^{k2}_{1}  \right).
 \end{equation}
-We shall perform the change of variables $\ak = b_k^{} e^{-i\omga_k t}$ to the so called interaction representetion,
+We shall perform the change of variables $\ak = b_k^{} e^{-i\omga_{\mathbf{k}} t}$ to the so called interaction representetion,
  to absorb the fast phase evolution due to the oscillation of the waves, and keep only the slow phase 
-one due to the nonlinear terms. After also multiplying the equation by $e^{+i\omga_k t}$ and integrating the r.h.s. we find
+one due to the nonlinear terms. After also multiplying the equation by $e^{+i\omga_{\mathbf{k}} t}$ and integrating the r.h.s. we find
 \begin{equation}
-    b_k^{}= -i\sum_{12} \int_{t_0}^{t} dt'\left( \Vint_{k12} b_1^{} b_2^{}e^{i(-\omga_1 - \omga_2 + \omga_k)t} \delta^{k}_{12} 
-    + 2 \Vint^*_{k12}b_1^{} b_2^{*}e^{i(-\omga_1 + \omga_2 + \omga_k)t} \delta^{k2}_{1}  \right).
+    b_\mathbf{k}^{}= -i\sum_{\mathbf{12}} \int_{t_0}^{t} dt'\left( \Vint_{\mathbf{k12}}^{} b_\mathbf{1}^{} b_\mathbf{2}^{}e^{i(-\omga_\mathbf{1} - \omga_\mathbf{2}
+     + \omga_{\mathbf{k}})t} \delta^{k}_{12} 
+    + 2 \Vint^*_\mathbf{k12}b_\mathbf{1}^{} b_\mathbf{2}^{*}e^{i(-\omga_\mathbf{1} + \omga_\mathbf{2}+ \omga_{\mathbf{k}})t} \delta^{k2}_{1}  \right).
 \end{equation}
 We see that for each term there is a complex exponential If there are no $k$s for which the exponent is zero and at the same time the delta
 over wave numbers is respected, over long times $t \gg t_0$ all contribution to amplitude evolution from the corresponding interaction will average out. This
 is of course only an intuitive argument, but the condition obtained from it corresponds with \eqref{resonance}. \\
 It is a general result that if the dispersion relation as a function of $|k|$ is a convex function, there are no three wave resonant points in $\Lambda^*$. As
-this is the case of the physical systems\footnote{The MMT model with $\omga_k = |k|^\frac{1}{2}$, to mimic in one dimension surface gravity waves.} we are interested in,
+this is the case of the physical systems\footnote{The MMT model with $\omga_{\mathbf{k}} = |k|^\frac{1}{2}$, to mimic in one dimension surface gravity waves.} we are interested in,
 we remove also three wave interactions from \eqref{HamOrig} by means of the same near identity transformation. 
 Thus the object of our discussion will be 
 \begin{equation}
-    \Ham = \sum_k \omga_k \akstar \ak + \frac{1}{2} \sum_{k123} \Tint_{k123} \akstar \aonestar \atwo \athree \delta_{23}^{k1}.
+    \Ham = \sum_\mathbf{k} \omga_{\mathbf{k}} \akstar \ak + \frac{1}{2} \sum_{\mathbf{k123}} \Tint_{\mathbf{k123}} \akstar \aonestar \atwo \athree \delta_{23}^{k1}.
     \label{ham4}
 \end{equation}
 We assume that the original physical space theory respects the usual simmetries of time and space translations, thus conserving the energy $\Ham$ and 
@@ -84,16 +87,16 @@ the components of linear
 momentum. When the dominating interaction is of the four wave kind, phase simmmetry also holds\footnote{The action is 
 symmetric under the action of U(1)}, leading to the conservation of wave number/action
 \begin{equation}
-    \Nwav = \sum_k \ak\akstar.
+    \Nwav = \sum_\mathbf{k} \ak\akstar.
 \end{equation} 
-The requirement $\Ham  \in \mathbb{R}$ imposes some symmetry properties on $\Tint_{k123}$. In the most general case where $\Tint \in \mathbb{C}$
+The requirement $\Ham  \in \mathbb{R}$ imposes some symmetry properties on $\Tint_{\mathbf{k123}}$. In the most general case where $\Tint \in \mathbb{C}$
 \begin{equation}
-    \Tint^{}_{k123} = \Tint^{}_{1k23} = \Tint^{}_{k132} = \Tint^*_{23k1}.
+    \Tint^{}_\mathbf{k123} = \Tint^{}_\mathbf{1k23} = \Tint^{}_\mathbf{k132} = \Tint^*_\mathbf{23k1}.
 \end{equation}
 Not in all cases the dominance of the four wave interactions is due to a convex dispersion relation. For example in the nonlinear Schrodinger equation
-the only interaction term is naturally of the four wave kind, with a dispersion relation $\omga_k = |k|^2$.\\ 
-This general Hamiltonian approach to nonlinear physics, here only briefely exposed, was envisioned and spearheaded by Zakharov, allowing for a remarkable universal treatment of many
-phenomena apparently very different for each other. \\ 
+the only interaction term is naturally of the four wave kind, with a dispersion relation $\omga_{\mathbf{k}} = k^2$\footnote{$k=|k|$}.\\ 
+This general Hamiltonian approach to nonlinear physics, here only briefely exposed, was envisioned and spearheaded by Zakharov, allowing for a remarkable universal 
+treatment of many different phenomena. \\ 
 
 \subsection{Perturbation Theory}
 
@@ -103,74 +106,77 @@ and their subsequent calculation order by order. From a physical viewpoint the s
 separation of the fast time scale on which the linear term operates from the slow time scale of the nonlinear one.\\
  To make the expansion clearer we add an explicit $\varepsilon$ factor in front of the interaction term in \eqref{ham4}
 \footnote{The small parameter my be present as a constant in the Hamiltonian (for example the coupling $g$ in the Nonlinear Schrodinger equation) or 
-it may be a placeholder for the smallness of the function $\Tint_{k123}$ in a certain subdomain of k-space (for example the interaction among gravity waves in 
+it may be a placeholder for the smallness of the function $\Tint_{\mathbf{k123}}$ in a certain subdomain of k-space (for example the interaction among gravity waves in 
 the small wavenumber limit). } . \\
 
 Following the derivation of \cite{Onorato2020} we transform to the action-angle coordinates of the unperturbed quadratic Hamiltonian
 \begin{equation}
-    a_k = \sqrt{\Ia_k}e^{-i\theta_k}
+    \ak = \sqrt{\Ia_\mathbf{k}}e^{-i\theta_\mathbf{k}}
     \label{action_angle}
 \end{equation} 
 obtaining 
 \begin{equation}
-    \Ham = \sum_k \omga_k \Ia_k + \frac{\varepsilon}{2} \sum_{k123}\Tint_{k123}\sqrt{\Ia_k\Ia_1\Ia_2\Ia_3}e^{i(\theta_k + \theta_1 - \theta_2 - \theta_3)}\delta^{k1}_{23},
+    \Ham = \sum_\mathbf{k} \omga_{\mathbf{k}} \Ia_\mathbf{k} + \frac{\varepsilon}{2} 
+    \sum_{\mathbf{k1234}}\Tint_{\mathbf{k123}}\sqrt{\Ia_\mathbf{k}\Ia_\mathbf{1}\Ia_\mathbf{2}\Ia_\mathbf{3}}
+    e^{i(\theta_\mathbf{k} + \theta_\mathbf{1} - \theta_\mathbf{2} - \theta_\mathbf{3})}\delta^{k1}_{23},
 \end{equation}
 by assuming that $\Tint \in \mathbb{R}$ (as is the case in a vast class of physical systems), $\Ham \in \mathbb{R}$ implies 
 \begin{equation}
-    \Ham = \sum_k \omga_k \Ia_k + \frac{\varepsilon}{2} \sum_{k123}\Tint_{k123}\sqrt{\Ia_k\Ia_1\Ia_2\Ia_3}\cos(\deltheta^{k1}_{34})\delta^{k1}_{23},
+    \Ham = \sum_\mathbf{k} \omga_{\mathbf{k}} \Ia_\mathbf{k} + \frac{\varepsilon}{2} \sum_{\mathbf{k1234}}\Tint_{\mathbf{k123}}\sqrt{\Ia_\mathbf{k}\Ia_\mathbf{1}\Ia_\mathbf{2}\Ia_\mathbf{3}}\cos(\deltheta^{k1}_{34})\delta^{k1}_{23},
 \end{equation}
-where we defined $\deltheta^{k1}_{23}=\theta_k + \theta_1 - \theta_2 - \theta_3$. \\
+where we defined $\deltheta^{k1}_{23}=\theta_\mathbf{k} + \theta_\mathbf{1} - \theta_\mathbf{2} - \theta_\mathbf{3}$. \\
 We can prove that the change of coordinates \eqref{action_angle} is canonical by assuming it to be true and recovering $\ak$ and $\akstar$'s poisson 
 brackets\footnote{Remembering that the true canonical variables are $\ak$ and $i\akstar$.} 
 \begin{align}
-    \left\{ i\akstar, \ak \right\} &= i \left( \frac{\partial \akstar}{\partial \Ia_k}\frac{\partial \ak}{\partial \theta_k}  -
-    \frac{\partial \akstar}{\partial \theta_k}\frac{\partial \ak}{\partial \Ia_k}  \right) \\
-    &= - i \left( \frac{i}{2} \frac{1}{\sqrt{\Ia_k}}e^{i\theta_k}\sqrt{\Ia_k}e^{-i\theta_k} + 
-    \frac{i}{2} \frac{1}{\sqrt{\Ia_k}}e^{-i\theta_k}\sqrt{\Ia_k}e^{i\theta_k}\right) \\
+    \left\{ i\akstar, \ak \right\} &= i \left( \frac{\partial \akstar}{\partial \Ia_\mathbf{k}}\frac{\partial \ak}{\partial \theta_\mathbf{k}}  -
+    \frac{\partial \akstar}{\partial \theta_\mathbf{k}}\frac{\partial \ak}{\partial \Ia_\mathbf{k}}  \right) \\
+    &= - i \left( \frac{i}{2} \frac{1}{\sqrt{\Ia_\mathbf{k}}}e^{i\theta_\mathbf{k}}\sqrt{\Ia_\mathbf{k}}e^{-i\theta_\mathbf{k}} + 
+    \frac{i}{2} \frac{1}{\sqrt{\Ia_\mathbf{k}}}e^{-i\theta_\mathbf{k}}\sqrt{\Ia_\mathbf{k}}e^{i\theta_\mathbf{k}}\right) \\
     &= 1 .
 \end{align} 
 We can thus impose Hamilton equations for the new coordinates (remembering that time dependance of the coordinates is suppressed)
 \begin{align}
-    \dt\Ia_k &= - \frac{\partial }{\partial \theta_k}\Ham = 2 \varepsilon \sum_{123} \Tint_{k123} \sqrt{\Ia_k\Ia_1\Ia_2\Ia_3} \sin(\deltheta^{k1}_{23})\delta^{k1}_{23}
+    \dt\Ia_\mathbf{k} &= - \frac{\partial }{\partial \theta_\mathbf{k}}\Ham = 2 \varepsilon \sum_{\mathbf{123}} \Tint_{\mathbf{k123}} \sqrt{\Ia_\mathbf{k}\Ia_\mathbf{1}\Ia_\mathbf{2}\Ia_\mathbf{3}} \sin(\deltheta^{k1}_{23})\delta^{k1}_{23}
     \label{Hameq1}\\
-    \dt\theta_k &= \phantom{-} \frac{\partial }{\partial \Ia_k}\Ham = \omga_k + 
-    \varepsilon \sum_{123} \Tint_{k123} \sqrt{\frac{\Ia_1\Ia_2\Ia_3}{\Ia_k}}\cos(\deltheta^{k1}_{23})\delta^{k1}_{23}.
+    \dt\theta_\mathbf{k} &= \phantom{-} \frac{\partial }{\partial \Ia_\mathbf{k}}\Ham = \omga_{\mathbf{k}} + 
+    \varepsilon \sum_{\mathbf{123}} \Tint_{\mathbf{k123}} \sqrt{\frac{\Ia_\mathbf{1}\Ia_\mathbf{2}\Ia_\mathbf{3}}{\Ia_\mathbf{k}}}\cos(\deltheta^{k1}_{23})\delta^{k1}_{23}.
     \label{Hameq2}
 \end{align}
 Since we are essentially perturbing an infinite set of harmonical oscillators with a small interaction term, we can euristically assume that
 the coordinates cannot grow indefinetly to infinity. We shall then be weary of unphysical secular terms artificially introduced by the perturbative
 expansion. The Poincarè-Lindsted method allows us to remove such terms by a frequency shift
 \begin{equation}
-    \omga_k \rightarrow \Omga_k = \omga_k + \varepsilon \left(2\sum_p \Tint_{kpkp}\Ia_p - \Tint_{kkkk}I_k \right),
+    \omga_{\mathbf{k}} \rightarrow \omga_{\mathbf{k}} = \omga_{\mathbf{k}} + \varepsilon \left(2\sum_p \Tint_{\mathbf{kpkp}}\Ia_\mathbf{p} - 
+    \Tint_{\mathbf{kkkk}}\Ia_\mathbf{k} \right),
     \label{shift_eq}
 \end{equation}   
 togheter with a change of the summatory in $\Ham$ such that the trivial interactions\footnote{
     we call them trivial as they do not correspond to a net exchange of energy/action among different Fourier modes
-} $k_2=k \hspace{2mm}\&\hspace{2mm} k_1 = k_3$, $k_3=k \hspace{2mm}\& \hspace{2mm}k_1=k_2$ and $k_1=k_2=k_3=k$ are excluded from it. \\
+} $\mathbf{k}_2=\mathbf{k} \hspace{2mm}\&\hspace{2mm} \mathbf{k}_1 = \mathbf{k}_3$, $\mathbf{k}_3=k \hspace{2mm}\& \hspace{2mm}\mathbf{k}_1=\mathbf{k}_2$ and $\mathbf{k}_1=\mathbf{k}_2=\mathbf{k}_3=k$ are excluded from it. \\
 The shift \eqref{shift_eq} intuitively corresponds to the self-interaction of waves, not resulting in a net exchange of energy among modes, and thus directly changing 
 the characteristic frequency of the free equation. \\ 
 This particular choice is better justified in \cite{Nazarenko2011}. \\
 
 We may now develop perturbation theory, we start by expanding the (unknown) solutions as
 \begin{align}
-    \Ia_k &= \Iaz_k +  + \varepsilon \Iao_k + \varepsilon^2 \Iat_k + \mathcal{O}(\varepsilon^3) \\
-    \tha_k &= \thaz_k +  + \varepsilon \thao_k + \varepsilon^2 \that_k + \mathcal{O}(\varepsilon^3),
+    \Ia_\mathbf{k} &= \Iaz_\mathbf{k} +  + \varepsilon \Iao_\mathbf{k} + \varepsilon^2 \Iat_\mathbf{k} + \mathcal{O}(\varepsilon^3) \\
+    \tha_k &= \thaz_\mathbf{k} +  + \varepsilon \thao_\mathbf{k} + \varepsilon^2 \that_\mathbf{k} + \mathcal{O}(\varepsilon^3),
 \end{align}
 and than substituting them into \eqref{Hameq1} and \eqref{Hameq2}. \\
-We now reintroduce explicit time dependance and impose $\Iaz_k(0) = \bar{\Ia}_k$ and $\Iao_k(0) = \Iat_k(0) = 0$ to fix initial conditions on the $\Ia$s and 
-$\thaz_k(0) = \bar{\tha}_k$ and $\thao_k(0) = \that_k(0) = 0$ to fix initial conditions on the $\tha$s.\\
+We now reintroduce explicit time dependance and impose $\Iaz_\mathbf{k}(0) = \bar{\Ia}_k$ and $\Iao_\mathbf{k}(0) = \Iat_\mathbf{k}(0) = 0$ to fix initial conditions on the $\Ia$s and 
+$\thaz_\mathbf{k}(0) = \bar{\tha}_k$ and $\thao_\mathbf{k}(0) = \that_\mathbf{k}(0) = 0$ to fix initial conditions on the $\tha$s.\\
 
 The $\varepsilon^0$ order equations are
 \begin{align}
-    \dt\Iaz_k &= 0   \\
-    \dt\thaz_k &= \Omgaz_k, 
+    \dt\Iaz_\mathbf{k} &= 0   \\
+    \dt\thaz_\mathbf{k} &= \Omgaz_\mathbf{k}, 
 \end{align}
 with solutions 
 \begin{align}
-    \Iaz_k(t) &= \bar{\Ia}_k \label{solzero1}\\
-    \thaz_k(t) &= \bar{\tha}_k + \bar{\Omga}_kt, \label{solzero2}
+    \Iaz_\mathbf{k}(t) &= \bar{\Ia}_\mathbf{k} \label{solzero1}\\
+    \thaz_\mathbf{k}(t) &= \bar{\tha}_\mathbf{k} + \bar{\Omga}_\mathbf{k}t, \label{solzero2}
 \end{align}
-where $\Omgaz_k$ and $\bar{\Omga}_k$ refer to $\Omga_k$ with only zeroeth order contribution or initial conditions respectively.
+where $\Omgaz_\mathbf{k}$ and $\bar{\Omga}_\mathbf{k}$ refer to $\omga_{\mathbf{k}}$ with only zeroeth order contribution or initial conditions respectively.
 Notice that the $\varepsilon$ terms in 
 the shifted frequency should be included in the equations for $\thao$ and not $\thaz$, we however make this choice to keep 
 all terms linear with time togheter (and thus leading in the expansion).\\
@@ -178,14 +184,14 @@ This order reproduces the dynamics of an infinite dimensional integrable system 
 
 At $\varepsilon$ order the equations of motion are 
 \begin{align}
-    \dt\Iao_k &= 2\sum_{123} \Tint_{k123} \sqrt{\Iaz_k\Iaz_1\Iaz_2\Iaz_3} \sin(\deltheta^{k1(0)}_{23})\delta^{k1}_{23} \label{hameqone}\\
-    \dt\thao_k &= \sum_{123} \Tint_{k123} \sqrt{\frac{\Iaz_1\Iaz_2\Iaz_3}{\Iaz_k}}\cos(\deltheta^{k1(0)}_{23})\delta^{k1}_{23}.
+    \dt\Iao_\mathbf{k} &= 2\sum_{\mathbf{123}} \Tint_{\mathbf{k123}} \sqrt{\Iaz_\mathbf{k}\Iaz_\mathbf{1}\Iaz_\mathbf{2}\Iaz_\mathbf{3}} \sin(\deltheta^{k1(0)}_{23})\delta^{k1}_{23} \label{hameqone}\\
+    \dt\thao_\mathbf{k} &= \sum_{\mathbf{123}} \Tint_{\mathbf{k123}} \sqrt{\frac{\Iaz_\mathbf{1}\Iaz_\mathbf{2}\Iaz_\mathbf{3}}{\Iaz_\mathbf{k}}}\cos(\deltheta^{k1(0)}_{23})\delta^{k1}_{23}.
 \end{align}
-Here the only time dependance lies in $\Delta\theta^{(0)}$ and $\Iao_k(0) = \thao_k(0) = 0$, integrating the equations gives
+Here the only time dependance lies in $\Delta\theta^{(0)}$ and $\Iao_\mathbf{k}(0) = \thao_\mathbf{k}(0) = 0$, integrating the equations gives
 \begin{align}
-    \Iao_k(t) &= 2\sum_{123} \Tint_{k123} \sqrt{\Iab_k\Iab_1\Iab_2\Iab_3} \frac{\delta^{k1}_{23}}{\delOmegab^{k1}_{23}}
+    \Iao_\mathbf{k}(t) &= 2\sum_{\mathbf{123}} \Tint_{\mathbf{k123}} \sqrt{\Iab_\mathbf{k}\Iab_\mathbf{1}\Iab_\mathbf{2}\Iab_\mathbf{3}} \frac{\delta^{k1}_{23}}{\delOmegab^{k1}_{23}}
     \left[ \cos(\delthetab^{k1}_{23}) - \cos(\delthetab^{k1}_{23} + \delOmegab^{k1}_{23}t) \right] \label{solone1}\\
-    \thao_k(t) &= \sum_{123} \Tint_{k123} \sqrt{\frac{\Iab_1\Iab_2\Iab_3}{\Iab_k}} \frac{\delta^{k1}_{23}}{\delOmegab^{k1}_{23}}
+    \thao_\mathbf{k}(t) &= \sum_{\mathbf{123}} \Tint_{\mathbf{k123}} \sqrt{\frac{\Iab_\mathbf{1}\Iab_\mathbf{2}\Iab_\mathbf{3}}{\Iab_\mathbf{k}}} \frac{\delta^{k1}_{23}}{\delOmegab^{k1}_{23}}
     \left[ \sin(\delthetab^{k1}_{23} + \delOmegab^{k1}_{23}t) -\sin(\delthetab^{k1}_{23}) \right]. \label{solone2}
 \end{align}
 Where $\delOmegab$ is defined in the same fashion as $\deltheta$. \\
@@ -200,7 +206,7 @@ we obtain four terms of the form
     \sqrt{(\mathrm{x} +\varepsilon \mathrm{y})\mathrm{\tilde{x}}} \underset{\varepsilon \rightarrow 0}{\sim} 
     \sqrt{\mathrm{x}\mathrm{\tilde{x}}}\left( 1 + \frac{\varepsilon \mathrm{y}}{2\mathrm{\tilde{x}}}\right),
 \end{equation}
-where, for example, $\mathrm{x} + \varepsilon \mathrm{y} = \Iaz_k + \varepsilon \Iao_k$ and $\mathrm{\tilde{x}} = \Iaz_1\Iaz_2\Iaz_3$.\\
+where, for example, $\mathrm{x} + \varepsilon \mathrm{y} = \Iaz_\mathbf{k} + \varepsilon \Iao_\mathbf{k}$ and $\mathrm{\tilde{x}} = \Iaz_\mathbf{1}\Iaz_\mathbf{2}\Iaz_\mathbf{3}$.\\
 There also appear terms of the form
 \begin{equation}
     \sin(\mathrm{x} + \varepsilon \mathrm{y}) \underset{\varepsilon \rightarrow 0}{\sim} \sin(\mathrm{x}) + \varepsilon \mathrm{y} \cos(\mathrm{x}),
@@ -208,19 +214,19 @@ There also appear terms of the form
 where $\mathrm{x} = \deltheta^{k1(0)}_{23}$ and $\mathrm{y} = \deltheta^{k1(1)}_{23}$.\\
 By plugging everything into \eqref{Hameq1} we first obtain
 \begin{multline}
-    \dt \Iat_k = 2 \sum_{123} \Tint_{k123} \sqrt{\Iaz_k\Iaz_1\Iaz_2\Iaz_3} \\ \times \left[ \frac{1}{2}\left(\frac{\Iao_k}{\Iaz_k}+\frac{\Iao_1}{\Iaz_1}+
-    \frac{\Iao_2}{\Iaz_2}+\frac{\Iao_3}{\Iaz_3} \right)\sin(\deltheta^{k1(0)}_{23})\delta^{k1}_{23} + 
+    \dt \Iat_\mathbf{k} = 2 \sum_{\mathbf{123}} \Tint_{\mathbf{k123}} \sqrt{\Iaz_\mathbf{k}\Iaz_\mathbf{1}\Iaz_\mathbf{2}\Iaz_\mathbf{3}} \\ \times \left[ \frac{1}{2}\left(\frac{\Iao_\mathbf{k}}{\Iaz_\mathbf{k}}+\frac{\Iao_\mathbf{1}}{\Iaz_\mathbf{1}}+
+    \frac{\Iao_\mathbf{2}}{\Iaz_\mathbf{2}}+\frac{\Iao_\mathbf{3}}{\Iaz_\mathbf{3}} \right)\sin(\deltheta^{k1(0)}_{23})\delta^{k1}_{23} + 
     \deltheta^{k1(1)}_{23}\cos(\deltheta^{k1(0)}_{23}) \delta^{k1}_{23}\right],
 \end{multline}
 and then by using \eqref{solzero1}, \eqref{solzero2}, \eqref{solone1}, \eqref{solone2} and basic trigonometry we find
 \begin{multline}
-    \dt \Iat_k = 2 \sum_{123456}\Tint_{k123} \sqrt{\Iab_k\Iab_1\Iab_2\Iab_3\Iab_4\Iab_5\Iab_6} 
-    \sum_{i=0}^{3}\frac{\Tint_{k123}\Tint_{i456}}{\sqrt{\Iab_i}\delOmegab^{i4}_{56}} \\
+    \dt \Iat_\mathbf{k} = 2 \sum_{\mathbf{123456}}\Tint_{\mathbf{k123}} \sqrt{\Iab_\mathbf{k}\Iab_\mathbf{1}\Iab_\mathbf{2}\Iab_\mathbf{3}\Iab_\mathbf{4}\Iab_\mathbf{5}\Iab_\mathbf{6}} 
+    \sum_{i=0}^{3}\frac{\Tint_{\mathbf{k123}}\Tint_\mathbf{i456}}{\sqrt{\Iab_i}\delOmegab^{i4}_{56}} \\
     \times\left(\sin(\delthetab^{k1}_{23} + \delOmegab^{k1}_{23}t - \sigma_i \delthetab^{i4}_{56}) 
     + \sin(\sigma_i \delthetab^{i4}_{56} + \sigma_i\delOmegab^{i4}_{56}t -\delthetab^{k1}_{23} - \delOmegab^{k1}_{23}t)  \right)\delta^{k1}_{23}\delta^{i4}_{56}, 
     \label{eqeps2}
 \end{multline}
-where $\sigma_i$ is equal to $+1$ if $i=0,1$ and alternatively is $-1$. When $i=0$ it represents functional dependance on $k$.\\
+where $\sigma_i$ is equal to $+1$ if $i=0,1$ and alternatively is $-1$. When $i=0$ it represents functional dependance on $\mathbf{k}$.\\
 
 \subsection{Random Phase Approximation}
 
@@ -232,37 +238,40 @@ a probabilistic one.\\
 In general such idea is realized thorugh averaging over infinitely many realizations of the equations of motion with different initial conditions, to then extract 
 average quantities more easily confrontable with experiment. In a nonlinear problem this is again highly non trivial, to simplify the endeavor we assume that
 a large number of waves is present in the system, in the sense that each mode in Fourier space is highly excited. It is then reasonable to assume that, after a time
-evolution proportional to the minimum value of $\frac{1}{\omga_k}$ in the range of physical interest, the phases $\tha$ would be uniformly distributed in the $\left[0,2\pi\right]$ segment 
+evolution proportional to the minimum value of $\frac{1}{\omga_{\mathbf{k}}}$ in the range of physical interest, the phases $\tha$ would be uniformly distributed in the $\left[0,2\pi\right]$ segment 
 \footnote{This is known as the random phase approximation. One shall be careful as if the original equations of motion are known to have solitonic solutions in a certain regime of k-space, 
 in such case phases could be correlated and the assumption would not hold.}
-. This means that whatever our initial conditions, given that $\Iab_k \neq 0$ almost everywhere and the nonlinear contribution being slower than the linear one,
+. This means that whatever our initial conditions, given that $\Iab_\mathbf{k} \neq 0$ almost everywhere and the nonlinear contribution being slower than the linear one,
 we may actually assume some new initial conditions on $\theta$s drawn from the following distribution
 \begin{equation}
-    \left\langle f(\bar{\tha}_1 \dots \bar{\tha}_N) \right\rangle_{\thab} = 
-    \int_{0}^{2\pi} P(\bar{\tha}_1 \dots \bar{\tha}_N)f(\bar{\tha}_1 \dots \bar{\tha}_N) d\bar{\tha}_1 \dots d\bar{\tha}_N 
-    \hspace{3mm} \text{with} \hspace{3mm}
-    P(\bar{\tha}_1 \dots \bar{\tha}_N) = \frac{1}{2\pi^{N}}
+    \begin{aligned}
+    &\left\langle f(\bar{\tha}_\mathbf{1} \dots \bar{\tha}_\mathbf{N}) \right\rangle_{\thab} = 
+    \int_{0}^{2\pi} P(\bar{\tha}_\mathbf{1} \dots \bar{\tha}_\mathbf{N})f(\bar{\tha}_\mathbf{1} \dots 
+    \bar{\tha}_\mathbf{N}) d\bar{\tha}_\mathbf{1} \dots d\bar{\tha}_\mathbf{N} 
+     \\
+    & \hspace{2mm} P(\bar{\tha}_\mathbf{1} \dots \bar{\tha}_\mathbf{N}) = \frac{1}{2\pi^{N}}
+    \end{aligned}
 \end{equation}
 
-Looking back at the Hamiltonian \eqref{ham4} we see that the phases do not contribute to physical quantities like the energy or the wave number, 
-it is in the action variables that those observables are encoded. We have now a clear plan, to find a kinetic equation, independent of initial conditions, for
+Looking back at the Hamiltonian \eqref{ham4} we see that the phases do not contribute to physical quantities like energy or wave number, 
+it is in the action variables that observables are encoded. We have now a clear plan, to find a kinetic equation, independent of initial conditions, for
 the action variables. \\
 The main objective is then
 \begin{equation}
-    \left\langle \dt \Ia_k \right\rangle_{\thab} = \dt \left\langle \Ia_k \right\rangle_{\thab} = \left\langle \dt \Iaz_k \right\rangle_{\thab}+
-    \varepsilon\left\langle \dt \Iao_k \right\rangle_{\thab} + \varepsilon^2\left\langle \dt \Iat_k \right\rangle_{\thab} 
+    \left\langle \dt \Ia_\mathbf{k} \right\rangle_{\thab} = \dt \left\langle \Ia_\mathbf{k} \right\rangle_{\thab} = \left\langle \dt \Iaz_\mathbf{k} \right\rangle_{\thab}+
+    \varepsilon\left\langle \dt \Iao_\mathbf{k} \right\rangle_{\thab} + \varepsilon^2\left\langle \dt \Iat_\mathbf{k} \right\rangle_{\thab} 
     \label{kineticexp}
 \end{equation}
 To zeroeth order, being constant, is null. We average over the $\varepsilon$ order equation \eqref{hameqone} (with subbed zeroeth order solutions)
 \begin{equation}
-    \left\langle \dt \Iao_k \right\rangle_{\thab} = 2\sum_{123} \Tint_{k123} \sqrt{\Iab_k\Iab_1\Iab_2\Iab_3} \left\langle\sin(\delthetab^{k1}_{23} +
+    \left\langle \dt \Iao_\mathbf{k} \right\rangle_{\thab} = 2\sum_{\mathbf{123}} \Tint_{\mathbf{k123}} \sqrt{\Iab_\mathbf{k}\Iab_\mathbf{1}\Iab_\mathbf{2}\Iab_\mathbf{3}} \left\langle\sin(\delthetab^{k1}_{23} +
     \delOmegab^{k1}_{23}t)\right\rangle_{\thab}\delta^{k1}_{23}.
 \end{equation}
 Making the probability distribution explicit and isolating the term depending on phases we obtain
 \begin{multline}
     \left\langle\sin(\delthetab^{k1}_{23} + \delOmegab^{k1}_{23}t)\right\rangle_{\thab} = 
     \left\langle 2 \operatorname{Im}\left(e^{i\delthetab^{k1}_{23}}e^{\delOmegab^{k1}_{23}t)} \right)   \right\rangle_{\thab} = 
-    \frac{1}{2\pi^4}\int_{0}^{2\pi}  e^{i\thab_k}e^{i\thab_1}e^{i\thab_2}e^{i\thab_3} d \thab_k d \thab_1 d \thab_2 d \thab_3 = 0
+    \frac{1}{2\pi^4}\int_{0}^{2\pi}  e^{i\thab_\mathbf{k}}e^{i\thab_\mathbf{1}}e^{i\thab_\mathbf{2}}e^{i\thab_\mathbf{3}} d \thab_\mathbf{k} d \thab_\mathbf{1} d \thab_\mathbf{2} d \thab_\mathbf{3} = 0
 \end{multline}
 To first order we have a trivial kinetic equation, and must then go to $\varepsilon^2$ order to find nontrivial results, luckily we have already written $\Ia$'s 
 Hamilton equations to second order. \\
@@ -274,34 +283,35 @@ The $\thab$ dependent part of equation \eqref{eqeps2} may be rewritten as
 \end{equation}
 We shall focus on the $i=0$ term and extend the results to the other ones. Isolating the exponential with $\thab$ in \eqref{thetaterm} and averaging we get
 \begin{equation}
-    \left\langle e^{i(\thab_4 +\thab_2 + \thab_3 - \thab_5 - \thab_6 - \thab_1)} \right\rangle_{\thab}.
+    \left\langle e^{i(\thab_\mathbf{4} +\thab_\mathbf{2} + \thab_\mathbf{3} - \thab_\mathbf{5} - \thab_\mathbf{6} - \thab_\mathbf{1})} \right\rangle_{\thab}.
     \label{average}
 \end{equation} 
-This term is different from $0$ only if the total exponent is null. It acts as a Kroenecker's delta on the $3$ out of the $6$ sums, imposing either $k_4=k_1$ \& $k_2 = k_5$ \&
-$k_3 = k_6$ or $k_4=k_1$ \& $k_2 = k_6$ \& $k_3 = k_5$\footnote{The combinations with $k_2 = k_4$ or $k_2 = k_3$ were 
+This term is different from $0$ only if the total exponent is null. It acts as a Kroenecker's delta on the $3$ out of the $6$ sums, imposing either $\mathbf{k}_4=\mathbf{k}_1$ \& $\mathbf{k}_2 = \mathbf{k}_5$ \&
+$\mathbf{k}_3 = \mathbf{k}_6$ or $\mathbf{k}_4=\mathbf{k}_1$ \& $\mathbf{k}_2 = \mathbf{k}_6$ \& $\mathbf{k}_3 = \mathbf{k}_5$\footnote{The combinations with $\mathbf{k}_2 = \mathbf{k}_4$ or $\mathbf{k}_2 = \mathbf{k}_3$ were 
 excluded from the sum with the shift \eqref{shift_eq}}. \\
 The full averaged $i=0$ term, with \eqref{average} enforced, is 
 \begin{equation}
-    4 \sum_{123} \Tint_{k123}\Tint_{k123}\Iab_1\Iab_2\Iab_3\frac{\sin(\delOmegab^{k1}_{23}t)}{\delOmegab^{k1}_{23}}\delta^{k1}_{23},
+    4 \sum_{\mathbf{123}} \Tint_{\mathbf{k123}}\Tint_{\mathbf{k123}}\Iab_\mathbf{1}\Iab_\mathbf{2}\Iab_\mathbf{3}\frac{\sin(\delOmegab^{k1}_{23}t)}{\delOmegab^{k1}_{23}}\delta^{k1}_{23},
 \end{equation}
-where the property $\Tint_{k123} = \Tint_{k132}$ was used\footnote{In the case of complex $\Tint$ the property would hold as well with a complex conjugate on one side.}.
+where the property $\Tint_{\mathbf{k123}} = \Tint_{\mathbf{k132}}$ was used\footnote{In the case of complex $\Tint$ the property would hold as well with a complex conjugate on one side.}.
 \\
 Looking at the cases $i =1,2,3$ the only differences are:
 \begin{itemize}
-    \item $i=1$ $\longrightarrow$ the same as $i=0$ except for the exchange $\Iab_1 \longleftrightarrow \Iab_k$;
+    \item $i=1$ $\longrightarrow$ the same as $i=0$ except for the exchange $\Iab_\mathbf{1} \longleftrightarrow \Iab_\mathbf{k}$;
     \item $i=2$ $\longrightarrow$ the same as $i=0$ except for an overall minus sign;
-    \item $i=3$ $\longrightarrow$ the same as $i=2$ except for  $\Iab_2 \longleftrightarrow \Iab_3$.
+    \item $i=3$ $\longrightarrow$ the same as $i=2$ except for  $\Iab_\mathbf{2} \longleftrightarrow \Iab_\mathbf{3}$.
 \end{itemize}
 The final result is
 \begin{equation}
-    \dt \left\langle \Iat_k\right\rangle = 4 \sum_{123} \Tint^2_{k123}\Iab_k\Iab_1\Iab_2\Iab_3
-    \left(\frac{1}{\Iab_k} + \frac{1}{\Iab_1} - \frac{1}{\Iab_2}- \frac{1}{\Iab_3}  \right)
+    \dt \left\langle \Iat_\mathbf{k}\right\rangle = 4 \sum_{\mathbf{123}} \Tint^2_\mathbf{k123}\Iab_\mathbf{k}\Iab_\mathbf{1}\Iab_\mathbf{2}\Iab_\mathbf{3}
+    \left(\frac{1}{\Iab_\mathbf{k}} + \frac{1}{\Iab_\mathbf{1}} - \frac{1}{\Iab_\mathbf{2}}- \frac{1}{\Iab_\mathbf{3}}  \right)
     \frac{\sin(\delOmegab^{k1}_{23}t)}{\delOmegab^{k1}_{23}}\delta^{k1}_{23},
     \label{kinetic1}
 \end{equation}
 where it is not anymore necessary to account in the sum for trivial 
-interactions, as for \\ $k_2=k \hspace{2mm}\&\hspace{2mm} k_1 = k_3$, $k_3=k \hspace{2mm}\& \hspace{2mm}k_1=k_2$ and $k_1=k_2=k_3=k$ the r.h.s is null.\\
-We may ignore to this order the frequency shift as Taylor expanding the sine function shows its contribution to be of order $\varepsilon^3$. \\
+interactions, as for \\ $\mathbf{k}_2=\mathbf{k} \hspace{2mm}\&\hspace{2mm} \mathbf{k}_1 = \mathbf{k}_3$, $\mathbf{k}_3=\mathbf{k} \hspace{2mm}\& \hspace{2mm}\mathbf{k}_1=\mathbf{k}_2$ 
+and $\mathbf{k}_1=\mathbf{k}_2=\mathbf{k}_3=\mathbf{k}$ the r.h.s is null.\\
+We may ignore to this order the frequency shift, as Taylor expanding the sine function shows its contribution to be of order $\varepsilon^3$. \\
 By using one of the possible definitions of the Dirac's delta function
 \begin{equation}
     \underset{a \rightarrow \infty}{\lim} \frac{\sin(a \mathrm{x})}{\pi\mathrm{x}} = \delta(\mathrm{x}),
@@ -311,17 +321,16 @@ into \eqref{kinetic1} togheter with \eqref{kineticexp} and the assumption that e
 %\footnote{More time than the fast linear time scale and smaller tha}
 , finally
 \begin{equation}
-    \dt \left\langle \Ia_k\right\rangle = 4 \pi\varepsilon^2 \sum_{123} \Tint^2_{k123}\Iab_k\Iab_1\Iab_2\Iab_3
-    \left(\frac{1}{\Iab_k} + \frac{1}{\Iab_1} - \frac{1}{\Iab_2}- \frac{1}{\Iab_3}  \right)
+    \dt \left\langle \Ia_\mathbf{k}\right\rangle = 4 \pi\varepsilon^2 \sum_{\mathbf{123}} \Tint^2_{k123}\Iab_\mathbf{k}\Iab_\mathbf{1}\Iab_\mathbf{2}\Iab_\mathbf{3}
+    \left(\frac{1}{\Iab_\mathbf{k}} + \frac{1}{\Iab_\mathbf{1}} - \frac{1}{\Iab_\mathbf{2}}- \frac{1}{\Iab_\mathbf{3}}  \right)
     \delta(\delomega^{k1}_{23})\delta^{k1}_{23}.
     \label{kinetic2}
 \end{equation}
 There are some important remarks on this last equation. \\
-The presence of the Dirac's delta defines a resonance manifold\footnote{even if at this discrete stage $\delomega$ is not a function over $\mathbb{R}$ yet,
- and should be argued to be densely valued around $0$ in the continuum limit} of the Fourier modes $k_1, k_2$ and $k_3$ interacting with $k$, 
- showing that only resonant term contribute to the net interaction between different modes\footnote{
-    This can be seen as an a posteriori justification for the elimination of nonresonant three wave interaction terms.
-}. \\
+The Dirac's delta identifies the Fourier modes $\mathbf{k}_1, \mathbf{k}_2,\mathbf{k}_3$ and $\mathbf{k}$ that can interact with each other.
+This set of modes in $4d$ $k$-space is called the resonant manifold\footnote{even if at this discrete stage $\delomega$ is not a function over $\mathbb{R}$ yet,
+ and should be argued to be densely valued around $0$ in the continuum limit}. the fact that only momenta belonging to this manifold contibute to time evolution
+  can be seen as an a posteriori justification for the elimination of nonresonant three wave interaction terms. \\
 Based on different preferences one could define a nonlinear time $\tau = t \varepsilon^2$, as in \cite{Onorato2020}, and absorb the 
 $\varepsilon^2$ term into the time derivative or just include it again into $\Tint$, we opt for the latter and will not write it explicitely in the future. \\
 The equation can be readily extended to the case $\Tint \in \mathbb{C}$ through the substitution $\Tint^2 \rightarrow |\Tint|^2$.\\
@@ -333,20 +342,20 @@ in a finite coordinate space. The next section builds on this. \\
 We now take the thermodynamic (continuum) limit ($L \rightarrow \infty$) to turn our set of infinitely many coupled equation into an integral one, easier to approach analytically.
 In Fourier space the limit takes the form 
 \begin{equation}
-    \vec{\Delta k} = \frac{2\pi}{L} \rightarrow 0 \hspace{10mm} \Lambda^* \rightarrow \mathbb{R}^d
+    \Delta\mathbf{ k} = \frac{2\pi}{L} \rightarrow 0 \hspace{10mm} \Lambda^* \rightarrow \mathbb{R}^d
 \end{equation}
 and we define 
 \begin{equation}
-    \tilde{\Ia}_k=\frac{\Ia_k}{(\Delta k)^d} \rightarrow \tilde{\Ia}(k) \hspace{10mm} \sum_k (\Delta k)^d \rightarrow \int d^d k \hspace{10mm} 
-    \frac{(\delta^{k1}_{23})^d}{(\Delta k)^d} \rightarrow \delta^d(k + k_1 - k_2 - k_3).
+    \tilde{\Ia}_\mathbf{k}=\frac{\Ia_\mathbf{k}}{(\Delta k)^d} \rightarrow \tilde{\Ia}(\mathbf{k}) \hspace{10mm} \sum_\mathbf{k} (\Delta k)^d \rightarrow \int d\mathbf{k} \hspace{10mm} 
+    \frac{(\delta^{k1}_{23})^d}{(\Delta k)^d} \rightarrow \delta(\mathbf{k} + \mathbf{k}_1 - \mathbf{k}_2 - \mathbf{k}_3).
 \end{equation}
-The action variables and interaction coefficents become functions of the now continuous coordinates of Fourier space, the sums turn into integrals and the Kroenecker's deltas become a
-Dirac's delta. Equation \eqref{kinetic2}, suppressing again all dimensional indexes, becomes
+The action variables and interaction coefficents become functions of the now continuous coordinates of Fourier space, sums turn into integrals and Kroenecker's deltas become a
+Dirac's delta. Equation \eqref{kinetic2} becomes
 \begin{multline}
-    \pt \left\langle \tilde{\Ia}(k)\right\rangle = 4 \pi\int dk_1 dk_2 dk_3 \\
-    \Tint^2(k, k_1, k_2, k_3)\Iab(k)\Iab(k_1)\Iab(k_2)\Iab(k_3)
-    \left(\frac{1}{\Iab(k)} + \frac{1}{\Iab(k_1)} - \frac{1}{\Iab(k_2)}- \frac{1}{\Iab(k_3)}  \right)
-    \delta(\delomega^{k1}_{23})\delta(k + k_1 - k_2 - k_3).
+    \pt \left\langle \tilde{\Ia}(\mathbf{k})\right\rangle = 4 \pi\int d\mathbf{k}_1 d\mathbf{k}_2 d\mathbf{k}_3 \\
+    \Tint^2(\mathbf{k}, \mathbf{k}_1, \mathbf{k}_2, \mathbf{k}_3)\Iab(\mathbf{k})\Iab(\mathbf{k}_1)\Iab(\mathbf{k}_2)\Iab(\mathbf{k}_3)
+    \left(\frac{1}{\Iab(\mathbf{k})} + \frac{1}{\Iab(\mathbf{k}_1)} - \frac{1}{\Iab(\mathbf{k}_2)}- \frac{1}{\Iab(\mathbf{k}_3)}  \right)
+    \delta(\delomega^{k1}_{23})\delta(\mathbf{k} + \mathbf{k}_1 - \mathbf{k}_2 - \mathbf{k}_3).
     \label{kinetic3}
 \end{multline}
 In performing the limit we must be careful to require that 
@@ -354,33 +363,33 @@ In performing the limit we must be careful to require that
 \underset{\varepsilon, \Delta k \rightarrow 0}{\lim} \frac{(\Delta k)^d}{\varepsilon} = 0 ,
 \end{equation}
 as otherwise we could not use definition \eqref{delta} to extract a delta from \eqref{kinetic1}. \\
-In the following we will recover the previous discrete notation for compactness, while still working in the continous limit.\\
+In the following we will recover the previous discrete notation for compactness, while still working in the continuous limit.\\
 
 Our equation is still deterministic regarding the action function. We shall assume a stochastic distribution on the inital data defining 
-the mean value\footnote{Working with $a_k$ variables $n_k$ would be the second moment of the distribution, not the first.}
-of $\Ia_k$ respect both distributions at a generic time as 
+the mean value\footnote{Working with $a_\mathbf{k}$ variables $n_\mathbf{k}$ would be the second moment of the distribution, not the first.}
+of $\Ia_\mathbf{k}$ respect both distributions at a generic time as 
 \begin{equation}
-    n(k,t) = n_k = \left\langle \Ia_k \right\rangle_{\Iab, \thab},
+    n(\mathbf{k},t) = n_\mathbf{k} = \left\langle \Ia_\mathbf{k} \right\rangle_{\Iab, \thab},
     \label{wavdef}
 \end{equation}     
 and requiring them to be uncorrelated at $t=0$ \\
 \begin{equation}
-    \left\langle \Iab_i \Iab_j \Iab_k\right\rangle_{\Iab} = 
-    \left\langle\Iab_i \right\rangle_{\Iab} \left\langle \Iab_j \right\rangle_{\Iab} \left\langle \Iab_k \right\rangle_{\Iab}
-    = \bar{n}_i \bar{n}_j \bar{n}_k \hspace{5mm} \text{for} \hspace{5mm} i\neq j\neq k.
+    \left\langle \Iab_\mathbf{i} \Iab_\mathbf{j} \Iab_\mathbf{k}\right\rangle_{\Iab} = 
+    \left\langle\Iab_\mathbf{i} \right\rangle_{\Iab} \left\langle \Iab_\mathbf{j} \right\rangle_{\Iab} \left\langle \Iab_\mathbf{k} \right\rangle_{\Iab}
+    = \bar{n}_\mathbf{i} \bar{n}_\mathbf{j} \bar{n}_\mathbf{k} \hspace{5mm} \text{for} \hspace{5mm} i\neq j\neq k.
 \end{equation}
 The combination of random phases and amplitues is usually defined as RPA. As long as the full distribution remains close to being RPA the whole statistical dynamics
-is described by the variance $n_k$. Based on dimensional analysis we call 
-$n_k$ the wave action density of the system\footnote{$\Nwav = \int n_k dk$ has the units of an action.}.\\
+is described by the variance $n_\mathbf{k}$. Based on dimensional analysis we call 
+$n_\mathbf{k}$ the wave action density of the system\footnote{$\Nwav = \int n_\mathbf{k} d\mathbf{k}$ has the units of an action.}.\\
 Averaging over \eqref{kinetic3} we obtain
 \begin{equation}
-    \pt n_k = 4 \pi\int dk_1 dk_2 dk_3 \\
-    \Tint^2_{k123}\nb_k\nb_1\nb_2\nb_3
-    \left(\frac{1}{\nb_k} + \frac{1}{\nb_1} - \frac{1}{\nb_2}- \frac{1}{\nb_3}  \right)
+    \pt n_\mathbf{k} = 4 \pi\int d\mathbf{k}_1 d\mathbf{k}_2 d\mathbf{k}_3 \\
+    \Tint^2_{k123}\nb_\mathbf{k}\nb_\mathbf{1}\nb_\mathbf{2}\nb_\mathbf{3}
+    \left(\frac{1}{\nb_\mathbf{k}} + \frac{1}{\nb_\mathbf{1}} - \frac{1}{\nb_\mathbf{2}}- \frac{1}{\nb_\mathbf{3}}  \right)
     \delta(\delomega^{k1}_{23})\delta^{k1}_{23}.
     \label{kinetic4}
 \end{equation}
-We find ourselves with an equation describing the time evolution of the average action value per Fourier mode, given an initial distribution.\\
+We found an equation describing the time evolution of the average action value per Fourier mode, given an initial distribution.\\
 %Unfortunately this equation holds now for a small time after $t=0$, 
 %since it does not account for successive interactions between different waves. We need some form of closure. \hl{DOES IT MAKE SENSE?, THINK AGAIN. 
 %LOOK ON ZAKH HOW HE JUSTIFY THIS, CITE THAT NAZARENKO IS MORE RIGOROUS(WAV TURUBULENCE ARTICLE)}\\ 
@@ -389,12 +398,13 @@ sensitive on said initial conditions. What we are looking for is a kinetic equat
 We make a last crucial assumption, time evolution does not spoil at successive instants the random phase and amplitude 
 assumptions on inital conditions. Intuitively we can think of the separation of time scales on which the linear and nonlinear term act as allowing for 
 the linear term to keep introducing chaos into the system. \\
-This assumption let us subsitute $\nb_k \rightarrow n(k,t) = n_k$, giving us a self-consistent integro-differential equation for the evolution of $n_k$, the celebrated
+This assumption let us subsitute $\nb_\mathbf{k} \rightarrow n(\mathbf{k},t) = n_\mathbf{k}$, giving us a self-consistent 
+integro-differential equation for the evolution of $n_\mathbf{k}$, the celebrated
 Wave Kinetic Equation (WKE)
 \begin{equation}
-    \pt n_k = 4 \pi\int dk_1 dk_2 dk_3 \\
-    \Tint^2_{k123}n_kn_1n_2n_3
-    \left(\frac{1}{n_k} + \frac{1}{n_1} - \frac{1}{n_2}- \frac{1}{n_3}  \right)
+    \pt n_\mathbf{k} = 4 \pi\int d\mathbf{k}_1 d\mathbf{k}_2 d\mathbf{k}_3 \\
+    \Tint^2_\mathbf{k123}n_\mathbf{k}n_\mathbf{1}n_\mathbf{2}n_\mathbf{3}
+    \left(\frac{1}{n_\mathbf{k}} + \frac{1}{n_\mathbf{1}} - \frac{1}{n_\mathbf{2}}- \frac{1}{n_\mathbf{3}}  \right)
     \delta(\delomega^{k1}_{23})\delta^{k1}_{23}.
     \label{kinetic}
 \end{equation}
@@ -402,10 +412,13 @@ Given that we are assuming Gaussian statistics, but at the same time letting the
 vary with time depending on each other values, it is customary to call the approximation quasi Gaussian. To be precise a Gaussian distribution is always
 RPA whereas an RPA field converges to a Gaussian one only in the thermodynamic limit. The l.h.s. is often called the collisional integral, again 
 for the reason that it quantifies the interactions among different modes, and represented through the symbol $\coll$. \\
-This same equation obtained through explicit perturbative expansion around the free theory may be found looking directly at the time derivative of $n_k(t)$. 
-Given the nonlinearity of the equations of motion, $\pt n_k(t)$ will depend on the fourth moment, whose time derivative will depend on the sixth one and so on. 
-This produces an hierarchy of equations in which the closure problem, that we addressed through $\nb_k \rightarrow n(k,t) = n_k$, is more evident. Under similar line of tought
-as in the previous section, assuming an $n$-points correlator to be Gaussian leads to a closed equation, the higher the $n$, the higher the order of the kinetic equation obtained.
+This same equation, here obtained through explicit perturbative expansion around the free theory, may be found looking directly at the time 
+derivative of $n_\mathbf{k}(t)$. 
+Given the nonlinearity of the equations of motion, $\pt n_\mathbf{k}(t)$ will depend on the fourth moment, whose time derivative will depend on the sixth one and so on. 
+This produces an hierarchy of equations in which the closure problem, that we addressed through $\nb_\mathbf{k} \rightarrow n(\mathbf{k},t) = n_\mathbf{k}$, 
+is more evident. Under similar line of tought
+as in the previous section, assuming an $n$-points correlator to be Gaussian leads to a closed equation, the higher the $n$, the higher 
+the order of the kinetic equation obtained.
 For the first nontrivial one said assumption should be imposed on the 6-points function.\\
 
 \subsection{Main properties of the kinetic equation}
@@ -415,51 +428,54 @@ space translation and phase shifting\footnote{A three wave interaction would not
 Are those conserved quantities inherited by the WKE?\\
 Let us start with energy, we separe the linear and nonlinear terms in \eqref{ham4}
 \begin{equation}
-    \Ham = \Ham_2 + \Ham_{\text{int}}.
+    \Ham = \Ham_{\text{lin}} + \Ham_{\text{int}}.
 \end{equation}
-The derivation of the kinetic equation was based off the assumption that $\Ham_{\text{int}} \ll \Ham_{2}$ and the obtained equation clearly shows that at $\varepsilon^2$ 
-order the only role of $\Ham_{\text{int}}$ is to redistibute energy amidst modes. This is enough to hypothesize that the conserved quantity may be the average linear energy
+The derivation of the kinetic equation was based on the assumption that $\Ham_{\text{int}} \ll \Ham_{\text{lin}}$ The equation we obtained clearly 
+shows that at $\varepsilon^2$ 
+order the only role of $\Ham_{\text{int}}$ is to redistibute energy amidst modes. This is enough to hypothesize that the conserved quantity may be the 
+average linear energy
 \begin{equation}
-    \Ewav = \left\langle \Ham_2 \right\rangle_{\Iab,\thab} = \int \omga_k n_k dk.
+    \Ewav = \left\langle \Ham_2 \right\rangle_{\Iab,\thab} = \int \omga_{\mathbf{k}} n^{}_\mathbf{k} d\mathbf{k}.
 \end{equation}
 Its conservation may be easily checked by utilizing \eqref{kinetic} 
 \begin{align}
-    &\dt \Ewav = \int \omga_k \pt n_k dk = \int \omga_k \coll dk = \label{encons}\\
-    4 &\pi\int  dk dk_1 dk_2 dk_3 
-    \Tint^2_{k123}n_kn_1n_2n_3 \omga_k
-    \left(\frac{1}{n_k} + \frac{1}{n_1} - \frac{1}{n_2}- \frac{1}{n_3}  \right)
+    &\dt \Ewav = \int \omga_{\mathbf{k}} \pt n_\mathbf{k} d\mathbf{k} = \int \omga_{\mathbf{k}} \coll d\mathbf{k} = \label{encons}\\
+    4 &\pi\int  d\mathbf{k} d\mathbf{k}_1 d\mathbf{k}_2 d\mathbf{k}_3 
+    \Tint^2_\mathbf{k123}n_\mathbf{k}n_\mathbf{1}n_\mathbf{2}n_\mathbf{3} \omga_{\mathbf{k}}
+    \left(\frac{1}{n_\mathbf{k}} + \frac{1}{n_\mathbf{1}} - \frac{1}{n_\mathbf{2}}- \frac{1}{n_\mathbf{3}}  \right)
     \delta(\delomega^{k1}_{23})\delta^{k1}_{23} = \\
-    &\pi\int  dk dk_1 dk_2 dk_3 
-    \Tint^2_{k123}n_kn_1n_2n_3\left(\omga_k + \omga_1 - \omga_2 - \omga_3\right) \\
-    & \hspace{6cm}\times\left(\frac{\omga_k}{n_k} + \frac{\omga_1}{n_1} - \frac{\omga_k}{n_2}- \frac{\omga_k}{n_3}  \right)
+    &\pi\int  d\mathbf{k} d\mathbf{k}_1 d\mathbf{k}_2 d\mathbf{k}_3 
+    \Tint^2_{k123}n_\mathbf{k}n_\mathbf{1}n_\mathbf{2}n_\mathbf{3} \left(\omga_{\mathbf{k}} + \omga_\mathbf{1} - \omga_\mathbf{2} - \omga_\mathbf{3}\right) \\
+    & \hspace{6cm}\times\left(\frac{\omga_{\mathbf{k}}}{n_\mathbf{k}} + \frac{\omga_\mathbf{1}}{n_\mathbf{1}} - 
+    \frac{\omga_{\mathbf{2}}}{n_\mathbf{2}}- \frac{\omga_{\mathbf{2}}}{n_\mathbf{3}}  \right)
     \delta(\delomega^{k1}_{23})\delta^{k1}_{23} = 0.    
 \end{align}
 The symmetry properties of $\Tint$ and the rest of the integrand were exploited to properly rename the dummy integrated variables. The delta function over frequencies 
 allows to determine that the integral is null. It is crucial to remember that the usage of the delta function is allowed only if the integral converges, such condition
 must be checked case by case and thus conservation of energy is not to be taken for granted\footnote{See \cite{Zakharov} for a more detailed analysis.}. \\
-Defining the energy density as $\Edens_k = \omga_k n_k$, we cast \eqref{encons} as a continuity equation
+Defining the energy density as $\Edens_\mathbf{k} = \omga_{\mathbf{k}} n_\mathbf{k}$, we cast \eqref{encons} as a continuity equation
 \begin{align}
-    &\pt \Edens_k + \vec{\nabla}\cdot\vec{\Pflux} = 0 \label{Econtinuity}\\
-    &\vec{\nabla}\cdot\vec{\Pflux} = -\omga_k \coll, 
+    &\pt \Edens_\mathbf{k} + \nabla\cdot\mathrm{\mathbf{P}} = 0 \label{Econtinuity}\\
+    &\nabla\cdot\mathrm{\mathbf{P}} = -\omga_{\mathbf{k}} \coll, 
 \end{align}
-where $\Pflux$ is the energy flux and the vector signs were made explicit to avoid ambiguity with future notation. \\
+where $\Pflux$ is the energy flux. \\
 
 We now move on to wave action conservation, given the original symmetry it is reasonable to assume that the new conserved quantity is 
 \begin{equation}
-    \Nwav = \int n_k dk.
+    \Nwav = \int n_\mathbf{k} d\mathbf{k}.
     \label{action}
 \end{equation}
 By substituting into \eqref{kinetic}  all four wave number variable are now integrated over. From the simmetries of  $\Tint$, 
-namely $(k,k_1 \rightarrow k_2,k_3)$, and the fact that the remaing part of the integrand is antisymmetryc for that same exchange, we conclude that the integral 
+namely $(\mathbf{k},\mathbf{k}_1 \rightarrow \mathbf{k}_2,\mathbf{k}_3)$, and the fact that the remaing part of the integrand is antisymmetryc for that same exchange, we conclude that the integral 
 is null. Thus \eqref{action} is a conserved quantity. In the same fashion as \eqref{Econtinuity} we may produce the continuity equation for the wave action density
 \begin{align}
-    &\pt n_k + \vec{\nabla}\cdot\vec{\Qflux} = 0 \label{Ncontinuity}\\
-    &\vec{\nabla}\cdot\vec{\Qflux} = -\coll, 
+    &\pt n_\mathbf{k} + \nabla\cdot\mathrm{\mathbf{Q}} = 0 \label{Ncontinuity}\\
+    &\nabla\cdot\mathrm{\mathbf{Q}} = -\coll, 
 \end{align}
 where $\Qflux$ is the wave action flux. \\
-From a similar argument as energy but using the deltas over wave numbers it may be shown that additional conserved quantities are the components of momentum
+From a similar argument as the one used for energy conservetion, but using the deltas over wave numbers, it may be shown that additional conserved quantities are the components of momentum
 \begin{equation}
-    \textrm{\Pi} = \int k n_k d k,
+    \Pi = \int \mathbf{k} n_\mathbf{k} d\mathbf{k},
 \end{equation}
 of lesser importance as only positive definite invariants leads to cascade solutions. \\
 Having built a statistical theory, it is customary to ask whether the time evolution is irreversible. This is commonly done by producing a definition of entropy for which
@@ -468,23 +484,28 @@ Given the RPA approximation we can consider the full system as infinitely many c
 the perturbative nature of the interaction term we can formulate a kind of ergodic assumption: very loosely speaking they interact, given that they exchange energy, but interact 
 so little that we may assume each of them to be a closed system with its own Boltzmann statistics.\footnote{We are sorry for butchering statistical mechanics in this way, 
 we do so in the hope of giving an intuitive origin for the entropy's formula.}\\ 
-Considering that the bigger $n_k$ is, the more probable it is to observe waves with wave vector $k$ in the full system, we may well use it instead of the number 
+Considering that the bigger $n_\mathbf{k}$ is, the more probable it is to observe waves with wave vector $\mathbf{k}$ in the full system, 
+we may well use it instead of the number 
 of microstates in the Boltzmann entropy. Thus the entropy of each of them, measuring temperature in Joules to avoid the introduction of another constant
-and omitting the insertion of another one to make $n_k$ adimensional, is $\Ent_k = \ln(n_k)$. Coupling togheter all different wave vectors we obtain 
+and omitting the insertion of another one to make $n_\mathbf{k}$ adimensional, is $\Ent_\mathbf{k} = \ln(n_\mathbf{k})$. 
+Coupling togheter all different wave vectors we obtain 
 \begin{equation}
-    \Ent = \int dk \ln(n_k).
+    \Ent = \int d\mathbf{k} \ln(n_\mathbf{k}).
 \end{equation}
 We shall now check that a Boltzmann H-theorem holds for such definition. Let us look at the time dependance of entropy, by using the kinetic equation we find
 \begin{align}
-    \dt \Ent &= \int \frac{dk}{n_k} \pt n_k = \int dk \frac{\coll}{n_k} = \int dk dk_1 dk_2 dk_3 \mathrm{D}_{k123}\\
-    &= 4\pi \int dk dk_1 dk_2 dk_3 |\Tint_{k123}|^2 n_k n_1 n_2 n_3 \left(\frac{1}{n_k^2} + \frac{1}{n_k n_1}-\frac{1}{n_k n_2}-\frac{1}{n_k n_3}\right)
+    \dt \Ent &= \int \frac{d\mathbf{k}}{n_\mathbf{k}} \pt n_\mathbf{k} = \int d\mathbf{k} \frac{\coll}{n_\mathbf{k}} = 
+    \int d\mathbf{k} d\mathbf{k}_1 d\mathbf{k}_2 d\mathbf{k}_3 \mathrm{D}_\mathbf{k123}\\
+    &= 4\pi \int d\mathbf{k} d\mathbf{k}_1 d\mathbf{k}_2 d\mathbf{k}_3 |\Tint_{\mathbf{k123}}|^2 n_\mathbf{k}n_\mathbf{1}n_\mathbf{2}n_\mathbf{3} 
+     \left(\frac{1}{n_\mathbf{k}^2} + \frac{1}{n_\mathbf{k} n_\mathbf{1}}-\frac{1}{n_\mathbf{k} n_\mathbf{2}}-\frac{1}{n_\mathbf{k} n_\mathbf{3}}\right)
     \delta(\delomega^{k1}_{23})\delta^{k1}_{23},
 \end{align}
 by renaming the integrated dummy variables we may reformulate the integrand as \\ 
-$\frac{1}{4} \left(\mathrm{D}_{k123}+\mathrm{D}_{1k23}+\mathrm{D}_{23k1}+
-\mathrm{D}_{321k} \right)$, recognizing the explicited square of a sum of fractions we find
+$\frac{1}{4} \left(\mathrm{D}_\mathbf{k123}+\mathrm{D}_\mathbf{1k23}+\mathrm{D}_\mathbf{23k1}+
+\mathrm{D}_\mathbf{321k} \right)$, recognizing the explicited square of a sum of fractions we find
 \begin{equation}
-    \dt \Ent = 4\pi \int dk dk_1 dk_2 dk_3 |\Tint_{k123}|^2 n_k n_1 n_2 n_3 \left( \frac{1}{n_k} + \frac{1}{n_1}-\frac{1}{n_2}-\frac{1}{n_3}\right)^2 
+    \dt \Ent = 4\pi \int d\mathbf{k} d\mathbf{k}_1 d\mathbf{k}_2 d\mathbf{k}_3 |\Tint_{\mathbf{k123}}|^2 n_\mathbf{k}n_\mathbf{1}n_\mathbf{2}n_\mathbf{3} 
+     \left( \frac{1}{n_\mathbf{k}} + \frac{1}{n_\mathbf{1}}-\frac{1}{n_\mathbf{2}}-\frac{1}{n_\mathbf{3}}\right)^2 
     \delta(\delomega^{k1}_{23})\delta^{k1}_{23}\ge 0,
 \end{equation}
 thus proving that entropy as defined cannot decrease with time. \\
@@ -492,36 +513,39 @@ thus proving that entropy as defined cannot decrease with time. \\
 \subsection{Equilibrium stationary state}
 
 Having now a working definition of entropy, we may look for stationary solution, i.e. solutions maximising the entropy. Through the insertions of Lagrange 
-multipliers we may choose and fix the constant of motion values.  \\
-We are looking for an $n_k$ such that 
+multipliers we may choose and fix the constant of motion's values.  \\
+We are looking for an $n_\mathbf{k}$ such that 
 \begin{equation}
-    \frac{\delta}{\delta n_k}\left( \Ent - \frac{\Ewav}{T} + \frac{u \cdot \textrm{\Pi}}{T} + \frac{\mu \Nwav}{T} \right).
+    \frac{\delta}{\delta n_\mathbf{k}}\left( \Ent - \frac{\Ewav}{T} + \frac{\mathbf{u} \cdot \Pi}{T} + \frac{\mu \Nwav}{T} \right).
 \end{equation}
 Where we could call $T$ the temperature, $\mu$ the chemical potential and $u$ the impulse. \\
 Using the previously given definitions of $\Ewav$ and $\Nwav$ 
 \begin{equation}
-    \frac{\delta}{\delta n_k} \int dk' \left[ \ln(n_{k'}) -\frac{\omga_{k'}}{T}n_{k'} + \frac{u \cdot k'}{T}n_{k'}+\frac{\mu}{T} n_{k'} \right] = 
-    \frac{1}{n_k} - \frac{\omga_k}{T} + \mu  +  u \cdot k= 0,
+    \frac{\delta}{\delta n_\mathbf{k}} \int d\mathbf{k'} \left[ \ln(n_\mathbf{k'}) -\frac{\omga_\mathbf{k'}}{T}n_\mathbf{k'} + 
+    \frac{u \cdot \mathbf{k'}}{T}n_\mathbf{k'}+\frac{\mu}{T} n_\mathbf{k'} \right] = 
+    \frac{1}{n_\mathbf{k}} - \frac{\omga_{\mathbf{k}}}{T} + \mu  +  u \cdot \mathbf{k}= 0,
 \end{equation} 
 where the obvious solution is 
 \begin{equation}
-    n_k = \frac{T}{\omga_k - u \cdot k - \mu},
+    n_\mathbf{k} = \frac{T}{\omga_{\mathbf{k}} - \mathbf{u} \cdot \mathbf{k} - \mu},
     \label{Gibbs}
 \end{equation}
-equivalent to the Gibbs Ensamble. It is easy to see that \eqref{Gibbs} is a solution of the wave kinetic equation, inserting it into $\left( \frac{1}{n_k} 
-+ \frac{1}{n_1}-\frac{1}{n_2}-\frac{1}{n_3}\right)$ in \eqref{kinetic} yealds
+equivalent to the Gibbs Ensamble. It is easy to see that \eqref{Gibbs} is a solution of the wave kinetic equation, inserting it into $\left( \frac{1}{n_\mathbf{k}} 
++ \frac{1}{n_\mathbf{1}}-\frac{1}{n_\mathbf{2}}-\frac{1}{n_\mathbf{3}}\right)$ in \eqref{kinetic} yealds
 \begin{equation}
-    \frac{1}{T}\left( \omga_k +\omga_1-\omga_2-\omga_3 + u \cdot k +u \cdot k_1 -u \cdot k_2 -u \cdot k_3 \right), 
+    \frac{1}{T}\left( \omga_{\mathbf{k}} +\omga_\mathbf{1}-\omga_\mathbf{2}-\omga_\mathbf{3} + \mathbf{u} \cdot \mathbf{k} +\mathbf{u} \cdot \mathbf{k}_1 
+    -\mathbf{u} \cdot \mathbf{k}_2 -\mathbf{u} \cdot \mathbf{k}_3 \right), 
 \end{equation}
 that can be readily see to be null thanks to the deltas over frequencies and wave vectors.\\
-From now on we shall choose $u = 0$ as we are not interested in states with overall momentum different than zero. This solutions is called  the 
+From now on we shall choose $\mathbf{u} = 0$ as we are not interested in states with overall momentum different than zero. This solutions is called  the 
 Rayleigh-Jeans distribution, from the analogy with statistical mechanics.\\
 By choosing $\mu = 0$, meaning that the total number of waves in the system is not fixed to a 
-chosen value, we see that $n_k = \frac{T}{\omga_k}$ implies $\Edens_k = T$, showing equipartition of energy for such a state.\\
+chosen value, we see that $n_\mathbf{k} = \frac{T}{\omga_{\mathbf{k}}}$ implies $\Edens_\mathbf{k} = T$, showing equipartition of energy for such a state.\\
 To have the energy of this state finite an high-k cutoff or a low-k one are required, meaning that under or over a certain lenght there is no oscillation. This however makes perfectly sense in
 a classical theory, where the granularity of any medium is ignored in order to describe it through differential equations or there is always a finite size to the medium. 
 In this case those cutoffs only reinstate natural properties of the system.\\ 
-Closed systems with a resonant three wave interaction do not conserve wave action, and thus relax to $n_k = \frac{T}{\omga_k}$. Four wave closed systems relax instead to 
+Closed systems with a resonant three wave interaction do not conserve wave action, and thus relax to $n_\mathbf{k} = \frac{T}{\omga_{\mathbf{k}}}$. 
+Four wave closed systems relax instead to 
 the more general solution. \\
 
 \subsection{Out of equilibrium stationary states}
@@ -538,9 +562,9 @@ a ship moving trough a body of water, radio waves scattering off plasma or exper
 interactions with a tank or a basin, Landau damping, superfluid particles in a magnetic trap reaching enough energy to escape it, generation of quasiparticles or interaction 
 with inhomogenities.\\
 now fjiortoft argument and then zakh formalization.\\
-In many physical settings those mechanisms operate only in a limited region of wave vector space (k-space), for example a ship would mainly generate waves of wavelenght comparable to 
+In many physical settings those mechanisms operate only in a limited region of wave vector space ($k$-space), for example a ship would mainly generate waves of wavelenght comparable to 
 its own lenght, Landau damping peaks for certain rather low wavelenghts (energetic waves) and interaction with a tank would dissipate water eaves of lenght comparable to the tank dimension. In such 
-case at least part of  k-space would still locally behave almost as a closed system, with the difference that energy and wave action flows in an out slowly due to the nonlinear 
+case at least part of  $k$-space would still locally behave almost as a closed system, with the difference that energy and wave action flows in an out slowly due to the nonlinear 
 coupling of modes. A region of this type in k-space is usually called the inertial range, and it is limited by neighbouring pumping and dissipations regions.\\
 It is natural to ask if there is a preferred flow of conserved quantities in the inertial range and if there exist nontrivial stationary out of equilibrium 
 states in such open systems. \\
@@ -550,8 +574,9 @@ states in such open systems. \\
     \caption{Pictorial representation of Fjortoft argument}
 \end{figure}
 
-To begin answering the first question we may start with a generic argument due to Fjortoft. We assume the system to be isotropic and concerns ouserlves only with the 
-wave vector absolute value\footnote{If until now we meant the whole vector with $k$, now it represents only its modulus.}. We imagine a system with a localized forcing 
+To begin answering the first question we may start with a generic argument due to Fjortoft. We assume the system to be isotropic and concerns ouserlves only with 
+wave vectors moduli\footnote{We remind the reader that $k = |k|$.}, meaning that $\Tint$, $\omga$ and $n$ are functions of $k$ and not $\mathbf{k}$. 
+We imagine a system with a localized forcing 
 around $k_f$ in k-space, inserting per unit time energy density $\Edens_f$ and wave action density $n_f$. Then are present two dissipating regions at $k_-$ and $k_+$
 extracting from the system per unit time relatively $\Edens_-$, $\Edens_+$, $n_-$ and $n_+$. We assume $k_- \ll k_f \ll k_+$ so that two inertial ranges are present.\\
 
@@ -561,7 +586,7 @@ Assuming that the dissipating mechanisms are able to fully absorb what is inject
     \omga_{k_f}n_f &=  \omga_{k_-}n_- + \omga_{k_+}n_+ \\
     n_f &= n_- + n_+,
 \end{align}
-where we used $\Edens_k = \omga_k n_k$. A crucial assumption for this argument, true for many physical systems, is that $\omga_k$ is a monotonical function 
+where we used $\Edens_k = \omga_{\mathbf{k}} n_k$. A crucial assumption for this argument, true for many physical systems, is that $\omga_{\mathbf{k}}$ is a monotonical function 
 of its arguments and it grows as $k$ grows.\\
 Let us now pretend that almost all the wave action density is dissipated at $k_+$, i.e. $n_f \simeq n_+$. Using the definition of $\Edens$ 
 \begin{equation}
@@ -571,7 +596,7 @@ leading to
 \begin{equation}
     \frac{\Edens_+}{\Edens_f} \simeq \frac{\omga_{k_+}}{\omga_{k_f}}.
 \end{equation}
-Given that $k_f$ and $k_+$ where assumed to be well separated and monotonicity of $\omga_k$ implies $\omga_{k_+} \gg \omga_{k_f}$, we find 
+Given that $k_f$ and $k_+$ where assumed to be well separated and monotonicity of $\omga_{k}$ implies $\omga_{k_+} \gg \omga_{k_f}$, we find 
 \begin{equation}
     \Edens_+ \gg \Edens_f,
 \end{equation}
@@ -583,7 +608,7 @@ logic as before to find
 \begin{equation}
     \Edens_f = \omga_{k_f}n_f \simeq \omga_{k_-}n_- \hspace{2mm} \longrightarrow \hspace{2mm} \frac{n_f}{n_-} \simeq \frac{\omga_{k_-}}{\omga_{k_f}}.
 \end{equation}   
-Again $\omga_{k_-} \ll \omga_{k_f}$ thus implying the paradoxical conclusion that $n_- \gg n_f$, more wave action is dissipated than introduced. As before this only 
+Again $\omga_{k_-} \ll \omga_{k_f}$, thus implying the paradoxical conclusion that $n_- \gg n_f$, more wave action is dissipated than introduced. As before this only 
 shows that the energy flux cannot fully go towords lower $k$, and it suggests that said flux will mainly move towords high k. We will later prove this as well. \\
 This argument hints at the physical picture that we will later draw through more careful mathematical analysis. In a generic system with nonlinear interaction among 
 k-modes and monotonical dispersion relation, if some mechanism allow for injection of conserved quantities in a limited region and other mechanisms extract those
@@ -595,7 +620,7 @@ First we start by the most general way of introducing forcing and dissipation in
 wave generation and damping, multiplied to $n_k$, as it intuively makes sense that the higher the number of waves of a certain lenght, the more effective the generation
 or destruction of them. We thus write
 \begin{equation}
-    \pt n_k = \coll + \Gamma_k n_k, 
+    \pt n_k = \collmod+ \Gamma_k n_k, 
     \label{kineticgamma}
 \end{equation} 
 where again $\coll$ stands for the collisional integral and the time dependance is implicit. It is easy to convince ourselves that where $\Gamma_k > 0$ it represents the growth rate of waves and 
@@ -615,7 +640,7 @@ where $A$ is an arbitrary constant.
 This ansatz was first introduced by Zakharov in 1965 \cite{Zakharov1965}, inspired by similar behavior in hydrodynamics discovered by Kolmogorov on on dimensional grounds 
 in 1941 \cite{1991}.\\
 A proper analysis would consist in substituting \eqref{ansatz} into \eqref{kinetic} and perform the so-called Zakharov transform, to put the integrand in a form where 
-the values of $\nu$ for which $\coll = 0$ are obvious. For an analysis of such method in the general case we remind again the reader to \cite{Zakharov}. \\
+the values of $\nu$ for which $\collmod= 0$ are obvious. For an analysis of such method in the general case we remind again the reader to \cite{Zakharov}. \\
 \hl{IF THERE IS TIME AT THE END INSERT HERE ZAKHAROV TRANSFORM EXPLANATION}\\
 We choose instead the route of dymensional analysis. After inserting our ansatz in the kinetic equation, we perform the change of variables $k_i = q_i k$ to leave a 
 dimensionless integral. To proceed we have to restrict the possible forms of the interaction term $\Tint_{k123} = \Tint(k, k_1, k_2, k_3) $, we require it to be an homogeneus 
@@ -624,9 +649,9 @@ function of degree $\beta$. Meaning that
     \Tint(\lambda k, \lambda k_1,\lambda k_2,\lambda k_3) = \lambda^\beta \Tint(k, k_1, k_2, k_3).
 \end{equation}
 We assume as well the dispersion relation to be an homogeneus function of degree $\alpha$\footnote{For surface gravity waves $\alpha = \dfrac{1}{2}$ and for the 
-nonlinear Schrodinger equation $\alpha = 2$}, this assumption togheter with the isotropy one implies $\omga_k = |k|^{\alpha}$. We obtain 
+nonlinear Schrodinger equation $\alpha = 2$}, this assumption togheter with the isotropy one implies $\omga_{\mathbf{k}} = |k|^{\alpha}$. We obtain 
 \begin{multline}
-    \coll = 4\pi A^3 k^{3d - 3\nu + 2\beta - d - \alpha} \int \mathrm{S}^3dq_1 dq_2 dq_3 q^{d-1}_1 q ^{d-1}_2 q^{d-1}_3 \\
+    \collmod= 4\pi A^3 k^{3d - 3\nu + 2\beta - d - \alpha} \int \mathrm{S}^3dq_1 dq_2 dq_3 q^{d-1}_1 q ^{d-1}_2 q^{d-1}_3 \\
     |\Tint(1, q_1, q_2, q_3)|^2 q_1^{-\nu}q_2^{-\nu}
     q_3^{-\nu}\left(1 + q_1^\nu - q_2^\nu - q_3^\nu \right) \delta (1 + |q_1|^\alpha - |q_2|^\alpha -|q_3|^\alpha)\delta(1 + q_1 - q_2 -q_3),
 \end{multline} 
@@ -648,7 +673,7 @@ where $\Pflux_k$ is the radial component in spherical coordinates of the flux ve
 again depending only on the wave vector modulus.\\
 By using \eqref{kinetic} we find
 \begin{equation}
-    \pt \Edensis_k = \mathrm{S} k^{d-1+\alpha} \coll = \mathrm{S} A^3 k^{3d-1-3\nu +2\beta} \collad(\nu),
+    \pt \Edensis_k = \mathrm{S} k^{d-1+\alpha} \collmod= \mathrm{S} A^3 k^{3d-1-3\nu +2\beta} \collad(\nu),
 \end{equation}
 that togheter with \eqref{Econtinuityis} and the fundamental theorem of calculus gives 
 \begin{equation}
@@ -697,7 +722,7 @@ For example for the energy flux one has to look at the continuity equation outsi
     \pt \Edensis_k + \frac{\partial}{\partial k}  \Pflux_k = \Gamma_k \Edensis_k. 
     \label{continuitygamma}
 \end{equation}
-When in a stationary solutions the time derivative part is null and by finite integration from a generic $k_0$ to infinity we obtain
+When the system is in a stationary solution the time derivative part is null and by finite integration from a generic $k_0$ to infinity we obtain
 \begin{equation}
 \Pflux_{\infty} - \Pflux_{k_0} = \int_{k_0}^{\infty} dk \Gamma_k \Edensis_k.
 \end{equation}
@@ -725,13 +750,12 @@ Let us be clear. As already said we did not prove that \eqref{KZPsol} and \eqref
 an inertial interval exist among regions in which energy and wave action are injected and extracted, the only consisten form a solution could take in such 
 interval to have a constant flux of conserved quantities is either \eqref{KZPsol} or \eqref{KZPsol}. \\
 Looking at the formulas \eqref{limP} and \eqref{limQ} we see that in any region where one of the fluxes is constant, the other must be null. This information, coupled 
-with the previously presented Fjortoft's argument, fixes the direction for cascade solutions of theories with $\omga_k$ monotonical. From the expression of the fluxes 
+with the previously presented Fjortoft's argument, fixes the direction for cascade solutions of theories with $\omga_{\mathbf{k}}$ monotonical. From the expression of the fluxes 
 we know that each quantity must flow almost completely upward or downward k-space, but Fjortoft's argument prohibits one direction for  each of them. Thus energy
 will be flowing towords high k, whereas wave action will flow towords low k. As historically the first cascade solutions to be discovered where of the first kind, 
 in this context energy cascade is called a direct cascade, conversely the wave action one is called an inverse cascade. \\
 
-Even after possibly proving that what we found actually are solutions, it must be checked case by case that the collisional integral is converging in the first place, 
-in other words the theory must be local, in the sense that points far removed from each other in k-space must have vanishing influence on each other. \\
+Even after possibly proving that what we found actually are solutions, it must be checked case by case that the collisional integral is converging in the first place,  in other words the theory must be local, in the sense that points far removed from each other in k-space must have vanishing influence on each other. \\
 When checking if this is the case with the general system we have been studying, some bounds are posed on the parameters $\alpha$ and $\beta$ that we introduced.
 Those bounds identify what is called a locality window and every healthy theory's parameters should fall in such window. We mention this because 
 the presence of this interval is not granted when analyzing higher perturbative orders.\\ 

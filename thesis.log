@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2024.9.26)  20 MAR 2025 12:46
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2024.9.26)  21 MAR 2025 19:23
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/home/greg/Desktop/TESI/Scrittura_tesi/ThesisTrue/thesis
@@ -37,8 +37,8 @@ Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
 Inserting `tracingstacklevels' in `input_level_string'. (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 luaotfload | db : Font names database loaded from /home/greg/.texlive2023/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz)
 \c@part=\count185
 \c@chapter=\count186
@@ -503,122 +503,50 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip51
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 30.
- (/usr/share/texlive/texmf-dist/tex/latex/fourier/fourier.sty
-Package: fourier 2022/02/05 2.3 fourier-GUTenberg package
-
-
-Package fourier Warning: Please consider loading "fourier-otf.sty" instead of
-(fourier)                "fourier.sty" with Unicode engines LuaTeX or XeTeX,
-(fourier)                so that Type1 fonts get replaced by OpenType fonts.
-(fourier)                See file "Erewhon-Math.pdf" for more information.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package hyperref Info: Option `colorlinks' set `true' on input line 32.
+ (/usr/share/texlive/texmf-dist/tex/latex/erewhon-math/fourier-otf.sty
+Package: fourier-otf 2024-01-16 0.65
+ (/usr/share/texlive/texmf-dist/tex/latex/unicode-math/unicode-math.sty (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2024-01-22 L3 programming layer (loader) 
+ (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
+File: l3backend-luatex.def 2024-01-04 L3 backend support: PDF output (LuaTeX)
+\l__color_backend_stack_int=\count305
+Inserting `l3color' in `luaotfload.parse_color'.
+\l__pdf_internal_box=\box73
+))
+Package: unicode-math 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLaTeX
+ (/usr/share/texlive/texmf-dist/tex/latex/unicode-math/unicode-math-luatex.sty
+Package: unicode-math-luatex 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLaTeX
+ (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2023-10-10 L3 Experimental document command parser
+) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2023-10-10 LaTeX2e option processing using LaTeX3 keys
+) (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
+Lua module: fontspec 2022/01/15 2.8a Font selection for XeLaTeX and LuaLaTeX (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
+Package: fontspec-luatex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
+\l__fontspec_script_int=\count306
+\l__fontspec_language_int=\count307
+\l__fontspec_strnum_int=\count308
+\l__fontspec_tmp_int=\count309
+\l__fontspec_tmpa_int=\count310
+\l__fontspec_tmpb_int=\count311
+\l__fontspec_tmpc_int=\count312
+\l__fontspec_em_int=\count313
+\l__fontspec_emdef_int=\count314
+\l__fontspec_strong_int=\count315
+\l__fontspec_strongdef_int=\count316
+\l__fontspec_tmpa_dim=\dimen281
+\l__fontspec_tmpb_dim=\dimen282
+\l__fontspec_tmpc_dim=\dimen283
+ (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-LaTeX Font Info:    Trying to load font information for T1+futs on input line 112.
- (/usr/share/texlive/texmf-dist/tex/latex/fourier/t1futs.fd
-File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
-)) (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-) (/usr/share/texlive/texmf-dist/tex/latex/fourier/fourier-orns.sty
-Package: fourier-orns 2022/02/05 2.3 fourier-ornaments package
-)
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 63.
-LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 63.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> T1/futs/m/n on input line 63.
-LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 63.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/futs/m/n on input line 63.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  T1/futs/m/n --> T1/futs/b/n on input line 64.
-LaTeX Font Info:    Redeclaring symbol font `letters' on input line 72.
-LaTeX Font Info:    Encoding `OML' has changed to `FML' for symbol font
-(Font)              `letters' in the math version `normal' on input line 72.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
-(Font)                  OML/cmm/m/it --> FML/futmi/m/it on input line 72.
-LaTeX Font Info:    Encoding `OML' has changed to `FML' for symbol font
-(Font)              `letters' in the math version `bold' on input line 72.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/cmm/b/it --> FML/futmi/m/it on input line 72.
-\symotherletters=\mathgroup4
-LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  FML/futmi/m/it --> FML/futmi/b/it on input line 74.
-LaTeX Font Info:    Overwriting symbol font `otherletters' in version `bold'
-(Font)                  FML/futm/m/it --> FML/futm/b/it on input line 75.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 76.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 77.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 79.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 80.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 81.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 82.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 83.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 84.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 85.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 86.
-LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 126.
-LaTeX Font Info:    Encoding `OMS' has changed to `FMS' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 126.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> FMS/futm/m/n on input line 126.
-LaTeX Font Info:    Encoding `OMS' has changed to `FMS' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 126.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> FMS/futm/m/n on input line 126.
-LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 127.
-LaTeX Font Info:    Encoding `OMX' has changed to `FMX' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 127.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> FMX/futm/m/n on input line 127.
-LaTeX Font Info:    Encoding `OMX' has changed to `FMX' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 127.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> FMX/futm/m/n on input line 127.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 128.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/futs/bx/n on input line 128.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/futs/bx/n on input line 128.
-LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 129.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 130.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/futs/m/it on input line 130.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/futs/m/it on input line 130.
-LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 131.
-LaTeX Font Info:    Redeclaring math symbol \parallel on input line 147.
-LaTeX Font Info:    Redeclaring math symbol \hbar on input line 161.
-LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 199.
-LaTeX Font Info:    Redeclaring math symbol \varvarrho on input line 200.
-LaTeX Font Info:    Redeclaring math delimiter \Vert on input line 223.
-LaTeX Font Info:    Redeclaring math delimiter \vert on input line 228.
-LaTeX Font Info:    Redeclaring math delimiter \Downarrow on input line 238.
-LaTeX Font Info:    Redeclaring math delimiter \backslash on input line 240.
-LaTeX Font Info:    Redeclaring math delimiter \rangle on input line 242.
-LaTeX Font Info:    Redeclaring math delimiter \langle on input line 244.
-LaTeX Font Info:    Redeclaring math delimiter \rbrace on input line 246.
-LaTeX Font Info:    Redeclaring math delimiter \lbrace on input line 248.
-LaTeX Font Info:    Redeclaring math delimiter \rceil on input line 250.
-LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 252.
-LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 254.
-LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 256.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 260.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 261.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 262.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 263.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 264.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 265.
-LaTeX Font Info:    Redeclaring math accent \check on input line 266.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 267.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 268.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 269.
-\symUfutm=\mathgroup5
-) (/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
-\CommentStream=\write4
- Excluding comment 'comment') (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (/usr/share/texlive/texmf-dist/tex/latex/base/fix-cm.sty
+Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2023/05/13 v2.17o AMS math features
 \@mathmargin=\skip52
 
@@ -628,791 +556,124 @@ Package: amstext 2021/08/26 v2.01 AMS text
  (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks43
-\ex@=\dimen281
+\ex@=\dimen284
 )) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen282
+\pmbraise@=\dimen285
 ) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count305
+\inf@bad=\count317
 LaTeX Info: Redefining \frac on input line 236.
-\uproot@=\count306
-\leftroot@=\count307
+\uproot@=\count318
+\leftroot@=\count319
 LaTeX Info: Redefining \overline on input line 399.
 LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count308
-\DOTSCASE@=\count309
+\classnum@=\count320
+\DOTSCASE@=\count321
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box73
-\strutbox@=\box74
+\Mathstrutbox@=\box74
+\strutbox@=\box75
 LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen283
+\big@size=\dimen286
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count310
+\macc@depth=\count322
 LaTeX Info: Redefining \bmod on input line 905.
 LaTeX Info: Redefining \pmod on input line 910.
 LaTeX Info: Redefining \smash on input line 940.
 LaTeX Info: Redefining \relbar on input line 970.
 LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count311
+\c@MaxMatrixCols=\count323
 \dotsspace@=\muskip17
-\c@parentequation=\count312
-\dspbrk@lvl=\count313
+\c@parentequation=\count324
+\dspbrk@lvl=\count325
 \tag@help=\toks44
-\row@=\count314
-\column@=\count315
-\maxfields@=\count316
+\row@=\count326
+\column@=\count327
+\maxfields@=\count328
 \andhelp@=\toks45
-\eqnshift@=\dimen284
-\alignsep@=\dimen285
-\tagshift@=\dimen286
-\tagwidth@=\dimen287
-\totwidth@=\dimen288
-\lineht@=\dimen289
+\eqnshift@=\dimen287
+\alignsep@=\dimen288
+\tagshift@=\dimen289
+\tagwidth@=\dimen290
+\totwidth@=\dimen291
+\lineht@=\dimen292
 \@envbody=\toks46
 \multlinegap=\skip53
 \multlinetaggap=\skip54
 \mathdisplay@stack=\toks47
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup6
-\symAMSb=\mathgroup7
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-LaTeX Font Info:    Redeclaring math symbol \square on input line 141.
-) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/euscript.sty
-Package: euscript 2009/06/22 v3.00 Euler Script fonts
-LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
-(Font)                  U/eus/m/n --> U/eus/b/n on input line 33.
-) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2020/01/02 v5.9 Page Geometry
- (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
-Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-)
-\Gm@cnth=\count317
-\Gm@cntv=\count318
-\c@Gm@tempcnt=\count319
-\Gm@bindingoffset=\dimen290
-\Gm@wd@mp=\dimen291
-\Gm@odd@mp=\dimen292
-\Gm@even@mp=\dimen293
-\Gm@layoutwidth=\dimen294
-\Gm@layoutheight=\dimen295
-\Gm@layouthoffset=\dimen296
-\Gm@layoutvoffset=\dimen297
-\Gm@dimlist=\toks48
-) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
-Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip55
-\enit@outerparindent=\dimen298
-\enit@toks=\toks49
-\enit@inbox=\box75
-\enit@count@id=\count320
-\enitdp@description=\count321
-) (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
-Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
- (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
-File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
-\BKM@id=\count322
-)) (/usr/share/texlive/texmf-dist/tex/latex/bigfoot/perpage.sty
-Package: perpage 2014/10/25 2.0 Reset/sort counters per page
-\c@abspage=\count323
-)
-\c@pp@a@footnote=\count324
- (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
-\f@nch@headwidth=\skip56
-\f@nch@O@elh=\skip57
-\f@nch@O@erh=\skip58
-\f@nch@O@olh=\skip59
-\f@nch@O@orh=\skip60
-\f@nch@O@elf=\skip61
-\f@nch@O@erf=\skip62
-\f@nch@O@olf=\skip63
-\f@nch@O@orf=\skip64
-) (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2023/10/27 v2.16 Sectioning titles
-\ttl@box=\box76
-\beforetitleunit=\skip65
-\aftertitleunit=\skip66
-\ttl@plus=\dimen299
-\ttl@minus=\dimen300
-\ttl@toksa=\toks50
-\titlewidth=\dimen301
-\titlewidthlast=\dimen302
-\titlewidthfirst=\dimen303
-) (/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
-LaTeX Info: Redefining \cite on input line 302.
-LaTeX Info: Redefining \nocite on input line 332.
-Package: cite 2015/02/27  v 5.5
-) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
-Package: setspace 2022/12/04 v6.7b set line spacing
-) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
-File: l3backend-luatex.def 2024-01-04 L3 backend support: PDF output (LuaTeX)
-\l__color_backend_stack_int=\count325
-Inserting `l3color' in `luaotfload.parse_color'.
-\l__pdf_internal_box=\box77
-) (./thesis.aux)
-\openout1 = thesis.aux
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 278.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 278.
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
-File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 278.
-LaTeX Font Info:    Trying to load font information for FML+futm on input line 278.
- (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutm.fd
-File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
-)
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 278.
-LaTeX Font Info:    Trying to load font information for FMS+futm on input line 278.
- (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmsfutm.fd
-File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
-)
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 278.
-LaTeX Font Info:    Trying to load font information for FMX+futm on input line 278.
- (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmxfutm.fd
-File: fmxfutm.fd futm-extension
-)
-LaTeX Font Info:    ... okay on input line 278.
- (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count326
-\scratchdimen=\dimen304
-\scratchbox=\box78
-\nofMPsegments=\count327
-\nofMParguments=\count328
-\everyMPshowfont=\toks51
-\MPscratchCnt=\count329
-\MPscratchDim=\dimen305
-\MPnumerator=\count330
-\makeMPintoPDFobject=\count331
-\everyMPtoPDFconversion=\toks52
-) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-))
-Package hyperref Info: Link coloring ON on input line 278.
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 278.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 278.
-
-*geometry* driver: auto-detecting
-*geometry* detected driver: luatex
-*geometry* verbose mode - [ preamble ] result:
-* driver: luatex
-* paper: a4paper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* bindingoffset: 28.45274pt
-* modes: twoside 
-* h-part:(L,W,R)=(85.35826pt, 398.33861pt, 85.35826pt)
-* v-part:(T,H,B)=(99.58464pt, 660.10394pt, 85.35826pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=398.33861pt
-* \textheight=660.10394pt
-* \oddsidemargin=41.54102pt
-* \evensidemargin=13.08827pt
-* \topmargin=-18.82857pt
-* \headheight=15.0pt
-* \headsep=34.14322pt
-* \topskip=11.0pt
-* \footskip=30.0pt
-* \marginparwidth=103.0pt
-* \marginparsep=10.0pt
-* \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-(./head/frontmatter.tex
-<images/Unito-logo.pdf, id=7, 511.96896pt x 512.41632pt>
-File: images/Unito-logo.pdf Graphic file (type pdf)
-<use images/Unito-logo.pdf>
-Package luatex.def Info: images/Unito-logo.pdf  used on input line 8.
-(luatex.def)             Requested size: 796.67722pt x 797.41936pt.
-
-Overfull \hbox (398.33861pt too wide) in paragraph at lines 7--9
- []
- []
-
-
-LaTeX Warning: Float too large for page by 195.22092pt on input line 9.
-
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}<./images/Unito-logo.pdf>] (./thesis.toc
-LaTeX Font Info:    Trying to load font information for FML+futmi on input line 1.
- (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutmi.fd
-File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
-)
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 1.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 1.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 1.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 1.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 1.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 1.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 1.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 1.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
-\tf@toc=\write5
-
-\openout5 = thesis.toc
- [2
-
-
-] (./body/Introduction/Introduction.tex
-LaTeX Font Info:    Trying to load font information for TS1+futs on input line 9.
- (/usr/share/texlive/texmf-dist/tex/latex/fourier/ts1futs.fd
-File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
-)) (./body/chapter_1/chapter_1.tex
-warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
-[1]
-Underfull \hbox (badness 10000) in paragraph at lines 7--15
-
- []
-
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 29.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 29.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 29.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 29.
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 38--46
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3]
-Underfull \hbox (badness 10000) in paragraph at lines 92--97
-
- []
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 100--108
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5]
-Underfull \hbox (badness 10000) in paragraph at lines 146--153
-
- []
-
-
-Overfull \hbox (3.01949pt too wide) in paragraph at lines 158--162
-\T1/futs/m/n/10.95 We now rein-tro-duce ex-plicit time de-pen-dance and im-pose $I[](0) \FMS/futm/m/n/10.95  [][]$ \T1/futs/m/n/10.95 and $I[](0) \FMS/futm/m/n/10.95  \T1/futs/m/n/10.95 I[](0) \FMS/futm/m/n/10.95 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 158--162
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6]
-Underfull \hbox (badness 10000) in paragraph at lines 172--178
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 190--192
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7]
-Underfull \hbox (badness 10000) in paragraph at lines 222--224
-
- []
-
-[8]
-Overfull \hbox (40.31296pt too wide) detected at line 266
- []$[]   [][] \FMS/futm/m/n/10.95  [][]  [] [][] \FML/futmi/m/it/10.95 e[]e[]e[]e[]d[]d[]d[]d[] \FMS/futm/m/n/10.95  \T1/futs/m/n/10.95 0$ []  
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 266--269
-
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 318--330
-
- []
-
-[10]
-Overfull \hbox (0.33902pt too wide) in paragraph at lines 342--345
-\T1/futs/m/n/10.95 The ac-tion vari-ables and in-ter-ac-tion co-ef-fif-i-cents be-come func-tions of the now con-tin-u-ous
- []
-
-
-Overfull \hbox (3.47722pt too wide) detected at line 351
- []$[]\T1/futs/m/n/10.95 T[](\FML/futmi/m/it/10.95 k; k[]; k[]; k[]\T1/futs/m/n/10.95 )[](\FML/futmi/m/it/10.95 k\T1/futs/m/n/10.95 )[](\FML/futmi/m/it/10.95 k[]\T1/futs/m/n/10.95 )[](\FML/futmi/m/it/10.95 k[]\T1/futs/m/n/10.95 )[](\FML/futmi/m/it/10.95 k[]\T1/futs/m/n/10.95 ) [] \FML/futmi/m/it/10.95 \T1/futs/m/n/10.95 (\FML/futm/m/it/10.95 \FML/futmi/m/it/10.95 ![]\T1/futs/m/n/10.95 )\FML/futmi/m/it/10.95 \T1/futs/m/n/10.95 (\FML/futmi/m/it/10.95 k \FMS/futm/m/n/10.95  \FML/futmi/m/it/10.95 k[] \FMS/futm/m/n/10.95 ^^@ \FML/futmi/m/it/10.95 k[] \FMS/futm/m/n/10.95 ^^@ \FML/futmi/m/it/10.95 k[]\T1/futs/m/n/10.95 )\FML/futmi/m/it/10.95 :$ []  
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 355--358
-
- []
-
-[11]
-Overfull \hbox (9.68257pt too wide) in paragraph at lines 359--362
-[]\T1/futs/m/n/10.95 Our equa-tion is still de-ter-min-is-tic re-gard-ing the ac-tion func-tion. We shall as-sume a stochas-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 365--367
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 400--410
-
- []
-
-[12]
-LaTeX Font Info:    Trying to load font information for U+eus on input line 440.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueus.fd
-File: ueus.fd 2013/01/14 v3.01 Euler Script
-) [13]
-Underfull \hbox (badness 10000) in paragraph at lines 444--446
-
- []
-
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 489--491
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [15]
-Underfull \hbox (badness 10000) in paragraph at lines 515--526
-
- []
-
-Excluding 'comment' comment.
-<images/Fjortoft.pdf, id=298, 425.18332pt x 440.84062pt>
-File: images/Fjortoft.pdf Graphic file (type pdf)
-<use images/Fjortoft.pdf>
-Package luatex.def Info: images/Fjortoft.pdf  used on input line 549.
-(luatex.def)             Requested size: 199.1693pt x 206.50226pt.
- [16]
-Overfull \hbox (4.66411pt too wide) in paragraph at lines 553--557
-[]\T1/futs/m/n/10.95 To be-gin an-swer-ing the first ques-tion we may start with a generic ar-gu-ment due to Fjortoft.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 553--557
-
- []
-
-[17<./images/Fjortoft.pdf>]
-Overfull \hbox (0.97466pt too wide) in paragraph at lines 585--593
-\T1/futs/m/n/10.95 and mono-ton-i-cal dis-per-sion re-la-tion, if some mech-a-nism al-low for in-jec-tion of con-served
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 585--593
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 600--604
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [18]
-Underfull \vbox (badness 5652) has occurred while \output is active []
-
- [19] [20]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [21]
-Underfull \hbox (badness 10000) in paragraph at lines 721--723
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 724--732
-
- []
-
-) [22] (./body/chapter_2/chapter_2.tex [23]
-Underfull \hbox (badness 10000) in paragraph at lines 6--20
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [24]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [25] Excluding 'comment' comment.
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [26]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [27]
-Underfull \hbox (badness 10000) in paragraph at lines 174--177
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 192--200
-
- []
-
-
-Underfull \vbox (badness 1540) has occurred while \output is active []
-
- [28]
-Underfull \hbox (badness 10000) in paragraph at lines 219--222
-
- []
-
-[29]
-Underfull \hbox (badness 10000) in paragraph at lines 257--259
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [30]
-Underfull \hbox (badness 10000) in paragraph at lines 318--319
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 320--330
-
- []
-
-<images/2pointsoneloop.jpg, id=525, 4517.87875pt x 1718.42pt>
-File: images/2pointsoneloop.jpg Graphic file (type jpg)
-<use images/2pointsoneloop.jpg>
-Package luatex.def Info: images/2pointsoneloop.jpg  used on input line 337.
-(luatex.def)             Requested size: 239.00558pt x 90.908pt.
-[31]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [32<./images/2pointsoneloop.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 381--388
-
- []
-
-<images/quarticvertex.jpg, id=552, 3153.7825pt x 3042.36626pt>
-File: images/quarticvertex.jpg Graphic file (type jpg)
-<use images/quarticvertex.jpg>
-Package luatex.def Info: images/quarticvertex.jpg  used on input line 393.
-(luatex.def)             Requested size: 159.33301pt x 153.65916pt.
-[33<./images/quarticvertex.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 417--419
-
- []
-
-<images/schanneloneloop.jpg, id=566, 4517.87875pt x 3651.6425pt>
-File: images/schanneloneloop.jpg Graphic file (type jpg)
-<use images/schanneloneloop.jpg>
-Package luatex.def Info: images/schanneloneloop.jpg  used on input line 424.
-(luatex.def)             Requested size: 159.33301pt x 128.76778pt.
-<images/tchanneloneloop.jpg, id=567, 4517.87875pt x 3651.6425pt>
-File: images/tchanneloneloop.jpg Graphic file (type jpg)
-<use images/tchanneloneloop.jpg>
-Package luatex.def Info: images/tchanneloneloop.jpg  used on input line 425.
-(luatex.def)             Requested size: 159.33301pt x 128.76778pt.
-<images/uchanneloneloop.jpg, id=568, 4517.87875pt x 3618.51875pt>
-File: images/uchanneloneloop.jpg Graphic file (type jpg)
-<use images/uchanneloneloop.jpg>
-Package luatex.def Info: images/uchanneloneloop.jpg  used on input line 426.
-(luatex.def)             Requested size: 159.33301pt x 127.59973pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [34<./images/schanneloneloop.jpg><./images/tchanneloneloop.jpg><./images/uchanneloneloop.jpg>]
-Overfull \hbox (0.62749pt too wide) in paragraph at lines 463--466
-\T1/futs/m/n/10.95 us-ing iden-ti-ties []-[], is a te-dious but straight-for-ward pro-cess. []FORSE[] [][][]AG[]-[]GIUNGI[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [35]
-Overfull \hbox (12.65811pt too wide) detected at line 479
- []$[] [] \FML/futmi/m/it/10.95 :$ []  
- []
-
-
-Overfull \hbox (13.4719pt too wide) detected at line 504
- []$[] [] \FML/futmi/m/it/10.95 :$ []  
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 504--507
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 508--510
-
- []
-
-<images/sexticdiagram.jpg, id=601, 4517.87875pt x 1762.585pt>
-File: images/sexticdiagram.jpg Graphic file (type jpg)
-<use images/sexticdiagram.jpg>
-Package luatex.def Info: images/sexticdiagram.jpg  used on input line 513.
-(luatex.def)             Requested size: 199.1693pt x 77.6992pt.
-
-Underfull \vbox (badness 1092) has occurred while \output is active []
-
- [36] [37<./images/sexticdiagram.jpg>]
-Overfull \hbox (3.40038pt too wide) detected at line 587
-[][][][][]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [38]
-Underfull \hbox (badness 10000) in paragraph at lines 613--616
-
- []
-
-
-Overfull \hbox (4.20625pt too wide) detected at line 650
- []$[]  []\FMS/futm/m/n/10.95 h\FML/futmi/m/it/10.95 a[]\T1/futs/m/n/10.95 (\FML/futmi/m/it/10.95 t\T1/futs/m/n/10.95 )\FML/futmi/m/it/10.95 a[]\T1/futs/m/n/10.95 (\FML/futmi/m/it/10.95 t\T1/futs/m/n/10.95 )\FMS/futm/m/n/10.95 i  []\FML/futmi/m/it/10.95 n[]\T1/futs/m/n/10.95 (\FML/futmi/m/it/10.95 t\T1/futs/m/n/10.95 ) \FMS/futm/m/n/10.95  \T1/futs/m/n/10.95 4\FML/futmi/m/it/10.95  [] [] dk[]\FMS/futm/m/n/10.95 j\T1/futs/m/n/10.95 T[]\FMS/futm/m/n/10.95 j[]\FML/futmi/m/it/10.95 n[]n[]n[]n[] [] \T1/futs/m/n/10.95 (\FML/futm/m/it/10.95 \FML/futmi/m/it/10.95 ![]\T1/futs/m/n/10.95 )$ 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [39]
-Underfull \hbox (badness 10000) in paragraph at lines 650--661
-
- []
-
-)
-Underfull \hbox (badness 10000) in paragraph at lines 662--312
-
- []
-
-[40] (./body/chapter_3/chapter_3.tex [41]
-Underfull \hbox (badness 10000) in paragraph at lines 7--19
-
- []
-
-[42]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [43]
-Underfull \hbox (badness 10000) in paragraph at lines 75--89
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 106--111
-
- []
-
-[44]
-
-LaTeX Warning: Reference `mMMTKZ' on page 45 undefined on input line 150.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 145--159
-
- []
-
-[45]
-Overfull \hbox (11.32507pt too wide) in paragraph at lines 160--163
-\T1/futs/m/n/10.95 Discuti con-ver-genza del fre-quency shift es-plici-ta-mente. di-ver-genza e di-mostrazione dell'es-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--163
-
- []
-
-) [46] (./thesis.bbl [47
-
-
-Missing character: There is no – (U+2013) in font futr8t!
-Missing character: There is no – (U+2013) in font futr8t!
-Missing character: There is no – (U+2013) in font futr8t!
-Missing character: There is no – (U+2013) in font futr8t!
-Missing character: There is no – (U+2013) in font futr8t!
-]) [48
-Missing character: There is no – (U+2013) in font futr8t!
-Missing character: There is no ’ (U+2019) in font futr8t!
-Missing character: There is no – (U+2013) in font futr8t!
-Missing character: There is no – (U+2013) in font futr8t!
-Missing character: There is no – (U+2013) in font futr8t!
-] (./thesis.aux)
- ***********
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-01-22>
- ***********
-
-
-LaTeX Warning: There were undefined references.
-
+) (/usr/share/texlive/texmf-dist/tex/lualatex/lualatex-math/lualatex-math.sty
+Package: lualatex-math 2022/01/01 v1.12 Patches for mathematics typesetting with LuaLaTeX
+Lua module: lualatex-math 2013/08/03 1.3 Patches for mathematics typesetting with LuaLaTeX)
+\g__um_fam_int=\count329
+\g__um_fonts_used_int=\count330
+\l__um_primecount_int=\count331
+\g__um_primekern_muskip=\muskip18
+ (/usr/share/texlive/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex)))
+\FOTtoksT=\toks48
+\FOTtoksM=\toks49
+ (/usr/share/texlive/texmf-dist/tex/latex/fourier/fourier-orns.sty
+Package: fourier-orns 2022/02/05 2.3 fourier-ornaments package
 )
 
-Here is how much of LuaTeX's memory you used:
- 29175 strings out of 476553
- 125016,1977958 words of node,token memory allocated
- 2537 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 39 glue, 4 kern, 28 sub_mlist, 32 glyph, 370 attribute, 57 glue_spec, 370 attribute_list, 2 write nodes
-   avail lists: 1:8,2:2604,3:1044,4:436,5:816,6:71,7:7966,8:106,9:2166,10:12,11:485
- 49845 multiletter control sequences out of 65536+600000
- 139 fonts using 8492751 bytes
- 94i,14n,97p,842b,1885s stack positions out of 10000i,1000n,20000p,200000b,200000s
+Package fontspec Info: Font family 'Erewhon-Math.otf(0)' created for font
+(fontspec)             'Erewhon-Math.otf' with options
+(fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,RawFeature={mathfontdimen=xetex},BoldFont={Erewhon-Math-Bold.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[Erewhon-Math.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[Erewhon-Math-Bold.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.36'
 
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.35'
+Package fontspec Info: Font family 'Erewhon-Math.otf(1)' created for font
+(fontspec)             'Erewhon-Math.otf' with options
+(fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=10.2-},{Size=7.5-10.2,Font=Erewhon-Math.otf,Style=MathScript},{Size=-7.5,Font=Erewhon-Math.otf,Style=MathScriptScript}},RawFeature={mathfontdimen=xetex},BoldFont={Erewhon-Math-Bold.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <10.2->"[Erewhon-Math.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;"<7.5-10.2>"[Erewhon-Math.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;+ssty=0;"<-7.5>"[Erewhon-Math.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[Erewhon-Math-Bold.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.34'
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 64.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/Erewhon-Math.otf(1)/m/n on input line 64.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 64.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/Erewhon-Math.otf(1)/b/n on input line 64.
 
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.33'
+Package fontspec Info: Font family 'Erewhon-Math.otf(2)' created for font
+(fontspec)             'Erewhon-Math.otf' with options
+(fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=10.2-},{Size=7.5-10.2,Font=Erewhon-Math.otf,Style=MathScript},{Size=-7.5,Font=Erewhon-Math.otf,Style=MathScriptScript}},RawFeature={mathfontdimen=xetex},BoldFont={Erewhon-Math-Bold.otf},RawFeature={mathfontdimen=tex2}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <10.2->"[Erewhon-Math.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;mathfontdimen=tex2;"<7.5-10.2>"[Erewhon-Math.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;mathfontdimen=tex2;+ssty=0;"<-7.5>"[Erewhon-Math.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;mathfontdimen=tex2;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[Erewhon-Math-Bold.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;mathfontdimen=tex2;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.32'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.31'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.30'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.29'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.28'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.27'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.26'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.25'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.24'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.23'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.22'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.21'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.20'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.19'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.18'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.17'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.16'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.15'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.14'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.13'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.12'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.11'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.10'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.9'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.8'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.7'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.6'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.5'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.4'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.3'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.2'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.1'
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on thesis.pdf (50 pages, 6123940 bytes).
-
-PDF statistics: 876 PDF objects out of 1000 (max. 8388607)
- 788 compressed objects within 8 object streams
- 301 named destinations out of 1000 (max. 131072)
- 168 words of extra memory for PDF output out of 10000 (max. 100000000)
-
+LaT
