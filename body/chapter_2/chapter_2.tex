@@ -438,7 +438,7 @@ Let us start from the first diagram in figure \ref{fig:quarticoneloop}, it conta
 \end{multline}
 Here the symmetry factor is given by the 16 possible ways of attaching the lines to the vertices and still results in an equivalent diagram. 
 An additional factor of $\dfrac{1}{2}$ has to be included, coming from perturbation theory. The origin of this latter term is again out of the scope of this thesis, the reader is directed
-to any QFT textbook to better understand it. INtuitively it corresponds to the $\dfrac{1}{2}$ term appearing in the second order of a Taylor expansion. \\
+to any QFT textbook to better understand it. Intuitively it corresponds to the $\dfrac{1}{2}$ term appearing in the second order of a Taylor expansion. \\
 We may readily resolve one of the integrals by using a delta function, so that now $\omgatt_6 = \omgatt_3 + \omgatt_4 - \omgatt_5$. The second delta will now not depend 
 anymore on the integration variable $\omgatt_5$, only enforcing conservation of energy. \\
 The integrand is made of 16 terms summed, before integrating them explicitely we shall prepare some identities. We will need all possible combinations of 
@@ -566,7 +566,7 @@ We notice that the second part of \eqref{sexticfullcontribution} diverges in the
 Since $k_5$ and $k_6$ are integrated over, it is easy to show that this term exactly cancels the diverging part of \eqref{sexticfullcontribution}.\\
 Finally the full contribution to order $\Tint^2$ is obtained by summing the finite parts of the expressions calculated from figure \ref{fig:quarticoneloop}.
 To recover the original nonlinear theory we remove the forcing and dissipating terms by taking the limit $F_k, \gamma_k \rightarrow 0$ while keeping their ratio constant
-(as to have $n_k$ finite). We shall keep the $\gamma_k$ terms in the denominator as $\varepsilon$ quantities to aid with the future Fourier antitransform. The result is 
+(as to have $n_k$ finite). We shall keep the $\gamma_k$ terms in the denominator as $\varepsilon$ quantities to aid with the future Fourier antitransform. The result is
 \begin{equation}
     \begin{aligned}
     \langle\tilde{a}_1^{} &\tilde{a}_2^{}\tilde{a}_3^{*}\tilde{a}_4^{*} \rangle_1 = 
@@ -574,17 +574,19 @@ To recover the original nonlinear theory we remove the forcing and dissipating t
     %-&2\pi i \delta(\delomegatt^{12}_{34})\Tint_{1234}\D^0_1\D^0_2\D^0_3\D^0_4\left(
     %\dfrac{1}{\G_1^*\F_1^{}}+\dfrac{1}{\G_2^*\F_2^{}}-\dfrac{1}{\G_3^{}\F_3^{}}-\dfrac{1}{\G_4^{}\F_4^{}}\right) 
     %\\
-    -&4\pi \delta(\delomegatt^{12}_{34})\D^0_1\D^0_2\D^0_3\D^0_4 \times
+    -4\pi &\delta(\delomegatt^{12}_{34})\D^0_1\D^0_2\D^0_3\D^0_4 \sum_{56} \times
     \\
-      \sum_{56}&\left[\Tint_{5634}\Tint_{1256}\delta^{56}_{34}\delta^{12}_{56}
+      &\left[\Tint_{5634}\Tint_{1256}\delta^{56}_{34}\delta^{12}_{56}
     \frac{i(n_5 + n_6)\left(\dfrac{1}{\G_1^*\F_1^{}}+\dfrac{1}{\G_2^*\F_2^{}}-\dfrac{1}{\G_3^{}\F_3^{}}
     -\dfrac{1}{\G_4^{}\F_4^{}}\right)\left( \omgatt_3 + \omgatt_4 - \omga_5 - \omga_6\right)}{\left( \omgatt_3 + \omgatt_4 - \omga_5 - \omga_6\right)^2 + \gamma^2_{56}}
-    +  \right.
+      \right.
     \\
-    &\hspace{2mm}\left. \Tint_{2546}\Tint_{6135}\delta^{25}_{46}\delta^{61}_{35}
+    +&\hspace{2mm}\Tint_{2546}\Tint_{6135}\delta^{25}_{46}\delta^{61}_{35}
     \frac{i(n_6 - n_5)\left(\dfrac{1}{\G_1^*\F_1^{}}+\dfrac{1}{\G_2^*\F_2^{}}-\dfrac{1}{\G_3^{}\F_3^{}}
-    -\dfrac{1}{\G_4^{}\F_4^{}}\right)\left( \omgatt_3 + \omgatt_4 - \omga_5 - \omga_6\right)}{\left( \omgatt_1 + \omga_6 - \omgatt_3 - \omga_5\right)^2 + \gamma^2_{56}}
-    + \left( 3 \longleftrightarrow 4 \right) \right].
+    -\dfrac{1}{\G_4^{}\F_4^{}}\right)\left( \omgatt_3 + \omgatt_4 - \omga_5 - \omga_6\right)}{\left( \omgatt_1 + \omga_6 - \omgatt_3 - \omga_5\right)^2 + \gamma^2_{56}}\\
+    +&\hspace{2mm}\left. \Tint_{2536}\Tint_{6145}\delta^{25}_{36}\delta^{61}_{45}
+    \frac{i(n_6 - n_5)\left(\dfrac{1}{\G_1^*\F_1^{}}+\dfrac{1}{\G_2^*\F_2^{}}-\dfrac{1}{\G_4^{}\F_4^{}}
+    -\dfrac{1}{\G_3^{}\F_3^{}}\right)\left( \omgatt_4 + \omgatt_3 - \omga_5 - \omga_6\right)}{\left( \omgatt_1 + \omga_6 - \omgatt_4 - \omga_5\right)^2 + \gamma^2_{56}} \right].
     \end{aligned}
     \label{transformedfourpoint}
 \end{equation}

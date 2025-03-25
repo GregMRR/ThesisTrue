@@ -218,9 +218,15 @@
     \begin{equation}
         \frac{d^2k_3}{dk_2^2} = \frac{(1-\alpha)k_2^{\alpha-2}k_3^{2\alpha-2} + (1-\alpha)k_3^{\alpha-2}k_2^{2\alpha-2}}{k_3^{3\alpha-3}}.
     \end{equation}   
-    We see from this result that the second derivative sign does not change throughout the quadrant and is positive when $\alpha < 1 $, making the curve concave and allowing nontrivial solutions, and negative when $\alpha > 1$, forbidding solutions other than $k_3 = k_2 = k$ . Since the resonant manifold is empty for $\alpha>1$, the aforementioned divergences are always present for the nontrivial set of MMT models.\\
+    We see from this result that the second derivative sign does not change throughout the quadrant and is positive when $\alpha < 1 $, making the curve concave and allowing nontrivial solutions, and negative when $\alpha > 1$, forbidding solutions other than $k_3 = k_2 = k$ . Since the resonant manifold is empty for $\alpha>1$, the aforementioned divergences are always present for the nontrivial set of MMT models. Our construction is presented in figure \ref{fig:nonlocal}.\\
     This line of reasoning does hold for $k_2 = k_3$ as well.\\
-
+    \begin{figure}[ht]
+        \centering
+        \includegraphics[width=0.4\textwidth]{images/nonlocal_resonances_convex.pdf}
+        \includegraphics[width=0.4\textwidth]{images/nonlocal_resonances_concave.pdf}
+        \caption{Examples of resonant manifolds when $k_1 = k$, in the cases $\alpha = \frac{1}{2}$ and $\alpha = \frac{3}{2}$. In the first case there are two nontrivial interactions.}
+        \label{fig:nonlocal}
+    \end{figure}
     Moving to the second denominator, and again exploiting the delta function and renaming $k_4 = q$, we study
     \begin{equation}
         \begin{aligned}
@@ -278,35 +284,32 @@
     As \eqref{wke_sim} is not anymore symmetric under a reflection of $k$, we integrate at each timestep first for $k_3 < 0$ and then $k_3 > 0$, alway assuming $n(k) = n(-k)$. \\
 
     We analyzed three situations, in all of them the forcing was a localized function and the dissipation was diverging on both ends of the simulated range in $k$-space. This was to reduce, for what is possible, finite size effects.\\
-    The first two cases are with one inertial range present only on lower $k$s than the forcing, figure \ref{fig:cascinv}, or only higher ones, figure \ref{fig:cascdir}. In both figures the late time stable spectra we found is represented in blue. In red one can see the forcing term and in green the spectra
+    The first two cases are with one inertial range present only on lower $k$s than the forcing, figure \ref{fig:cascdir}, or only higher ones, figure \ref{fig:cascdir}. In both figures the late time stable spectra we found is represented in blue. In red one can see the forcing term and in green the spectra
     \eqref{KZPsol} and \eqref{KZQsol} predicted by weak turbulence theory\footnote{In the first picture an inverse wave action cascade and in the second one a direct energy one.}. Both simulations are in good agreement with theoretical predictions for the exponents.
     Notice how Fjortoft's argument correctly predicts the direction of fluxes in both cases. 
     \begin{figure}[ht]
         \centering
-            \includegraphics[width=0.5\textwidth]{images/MMT_inverse_256_[1.0e-5-10.0].png}
+            \includegraphics[width=0.4\textwidth]{images/MMT_inverse_256_[1.0e-5-10.0].png}
+            \includegraphics[width=0.4\textwidth]{images/MMT_direct_256[1.0e-6_1.0].png}
             \vspace{-0.5cm}
-            \caption{Inverse cascade from WavKinS}
-            \label{fig:cascinv}
+            \caption{Inverse and direct cascades from WavKinS.}
+            \label{fig:cascdir}
     \end{figure}
     \begin{figure}[ht]
         \centering
-            \includegraphics[width=0.5\textwidth]{images/MMT_direct_256[1.0e-6_1.0].png}
-            \vspace{-0.5cm}
-            \caption{Direct cascade from WavKinS}
-            \label{fig:cascdir}
+        \includegraphics[width=0.5\textwidth]{images/double_cascade3.jpg}
+        \vspace{-0.5cm}
+        \caption{Double cascade from WavKinS.}
+        \label{fig:cascdouble}
     \end{figure}
-    In the direct cascade the inertial range is smaller, it is however the longest we could reproduce. On the left of the forcing in figure \ref{fig:cascdir} there is almost no range in which both the forcing and dissipation terms are negligible, we had however to distance the forcing term from the lower end of the grid to avoid divergencies during time evolution. \\
-    As a last example we simulated the situation where an inertial range is present on both sides of the forcing in $k$-space. The results, again in remarkable agreement with theoretical predictions, are in figure \ref{fig:cascdouble}. 
-    \begin{figure}[ht]
-            \centering
-            \includegraphics[width=0.5\textwidth]{images/double_cascade3.jpg}
-            \vspace{-0.5cm}
-            \caption{Double cascade from WavKinS}
-            \label{fig:cascdouble}
-    \end{figure}
-
-    \clearpage
+    In the direct cascade the inertial range is smaller, it is however the longest we could reproduce. In the range $10^{-6}$-$10^{-4}$ in figure \ref{fig:cascdir}  the forcing and dissipation terms are not negligible, we had however to distance the forcing term from the lower end of the grid to avoid divergencies during time evolution. \\
+    \hl{REDO direct cascade simulation} \\
+    As a last example we simulated the situation where an inertial range is present on both sides of the forcing in $k$-space. The results, again in remarkable agreement with theoretical predictions, are in figure \ref{fig:cascdouble}. \\
     \subsection{Future work}
-    
-    \hl{SIMULAZIONI CON CUTOFF DENOMINATORE, STUDIO TEORICO IN SISTEMI A TRE ONDE, STUDIO CONTRIBUTI ORDINI SUPERIORI}
+
+    The novel contribution of this thesis consisted in the analysis we presented of the higher order WKE for the MMT model. 
+    Our analysis, however, can be at best called preliminary. There are many other approaches to try. One could include the frequency shift with a generic $\beta$, to see if it influences the presence of divergencies. One could also include higher order diagrams in the derivation, to check if there is any cancellation. On the numerical side one could forcefully impose a cutoff on the diverging denominator, to at least see the qualitative deviation of possible stationary states from the KZ spectra.\\
+    It is an open question wether nontrivial resonances still exists in higher dimensions, and for which dispersion relations they do.\\
+    Another possible route would be to examine the correspective of \eqref{wke_nlo} in three wave systems, and check wether such divergencies appear as well. 
+
     
