@@ -9,7 +9,7 @@ based on classical diagrammatic methods were developed in \cite{Zakharov1975} an
 Such equations and their validity are discussed in \cite{Rosenhaus:2023pdj}. The possibility of gaining insight into the strong turbulent regime by resumming 
 part of the corrections was investigated instead in \cite{Rosenhaus:2025mgj}. \\
 The focus of this chapter is to introduce the computational tools to consistently derive kinetic equations with contributions from higher powers of the coupling. 
-The methods of \cite{Rosenhaus2023} are discussed in a generic four wave system. First we show \hl{MAYBE CITE SIGGIA ROSEN MARTIN} how to map the derivation of the kinetic equation into
+The methods of \cite{Rosenhaus2023} are discussed in a generic four wave system. First we show how to map the derivation of the kinetic equation into
 the task of evaluating correlators in a Quantum Field Theory model. The basic idea is that a nonlinear system coupled to a random forcing may be regarded as 
 a statistical theory were the normal variables of the orginal system inherit the stochastic properties of the forcing. If the system spectrum in Fourier space is continuous
 a path integral approach may be implemented, allowing for the usage of the well developed machinery of QFT perturbation theory.\\
@@ -463,7 +463,7 @@ Now let us move to the full integral. There is a common factor of
     \delta^{12}_{56}\D_1^0\D_2^0\D_3^0\D_4^0
 \end{equation*}
 in front of the integral. Then there is the $d\omgatt_5$ integration of 16 terms. Integrating them, using identities \eqref{identity1}-\eqref{identity6},
-is a tedious but straightforward process. \hl{FORSE AGGIUNGI IN APPENDICE CONTI} The complete result is 
+is a tedious but straightforward process. The complete result is 
 \begin{multline}
     -4\pi\delta(\delomegatt^{34}_{12})\sum_{56}\Tint_{5634}\Tint_{1256}\delta^{56}_{34}
     \delta^{12}_{56}\D_1^0\D_2^0\D_3^0\D_4^0 \left\{ -\frac{n_6}{\F_5}-\frac{n_5}{\F_6}\right. + 
@@ -556,8 +556,7 @@ This term would manifest itself, at this order of perturbation theory, in a diag
 yealding exactly the same contribution as \eqref{shiftsextic}. As we did for the diagram in figure \ref{fig:oneloop2}, we can ignore this contribution by including
 the frequency shift into the final result. \\
 We notice that the second part of \eqref{sexticfullcontribution} diverges in the $\F_k \rightarrow 0$ limit. Looking at the diverging contributions of 
-\eqref{schannelfullcontribution}, \eqref{tchannelfullcontribution} and \eqref{tchannelfullcontribution}($3 \leftrightarrow 4$), we see that their sum is\\
-\hl{FROM HER ON ADD DELTAS NEXT TO INTERACTION TERMS}
+\eqref{schannelfullcontribution}, \eqref{tchannelfullcontribution} and \eqref{tchannelfullcontribution}($3 \leftrightarrow 4$), we see that their sum is
 \begin{multline}
     4\pi\delta(\delomegatt^{12}_{34})\D_1^0\D_2^0\D_3^0\D_4^0\sum_{56}
      \left( \frac{n_5}{\F_6} + \frac{n_6}{\F_5}\right)\\ \times\left(
@@ -661,7 +660,7 @@ wave density at first order in perturbation theory. We may consequently close th
 As in the first chapter, this assumption holds provided that the interaction term is truly perturbative. If this is the case, it is reasonable (but not trivial) 
 to expect the theory to stay close enough to a free one as to make \eqref{NLOkinetic} valid at any time. \\ 
 Into this new kinetic equation every frequency should be assumed to be shifted by the quantity $\delta\omega$, to account for the contributions of 
-figure \ref{fig:oneloop2} and \ref{fig:sexticoneloop}. \hl{COMMENTO SUL POERCHÈ SI POSSONO IGNORARE?}\\
+figure \ref{fig:oneloop2} and \ref{fig:sexticoneloop}.\\
 In equation \eqref{NLOkinetic} we committed a slight abuse of notation, as the $n_k$ in the l.h.s. should be multiplied by a delta function with argument zero\footnote{Coming from the definition of $n_k$ in the continuous from the two point function.}. We balanced this by removing one of the deltas in the r.h.s. at each order, as when imposed together one of them always ends up with argument zero. This division on both side by $\infty$ should be justified through a derivation starting by the system in a box, and removing the corresponding Kroenecker's deltas before taking the continous limit.\\
 It is easy to see that solution \eqref{Gibbs} remains an equilibrium state even for \eqref{NLOkinetic}. The same cannot be said for 
 KZ states. Rosenhaus and Falkovich studied the convergence of \eqref{NLOkinetic} when one of the KZ solutions of \eqref{kinetic} is substituted into it, 

@@ -55,18 +55,19 @@
         A nontrivial solution is a solution which does not make the collisional integral null, and thus result in an exchange of energy among modes. 
         For example $k=k_2$ and $k_1=k_3$ is always a solution, but the term 
         $\left(\frac{1}{n_k} +\frac{1}{n_1} -\frac{1}{n_2}-\frac{1}{n_3} \right)$ kills the collisional integral in that point of the resonance manifold.
-    } is if $\alpha < 1$. \hl{COULD ADD PROOF} We shall then adopt $\alpha = \frac{1}{2}$ to mimic the dispersion relation of surface gravity waves, in which case $\omga = |gk|^\frac{1}{2}$ 
+    } is if $\alpha < 1$. \hl{COULD ADD PROOF from mmt article original} We shall then adopt $\alpha = \frac{1}{2}$ to mimick the dispersion relation of surface gravity waves, in which case $\omga = |gk|^\frac{1}{2}$ 
     with $g$ being the acceleration of gravity.\\
     By direct substitution of MMT's dispersion relation and interaction term into $\eqref{kinetic}$, the WKE to the leading order is 
-    \begin{equation}
-        \pt n_k = 4 \pi\int dk_1 dk_2 dk_3 \\
-        |kk_1k_2k_3|^\frac{\beta}{2}n_kn_1n_2n_3
+    \begin{multline}
+        \pt n_k = 4 \pi\int dk_1 dk_2 dk_3 
+        |kk_1k_2k_3|^\frac{\beta}{2}
+        \\ \times n_kn_1n_2n_3
     \left(\frac{1}{n_k} + \frac{1}{n_1} - \frac{1}{n_2}- \frac{1}{n_3}  \right)
     \delta(\delomega^{k1}_{23})\delta^{k1}_{23}.
-    \end{equation}
+    \end{multline}
     Given that the model is one dimensional we will refer with $k$ to the value of the only component of the wave vector, when talking about its modulus we shall use $|k|$ instead. The isotropy assumptions would corresponds in one dimension
     to the reflection symmetry $k \rightarrow -k$.\\ 
-    From the discussion in chapter 1 we now that the two possible out of equilibrium solutions for this equation are 
+    From the discussion in chapter 1 we know that the two possible out of equilibrium solutions for this equation are 
     \begin{equation}
         \begin{aligned}
         &n_k^P \propto |k|^{\frac{2}{3}\beta + 1}, \\
@@ -102,8 +103,9 @@
     \begin{multline}
         \sigma(k,k_1,k_2,k_3) =  4 \int dk_4dk_5n_4n_5|k_4k_5|^{\beta/2} \\
         \times \left[\left( \frac{1}{n_4}+\frac{1}{n_5} \right) 
-        \frac{\delta_{23}^{45}}{\sqrt{k_2}+\sqrt{k_3}-\sqrt{k_4}-\sqrt{k_5}} + 4\left( \frac{1}{n_4}-\frac{1}{n_5} \right) 
-        \frac{\delta_{14}^{35}}{\sqrt{k_3}+\sqrt{k_5}-\sqrt{k_1}-\sqrt{k_4}}\right].
+        \frac{\delta_{23}^{45}}{\sqrt{k_2}+\sqrt{k_3}-\sqrt{k_4}-\sqrt{k_5}} \right.
+        \\ + 4\left( \frac{1}{n_4}-\frac{1}{n_5} \right) 
+        \left.\frac{\delta_{14}^{35}}{\sqrt{k_3}+\sqrt{k_5}-\sqrt{k_1}-\sqrt{k_4}}\right].
         \label{sigma}
     \end{multline}
     We rewrote the equation in this fashion to highlight the contributions of higher perturbative orders as modifications to the effective interaction term in the WKE.
@@ -115,38 +117,39 @@
     The leading order WKE conserves energy and wave action as consequences of the symmetries of $\Tint_{k123}$. To show that even the corrected equation 
     conserves the same quantities, as it is expected, we shall just check that the same symmetries hold for $\sigma$.\\
     The symmetry under the exchange $k_2 \leftrightarrow k_3$ is built-in but not explicit, as already commented in the previous chapter. The contribution of the 
-    first diagram in figure \ref{fig:quarticoneloop}is obviously symmetric and the other two contribution are mapped into each other by the exchange. It was used to make
+    first diagram in figure \ref{fig:quarticoneloop} is obviously symmetric and the other two contribution are mapped into each other by the exchange. It was used to make
     \eqref{NLOkinetic} more compact. \\
     Recovering it and manipulating the dummy variables, 
     $\sigma$ becomes
     \begin{multline}
-      \sigma(k,k_1,k_2,k_3) =  4 \int dk_4dk_5n_4n_5|k_4k_5|^{\beta/2} 
-       \left[\left( \frac{1}{n_4}+\frac{1}{n_5} \right) 
-      \frac{\delta_{23}^{45}}{\sqrt{k_2}+\sqrt{k_3}-\sqrt{k_4}-\sqrt{k_5}} \right. \\
-      + \left( \frac{1}{n_4}-\frac{1}{n_5} \right) \left(\frac{\delta_{14}^{35}}{\sqrt{k_3}+\sqrt{k_5}-\sqrt{k_1}-\sqrt{k_4}} - \frac{\delta_{15}^{34}}{\sqrt{k_3} 
+      \sigma(k,k_1,k_2,k_3) =  4 \int dk_4dk_5n_4n_5|k_4k_5|^{\beta/2} \\
+       \times \left[\left( \frac{1}{n_4}+\frac{1}{n_5} \right) 
+      \frac{\delta_{23}^{45}}{\sqrt{k_2}+\sqrt{k_3}-\sqrt{k_4}-\sqrt{k_5}} \right.
+      + \left( \frac{1}{n_4}-\frac{1}{n_5} \right) \\ 
+      \times\left(\frac{\delta_{14}^{35}}{\sqrt{k_3}+\sqrt{k_5}-\sqrt{k_1}-\sqrt{k_4}} - \frac{\delta_{15}^{34}}{\sqrt{k_3} 
        +\sqrt{k_4}-\sqrt{k_1}-\sqrt{k_5}}  \right. \\
       \left. \left. +\frac{\delta_{14}^{25}}{\sqrt{k_2}+\sqrt{k_5}-\sqrt{k_1}-\sqrt{k_4}} -\frac{\delta_{15}^{24}}{\sqrt{k_2}
       +\sqrt{k_4}-\sqrt{k_1}-\sqrt{k_5}}\right)\right].
       \label{eqsym}
     \end{multline}
     Under the exchange $(k \text{,} k_1) \leftrightarrow (k_2 \text{,} k_3)$  we obtain
-    \begin{multline*}
-      \sigma(k,k_1,k_2,k_3) =  4 \int_{-\infty}^{+\infty}dk_4dk_5n_4n_5|k_4k_5|^{\beta/2} 
-       \left[\left( \frac{1}{n_4}+\frac{1}{n_5} \right) 
-      \frac{\delta_{1k}^{45}}{\sqrt{k}+\sqrt{k_1}-\sqrt{k_4}-\sqrt{k_5}} \right. \\
-      + 4\left( \frac{1}{n_4}-\frac{1}{n_5} \right) 
-      \left(\frac{\delta_{34}^{15}}{\sqrt{k_1}+\sqrt{k_5}-\sqrt{k_3}-\sqrt{k_4}} - \frac{\delta_{35}^{14}}{\sqrt{k_1} +\sqrt{k_4}-\sqrt{k_3}-\sqrt{k_5}}  \right. \\
+    \begin{multline}
+      \sigma(k,k_1,k_2,k_3) =  4 \int dk_4dk_5n_4n_5|k_4k_5|^{\beta/2} \\
+       \times \left[\left( \frac{1}{n_4}+\frac{1}{n_5} \right) 
+      \frac{\delta_{1k}^{45}}{\sqrt{k}+\sqrt{k_1}-\sqrt{k_4}-\sqrt{k_5}} \right. 
+      + 4\left( \frac{1}{n_4}-\frac{1}{n_5} \right) \\
+      \times \left(\frac{\delta_{34}^{15}}{\sqrt{k_1}+\sqrt{k_5}-\sqrt{k_3}-\sqrt{k_4}} - \frac{\delta_{35}^{14}}{\sqrt{k_1} +\sqrt{k_4}-\sqrt{k_3}-\sqrt{k_5}}  \right. \\
       \left. \left. +\frac{\delta_{34}^{k5}}{\sqrt{k}+\sqrt{k_5}-\sqrt{k_3}-\sqrt{k_4}} -\frac{\delta_{35}^{k4}}{\sqrt{k}+\sqrt{k_4}-\sqrt{k_3}-\sqrt{k_5}}\right)\right].
-    \end{multline*}
+    \end{multline}
     Imposing $\omega + \omega_1 = \omega_2 +\omega_3$ and $k + k_1 = k_2 + k_3$ results in
-    \begin{multline*}
-      \sigma(k,k_1,k_2,k_3) =  44 \int dk_4dk_5n_4n_5|k_4k_5|^{\beta/2} 
-       \left[\left( \frac{1}{n_4}+\frac{1}{n_5} \right) 
-      \frac{\delta_{1k}^{45}}{\sqrt{k_2}+\sqrt{k_3}-\sqrt{k_4}-\sqrt{k_5}} \right. \\
-      + \left( \frac{1}{n_4}-\frac{1}{n_5} \right) 
-      \left(\frac{\delta_{34}^{15}}{\sqrt{k_1}+\sqrt{k_5}-\sqrt{k_3}-\sqrt{k_4}} - \frac{\delta_{35}^{14}}{\sqrt{k_1} +\sqrt{k_4}-\sqrt{k_3}-\sqrt{k_5}}  \right. \\
+    \begin{multline}
+      \sigma(k,k_1,k_2,k_3) =  44 \int dk_4dk_5n_4n_5|k_4k_5|^{\beta/2} \\
+       \times \left[\left( \frac{1}{n_4}+\frac{1}{n_5} \right) 
+      \frac{\delta_{1k}^{45}}{\sqrt{k_2}+\sqrt{k_3}-\sqrt{k_4}-\sqrt{k_5}} \right. 
+      + \left( \frac{1}{n_4}-\frac{1}{n_5} \right) \\
+      \times \left(\frac{\delta_{34}^{15}}{\sqrt{k_1}+\sqrt{k_5}-\sqrt{k_3}-\sqrt{k_4}} - \frac{\delta_{35}^{14}}{\sqrt{k_1} +\sqrt{k_4}-\sqrt{k_3}-\sqrt{k_5}}  \right. \\
       \left. \left. +\frac{\delta_{25}^{14}}{\sqrt{k_2}+\sqrt{k_5}-\sqrt{k_1}-\sqrt{k_4}} -\frac{\delta_{24}^{15}}{\sqrt{k_2}+\sqrt{k_4}-\sqrt{k_1}-\sqrt{k_5}}\right)\right],
-    \end{multline*}
+    \end{multline}
     showing that $\sigma(k,k_1,k_2,k_3) = \sigma(k_2,k_3,k,k_1) = \sigma(k,k_1,k_3,k_2)$ and thus that $E$ and $N$ are conserved\footnote{
     We do not need to prove directly symmetry under $k \leftrightarrow k_1$, as it is implied by the other two combined.}.\\ 
     There are two integrations in \eqref{wke_nlo}, an external one (three integration measures with two deltas) and an internal one (two measures with one delta). 
@@ -169,9 +172,12 @@
     as we already said we can interpret the $\sigma$ term as the exchange of virtual waves among different modes.
     $k$ and $k_1$ produce two virtual waves ($k_4$ and $k_5$) that rescatter into $k_2$ and $k_3$.
     Being virtual they do not need to be resonant, but the closer to resonant they are, the bigger their contribution to the process, as the denominator suggests.   
-    We recast it by using the delta function in the numerator, removing in the process the $k_5$ integration, and rename $k_4=q$. Remember that $\sigma$ arguments $k\dots k_3$ have to be part of the resonant manifold, hereby called external, implying  
+    We recast it by using the delta function in the numerator, removing in the process the $k_5$ integration, and rename $k_4=q$. Remember that $\sigma$ arguments $k\dots k_3$ have to be part of the resonant manifold, hereby called external, implying  that the first denominator
     \begin{equation}
-      D = \sqrt{k_2} + \sqrt{k_3} -\sqrt{q} - \sqrt{k_2 + k_3 - q} = \sqrt{k} + \sqrt{k_1} -\sqrt{q} - \sqrt{k + k_1 - q}.
+        \begin{aligned}
+      D_1 &= \sqrt{k_2} + \sqrt{k_3} -\sqrt{q} - \sqrt{k_2 + k_3 - q}\\
+       &= \sqrt{k} + \sqrt{k_1} -\sqrt{q} - \sqrt{k + k_1 - q}.
+        \end{aligned}
     \end{equation}
     It is easy to see that this expression has four zeroes corresponing to $q$ equal to any of the external wavenumbers. \\
     As long as $k \neq k_1$ or $k_2 \neq k_3$ the zeroes are singles. For example let's look at $q = k$. We rename $p = q-k$ and expand around $p=0$:
@@ -217,7 +223,10 @@
 
     Moving to the second denominator, and again exploiting the delta function and renaming $k_4 = q$, we study
     \begin{equation}
-      D = \sqrt{k} - \sqrt{k_2} - \sqrt{|q|} + \sqrt{|k_2-k + q|} = \sqrt{k_3} - \sqrt{k_1} - \sqrt{|q|} + \sqrt{|k_1-k_3 + q|}
+        \begin{aligned}
+      D_2 &= \sqrt{k} - \sqrt{k_2} - \sqrt{|q|} + \sqrt{|k_2-k + q|} \\
+      &= \sqrt{k_3} - \sqrt{k_1} - \sqrt{|q|} + \sqrt{|k_1-k_3 + q|}
+        \end{aligned}
     \end{equation}
     we see that it is null for $q = k_3$ and $q = k$. Recovering the symmetryc part as in \eqref{eqsym} we would find as similar expression with divergencies in $q = k_1$ and $q = k_2$. \\
     Again when no external wavenumbers collide the divergent part goes as $\int_{-\epsilon}^{+\epsilon}\frac{1}{p}$ and its principal value is null. When $k_1 = k_3$ or $k = k_3$ there is yet another singularity whose principal value diverges. This one is however balanced by the term $\frac{1}{n_k} + \frac{1}{n_1} -\frac{1}{n_2} -\frac{1}{n_3}$ in the kinetic equation, healing the divergence\footnote{
@@ -225,19 +234,79 @@
     In general any time one of the incoming wave vectors is equal to one of the outgoing ones the other two must be equal}.\\
     We conclude that the only problematic term of $\sigma$ is the first one, associated to the first diagram in figure \ref{fig:quarticoneloop}. \\
     
-    One could ask if accounting for the frequency shift could somewhat help avoiding these uncurable divergencies. In the case
-    $\beta = 0$ mimicking the NLS equation this is surely not the case, as the frequency shift would be
+    One could ask if accounting for the frequency shift, that we ignored until now, could somewhat help avoiding these uncurable divergencies. In the case
+    $\beta = 0$, mimicking the NLS equation. this is surely not the case, as the frequency shift would be
     \begin{equation}
         \delta \omga_k = 2\int dk' n_{k'} = 2 \Nwav. 
     \end{equation}
-    Aside from the possible presence of IR and UV divergencies, the contribution is a constant factor that would cancel out in all
-    the problematic denominators.\\
-    We have not undertaken the study of this situation for a generic $\beta$, but our naive intuition is that divergencies would survive. The perturbative nature of the term  should not drastically change the geometrical picture we just presented to the point of forbidding the nontrivial resonances causing the problem.\\
-    
-    %\subsection{Numerical simulations through WavKinS}
+    Aside from the possible presence of IR and UV divergencies, the contribution is a constant factor that would cancel out in all denominators and delta functions.\\
+    We have not undertaken the study of this situation for a generic $\beta$, but our naive intuition is that divergencies would survive. The perturbative nature of the frequency shift should not drastically change the geometrical picture we just presented to the point of forbidding the nontrivial resonances causing the divergencies.\\
+    \subsection{Numerical simulations through WavKinS}
 
-    %Spiega struttura codice, conto per esplicitare delta function, mostra simulazioni per vari tipi di cascate con i loro parametri e discutile
-    %\subsection{Future work}
+    Even though analytical stationary solutions are known, simulating the WKE is interesting already at leading order. It allows to verify the convergence of the collision integral, the stability of the KZ solutions and how the system relaxes to such solutions depending on different forcing and dissipating mechanisms. Of course simulating the WKE is different than simulating the underlying nonlinear microscopic theory, and any result is only to be trusted in the regimes where the validity of the kinetic equation is verified. \\
+
+    In recent years Krstulovic and Labarre developed WavKinS, a flexible solver for a wide variety of kinetic equations, first used in \cite{Giorgio1} and \cite{Giorgio2}. Our original goal was to use it to 
+    simulate equation \eqref{wke_nlo}, in order to check the presence of out of equilibrium stationary states and their deviation from KZ solutions.\\
+    Given the results of our theoretical analysis we were not able to do so, but nonetheless we simulated the leading order equation as a way to get aquainted with the code. In this short section we briefly introduce WavKinS and present the stationary solutions found numerically. \\
+    
+    Looking for the zeroes of the collisional integral as a function of the solutions's exponent is computationally expensive. A better way consists in simulating the kinetic equation with localized forcing and dissipation, and then confront its late time slope in the inertial interval with the expected solution. As it is a better way to represent polynomials, WavKinS directly operates on a logarithmic grid in $k$-space. For each timestep the collisional integral is evaluated. Various schemes can be utilized, in our case an RK2 one for time evolution and the trapezoidal rule for integrations.\\
+    We chose $\alpha = \frac{1}{2}$, as with this dispersion relation the resonant manifold can be parametrized analytically.
+    We then chose $\beta = 0$, to mimic the NLS equation. Resolving both deltas in the collisional integral, at each timestep only one integration over $k$ is necessary. The equation we simulated is
+    \begin{equation}
+        \pt n_k=4\pi \int_{-\infty}^\infty\frac{1}{\Delta_{12}}n_kn_1n_2n_3\left(\frac{1}{n_k}+\frac{1}{n_1}-\frac{1}{n_2}-\frac{1}{n_3}   \right)dk_3,  
+        \label{wke_sim} 
+    \end{equation}     
+    where 
+    \begin{equation}
+        \begin{aligned}
+            &\Delta_{12}=\frac{1}{2}\left| \frac{\text{sign}{(k_2)}}{\sqrt{k_2}}- \frac{\text{sign}{(k_1)}}{\sqrt{k_1}}  \right|, \\
+            &k_2=k+k_1(k_3)-k_3, \\
+            &k_1(k_3)=k q_1\left(\frac{k_3}{k}\right).
+        \end{aligned}
+    \end{equation}
+    The last three equations results from manually solving the resonance condition, together with the wave number conservation one. In the last equation $q_1$ is defined as 
+    \begin{equation}
+        q_1(q_3) = \left\{
+        \begin{array}{ll}
+            -\frac{\left(q_3+\sqrt{-q_3}-1\right)^2}{\left(\sqrt{-q_3}-1\right)^2} & \quad q_3 \leq -1 \\
+            \frac{q_3 \left(q_3-2 \sqrt{-q_3}-1\right)}{(q_3+1)^2} & \quad -1 \leq q_3 \leq 0\\
+            \frac{1}{2} \left(\sqrt{8 q_3^{3/2}-3 q_3^2-6 q_3+1}+q_3-1\right) & \quad 0 \leq q_3 \leq 1\\
+            \frac{1}{2} \left(\sqrt{q_3^2-6 q_3+8 \sqrt{q_3}-3}+q_3-1\right) & \quad 1 \leq q_3\\
+        \end{array}
+    \right.
+    \end{equation}
+    As \eqref{wke_sim} is not anymore symmetric under a reflection of $k$, we integrate at each timestep first for $k_3 < 0$ and then $k_3 > 0$, alway assuming $n(k) = n(-k)$. \\
+
+    We analyzed three situations, in all of them the forcing was a localized function and the dissipation was diverging on both ends of the simulated range in $k$-space. This was to reduce, for what is possible, finite size effects.\\
+    The first two cases are with one inertial range present only on lower $k$s than the forcing, figure \ref{fig:cascinv}, or only higher ones, figure \ref{fig:cascdir}. In both figures the late time stable spectra we found is represented in blue. In red one can see the forcing term and in green the spectra
+    \eqref{KZPsol} and \eqref{KZQsol} predicted by weak turbulence theory\footnote{In the first picture an inverse wave action cascade and in the second one a direct energy one.}. Both simulations are in good agreement with theoretical predictions for the exponents.
+    Notice how Fjortoft's argument correctly predicts the direction of fluxes in both cases. 
+    \begin{figure}[ht]
+        \centering
+            \includegraphics[width=0.5\textwidth]{images/MMT_inverse_256_[1.0e-5-10.0].png}
+            \vspace{-0.5cm}
+            \caption{Inverse cascade from WavKinS}
+            \label{fig:cascinv}
+    \end{figure}
+    \begin{figure}[ht]
+        \centering
+            \includegraphics[width=0.5\textwidth]{images/MMT_direct_256[1.0e-6_1.0].png}
+            \vspace{-0.5cm}
+            \caption{Direct cascade from WavKinS}
+            \label{fig:cascdir}
+    \end{figure}
+    In the direct cascade the inertial range is smaller, it is however the longest we could reproduce. On the left of the forcing in figure \ref{fig:cascdir} there is almost no range in which both the forcing and dissipation terms are negligible, we had however to distance the forcing term from the lower end of the grid to avoid divergencies during time evolution. \\
+    As a last example we simulated the situation where an inertial range is present on both sides of the forcing in $k$-space. The results, again in remarkable agreement with theoretical predictions, are in figure \ref{fig:cascdouble}. 
+    \begin{figure}[ht]
+            \centering
+            \includegraphics[width=0.5\textwidth]{images/double_cascade3.jpg}
+            \vspace{-0.5cm}
+            \caption{Double cascade from WavKinS}
+            \label{fig:cascdouble}
+    \end{figure}
+
+    \clearpage
+    \subsection{Future work}
     
     \hl{SIMULAZIONI CON CUTOFF DENOMINATORE, STUDIO TEORICO IN SISTEMI A TRE ONDE, STUDIO CONTRIBUTI ORDINI SUPERIORI}
     

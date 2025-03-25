@@ -11,8 +11,10 @@
 \contentsline {subsection}{\numberline {\textsection 2.1}Path integral formulation of weak turbulence theory}{26}{subsection.0.2.1}%
 \contentsline {subsection}{\numberline {\textsection 2.2}Feynman rules}{30}{subsection.0.2.2}%
 \contentsline {subsection}{\numberline {\textsection 2.3}Two points functions}{34}{subsection.0.2.3}%
-\contentsline {subsection}{\numberline {\textsection 2.4}Four points functions}{35}{subsection.0.2.4}%
+\contentsline {subsection}{\numberline {\textsection 2.4}Four points functions}{36}{subsection.0.2.4}%
 \contentsline {subsection}{\numberline {\textsection 2.5}Higher order kinetic equation}{42}{subsection.0.2.5}%
 \contentsline {section}{\numberline {III}A one dimensional model for Wave Turbulence}{45}{section.0.3}%
 \contentsline {subsection}{\numberline {\textsection 3.1}The MMT model and its wave kinetic equation}{46}{subsection.0.3.1}%
 \contentsline {subsection}{\numberline {\textsection 3.2}The higher order kinetic equation}{48}{subsection.0.3.2}%
+\contentsline {subsection}{\numberline {\textsection 3.3}Numerical simulations through WavKinS}{53}{subsection.0.3.3}%
+\contentsline {subsection}{\numberline {\textsection 3.4}Future work}{57}{subsection.0.3.4}%

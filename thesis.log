@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2024.9.26)  21 MAR 2025 19:23
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2024.9.26)  25 MAR 2025 00:20
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/home/greg/Desktop/TESI/Scrittura_tesi/ThesisTrue/thesis
@@ -676,4 +676,1012 @@ Package fontspec Info: Font family 'Erewhon-Math.otf(2)' created for font
 (fontspec)             <->"[Erewhon-Math-Bold.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;mathfontdimen=tex2;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
-LaT
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 64.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> TU/Erewhon-Math.otf(2)/m/n on input line 64.
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 64.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> TU/Erewhon-Math.otf(2)/b/n on input line 64.
+
+Package fontspec Info: Font family 'Erewhon-Math.otf(3)' created for font
+(fontspec)             'Erewhon-Math.otf' with options
+(fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=10.2-},{Size=7.5-10.2,Font=Erewhon-Math.otf,Style=MathScript},{Size=-7.5,Font=Erewhon-Math.otf,Style=MathScriptScript}},RawFeature={mathfontdimen=xetex},BoldFont={Erewhon-Math-Bold.otf},RawFeature={mathfontdimen=tex3}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <10.2->"[Erewhon-Math.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;mathfontdimen=tex3;"<7.5-10.2>"[Erewhon-Math.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;mathfontdimen=tex3;+ssty=0;"<-7.5>"[Erewhon-Math.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;mathfontdimen=tex3;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[Erewhon-Math-Bold.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;mathfontdimen=tex3;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 64.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> TU/Erewhon-Math.otf(3)/m/n on input line 64.
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 64.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> TU/Erewhon-Math.otf(3)/b/n on input line 64.
+ (/usr/share/texlive/texmf-dist/tex/latex/realscripts/realscripts.sty
+Package: realscripts 2016/02/13 v0.3d Access OpenType subscripts and superscripts
+\subsupersep=\dimen293
+) (/usr/share/texlive/texmf-dist/tex/latex/erewhon/erewhon.fontspec)
+
+Package fontspec Info: Font family 'erewhon(0)' created for font 'erewhon'
+(fontspec)             with options [Ligatures=TeX,Extension =
+(fontspec)             .otf,SlantedFont =
+(fontspec)             Erewhon-RegularSlanted,BoldSlantedFont =
+(fontspec)             Erewhon-BoldSlanted,BoldFont = Erewhon-Bold,ItalicFont
+(fontspec)             = Erewhon-Italic,BoldItalicFont =
+(fontspec)             Erewhon-BoldItalic,UprightFont = Erewhon-Regular].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[Erewhon-Regular.otf]:mode=node;script=latn;language=dflt;+tlig;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->"[Erewhon-Regular.otf]:mode=node;script=latn;language=dflt;+tlig;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[Erewhon-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"[Erewhon-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"[Erewhon-Italic.otf]:mode=node;script=latn;language=dflt;+tlig;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"[Erewhon-Italic.otf]:mode=node;script=latn;language=dflt;+tlig;+smcp;"
+(fontspec)             - 'slanted' (m/sl) with NFSS spec.:
+(fontspec)             <->"[Erewhon-RegularSlanted.otf]:mode=node;script=latn;language=dflt;+tlig;"
+(fontspec)             - 'slanted small caps'  (m/scsl) with NFSS spec.:
+(fontspec)             <->"[Erewhon-RegularSlanted.otf]:mode=node;script=latn;language=dflt;+tlig;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"[Erewhon-BoldItalic.otf]:mode=node;script=latn;language=dflt;+tlig;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"[Erewhon-BoldItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+smcp;"
+(fontspec)             - 'bold slanted' (b/sl) with NFSS spec.:
+(fontspec)             <->"[Erewhon-BoldSlanted.otf]:mode=node;script=latn;language=dflt;+tlig;"
+(fontspec)             - 'bold slanted small caps'  (b/scsl) with NFSS spec.:
+(fontspec)             <->"[Erewhon-BoldSlanted.otf]:mode=node;script=latn;language=dflt;+tlig;+smcp;"
+
+
+Package fontspec Info: Font family 'erewhon(1)' created for font 'erewhon'
+(fontspec)             with options [Extension = .otf,SlantedFont =
+(fontspec)             Erewhon-RegularSlanted,BoldSlantedFont =
+(fontspec)             Erewhon-BoldSlanted,BoldFont = Erewhon-Bold,ItalicFont
+(fontspec)             = Erewhon-Italic,BoldItalicFont =
+(fontspec)             Erewhon-BoldItalic,UprightFont =
+(fontspec)             Erewhon-Regular,Renderer=Basic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[Erewhon-Regular.otf]:mode=base;script=latn;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->"[Erewhon-Regular.otf]:mode=base;script=latn;language=dflt;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[Erewhon-Bold.otf]:mode=base;script=latn;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"[Erewhon-Bold.otf]:mode=base;script=latn;language=dflt;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"[Erewhon-Italic.otf]:mode=base;script=latn;language=dflt;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"[Erewhon-Italic.otf]:mode=base;script=latn;language=dflt;+smcp;"
+(fontspec)             - 'slanted' (m/sl) with NFSS spec.:
+(fontspec)             <->"[Erewhon-RegularSlanted.otf]:mode=base;script=latn;language=dflt;"
+(fontspec)             - 'slanted small caps'  (m/scsl) with NFSS spec.:
+(fontspec)             <->"[Erewhon-RegularSlanted.otf]:mode=base;script=latn;language=dflt;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"[Erewhon-BoldItalic.otf]:mode=base;script=latn;language=dflt;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"[Erewhon-BoldItalic.otf]:mode=base;script=latn;language=dflt;+smcp;"
+(fontspec)             - 'bold slanted' (b/sl) with NFSS spec.:
+(fontspec)             <->"[Erewhon-BoldSlanted.otf]:mode=base;script=latn;language=dflt;"
+(fontspec)             - 'bold slanted small caps'  (b/scsl) with NFSS spec.:
+(fontspec)             <->"[Erewhon-BoldSlanted.otf]:mode=base;script=latn;language=dflt;+smcp;"
+
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  TU/Erewhon-Math.otf(1)/m/n --> TU/erewhon(1)/m/n on input line 75.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/erewhon(1)/m/it on input line 75.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/erewhon(1)/b/n on input line 75.
+luaotfload | aux : font no 52 (nil) defines no feature for script latn
+luaotfload | aux : font no 52 (nil) defines no feature for script dflt
+
+Package fontspec Info: Font family 'FourierOrns-Regular.otf(0)' created for
+(fontspec)             font 'FourierOrns-Regular.otf' with options [BoldFont =
+(fontspec)             FourierOrns-Regular.otf,ItalicFont =
+(fontspec)             FourierOrns-Regular.otf,BoldItalicFont =
+(fontspec)             FourierOrns-Regular.otf].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[FourierOrns-Regular.otf]:mode=node;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[FourierOrns-Regular.otf]:mode=node;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"[FourierOrns-Regular.otf]:mode=node;language=dflt;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"[FourierOrns-Regular.otf]:mode=node;language=dflt;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+
+) (/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write4
+ Excluding comment 'comment') (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math delimiter \ulcorner on input line 74.
+LaTeX Font Info:    Redeclaring math delimiter \urcorner on input line 75.
+LaTeX Font Info:    Redeclaring math delimiter \llcorner on input line 76.
+LaTeX Font Info:    Redeclaring math delimiter \lrcorner on input line 77.
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/euscript.sty
+Package: euscript 2009/06/22 v3.00 Euler Script fonts
+LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
+(Font)                  U/eus/m/n --> U/eus/b/n on input line 33.
+) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count332
+\Gm@cntv=\count333
+\c@Gm@tempcnt=\count334
+\Gm@bindingoffset=\dimen294
+\Gm@wd@mp=\dimen295
+\Gm@odd@mp=\dimen296
+\Gm@even@mp=\dimen297
+\Gm@layoutwidth=\dimen298
+\Gm@layoutheight=\dimen299
+\Gm@layouthoffset=\dimen300
+\Gm@layoutvoffset=\dimen301
+\Gm@dimlist=\toks50
+) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip55
+\enit@outerparindent=\dimen302
+\enit@toks=\toks51
+\enit@inbox=\box76
+\enit@count@id=\count335
+\enitdp@description=\count336
+) (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
+Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
+ (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
+File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
+\BKM@id=\count337
+)) (/usr/share/texlive/texmf-dist/tex/latex/bigfoot/perpage.sty
+Package: perpage 2014/10/25 2.0 Reset/sort counters per page
+\c@abspage=\count338
+)
+\c@pp@a@footnote=\count339
+ (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+\f@nch@headwidth=\skip56
+\f@nch@O@elh=\skip57
+\f@nch@O@erh=\skip58
+\f@nch@O@olh=\skip59
+\f@nch@O@orh=\skip60
+\f@nch@O@elf=\skip61
+\f@nch@O@erf=\skip62
+\f@nch@O@olf=\skip63
+\f@nch@O@orf=\skip64
+) (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2023/10/27 v2.16 Sectioning titles
+\ttl@box=\box77
+\beforetitleunit=\skip65
+\aftertitleunit=\skip66
+\ttl@plus=\dimen303
+\ttl@minus=\dimen304
+\ttl@toksa=\toks52
+\titlewidth=\dimen305
+\titlewidthlast=\dimen306
+\titlewidthfirst=\dimen307
+) (/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+) (./thesis.aux)
+\openout1 = thesis.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 285.
+LaTeX Font Info:    ... okay on input line 285.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 285.
+LaTeX Font Info:    ... okay on input line 285.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 285.
+LaTeX Font Info:    ... okay on input line 285.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 285.
+LaTeX Font Info:    ... okay on input line 285.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 285.
+LaTeX Font Info:    ... okay on input line 285.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 285.
+LaTeX Font Info:    ... okay on input line 285.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 285.
+LaTeX Font Info:    ... okay on input line 285.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 285.
+LaTeX Font Info:    ... okay on input line 285.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 285.
+LaTeX Font Info:    ... okay on input line 285.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 285.
+LaTeX Font Info:    ... okay on input line 285.
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count340
+\scratchdimen=\dimen308
+\scratchbox=\box78
+\nofMPsegments=\count341
+\nofMParguments=\count342
+\everyMPshowfont=\toks53
+\MPscratchCnt=\count343
+\MPscratchDim=\dimen309
+\MPnumerator=\count344
+\makeMPintoPDFobject=\count345
+\everyMPtoPDFconversion=\toks54
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+Package hyperref Info: Link coloring ON on input line 285.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 285.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 285.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 285.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 285.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+*geometry* verbose mode - [ preamble ] result:
+* driver: luatex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* bindingoffset: 28.45274pt
+* modes: twoside 
+* h-part:(L,W,R)=(85.35826pt, 398.33861pt, 85.35826pt)
+* v-part:(T,H,B)=(99.58464pt, 660.10394pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=398.33861pt
+* \textheight=660.10394pt
+* \oddsidemargin=41.54102pt
+* \evensidemargin=13.08827pt
+* \topmargin=-18.82857pt
+* \headheight=15.0pt
+* \headsep=34.14322pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=85.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(./head/frontmatter.tex
+<images/Unito-logo.pdf, id=7, 511.96896pt x 512.41632pt>
+File: images/Unito-logo.pdf Graphic file (type pdf)
+<use images/Unito-logo.pdf>
+Package luatex.def Info: images/Unito-logo.pdf  used on input line 8.
+(luatex.def)             Requested size: 796.67722pt x 797.41936pt.
+
+Overfull \hbox (398.33861pt too wide) in paragraph at lines 7--9
+ []
+ []
+
+
+LaTeX Warning: Float too large for page by 195.22092pt on input line 9.
+
+) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}<./images/Unito-logo.pdf>] [2
+
+
+] (./thesis.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
+\tf@toc=\write5
+
+\openout5 = thesis.toc
+ [1
+
+] (./body/Introduction/Introduction.tex
+Overfull \hbox (0.17041pt too wide) in paragraph at lines 9--29
+\TU/erewhon(0)/m/n/12 tur-ba-tion, it is a cer-tainty that some kind of os-cil-la-tory phe-nomenon takes place.
+ []
+
+
+Overfull \hbox (0.93546pt too wide) in paragraph at lines 9--29
+\TU/erewhon(0)/m/n/12 vari-ates, orig-i-nat-ing pres-sure waves. On its sep-a-ra-tion layer from a dif-fer-ent fluid
+ []
+
+) (./body/chapter_1/chapter_1.tex
+warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
+[1]
+Overfull \hbox (8.48236pt too wide) in paragraph at lines 7--15
+\TU/erewhon(0)/m/n/12 First we in-tro-duce a gen-eral model for non-lin-ear waves, we later ex-pand it through
+ []
+
+
+Overfull \hbox (3.61359pt too wide) in paragraph at lines 7--15
+\TU/erewhon(0)/m/n/12 stan-dard per-tur-ba-tion the-ory and as-sume ho-mo-geneus statis-tics over the phases
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--15
+
+ []
+
+
+Package fontspec Info: Font family 'erewhon(2)' created for font 'erewhon'
+(fontspec)             with options [Ligatures=TeX,Extension =
+(fontspec)             .otf,SlantedFont =
+(fontspec)             Erewhon-RegularSlanted,BoldSlantedFont =
+(fontspec)             Erewhon-BoldSlanted,BoldFont = Erewhon-Bold,ItalicFont
+(fontspec)             = Erewhon-Italic,BoldItalicFont =
+(fontspec)             Erewhon-BoldItalic,UprightFont =
+(fontspec)             Erewhon-Regular,VerticalPosition=Superior].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[Erewhon-Regular.otf]:mode=node;script=latn;language=dflt;+tlig;+sups;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->"[Erewhon-Regular.otf]:mode=node;script=latn;language=dflt;+tlig;+sups;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[Erewhon-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+sups;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"[Erewhon-Bold.otf]:mode=node;script=latn;language=dflt;+tlig;+sups;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"[Erewhon-Italic.otf]:mode=node;script=latn;language=dflt;+tlig;+sups;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"[Erewhon-Italic.otf]:mode=node;script=latn;language=dflt;+tlig;+sups;+smcp;"
+(fontspec)             - 'slanted' (m/sl) with NFSS spec.:
+(fontspec)             <->"[Erewhon-RegularSlanted.otf]:mode=node;script=latn;language=dflt;+tlig;+sups;"
+(fontspec)             - 'slanted small caps'  (m/scsl) with NFSS spec.:
+(fontspec)             <->"[Erewhon-RegularSlanted.otf]:mode=node;script=latn;language=dflt;+tlig;+sups;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"[Erewhon-BoldItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+sups;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"[Erewhon-BoldItalic.otf]:mode=node;script=latn;language=dflt;+tlig;+sups;+smcp;"
+(fontspec)             - 'bold slanted' (b/sl) with NFSS spec.:
+(fontspec)             <->"[Erewhon-BoldSlanted.otf]:mode=node;script=latn;language=dflt;+tlig;+sups;"
+(fontspec)             - 'bold slanted small caps'  (b/scsl) with NFSS spec.:
+(fontspec)             <->"[Erewhon-BoldSlanted.otf]:mode=node;script=latn;language=dflt;+tlig;+sups;+smcp;"
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
+[2]
+Overfull \hbox (0.2161pt too wide) in paragraph at lines 38--47
+\TU/erewhon(0)/m/n/12 ap-pear with a pos-i-tive sign and sub-scripts with a neg-a-tive one, for ex-am-ple $\TU/Erewhon-Math.otf(1)/m/n/12 𝛿[] =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--47
+
+ []
+
+[3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 95--100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--111
+
+ []
+
+[5]
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 144.
+
+Overfull \hbox (23.1946pt too wide) in paragraph at lines 144--148
+\TU/erewhon(0)/m/n/12 ar-ti-fi-cially in-tro-duced by the per-tur-ba-tive ex-pan-sion. The Poincarè-Lindsted method
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--159
+
+ []
+
+[6]
+Overfull \hbox (11.4662pt too wide) in paragraph at lines 164--168
+\TU/erewhon(0)/m/n/12 We now rein-tro-duce ex-plicit time de-pen-dance and im-pose $\TU/erewhon(1)/m/n/12 I[]\TU/Erewhon-Math.otf(1)/m/n/12 (0) = [][]$ \TU/erewhon(0)/m/n/12 and $\TU/erewhon(1)/m/n/12 I[]\TU/Erewhon-Math.otf(1)/m/n/12 (0) =
+ []
+
+
+Overfull \hbox (3.95929pt too wide) in paragraph at lines 164--168
+\TU/erewhon(1)/m/n/12 I[]\TU/Erewhon-Math.otf(1)/m/n/12 (0) = 0$ \TU/erewhon(0)/m/n/12 to fix ini-tial con-di-tions on the $\TU/erewhon(1)/m/n/12 I[]$\TU/erewhon(0)/m/n/12 s and $\TU/Erewhon-Math.otf(1)/m/n/12 𝜃[](0) = [][]$ \TU/erewhon(0)/m/n/12 and $\TU/Erewhon-Math.otf(1)/m/n/12 𝜃[](0) = 𝜃[](0) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--168
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--184
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+Underfull \hbox (badness 10000) in paragraph at lines 196--198
+
+ []
+
+
+Overfull \hbox (9.8519pt too wide) detected at line 228
+ []$[] \TU/Erewhon-Math.otf(1)/m/n/12 × [] 𝛿[]𝛿[],$ []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8]
+Underfull \hbox (badness 10000) in paragraph at lines 228--230
+
+ []
+
+[9]
+Overfull \hbox (87.53629pt too wide) detected at line 275
+ []$[]   [][] \TU/Erewhon-Math.otf(1)/m/n/12 = [][] = [] [][] 𝑒[]𝑒[]𝑒[]𝑒[]𝑑[]𝑑[]𝑑[]𝑑[] = 0$ []  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--278
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10]
+Underfull \hbox (badness 10000) in paragraph at lines 328--339
+
+ []
+
+[11]
+Overfull \hbox (67.10086pt too wide) detected at line 360
+ []$[]\TU/erewhon(1)/m/n/12 T[]\TU/Erewhon-Math.otf(1)/m/n/12 (\TU/erewhon(1)/b/n/12 k\TU/Erewhon-Math.otf(1)/m/n/12 , \TU/erewhon(1)/b/n/12 k[]\TU/Erewhon-Math.otf(1)/m/n/12 , \TU/erewhon(1)/b/n/12 k[]\TU/Erewhon-Math.otf(1)/m/n/12 , \TU/erewhon(1)/b/n/12 k[]\TU/Erewhon-Math.otf(1)/m/n/12 )[](\TU/erewhon(1)/b/n/12 k\TU/Erewhon-Math.otf(1)/m/n/12 )[](\TU/erewhon(1)/b/n/12 k[]\TU/Erewhon-Math.otf(1)/m/n/12 )[](\TU/erewhon(1)/b/n/12 k[]\TU/Erewhon-Math.otf(1)/m/n/12 )[](\TU/erewhon(1)/b/n/12 k[]\TU/Erewhon-Math.otf(1)/m/n/12 ) [] 𝛿(Δ𝜔[])𝛿(\TU/erewhon(1)/b/n/12 k \TU/Erewhon-Math.otf(1)/m/n/12 + \TU/erewhon(1)/b/n/12 k[] \TU/Erewhon-Math.otf(1)/m/n/12 − \TU/erewhon(1)/b/n/12 k[] \TU/Erewhon-Math.otf(1)/m/n/12 − \TU/erewhon(1)/b/n/12 k[]\TU/Erewhon-Math.otf(1)/m/n/12 ).$ []  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 364--367
+
+ []
+
+
+Underfull \vbox (badness 1019) has occurred while \output is active []
+
+ [12]
+Underfull \hbox (badness 10000) in paragraph at lines 374--376
+
+ []
+
+
+Overfull \hbox (13.45442pt too wide) in paragraph at lines 410--423
+\TU/erewhon(0)/m/n/12 This same equa-tion, here ob-tained through ex-plicit per-tur-ba-tive ex-pan-sion around
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 410--423
+
+ []
+
+[13]
+Overfull \hbox (6.69835pt too wide) in paragraph at lines 426--430
+\TU/erewhon(0)/m/n/12 The mi-cro-scopic Hamil-to-nian [] con-serves en-ergy, mo-men-tum and wave num-
+ []
+
+LaTeX Font Info:    Trying to load font information for U+eus on input line 456.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueus.fd
+File: ueus.fd 2013/01/14 v3.01 Euler Script
+) [14]
+Underfull \hbox (badness 10000) in paragraph at lines 460--462
+
+ []
+
+[15]
+Overfull \hbox (34.01953pt too wide) detected at line 502
+[]
+ []
+
+
+Overfull \hbox (18.3365pt too wide) detected at line 510
+[][][][]\TU/erewhon(1)/m/n/12 S \TU/Erewhon-Math.otf(1)/m/n/12 = 4𝜋 [] 𝑑\TU/erewhon(1)/b/n/12 k\TU/Erewhon-Math.otf(1)/m/n/12 𝑑\TU/erewhon(1)/b/n/12 k[]\TU/Erewhon-Math.otf(1)/m/n/12 𝑑\TU/erewhon(1)/b/n/12 k[]\TU/Erewhon-Math.otf(1)/m/n/12 𝑑\TU/erewhon(1)/b/n/12 k[]\TU/Erewhon-Math.otf(1)/m/n/12 |\TU/erewhon(1)/m/n/12 T[]\TU/Erewhon-Math.otf(1)/m/n/12 |[]𝑛[]𝑛[]𝑛[]𝑛[] [][] 𝛿(Δ𝜔[])𝛿[] ≥ 0,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--512
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16]
+Underfull \hbox (badness 10000) in paragraph at lines 538--550
+
+ []
+
+
+Underfull \vbox (badness 1383) has occurred while \output is active []
+
+ [17] Excluding 'comment' comment.
+<images/Fjortoft.pdf, id=313, 425.18332pt x 440.84062pt>
+File: images/Fjortoft.pdf Graphic file (type pdf)
+<use images/Fjortoft.pdf>
+Package luatex.def Info: images/Fjortoft.pdf  used on input line 573.
+(luatex.def)             Requested size: 199.1693pt x 206.50226pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 577--582
+
+ []
+
+[18<./images/Fjortoft.pdf>]
+Underfull \vbox (badness 1448) has occurred while \output is active []
+
+ [19]
+Underfull \hbox (badness 10000) in paragraph at lines 610--618
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 625--629
+
+ []
+
+[20]
+Overfull \hbox (43.30957pt too wide) detected at line 656
+ []$[]\TU/Erewhon-Math.otf(1)/m/n/12 |\TU/erewhon(1)/m/n/12 T\TU/Erewhon-Math.otf(1)/m/n/12 (1, 𝑞[], 𝑞[], 𝑞[])|[]𝑞[]𝑞[]𝑞[] [] 𝛿(1 + |𝑞[]|[] − |𝑞[]|[] − |𝑞[]|[])𝛿(1 + 𝑞[] − 𝑞[] − 𝑞[]),$ []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23]
+Underfull \hbox (badness 10000) in paragraph at lines 745--747
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 748--756
+
+ []
+
+[24]) (./body/chapter_2/chapter_2.tex [25]
+Underfull \hbox (badness 10000) in paragraph at lines 6--20
+
+ []
+
+[26] [27] Excluding 'comment' comment.
+Overfull \hbox (12.2855pt too wide) in paragraph at lines 92--95
+\TU/erewhon(0)/m/n/12 where each com-po-nent is in turn a ma-trix with in-finitely many rows and columns[][][][][][]. 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29]
+Underfull \hbox (badness 10000) in paragraph at lines 173--176
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30]
+Underfull \hbox (badness 10000) in paragraph at lines 191--199
+
+ []
+
+
+Overfull \hbox (7.10913pt too wide) in paragraph at lines 218--221
+\TU/erewhon(0)/m/n/12 and $[]\TU/Erewhon-Math.otf(1)/m/n/12 𝑎[]$ \TU/erewhon(0)/m/n/12 is its com-plex con-ju-gate. More-over in ev-ery ex-pres-sion like $[]\TU/Erewhon-Math.otf(1)/m/n/12 𝑎[]𝑎[]𝑎[]𝑎[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--221
+
+ []
+
+[31]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32]
+Underfull \hbox (badness 10000) in paragraph at lines 256--258
+
+ []
+
+
+Overfull \hbox (0.46214pt too wide) in paragraph at lines 315--316
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--318
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--329
+
+ []
+
+[33]
+<images/2pointsoneloop.jpg, id=543, 4517.87875pt x 1718.42pt>
+File: images/2pointsoneloop.jpg Graphic file (type jpg)
+<use images/2pointsoneloop.jpg>
+Package luatex.def Info: images/2pointsoneloop.jpg  used on input line 336.
+(luatex.def)             Requested size: 239.00558pt x 90.908pt.
+ [34<./images/2pointsoneloop.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 380--387
+
+ []
+
+<images/quarticvertex.jpg, id=562, 3153.7825pt x 3042.36626pt>
+File: images/quarticvertex.jpg Graphic file (type jpg)
+<use images/quarticvertex.jpg>
+Package luatex.def Info: images/quarticvertex.jpg  used on input line 392.
+(luatex.def)             Requested size: 159.33301pt x 153.65916pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35]
+Overfull \hbox (12.96288pt too wide) detected at line 401
+[][][]\TU/Erewhon-Math.otf(1)/m/n/12 ⟨[][][][]⟩[] = −4[]\TU/erewhon(1)/m/n/12 T[] [] D[]D[]D[]D[]\TU/Erewhon-Math.otf(1)/m/n/12 2𝜋𝛿(Δ[])𝛿[],
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 417--419
+
+ []
+
+<images/schanneloneloop.jpg, id=576, 4517.87875pt x 3651.6425pt>
+File: images/schanneloneloop.jpg Graphic file (type jpg)
+<use images/schanneloneloop.jpg>
+Package luatex.def Info: images/schanneloneloop.jpg  used on input line 424.
+(luatex.def)             Requested size: 159.33301pt x 128.76778pt.
+<images/tchanneloneloop.jpg, id=577, 4517.87875pt x 3651.6425pt>
+File: images/tchanneloneloop.jpg Graphic file (type jpg)
+<use images/tchanneloneloop.jpg>
+Package luatex.def Info: images/tchanneloneloop.jpg  used on input line 425.
+(luatex.def)             Requested size: 159.33301pt x 128.76778pt.
+<images/uchanneloneloop.jpg, id=578, 4517.87875pt x 3618.51875pt>
+File: images/uchanneloneloop.jpg Graphic file (type jpg)
+<use images/uchanneloneloop.jpg>
+Package luatex.def Info: images/uchanneloneloop.jpg  used on input line 426.
+(luatex.def)             Requested size: 159.33301pt x 127.59973pt.
+[36<./images/quarticvertex.jpg>] [37<./images/schanneloneloop.jpg><./images/tchanneloneloop.jpg><./images/uchanneloneloop.jpg>]
+Overfull \hbox (20.95143pt too wide) detected at line 481
+ []$[]   \TU/Erewhon-Math.otf(1)/m/n/12 − 4𝜋𝛿(Δ[]) [] \TU/erewhon(1)/m/n/12 T[]T[]\TU/Erewhon-Math.otf(1)/m/n/12 𝛿[]𝛿[]\TU/erewhon(1)/m/n/12 D[]D[]D[]D[] [] \TU/Erewhon-Math.otf(1)/m/n/12 + []$ 
+ []
+
+
+Overfull \hbox (60.05426pt too wide) detected at line 481
+ []$[] [] \TU/Erewhon-Math.otf(1)/m/n/12 .$ []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38]
+Overfull \hbox (20.95143pt too wide) detected at line 507
+ []$[]   \TU/Erewhon-Math.otf(1)/m/n/12 − 8𝜋𝛿(Δ[]) [] \TU/erewhon(1)/m/n/12 T[]T[]\TU/Erewhon-Math.otf(1)/m/n/12 𝛿[]𝛿[]\TU/erewhon(1)/m/n/12 D[]D[]D[]D[] [] \TU/Erewhon-Math.otf(1)/m/n/12 + []$ 
+ []
+
+
+Overfull \hbox (61.01425pt too wide) detected at line 507
+ []$[] [] \TU/Erewhon-Math.otf(1)/m/n/12 .$ []  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--510
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--513
+
+ []
+
+<images/sexticdiagram.jpg, id=620, 4517.87875pt x 1762.585pt>
+File: images/sexticdiagram.jpg Graphic file (type jpg)
+<use images/sexticdiagram.jpg>
+Package luatex.def Info: images/sexticdiagram.jpg  used on input line 516.
+(luatex.def)             Requested size: 199.1693pt x 77.6992pt.
+[39<./images/sexticdiagram.jpg>]
+Overfull \hbox (1.40578pt too wide) in paragraph at lines 537--541
+\TU/erewhon(0)/m/n/12 im-pos-ing $\TU/Erewhon-Math.otf(1)/m/n/12 𝑘[] = 𝑘[]$ \TU/erewhon(0)/m/n/12 and us-ing the sym-me-tries of $\TU/erewhon(1)/m/n/12 T$ \TU/erewhon(0)/m/n/12 re-duces the un-equiv-a-lent terms’
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40]
+Overfull \hbox (81.3089pt too wide) detected at line 590
+[][][][][]
+ []
+
+
+Overfull \hbox (10.2978pt too wide) detected at line 599
+ []$[]\TU/Erewhon-Math.otf(1)/m/n/12 2\TU/erewhon(1)/m/n/12 T[]T[]\TU/Erewhon-Math.otf(1)/m/n/12 𝛿[]𝛿[] [] ,$ []  
+ []
+
+
+Overfull \hbox (21.9494pt too wide) detected at line 616
+[][][][][]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41]
+Underfull \hbox (badness 10000) in paragraph at lines 616--619
+
+ []
+
+
+Overfull \hbox (2.1144pt too wide) in paragraph at lines 636--640
+\TU/erewhon(0)/m/n/12 scribed in the ap-pendix of [[][]12[][]], we ob-tain Rosen-haus and Smolkin’s ki-netic equa-
+ []
+
+
+Overfull \hbox (70.96172pt too wide) detected at line 653
+ []$[]  []\TU/Erewhon-Math.otf(1)/m/n/12 ⟨𝑎[](𝑡)𝑎[](𝑡)⟩ = []𝑛[](𝑡) = 4𝜋 [] [] 𝑑𝑘[]|\TU/erewhon(1)/m/n/12 T[]\TU/Erewhon-Math.otf(1)/m/n/12 |[]𝑛[]𝑛[]𝑛[]𝑛[] [] 𝛿(Δ𝜔[])𝛿[]$ 
+ []
+
+
+Underfull \vbox (badness 7116) has occurred while \output is active []
+
+ [42]
+Overfull \hbox (2.46558pt too wide) in paragraph at lines 653--677
+\TU/erewhon(0)/m/n/12 ques-tion how much in-sight can be ex-tracted about the strong tur-bu-lence regime,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 653--677
+
+ []
+
+[43]) (./body/chapter_3/chapter_3.tex [44]
+Underfull \hbox (badness 10000) in paragraph at lines 7--18
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [45]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46]
+Underfull \hbox (badness 10000) in paragraph at lines 77--92
+
+ []
+
+[47]
+Overfull \hbox (2.33359pt too wide) in paragraph at lines 110--114
+\TU/erewhon(0)/m/n/12 per-tur-ba-tive or-ders as mod-i-fi-ca-tions to the ef-fec-tive in-ter-ac-tion term in the WKE.
+ []
+
+[48]
+Underfull \hbox (badness 10000) in paragraph at lines 152--167
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [49]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [50]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [51]
+Underfull \hbox (badness 10000) in paragraph at lines 220--223
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 230--236
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [52]
+Underfull \hbox (badness 10000) in paragraph at lines 241--244
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
+
+ []
+
+
+Overfull \hbox (9.96242pt too wide) in paragraph at lines 248--251
+\TU/erewhon(0)/m/n/12 Given the re-sults of our the-o-ret-i-cal anal-y-sis we were not able to do so, but nonethe-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--251
+
+ []
+
+[53]
+Underfull \hbox (badness 10000) in paragraph at lines 277--279
+
+ []
+
+<images/MMT_inverse_256_[1.0e-5-10.0].png, id=827, 401.5pt x 301.125pt>
+File: images/MMT_inverse_256_[1.0e-5-10.0].png Graphic file (type png)
+<use images/MMT_inverse_256_[1.0e-5-10.0].png>
+Package luatex.def Info: images/MMT_inverse_256_[1.0e-5-10.0].png  used on input line 286.
+(luatex.def)             Requested size: 199.1693pt x 149.38126pt.
+<images/MMT_direct_256[1.0e-6_1.0].png, id=828, 401.5pt x 301.125pt>
+File: images/MMT_direct_256[1.0e-6_1.0].png Graphic file (type png)
+<use images/MMT_direct_256[1.0e-6_1.0].png>
+Package luatex.def Info: images/MMT_direct_256[1.0e-6_1.0].png  used on input line 293.
+(luatex.def)             Requested size: 199.1693pt x 149.38126pt.
+<images/double_cascade3.jpg, id=831, 401.5pt x 301.125pt>
+File: images/double_cascade3.jpg Graphic file (type jpg)
+<use images/double_cascade3.jpg>
+Package luatex.def Info: images/double_cascade3.jpg  used on input line 302.
+(luatex.def)             Requested size: 199.1693pt x 149.38126pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [54] [55<./images/MMT_inverse_256_[1.0e-5-10.0].png><./images/MMT_direct_256[1.0e-6_1.0].png>] [56<./images/double_cascade3.jpg>]
+Overfull \hbox (4.60538pt too wide) in paragraph at lines 311--312
+[]\TU/erewhon(0)/m/n/12 SIM[]-[]U[]-[]LAZIONI[] [][][]CON[] [][][]CUT[]-[]OFF[] [][][]DE[]-[]NOM[]-[]I[]-[]NA[]-[]TORE,[] [][][]STU[]-[]DIO[] [][][]TEORICO[] [][][]IN[] [][][]SIS[]-[]TEMI[]
+ []
+
+) [57
+
+] (./thesis.bbl [58
+
+]) [59] (./thesis.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+ ***********
+)
+
+Here is how much of LuaTeX's memory you used:
+ 35375 strings out of 476553
+ 125016,1977958 words of node,token memory allocated
+ 3061 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 45 glue, 4 kern, 29 sub_mlist, 65 glyph, 433 attribute, 58 glue_spec, 433 attribute_list, 2 write nodes
+   avail lists: 1:10,2:2377,3:990,4:680,5:931,6:59,7:7108,8:106,9:1974,10:14,11:562
+ 56099 multiletter control sequences out of 65536+600000
+ 148 fonts using 33523239 bytes
+ 110i,14n,104p,1008b,1885s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.39'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.38'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.37'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.36'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.35'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.34'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.33'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.32'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.31'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.30'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.29'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.28'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.27'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.26'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.25'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.24'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.23'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.22'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.21'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.20'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.19'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.18'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.17'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.16'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.15'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.14'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.13'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.12'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.11'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.10'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.9'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.8'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.7'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.6'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.5'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.4'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.3'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.2'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.1'
+</usr/share/texlive/texmf-dist/fonts/opentype/public/erewhon/Erewhon-Italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/erewhon-math/Erewhon-Math.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/erewhon/Erewhon-Bold.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/erewhon/Erewhon-Regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/erewhon-math/Erewhon-Math.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/erewhon-math/Erewhon-Math.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/erewhon/Erewhon-Regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/erewhon/Erewhon-Bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb>
+Output written on thesis.pdf (62 pages, 6171612 bytes).
+
+PDF statistics: 1007 PDF objects out of 1200 (max. 8388607)
+ 884 compressed objects within 9 object streams
+ 333 named destinations out of 1000 (max. 131072)
+ 168 words of extra memory for PDF output out of 10000 (max. 100000000)
+
