@@ -18,6 +18,11 @@ V.~Gurarie.
 \newblock {Probability density, diagrammatic technique, and epsilon expansion in the theory of wave turbulence}.
 \newblock {\em Nucl. Phys. B}, 441:569--594, 1995.
 
+\bibitem{Hasselmann1962}
+K.~Hasselmann.
+\newblock On the non-linear energy transfer in a gravity-wave spectrum part 1. general theory.
+\newblock {\em Journal of Fluid Mechanics}, 12(04):481, April 1962.
+
 \bibitem{Giorgio1}
 Vincent Labarre, Giorgio Krstulovic, and Sergey Nazarenko.
 \newblock Wave-kinetic dynamics of forced-dissipated turbulent internal gravity waves, 2024.
@@ -36,6 +41,11 @@ Sergey Nazarenko.
 M~Onorato and G~Dematteis.
 \newblock A straightforward derivation of the four-wave kinetic equation in action-angle variables.
 \newblock {\em Journal of Physics Communications}, 4(9):095016, September 2020.
+
+\bibitem{Peierls1929}
+R.~Peierls.
+\newblock Zur kinetischen theorie der w\"{a}rmeleitung in kristallen.
+\newblock {\em Annalen der Physik}, 395(8):1055–1101, January 1929.
 
 \bibitem{Rosenhaus:2023pdj}
 Vladimir Rosenhaus and Gregory Falkovich.

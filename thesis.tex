@@ -28,7 +28,7 @@
     colorlinks,
     linkcolor=black,
     citecolor=black,
-    urlcolor={blue!80!black}
+    urlcolor=black
 }
 
 %to have the fourier font (very nice) without it uses computern modern, it should be fourier-otf with lualatex
@@ -92,6 +92,7 @@
 
 %%%%%%%%%%HEADERS%%%%%%%%%%%%%
 \usepackage{fancyhdr}
+%%%%%%%%%%%%%%%%NOT USED I DON'T REALLY KNOW WHAT IT DOES%%%%%%%%%%%%%%%%%
 \pagestyle{fancy}
 %to clear all previous settings
 \fancyhf{} 
@@ -100,38 +101,41 @@
 \fancyhead[L]{} 
 \fancyhead[LE,RO]{\thepage}
 %to remove the black line
-\renewcommand{\headrulewidth}{0pt}
+%\renewcommand{\headrulewidth}{0pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %to change also the style used by Tableofcontents and bibliography
 \fancypagestyle{plain}{
     \fancyhf{}
-    \fancyhead[R]{\thepage}
+    \fancyhead[LE,RO]{\thepage}
     \fancyfoot{}
 }
 
-%to have a custom header for the introduction first page
+%to have a custom header for the introduction first page NOT USED
 \fancypagestyle{intro1}{
     \fancyhf{}  
     \fancyhead[C]{}  
-    \fancyhead[R]{\thepage}  
-    \renewcommand{\headrulewidth}{0pt}  
+    \fancyhead[LE,RO]{\thepage}  
+    %\renewcommand{\headrulewidth}{0pt}  
 }
 %to have a custom header for the introduction other pages
 \fancypagestyle{intro2}{
     \fancyhf{}  
     \fancyhead[C]{\small \bfseries{INTRODUCTION}}  
-    \fancyhead[R]{\thepage}  
-    \renewcommand{\headrulewidth}{0pt}  
+    \fancyhead[LE,RO]{\thepage}  
+    %\renewcommand{\headrulewidth}{0pt}  
 }
-
-%to recover normal header style (NOT USED FOR NOW)
-\fancypagestyle{normal}{
-    \fancyhf{}  
-    \fancyhead[C]{\small \bfseries{diobon}}  
-    \fancyhead[R]{\thepage}  
-    \renewcommand{\headrulewidth}{0pt}  
+%to personalize the section name im the \rightmark call 
+\renewcommand{\sectionmark}[1]{%
+ \markright{\MakeUppercase{#1}}}%
+%to recover normal header style after the introduction, adding alternation of chapter number and section name
+\fancypagestyle{landau}{
+    \fancyhead[CE]{\small \bfseries{CHAPTER} \thesection}
+    \fancyhead[CO]{\small \bfseries\rightmark}
+    \fancyhead[L]{} 
+    \fancyhead[LE,RO]{\thepage}  
+    %\renewcommand{\headrulewidth}{0pt}  
 }
-
 
 %NOT DEFINITIVE to have the section title 3 cm down with respect to the header, but it applies to every page
 %\setlength{\headsep}{3cm}
@@ -154,9 +158,18 @@
 %to center CONTENTS and BIBLIOGRAPHY
 \renewcommand{\contentsname}{\centering Contents}   % For TOC title
 \renewcommand{\bibname}{\centering Bibliography}   % For report/book
-%%%%%%%%%%COVER%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%to manipulate the TOC (indentations, dot separations etc) 
+\usepackage{tocloft} 
+\renewcommand{\cftdotsep}{1} % Separation of dots in TOC
+\setlength{\cftbeforesecskip}{15pt}    % Space before a section entry
+\setlength{\cftbeforesubsecskip}{5pt} % Space before a subsection entry
+%\setlength{\cftsubsecnumwidth}{2em}  % Space between subsection number and name
+\setlength{\cftsecindent}{0em}  % Adjust indentation of sections
+\renewcommand{\cftsecfont}{\bfseries\large}        % Make section titles bold in TOC
+\renewcommand{\cftsubsecfont}{\bfseries}     % Make subsection titles bold in TOC
+\renewcommand{\cftsecpagefont}{\bfseries}        % Make section page numbers bold
+\renewcommand{\cftsubsecpagefont}{\bfseries}     % Make subsection page numbers bold
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %positions of feynman diagrams
 \newcommand\yone{0}
@@ -313,11 +326,16 @@
 %introduction
 %resetting page numbering
 \pagenumbering{arabic}
-%bad solutions to have different header for the intro si to manually change eat each page
-\thispagestyle{intro1}
+%to change the introduction header
+\pagestyle{intro2}
+%to add the introductionto the toc
+\addcontentsline{toc}{section}{\hspace{10mm}Introduction}
+\thispagestyle{empty}
 \input{body/Introduction/Introduction.tex}
-
+\newpage
+\pagestyle{landau}
 %CHAPTERS
+%At the start of each one is necessary to insert \newpage \phantom \thispagestyle{empty}
 %chapter1
 \input{body/chapter_1/chapter_1.tex}
 
@@ -326,13 +344,6 @@
 
 %chapter3
 \input{body/chapter_3/chapter_3.tex}
-
-%chapter4
-%\input{body/chapter_4/chapter_4.tex}
-
-
-
-
 
 %%%%%%%%%%%%%%%%%%%BIBLIOGRAPHY%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage

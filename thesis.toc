@@ -1,0 +1,21 @@
+\thispagestyle {empty}
+\contentsline {section}{\hspace {10mm}Introduction}{1}{Doc-Start}%
+\contentsline {section}{\numberline {I}Statistics of weakly nonlinear waves}{4}{section.0.1}%
+\contentsline {subsection}{\numberline {\textsection 1.1}Waves in continuous media}{4}{subsection.0.1.1}%
+\contentsline {subsection}{\numberline {\textsection 1.2}Perturbation Theory}{7}{subsection.0.1.2}%
+\contentsline {subsection}{\numberline {\textsection 1.3}Random Phase Approximation}{11}{subsection.0.1.3}%
+\contentsline {subsection}{\numberline {\textsection 1.4}The Wave Kinetic Equation}{14}{subsection.0.1.4}%
+\contentsline {subsection}{\numberline {\textsection 1.5}Main properties of the kinetic equation}{16}{subsection.0.1.5}%
+\contentsline {subsection}{\numberline {\textsection 1.6}Equilibrium stationary states}{19}{subsection.0.1.6}%
+\contentsline {subsection}{\numberline {\textsection 1.7}Out of equilibrium stationary states}{20}{subsection.0.1.7}%
+\contentsline {section}{\numberline {II}Beyond the leading order}{28}{section.0.2}%
+\contentsline {subsection}{\numberline {\textsection 2.1}Path integral formulation of weak turbulence}{28}{subsection.0.2.1}%
+\contentsline {subsection}{\numberline {\textsection 2.2}Feynman rules}{32}{subsection.0.2.2}%
+\contentsline {subsection}{\numberline {\textsection 2.3}Two points functions}{36}{subsection.0.2.3}%
+\contentsline {subsection}{\numberline {\textsection 2.4}Four points functions}{38}{subsection.0.2.4}%
+\contentsline {subsection}{\numberline {\textsection 2.5}Higher order kinetic equation}{44}{subsection.0.2.5}%
+\contentsline {section}{\numberline {III}A one dimensional model for Wave Turbulence}{47}{section.0.3}%
+\contentsline {subsection}{\numberline {\textsection 3.1}The MMT model}{48}{subsection.0.3.1}%
+\contentsline {subsection}{\numberline {\textsection 3.2}The higher order kinetic equation}{50}{subsection.0.3.2}%
+\contentsline {subsection}{\numberline {\textsection 3.3}Numerical simulations through WavKinS}{55}{subsection.0.3.3}%
+\contentsline {subsection}{\numberline {\textsection 3.4}Future work}{58}{subsection.0.3.4}%

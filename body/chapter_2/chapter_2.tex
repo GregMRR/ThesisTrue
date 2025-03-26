@@ -1,7 +1,8 @@
 % !TEX root = ../../thesis.tex
 
 \newpage
-\vphantom{}
+\phantom{}
+\thispagestyle{empty}
 \section{Beyond the leading order}
 Deriving the wave kinetic equation by truncating perturbation theory at higher orders is not an easy feat. Calculations become quickly extremely cumbersome. Approaches 
 based on classical diagrammatic methods were developed in \cite{Zakharov1975} and \cite{Gurarie:1994ut}. Lately techniques exploiting Feynman diagrams were developed in
@@ -15,12 +16,12 @@ a statistical theory were the normal variables of the orginal system inherit the
 a path integral approach may be implemented, allowing for the usage of the well developed machinery of QFT perturbation theory.\\
 After introducing and commenting the Feynman rules of the model, we calculate two and four points 
 correlation functions up to the first nontrivial higher order to derive the corresponding kinetic equation. The resulting theory can be said to account 
-not only for direct four wave interactions,as \eqref{kinetic}, but also for the exchange of virtual waves among different modes. We end the chapter by briefly discussing the implications
+not only for direct four wave interactions, as \eqref{kinetic}, but also for the exchange of virtual waves among different modes. We end the chapter by briefly discussing the implications
 of this corrected equations for the KZ spectra. \\  
-\subsection{Path integral formulation of weak turbulence theory}
+\subsection{Path integral formulation of weak turbulence}
 
-There are many ways to derive the kinetic equation for weakly interactive waves. One of them is by looking at the late time behaviour of the same nonlinear system
-coupled to a complex gaussian forcing and some dissipation, as in \cite{Zakharov1975} we write the modified e.o.m.s (already in the continuum limit)
+There are many ways to derive the kinetic equation for weakly interactive waves. One of them is by looking at the late time behavior of the same nonlinear system
+coupled to a complex Gaussian forcing and some dissipation, as in \cite{Zakharov1975} we write the modified e.o.m.s (already in the continuum limit)
 \begin{equation}
     \pt a_k + i \omga_k a_k = -i \int dk_1 dk_2 dk_3 \Tint_{k123} a_1^*a_2^{}a_3^{} \delta^{k1}_{23} + f_k(t) - \gamma_k a_k.
     \label{eoms}

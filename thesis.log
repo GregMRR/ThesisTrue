@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2024.9.26)  26 MAR 2025 00:00
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2024.9.26)  27 MAR 2025 00:24
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/home/greg/Desktop/TESI/Scrittura_tesi/ThesisTrue/thesis
@@ -892,43 +892,82 @@ Package: titlesec 2023/10/27 v2.16 Sectioning titles
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
+) (/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip67
+\cftbeforetoctitleskip=\skip68
+\cftaftertoctitleskip=\skip69
+\cftbeforepartskip=\skip70
+\cftpartnumwidth=\skip71
+\cftpartindent=\skip72
+\cftbeforechapskip=\skip73
+\cftchapindent=\skip74
+\cftchapnumwidth=\skip75
+\cftbeforesecskip=\skip76
+\cftsecindent=\skip77
+\cftsecnumwidth=\skip78
+\cftbeforesubsecskip=\skip79
+\cftsubsecindent=\skip80
+\cftsubsecnumwidth=\skip81
+\cftbeforesubsubsecskip=\skip82
+\cftsubsubsecindent=\skip83
+\cftsubsubsecnumwidth=\skip84
+\cftbeforeparaskip=\skip85
+\cftparaindent=\skip86
+\cftparanumwidth=\skip87
+\cftbeforesubparaskip=\skip88
+\cftsubparaindent=\skip89
+\cftsubparanumwidth=\skip90
+\cftbeforeloftitleskip=\skip91
+\cftafterloftitleskip=\skip92
+\cftbeforefigskip=\skip93
+\cftfigindent=\skip94
+\cftfignumwidth=\skip95
+\c@lofdepth=\count340
+\c@lotdepth=\count341
+\cftbeforelottitleskip=\skip96
+\cftafterlottitleskip=\skip97
+\cftbeforetabskip=\skip98
+\cfttabindent=\skip99
+\cfttabnumwidth=\skip100
 ) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 ) (./thesis.aux)
 \openout1 = thesis.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 285.
-LaTeX Font Info:    ... okay on input line 285.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 285.
-LaTeX Font Info:    ... okay on input line 285.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 285.
-LaTeX Font Info:    ... okay on input line 285.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 285.
-LaTeX Font Info:    ... okay on input line 285.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 285.
-LaTeX Font Info:    ... okay on input line 285.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 285.
-LaTeX Font Info:    ... okay on input line 285.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 285.
-LaTeX Font Info:    ... okay on input line 285.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 285.
-LaTeX Font Info:    ... okay on input line 285.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 285.
-LaTeX Font Info:    ... okay on input line 285.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 285.
-LaTeX Font Info:    ... okay on input line 285.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 298.
+LaTeX Font Info:    ... okay on input line 298.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 298.
+LaTeX Font Info:    ... okay on input line 298.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 298.
+LaTeX Font Info:    ... okay on input line 298.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 298.
+LaTeX Font Info:    ... okay on input line 298.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 298.
+LaTeX Font Info:    ... okay on input line 298.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 298.
+LaTeX Font Info:    ... okay on input line 298.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 298.
+LaTeX Font Info:    ... okay on input line 298.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 298.
+LaTeX Font Info:    ... okay on input line 298.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 298.
+LaTeX Font Info:    ... okay on input line 298.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 298.
+LaTeX Font Info:    ... okay on input line 298.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count340
+\scratchcounter=\count342
 \scratchdimen=\dimen308
 \scratchbox=\box78
-\nofMPsegments=\count341
-\nofMParguments=\count342
+\nofMPsegments=\count343
+\nofMParguments=\count344
 \everyMPshowfont=\toks53
-\MPscratchCnt=\count343
+\MPscratchCnt=\count345
 \MPscratchDim=\dimen309
-\MPnumerator=\count344
-\makeMPintoPDFobject=\count345
+\MPnumerator=\count346
+\makeMPintoPDFobject=\count347
 \everyMPtoPDFconversion=\toks54
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -936,15 +975,15 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 285.
+Package hyperref Info: Link coloring ON on input line 298.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 285.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 298.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 285.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 298.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 285.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 298.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 285.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 298.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -1010,35 +1049,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write5
 
 \openout5 = thesis.toc
- [1
-
-] (./body/Introduction/Introduction.tex
-Overfull \hbox (0.17041pt too wide) in paragraph at lines 9--29
-\TU/erewhon(0)/m/n/12 tur-ba-tion, it is a cer-tainty that some kind of os-cil-la-tory phe-nomenon takes place.
- []
-
-
-Overfull \hbox (0.93546pt too wide) in paragraph at lines 9--29
-\TU/erewhon(0)/m/n/12 vari-ates, orig-i-nat-ing pres-sure waves. On its sep-a-ra-tion layer from a dif-fer-ent fluid
- []
-
-) (./body/chapter_1/chapter_1.tex
-warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
-[1]
-Overfull \hbox (8.48236pt too wide) in paragraph at lines 7--15
-\TU/erewhon(0)/m/n/12 First we in-tro-duce a gen-eral model for non-lin-ear waves, we later ex-pand it through
- []
-
-
-Overfull \hbox (3.61359pt too wide) in paragraph at lines 7--15
-\TU/erewhon(0)/m/n/12 stan-dard per-tur-ba-tion the-ory and as-sume ho-mo-geneus statis-tics over the phases
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--15
-
- []
-
+ [1] (./body/Introduction/Introduction.tex
 
 Package fontspec Info: Font family 'erewhon(2)' created for font 'erewhon'
 (fontspec)             with options [Ligatures=TeX,Extension =
@@ -1078,246 +1089,650 @@ Package fontspec Info: Font family 'erewhon(2)' created for font 'erewhon'
 (fontspec)             <->"[Erewhon-BoldSlanted.otf]:mode=node;script=latn;language=dflt;+tlig;+sups;+smcp;"
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 8--15
+
+ []
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
+[1]
 warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
-[2]
-Overfull \hbox (0.2161pt too wide) in paragraph at lines 38--47
+[2]) [3] (./body/chapter_1/chapter_1.tex
+Overfull \hbox (8.48236pt too wide) in paragraph at lines 7--14
+\TU/erewhon(0)/m/n/12 First we in-tro-duce a gen-eral model for non-lin-ear waves, we later ex-pand it through
+ []
+
+
+Overfull \hbox (10.11758pt too wide) in paragraph at lines 7--14
+\TU/erewhon(0)/m/n/12 stan-dard per-tur-ba-tion the-ory and as-sume ho-mo-ge-neous statis-tics over the phases
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--14
+
+ []
+
+[4]
+Overfull \hbox (0.2161pt too wide) in paragraph at lines 37--46
 \TU/erewhon(0)/m/n/12 ap-pear with a pos-i-tive sign and sub-scripts with a neg-a-tive one, for ex-am-ple $\TU/Erewhon-Math.otf(1)/m/n/12 𝛿[] =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--47
+Underfull \hbox (badness 10000) in paragraph at lines 37--46
 
  []
 
-[3] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 95--100
+[5] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 94--99
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--111
+Underfull \hbox (badness 10000) in paragraph at lines 102--110
 
  []
 
-[5]
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 144.
+[7]
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 143.
 
-Overfull \hbox (23.1946pt too wide) in paragraph at lines 144--148
+Overfull \hbox (23.1946pt too wide) in paragraph at lines 143--147
 \TU/erewhon(0)/m/n/12 ar-ti-fi-cially in-tro-duced by the per-tur-ba-tive ex-pan-sion. The Poincarè-Lindsted method
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--159
+Underfull \hbox (badness 10000) in paragraph at lines 151--158
 
  []
 
-[6]
-Overfull \hbox (11.4662pt too wide) in paragraph at lines 164--168
+[8]
+Overfull \hbox (11.4662pt too wide) in paragraph at lines 163--167
 \TU/erewhon(0)/m/n/12 We now rein-tro-duce ex-plicit time de-pen-dance and im-pose $\TU/erewhon(1)/m/n/12 I[]\TU/Erewhon-Math.otf(1)/m/n/12 (0) = [][]$ \TU/erewhon(0)/m/n/12 and $\TU/erewhon(1)/m/n/12 I[]\TU/Erewhon-Math.otf(1)/m/n/12 (0) =
  []
 
 
-Overfull \hbox (3.95929pt too wide) in paragraph at lines 164--168
+Overfull \hbox (3.95929pt too wide) in paragraph at lines 163--167
 \TU/erewhon(1)/m/n/12 I[]\TU/Erewhon-Math.otf(1)/m/n/12 (0) = 0$ \TU/erewhon(0)/m/n/12 to fix ini-tial con-di-tions on the $\TU/erewhon(1)/m/n/12 I[]$\TU/erewhon(0)/m/n/12 s and $\TU/Erewhon-Math.otf(1)/m/n/12 𝜃[](0) = [][]$ \TU/erewhon(0)/m/n/12 and $\TU/Erewhon-Math.otf(1)/m/n/12 𝜃[](0) = 𝜃[](0) =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--168
+Underfull \hbox (badness 10000) in paragraph at lines 163--167
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--184
+Underfull \hbox (badness 10000) in paragraph at lines 177--183
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7]
-Underfull \hbox (badness 10000) in paragraph at lines 196--198
+ [9]
+Underfull \hbox (badness 10000) in paragraph at lines 195--197
 
  []
 
 
-Overfull \hbox (9.8519pt too wide) detected at line 228
+Overfull \hbox (9.8519pt too wide) detected at line 227
  []$[] \TU/Erewhon-Math.otf(1)/m/n/12 × [] 𝛿[]𝛿[],$ []  
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8]
-Underfull \hbox (badness 10000) in paragraph at lines 228--230
+ [10]
+Underfull \hbox (badness 10000) in paragraph at lines 227--229
 
  []
 
-[9]
-Overfull \hbox (87.53629pt too wide) detected at line 275
+[11]
+Overfull \hbox (87.53629pt too wide) detected at line 274
  []$[]   [][] \TU/Erewhon-Math.otf(1)/m/n/12 = [][] = [] [][] 𝑒[]𝑒[]𝑒[]𝑒[]𝑑[]𝑑[]𝑑[]𝑑[] = 0$ []  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--278
+Underfull \hbox (badness 10000) in paragraph at lines 274--277
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10]
-Underfull \hbox (badness 10000) in paragraph at lines 328--339
+ [12]
+Underfull \hbox (badness 10000) in paragraph at lines 327--338
 
  []
 
-[11]
-Overfull \hbox (67.10086pt too wide) detected at line 360
+[13]
+Overfull \hbox (67.10086pt too wide) detected at line 359
  []$[]\TU/erewhon(1)/m/n/12 T[]\TU/Erewhon-Math.otf(1)/m/n/12 (\TU/erewhon(1)/b/n/12 k\TU/Erewhon-Math.otf(1)/m/n/12 , \TU/erewhon(1)/b/n/12 k[]\TU/Erewhon-Math.otf(1)/m/n/12 , \TU/erewhon(1)/b/n/12 k[]\TU/Erewhon-Math.otf(1)/m/n/12 , \TU/erewhon(1)/b/n/12 k[]\TU/Erewhon-Math.otf(1)/m/n/12 )[](\TU/erewhon(1)/b/n/12 k\TU/Erewhon-Math.otf(1)/m/n/12 )[](\TU/erewhon(1)/b/n/12 k[]\TU/Erewhon-Math.otf(1)/m/n/12 )[](\TU/erewhon(1)/b/n/12 k[]\TU/Erewhon-Math.otf(1)/m/n/12 )[](\TU/erewhon(1)/b/n/12 k[]\TU/Erewhon-Math.otf(1)/m/n/12 ) [] 𝛿(Δ𝜔[])𝛿(\TU/erewhon(1)/b/n/12 k \TU/Erewhon-Math.otf(1)/m/n/12 + \TU/erewhon(1)/b/n/12 k[] \TU/Erewhon-Math.otf(1)/m/n/12 − \TU/erewhon(1)/b/n/12 k[] \TU/Erewhon-Math.otf(1)/m/n/12 − \TU/erewhon(1)/b/n/12 k[]\TU/Erewhon-Math.otf(1)/m/n/12 ).$ []  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 364--367
+Underfull \hbox (badness 10000) in paragraph at lines 363--366
 
  []
 
 
 Underfull \vbox (badness 1019) has occurred while \output is active []
 
- [12]
-Underfull \hbox (badness 10000) in paragraph at lines 374--376
+ [14]
+Underfull \hbox (badness 10000) in paragraph at lines 373--375
 
  []
 
 
-Overfull \hbox (13.45442pt too wide) in paragraph at lines 410--423
+Overfull \hbox (13.45442pt too wide) in paragraph at lines 409--422
 \TU/erewhon(0)/m/n/12 This same equa-tion, here ob-tained through ex-plicit per-tur-ba-tive ex-pan-sion around
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 410--423
-
- []
-
-[13]
-Overfull \hbox (6.69835pt too wide) in paragraph at lines 426--430
-\TU/erewhon(0)/m/n/12 The mi-cro-scopic Hamil-to-nian [] con-serves en-ergy, mo-men-tum and wave num-
- []
-
-LaTeX Font Info:    Trying to load font information for U+eus on input line 456.
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueus.fd
-File: ueus.fd 2013/01/14 v3.01 Euler Script
-) [14]
-Underfull \hbox (badness 10000) in paragraph at lines 460--462
+Underfull \hbox (badness 10000) in paragraph at lines 409--422
 
  []
 
 [15]
-Overfull \hbox (34.01953pt too wide) detected at line 502
+Overfull \hbox (6.69835pt too wide) in paragraph at lines 425--429
+\TU/erewhon(0)/m/n/12 The mi-cro-scopic Hamil-to-nian [] con-serves en-ergy, mo-men-tum and wave num-
+ []
+
+LaTeX Font Info:    Trying to load font information for U+eus on input line 455.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueus.fd
+File: ueus.fd 2013/01/14 v3.01 Euler Script
+) [16]
+Underfull \hbox (badness 10000) in paragraph at lines 459--461
+
+ []
+
+[17]
+Overfull \hbox (34.01953pt too wide) detected at line 501
 []
  []
 
 
-Overfull \hbox (18.3365pt too wide) detected at line 510
+Overfull \hbox (18.3365pt too wide) detected at line 509
 [][][][]\TU/erewhon(1)/m/n/12 S \TU/Erewhon-Math.otf(1)/m/n/12 = 4𝜋 [] 𝑑\TU/erewhon(1)/b/n/12 k\TU/Erewhon-Math.otf(1)/m/n/12 𝑑\TU/erewhon(1)/b/n/12 k[]\TU/Erewhon-Math.otf(1)/m/n/12 𝑑\TU/erewhon(1)/b/n/12 k[]\TU/Erewhon-Math.otf(1)/m/n/12 𝑑\TU/erewhon(1)/b/n/12 k[]\TU/Erewhon-Math.otf(1)/m/n/12 |\TU/erewhon(1)/m/n/12 T[]\TU/Erewhon-Math.otf(1)/m/n/12 |[]𝑛[]𝑛[]𝑛[]𝑛[] [][] 𝛿(Δ𝜔[])𝛿[] ≥ 0,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 510--512
+Underfull \hbox (badness 10000) in paragraph at lines 509--511
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16]
-Underfull \hbox (badness 10000) in paragraph at lines 538--550
+ [18]
+Underfull \hbox (badness 10000) in paragraph at lines 537--549
 
  []
 
 
 Underfull \vbox (badness 1383) has occurred while \output is active []
 
- [17] Excluding 'comment' comment.
-<images/Fjortoft.pdf, id=313, 425.18332pt x 440.84062pt>
+ [19] Excluding 'comment' comment.
+<images/Fjortoft.pdf, id=351, 425.18332pt x 440.84062pt>
 File: images/Fjortoft.pdf Graphic file (type pdf)
 <use images/Fjortoft.pdf>
-Package luatex.def Info: images/Fjortoft.pdf  used on input line 573.
+Package luatex.def Info: images/Fjortoft.pdf  used on input line 571.
 (luatex.def)             Requested size: 199.1693pt x 206.50226pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 577--582
+Underfull \hbox (badness 10000) in paragraph at lines 575--580
 
  []
 
-[18<./images/Fjortoft.pdf>]
+[20<./images/Fjortoft.pdf>]
 Underfull \vbox (badness 1448) has occurred while \output is active []
 
- [19]
-Underfull \hbox (badness 10000) in paragraph at lines 610--618
+ [21]
+Underfull \hbox (badness 10000) in paragraph at lines 608--616
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 625--629
+Underfull \hbox (badness 10000) in paragraph at lines 623--627
 
  []
 
-[20]
-Overfull \hbox (43.30957pt too wide) detected at line 656
+[22]
+Overfull \hbox (43.30957pt too wide) detected at line 654
  []$[]\TU/Erewhon-Math.otf(1)/m/n/12 |\TU/erewhon(1)/m/n/12 T\TU/Erewhon-Math.otf(1)/m/n/12 (1, 𝑞[], 𝑞[], 𝑞[])|[]𝑞[]𝑞[]𝑞[] [] 𝛿(1 + |𝑞[]|[] − |𝑞[]|[] − |𝑞[]|[])𝛿(1 + 𝑞[] − 𝑞[] − 𝑞[]),$ []  
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [22]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [23]
-Underfull \hbox (badness 10000) in paragraph at lines 745--747
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25]
+Underfull \hbox (badness 10000) in paragraph at lines 743--745
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 748--756
+Underfull \hbox (badness 10000) in paragraph at lines 746--754
 
  []
 
-[24]) (./body/chapter_2/chapter_2.tex [25]
-Underfull \hbox (badness 10000) in paragraph at lines 6--20
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 755--761
 
  []
 
-[26] [27] Excluding 'comment' comment.
-Overfull \hbox (12.2855pt too wide) in paragraph at lines 92--95
+
+Underfull \hbox (badness 10000) in paragraph at lines 762--764
+
+ []
+
+) (./body/chapter_2/chapter_2.tex [27]
+Underfull \hbox (badness 10000) in paragraph at lines 7--21
+
+ []
+
+[28] [29] Excluding 'comment' comment.
+Overfull \hbox (12.2855pt too wide) in paragraph at lines 93--96
 \TU/erewhon(0)/m/n/12 where each com-po-nent is in turn a ma-trix with in-finitely many rows and columns[][][][][][]. 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [29]
-Underfull \hbox (badness 10000) in paragraph at lines 173--176
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [30]
-Underfull \hbox (badness 10000) in paragraph at lines 191--199
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31]
+Underfull \hbox (badness 10000) in paragraph at lines 174--177
 
  []
 
 
-Overfull \hbox (7.10913pt too wide) in paragraph at lines 218--221
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32]
+Underfull \hbox (badness 10000) in paragraph at lines 192--200
+
+ []
+
+
+Overfull \hbox (7.10913pt too wide) in paragraph at lines 219--222
 \TU/erewhon(0)/m/n/12 and $[]\TU/Erewhon-Math.otf(1)/m/n/12 𝑎[]$ \TU/erewhon(0)/m/n/12 is its com-plex con-ju-gate. More-over in ev-ery ex-pres-sion like $[]\TU/Erewhon-Math.otf(1)/m/n/12 𝑎[]𝑎[]𝑎[]𝑎[]$
  []
 
 
-Underfull \hbox (badness 10
+Underfull \hbox (badness 10000) in paragraph at lines 219--222
+
+ []
+
+[33]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34]
+Underfull \hbox (badness 10000) in paragraph at lines 257--259
+
+ []
+
+
+Overfull \hbox (0.46214pt too wide) in paragraph at lines 316--317
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--319
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--330
+
+ []
+
+[35]
+<images/2pointsoneloop.jpg, id=576, 4517.87875pt x 1718.42pt>
+File: images/2pointsoneloop.jpg Graphic file (type jpg)
+<use images/2pointsoneloop.jpg>
+Package luatex.def Info: images/2pointsoneloop.jpg  used on input line 337.
+(luatex.def)             Requested size: 239.00558pt x 90.908pt.
+ [36<./images/2pointsoneloop.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 381--388
+
+ []
+
+<images/quarticvertex.jpg, id=595, 3153.7825pt x 3042.36626pt>
+File: images/quarticvertex.jpg Graphic file (type jpg)
+<use images/quarticvertex.jpg>
+Package luatex.def Info: images/quarticvertex.jpg  used on input line 393.
+(luatex.def)             Requested size: 159.33301pt x 153.65916pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37]
+Overfull \hbox (12.96288pt too wide) detected at line 402
+[][][]\TU/Erewhon-Math.otf(1)/m/n/12 ⟨[][][][]⟩[] = −4[]\TU/erewhon(1)/m/n/12 T[] [] D[]D[]D[]D[]\TU/Erewhon-Math.otf(1)/m/n/12 2𝜋𝛿(Δ[])𝛿[],
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 418--420
+
+ []
+
+<images/schanneloneloop.jpg, id=609, 4517.87875pt x 3651.6425pt>
+File: images/schanneloneloop.jpg Graphic file (type jpg)
+<use images/schanneloneloop.jpg>
+Package luatex.def Info: images/schanneloneloop.jpg  used on input line 425.
+(luatex.def)             Requested size: 159.33301pt x 128.76778pt.
+<images/tchanneloneloop.jpg, id=610, 4517.87875pt x 3651.6425pt>
+File: images/tchanneloneloop.jpg Graphic file (type jpg)
+<use images/tchanneloneloop.jpg>
+Package luatex.def Info: images/tchanneloneloop.jpg  used on input line 426.
+(luatex.def)             Requested size: 159.33301pt x 128.76778pt.
+<images/uchanneloneloop.jpg, id=611, 4517.87875pt x 3618.51875pt>
+File: images/uchanneloneloop.jpg Graphic file (type jpg)
+<use images/uchanneloneloop.jpg>
+Package luatex.def Info: images/uchanneloneloop.jpg  used on input line 427.
+(luatex.def)             Requested size: 159.33301pt x 127.59973pt.
+[38<./images/quarticvertex.jpg>] [39<./images/schanneloneloop.jpg><./images/tchanneloneloop.jpg><./images/uchanneloneloop.jpg>]
+Overfull \hbox (20.95143pt too wide) detected at line 482
+ []$[]   \TU/Erewhon-Math.otf(1)/m/n/12 − 4𝜋𝛿(Δ[]) [] \TU/erewhon(1)/m/n/12 T[]T[]\TU/Erewhon-Math.otf(1)/m/n/12 𝛿[]𝛿[]\TU/erewhon(1)/m/n/12 D[]D[]D[]D[] [] \TU/Erewhon-Math.otf(1)/m/n/12 + []$ 
+ []
+
+
+Overfull \hbox (60.05426pt too wide) detected at line 482
+ []$[] [] \TU/Erewhon-Math.otf(1)/m/n/12 .$ []  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40]
+Overfull \hbox (20.95143pt too wide) detected at line 508
+ []$[]   \TU/Erewhon-Math.otf(1)/m/n/12 − 8𝜋𝛿(Δ[]) [] \TU/erewhon(1)/m/n/12 T[]T[]\TU/Erewhon-Math.otf(1)/m/n/12 𝛿[]𝛿[]\TU/erewhon(1)/m/n/12 D[]D[]D[]D[] [] \TU/Erewhon-Math.otf(1)/m/n/12 + []$ 
+ []
+
+
+Overfull \hbox (61.01425pt too wide) detected at line 508
+ []$[] [] \TU/Erewhon-Math.otf(1)/m/n/12 .$ []  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 508--511
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 512--514
+
+ []
+
+<images/sexticdiagram.jpg, id=654, 4517.87875pt x 1762.585pt>
+File: images/sexticdiagram.jpg Graphic file (type jpg)
+<use images/sexticdiagram.jpg>
+Package luatex.def Info: images/sexticdiagram.jpg  used on input line 517.
+(luatex.def)             Requested size: 199.1693pt x 77.6992pt.
+[41<./images/sexticdiagram.jpg>]
+Overfull \hbox (1.40578pt too wide) in paragraph at lines 538--542
+\TU/erewhon(0)/m/n/12 im-pos-ing $\TU/Erewhon-Math.otf(1)/m/n/12 𝑘[] = 𝑘[]$ \TU/erewhon(0)/m/n/12 and us-ing the sym-me-tries of $\TU/erewhon(1)/m/n/12 T$ \TU/erewhon(0)/m/n/12 re-duces the un-equiv-a-lent terms’
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [42]
+Overfull \hbox (28.10622pt too wide) detected at line 593
+[][][][][]
+ []
+
+
+Overfull \hbox (10.2978pt too wide) detected at line 602
+ []$[]\TU/Erewhon-Math.otf(1)/m/n/12 2\TU/erewhon(1)/m/n/12 T[]T[]\TU/Erewhon-Math.otf(1)/m/n/12 𝛿[]𝛿[] [] ,$ []  
+ []
+
+
+Overfull \hbox (21.9494pt too wide) detected at line 619
+[][][][][]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [43]
+Underfull \hbox (badness 10000) in paragraph at lines 619--622
+
+ []
+
+
+Overfull \hbox (2.1144pt too wide) in paragraph at lines 639--643
+\TU/erewhon(0)/m/n/12 scribed in the ap-pendix of [[][]14[][]], we ob-tain Rosen-haus and Smolkin’s ki-netic equa-
+ []
+
+
+Overfull \hbox (70.96172pt too wide) detected at line 656
+ []$[]  []\TU/Erewhon-Math.otf(1)/m/n/12 ⟨𝑎[](𝑡)𝑎[](𝑡)⟩ = []𝑛[](𝑡) = 4𝜋 [] [] 𝑑𝑘[]|\TU/erewhon(1)/m/n/12 T[]\TU/Erewhon-Math.otf(1)/m/n/12 |[]𝑛[]𝑛[]𝑛[]𝑛[] [] 𝛿(Δ𝜔[])𝛿[]$ 
+ []
+
+
+Underfull \vbox (badness 7116) has occurred while \output is active []
+
+ [44]
+Overfull \hbox (2.46558pt too wide) in paragraph at lines 656--680
+\TU/erewhon(0)/m/n/12 ques-tion how much in-sight can be ex-tracted about the strong tur-bu-lence regime,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 656--680
+
+ []
+
+[45]) (./body/chapter_3/chapter_3.tex [46]
+Underfull \hbox (badness 10000) in paragraph at lines 8--19
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [47]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [48]
+Underfull \hbox (badness 10000) in paragraph at lines 78--93
+
+ []
+
+[49]
+Overfull \hbox (2.33359pt too wide) in paragraph at lines 111--115
+\TU/erewhon(0)/m/n/12 per-tur-ba-tive or-ders as mod-i-fi-ca-tions to the ef-fec-tive in-ter-ac-tion term in the WKE.
+ []
+
+[50]
+Underfull \hbox (badness 10000) in paragraph at lines 153--168
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [51]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [52]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [53]
+<images/nonlocal_resonances_convex.pdf, id=833, 277.98228pt x 274.65486pt>
+File: images/nonlocal_resonances_convex.pdf Graphic file (type pdf)
+<use images/nonlocal_resonances_convex.pdf>
+Package luatex.def Info: images/nonlocal_resonances_convex.pdf  used on input line 226.
+(luatex.def)             Requested size: 159.33301pt x 157.43079pt.
+<images/nonlocal_resonances_concave.pdf, id=834, 277.98228pt x 274.65486pt>
+File: images/nonlocal_resonances_concave.pdf Graphic file (type pdf)
+<use images/nonlocal_resonances_concave.pdf>
+Package luatex.def Info: images/nonlocal_resonances_concave.pdf  used on input line 227.
+(luatex.def)             Requested size: 159.33301pt x 157.43079pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--243
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [54]
+Underfull \hbox (badness 10000) in paragraph at lines 248--251
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
+
+ []
+
+[55<./images/nonlocal_resonances_convex.pdf><./images/nonlocal_resonances_concave.pdf>]
+Overfull \hbox (9.96242pt too wide) in paragraph at lines 255--258
+\TU/erewhon(0)/m/n/12 Given the re-sults of our the-o-ret-i-cal anal-y-sis we were not able to do so, but nonethe-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 255--258
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [56]
+Underfull \hbox (badness 10000) in paragraph at lines 284--286
+
+ []
+
+<images/MMT_inverse_256_[1.0e-5-10.0].png, id=918, 401.5pt x 301.125pt>
+File: images/MMT_inverse_256_[1.0e-5-10.0].png Graphic file (type png)
+<use images/MMT_inverse_256_[1.0e-5-10.0].png>
+Package luatex.def Info: images/MMT_inverse_256_[1.0e-5-10.0].png  used on input line 293.
+(luatex.def)             Requested size: 159.33301pt x 119.50133pt.
+<images/MMT_direct_256[1.0e-6_1.0].png, id=919, 401.5pt x 301.125pt>
+File: images/MMT_direct_256[1.0e-6_1.0].png Graphic file (type png)
+<use images/MMT_direct_256[1.0e-6_1.0].png>
+Package luatex.def Info: images/MMT_direct_256[1.0e-6_1.0].png  used on input line 294.
+(luatex.def)             Requested size: 159.33301pt x 119.50133pt.
+<images/double_cascade3.jpg, id=920, 401.5pt x 301.125pt>
+File: images/double_cascade3.jpg Graphic file (type jpg)
+<use images/double_cascade3.jpg>
+Package luatex.def Info: images/double_cascade3.jpg  used on input line 301.
+(luatex.def)             Requested size: 199.1693pt x 149.38126pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--309
+
+ []
+
+[57<./images/MMT_inverse_256_[1.0e-5-10.0].png><./images/MMT_direct_256[1.0e-6_1.0].png>]) [58<./images/double_cascade3.jpg>] (./thesis.bbl [59
+
+]) [60] (./thesis.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+ ***********
+)
+
+Here is how much of LuaTeX's memory you used:
+ 35688 strings out of 476553
+ 125016,1977958 words of node,token memory allocated
+ 2681 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 46 glue, 4 kern, 29 sub_mlist, 14 glyph, 383 attribute, 92 glue_spec, 383 attribute_list, 2 write nodes
+   avail lists: 1:10,2:2399,3:990,4:184,5:935,6:62,7:8759,8:106,9:1974,10:14,11:738
+ 56397 multiletter control sequences out of 65536+600000
+ 148 fonts using 33525799 bytes
+ 110i,14n,104p,1378b,1885s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.41'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.40'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.39'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.38'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.37'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.36'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.35'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.34'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.33'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.32'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.31'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.30'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.29'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.28'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.27'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.26'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.25'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.24'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.23'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.22'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.21'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.20'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.19'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.18'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.17'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.16'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.15'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.14'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.13'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.12'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.11'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.10'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.9'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.8'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.7'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.6'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.5'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.4'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.3'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.2'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.1'
+</usr/share/texlive/texmf-dist/fonts/opentype/public/erewhon/Erewhon-Italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/erewhon/Erewhon-Bold.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/erewhon/Erewhon-Regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/erewhon-math/Erewhon-Math.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/erewhon-math/Erewhon-Math.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/erewhon-math/Erewhon-Math.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/erewhon/Erewhon-Regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/erewhon/Erewhon-Bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb>
+Output written on thesis.pdf (63 pages, 6205760 bytes).
+
+PDF statistics: 1091 PDF objects out of 1200 (max. 8388607)
+ 943 compressed objects within 10 object streams
+ 337 named destinations out of 1000 (max. 131072)
+ 176 words of extra memory for PDF output out of 10000 (max. 100000000)
+

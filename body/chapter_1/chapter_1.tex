@@ -2,18 +2,17 @@
 % dove dovresti citare qualcosa scrivi \cit 
 \newpage
 \phantom{}
+\thispagestyle{empty}
 \section{Statistics of weakly nonlinear waves}
-
-This chapter is devoted to the derivation and analysis of the wave kinetic equation and its stationary solutions, assuming generic systems with nonlinearity of 
-the four-wave kind, essentialy meaning that not only energy cascades may originate, but also wave action ones. Our account mainly draws from \cite{Onorato2020} and 
+This chapter is devoted to the derivation and analysis of the wave kinetic equation and its stationary solutions, assuming generic systems with nonlinearity of the four-wave kind, implying that not only energy cascades may originate, but also wave action ones. Our account mainly draws from \cite{Onorato2020} and 
 \cite{Zakharov}. A more rigorous and modern derivation may be found in \cite{Nazarenko2011}. \\
-First we introduce a general model for nonlinear waves, we later expand it through standard perturbation theory and assume homogeneus statistics over the phases 
+First we introduce a general model for nonlinear waves, we later expand it through standard perturbation theory and assume homogeneous statistics over the phases 
 and Gaussian statistics on the free theory action variables. By requiring that said assumptions are not spoiled by time evolution we find a late time asymptotic closure, 
 resulting in the aforementioned wave kinetic equation. The conserved quantities of this new statistical description are discussed, and a notion of entropy is introduced. \\
 Stationary solutions of the equation are discussed, both in the case of a closed system and  in the case of an exchange of energy 
-and wave action with the environment, trough forcing and dissipation terms opportunely separated in k-space.\\ 
+and wave action with the environment, through forcing and dissipation terms opportunely separated in k-space.\\ 
 
-\subsection{Hamiltonian description of waves in continuous media}
+\subsection{Waves in continuous media}
 
 We first turn to the construction of a general Hamiltonian method for the description of waves travelling in continuous media. In doing this
 we greatly borrow from the exceptional treatment in \cite{Zakharov}. \\
@@ -24,7 +23,7 @@ perturbation theory, for small wave amplitudes and in canonical coordinates, to 
     +\frac{1}{2}\sum_{\mathbf{k123}} \Tint_{\mathbf{k123}} \akstar\aonestar\atwo\athree\delta^{k1}_{23},
     \label{HamOrig}
 \end{equation}
-where an oppurtune canonical transformation was performed in order to make the dispersion relation explicit in the linear term, said relation must be positive definite 
+where an opportune canonical transformation was performed in order to make the dispersion relation explicit in the linear term, said relation must be positive definite 
 as to guarantee the stability of the medium\footnote{A negative dispersion relation would imply the spontaneus growth of oscillations, even when the nonlinear
 term is null.}, a reasonable physical assumption given we wish to study weak waves. The canonical coordinates are usually obtained from the generalized position
 variables $\Phi_k$ and their conjugate momenta $\pi_k$ by
@@ -337,7 +336,7 @@ The equation can be readily extended to the case $\Tint \in \mathbb{C}$ through 
 We solved the problem of initial conditions on the phases but not yet on the action variables and we are still dealing with infinite sums, since we defined our system
 in a finite coordinate space. The next section builds on this. \\
 
-\subsection{Statistics over the actions and the thermodynamic limit}
+\subsection{The Wave Kinetic Equation}
 
 We now take the thermodynamic (continuum) limit ($L \rightarrow \infty$) to turn our set of infinitely many coupled equation into an integral one, easier to approach analytically.
 In Fourier space the limit takes the form 
@@ -510,7 +509,7 @@ $\frac{1}{4} \left(\mathrm{D}_\mathbf{k123}+\mathrm{D}_\mathbf{1k23}+\mathrm{D}_
 \end{equation}
 thus proving that entropy as defined cannot decrease with time. \\
 
-\subsection{Equilibrium stationary state}
+\subsection{Equilibrium stationary states}
 
 Having now a working definition of entropy, we may look for stationary solution, i.e. solutions maximising the entropy. Through the insertions of Lagrange 
 multipliers we may choose and fix the constant of motion's values.  \\
@@ -558,14 +557,13 @@ e finestra di località, definizioni costanti di KZ e
 commenti su cnvergenza e un pò di foto di cascate per sistemi fisici NON MMT, commento su nome Kolmogorov
 \end{comment}
 Let us now imagine that our system is not closed, energy and action may be introduced and dissipated. Examples of forcing may be wind blowing on the surface of the sea, 
-a ship moving trough a body of water, radio waves scattering off plasma or experimentally pumping atoms into a condensate. Dissipation may be due to viscosity in a fluid,
+a ship moving through a body of water, radio waves scattering off plasma or experimentally pumping atoms into a condensate. Dissipation may be due to viscosity in a fluid,
 interactions with a tank or a basin, Landau damping, superfluid particles in a magnetic trap reaching enough energy to escape it, generation of quasiparticles or interaction 
 with inhomogenities.\\
-now fjiortoft argument and then zakh formalization.\\
-In many physical settings those mechanisms operate only in a limited region of wave vector space ($k$-space), for example a ship would mainly generate waves of wavelenght comparable to 
-its own lenght, Landau damping peaks for certain rather low wavelenghts (energetic waves) and interaction with a tank would dissipate water eaves of lenght comparable to the tank dimension. In such 
+In many physical settings those mechanisms operate only in a limited region of wave vector space ($k$-space), for example a ship would mainly generate waves of wavelength comparable to 
+its own length, Landau damping peaks for certain rather low wavelengths (energetic waves) and interaction with a tank would dissipate water eaves of lenght comparable to the tank dimension. In such 
 case at least part of  $k$-space would still locally behave almost as a closed system, with the difference that energy and wave action flows in an out slowly due to the nonlinear 
-coupling of modes. A region of this type in k-space is usually called the inertial range, and it is limited by neighbouring pumping and dissipations regions.\\
+coupling of modes. A region of this type in k-space is usually called the inertial range, and it is limited by neighboring pumping and dissipation regions.\\
 It is natural to ask if there is a preferred flow of conserved quantities in the inertial range and if there exist nontrivial stationary out of equilibrium 
 states in such open systems. \\
 \begin{figure} %this figure will be at the right
@@ -759,9 +757,8 @@ When checking if this is the case with the general system we have been studying,
 Those bounds identify what is called a locality window and every healthy theory's parameters should fall in such window. We mention this because 
 the presence of this interval is not granted when analyzing higher perturbative orders.\\ 
 Many topics were not discussed, among them the stability problem of the KZ solutions and the analysis of anisotropic systems. The reader is directed to the 
-already cited references for an in depth discussion of those and many more topics.
+already cited references for an in depth discussion of those and many more topics.\\
 
-Weak turbulence theory has been successfull in explaining experimental findings in a number of settings. Some examples are Rossby waves in a rotating fluid, internal waves 
-in a stratified fluid, capillary waves, gravity surface waves in the ocean and quantum bose gases. \\
-\hl{CITATIONS TO BE ADDED, MAYBE IT WOULD MAKE SENSE TO CITE ONLY 4 WAVE SYSTEMS, ASKS PROFESSOR FOR EXAMPLES AND HOW 
-TO USE PLOTS FROM PAPERS, MAYBE THERE SHOULD BE ADDED SOME REMARKS ON THE LIMITS OF WWT (SOLITONS, STRONG TURBULENCE)}
+Weak turbulence theory has been successful in explaining experimental findings in a number of settings. Some examples are Rossby waves in a rotating fluid, internal waves 
+in a stratified fluid, capillary waves, gravity surface waves in the ocean and quantum Bose gases. We yet again direct the reader to the introduction of \cite{Nazarenko2011} for a proper literature review of experiments in WT.\\
+

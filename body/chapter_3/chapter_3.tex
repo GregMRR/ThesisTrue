@@ -2,7 +2,8 @@
 
 
 \newpage
-\vphantom{}
+\phantom{}
+\thispagestyle{empty}
 \section{A one dimensional model for Wave Turbulence}
     The Majda-McLaughlin-Tabak (MMT) family of models was introduced in \cite{Majda1997} to test the prediction of weak turbulence theory. The idea is to have a 1D system manifesting
     the main phenomenology of nonlinear physics while at the same time being relatively easy to numerically simulate with a fine grid. Its study was then continued in
@@ -15,7 +16,7 @@
     models this divergences exist, and must be accounted for. Our original idea was to perform numerical simulations of the higher order WKE, to check the form of eventual out of equilibrium stationary states. This newly found diverging integrals didn't allow us to do so. Nontheless we introduce the basic workings of WavKinS,
     a newly developed solver for WKEs introduced in \cite{Giorgio1} and \cite{Giorgio2} by Krstulovic. We end the chapter by discussing a few simulations obtained 
     through it. \\  
-    \subsection{The MMT model and its wave kinetic equation}
+    \subsection{The MMT model}
 
     In coordinate space the model consists in the two parameters family of differential equations
     \begin{equation}
