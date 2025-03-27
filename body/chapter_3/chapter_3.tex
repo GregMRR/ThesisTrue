@@ -6,31 +6,32 @@
 \thispagestyle{empty}
 \section{A one dimensional model for Wave Turbulence}
     The Majda-McLaughlin-Tabak (MMT) family of models was introduced in \cite{Majda1997} to test the prediction of weak turbulence theory. The idea is to have a 1D system manifesting
-    the main phenomenology of nonlinear physics while at the same time being relatively easy to numerically simulate with a fine grid. Its study was then continued in
+    the main phenomenology of nonlinear physics, while at the same time being relatively easy to numerically simulate on a fine grid. Its study was then continued in
     \cite{Cai2001} and \cite{Zakharov2001}, and resulted in a better understanding of how coherent phenomena (like solitons or quasisolitons) influence the applicability 
     of wave turbulence theory. This two parameters family of models has since been a traditional benchmark on which to test new techniques and ideas in the world of turbulence. \\
     In this chapter we briefly introduce the MMT family of differential equations and discuss its salient features and associated WKE, mainly inspired by the account in 
     \cite{ZAKHAROV2004}. We then 
     move to the analysis of its higher order kinetic equation, proving that energy and wave action are still conserved quantities. Unexpectedly  we find 
-    ulterior divergences, neither UV or IR, due to nonlocal interactions. We prove that for all nontrivial members of the MMT family of
-    models this divergences exist, and must be accounted for. Our original idea was to perform numerical simulations of the higher order WKE, to check the form of eventual out of equilibrium stationary states. This newly found diverging integrals didn't allow us to do so. Nontheless we introduce the basic workings of WavKinS,
-    a newly developed solver for WKEs introduced in \cite{Giorgio1} and \cite{Giorgio2} by Krstulovic. We end the chapter by discussing a few simulations obtained 
-    through it. \\  
+    ulterior divergences, neither UV nor IR, due to nonlocal interactions. We prove that for all nontrivial members of the MMT family of
+    models these divergences exist, and must be accounted for. Our original idea was to perform numerical simulations of the higher order WKE, to check the form of eventual out of equilibrium stationary states. This newly found diverging integrals didn't allow us to do so. Nonetheless, we introduce the basic workings of WavKinS,
+    a newly developed solver for WKEs introduced in \cite{Giorgio1} and \cite{Giorgio2} by Krstulovic. We end the chapter by discussing some simulations of the leading order WKE. 
+    \newpage  
+    \vphantom{a}
     \subsection{The MMT model}
 
-    In coordinate space the model consists in the two parameters family of differential equations
+    The model consists, in physical space, in the two parameters family of differential equations
     \begin{equation}
         i\pt \Psi = \left|\px\right|^\alpha \Psi + \lambda \left|\px\right|^{\frac{\beta}{4}}
-        \left( \left|\left|\px\right|^{\frac{\beta}{4}}\Psi\right|\left|\px\right|^{\frac{\beta}{4}}\Psi \right).
+        \left( \left|\left|\px\right|^{\frac{\beta}{4}}\Psi\right|\left|\px\right|^{\frac{\beta}{4}}\Psi \right),
         \label{MMTPOS}
     \end{equation}
     where $\Psi = \Psi(x,t)$ is a complex function, $\lambda = \pm 1$ and $\alpha, \beta \in \mathbb{R}$. Positive $\lambda$ 
     corresponds to the defocusing case whereas negative $\lambda$ to the focusing one.\\
     We interpret the fractional derivatives in \eqref{MMTPOS} through their action in Fourier space, namely 
     \begin{equation}
-        \left|\px\right|^\alpha \Psi = \frac{1}{2\pi} \int dk |k|^{\alpha} \ak e^{-ikx},
+        \left|\px\right|^\alpha \Psi = \frac{1}{2\pi} \int dk |k|^{\alpha} a_k e^{-ikx},
     \end{equation} 
-    where $\ak = \anorm(k,t)$ is the Fourier transform of $\Psi$. A rigorous definition can be found in the appendix of \cite{ZAKHAROV2004}\\
+    where $a_k = \anorm(k,t)$ is the Fourier transform of $\Psi$. A rigorous definition can be found in the appendix of \cite{ZAKHAROV2004}\\
     Time translational symmetry implies that the energy
     \begin{equation}
         \Ewav = \int dx \left( \left|\left|\px\right|^\frac{\alpha}{2}\Psi\right|^2 + \frac{1}{2}\lambda\left|\left|\px\right|^\frac{\beta}{4}\Psi\right|^4 \right)
@@ -39,13 +40,13 @@
     \begin{equation}
         \Nwav = \int dx \left| \Psi \right|^2 \hspace{1cm} \textrm{M} = \frac{i}{2}\int dx \left( \Psi \px \Psi^* - \Psi^* \px \Psi \right).
     \end{equation}
-    Tranforming \eqref{MMTPOS} to Fourier space we find
+    Transforming \eqref{MMTPOS} to Fourier space we find
     \begin{equation}
         i\pt \ak = \omga_k \ak  + \int dk_1dk_2dk_3 \Tint_{k123}\aone \atwo \athreestar \delta^{k1}_{23}.
     \end{equation}
-    There, to have uniform notations with the previous chapters, we defined $\omga_k = |k|^\alpha$ and $\Tint_{k123} = \lambda|kk_1k_2k_3|^\frac{\beta}{4}$. It is easy to see that
+    There, to have uniform notation with the previous chapters, we defined\footnote{As this model is one dimensional $k$ is the only component of the wave vector and $|k|$ its modulus.} $\omga_k = |k|^\alpha$ and $\Tint_{k123} = \lambda|kk_1k_2k_3|^\frac{\beta}{4}$. It is easy to see that
     $\Tint$ satisfies the symmetries generally required in chapter 1, allowing for the Hamiltonian treatment of the system. \\
-    This system by construction only posseses a four wave interaction. In one dimension the resonance condition is
+    This system possess by construction only a four wave interaction. In one dimension the resonance condition is
     \begin{equation}
         \begin{aligned}
             k + k_1 &= k_2 + k_3 \\
@@ -53,10 +54,10 @@
         \end{aligned}
     \end{equation}
     In \cite{Majda1997} it was proved that the only way nontrivial solution exists\footnote{
-        A nontrivial solution is a solution which does not make the collisional integral null, and thus result in an exchange of energy among modes. 
+        A nontrivial solution is a solution which does not make the collision integral null, and thus result in an exchange of energy among modes. 
         For example $k=k_2$ and $k_1=k_3$ is always a solution, but the term 
-        $\left(\frac{1}{n_k} +\frac{1}{n_1} -\frac{1}{n_2}-\frac{1}{n_3} \right)$ kills the collisional integral in that point of the resonance manifold.
-    } is if $\alpha < 1$. \hl{COULD ADD PROOF from mmt article original} We shall then adopt $\alpha = \frac{1}{2}$ to mimick the dispersion relation of surface gravity waves, in which case $\omga = |gk|^\frac{1}{2}$ 
+        $\left(\frac{1}{n_k} +\frac{1}{n_1} -\frac{1}{n_2}-\frac{1}{n_3} \right)$ kills the collision integral in that point of the resonance manifold.
+    } is if $\alpha < 1$. We shall then adopt $\alpha = \frac{1}{2}$ to mimic the dispersion relation of surface gravity waves, in which case $\omga = |gk|^\frac{1}{2}$ 
     with $g$ being the acceleration of gravity.\\
     By direct substitution of MMT's dispersion relation and interaction term into $\eqref{kinetic}$, the WKE to the leading order is 
     \begin{multline}
@@ -66,7 +67,7 @@
     \left(\frac{1}{n_k} + \frac{1}{n_1} - \frac{1}{n_2}- \frac{1}{n_3}  \right)
     \delta(\delomega^{k1}_{23})\delta^{k1}_{23}.
     \end{multline}
-    Given that the model is one dimensional we will refer with $k$ to the value of the only component of the wave vector, when talking about its modulus we shall use $|k|$ instead. The isotropy assumptions would corresponds in one dimension
+    Given that the model is one dimensional we will refer with $k$ to the value of the only component of the wave vector, when talking about its modulus we shall use $|k|$ instead. The isotropy assumptions would correspond in one dimension
     to the reflection symmetry $k \rightarrow -k$.\\ 
     From the discussion in chapter 1 we know that the two possible out of equilibrium solutions for this equation are 
     \begin{equation}
@@ -76,20 +77,19 @@
         \end{aligned}
         \label{MMTKZ}
     \end{equation}
-    \hl{ADD PROOF OF LOCALITY WINDOW}\\
     Since the interaction term appears squared in the WKE, weak turbulence theory provides the same prediction in both the focusing and defocusing cases. 
-    However \eqref{MMTPOS} presents different behaviours depending on the sign of the interaction. 
+    However, \eqref{MMTPOS} presents different behaviors depending on the sign of the interaction. 
     In the focusing case stable solitonic solutions are possible, as well as wave collapses
     (\cite{Zakharov2001}). It was seen in numerical simulations of the primitive equation that, under incoherent forcing, the wave density spectrum stabilizes in a state
     with opposite wave action flux respect to the WT prediction. The energy flux sign corresponds to predictions, but only in the high $k$ limit the slope can be 
     described through a KZ state.\\
-    In the defocusing case the spectrum qualitatevely corresponds to the expected one, but with a steeper slope in the inertial range. This discrepancy could be justified 
+    In the defocusing case the spectrum qualitatively corresponds to the expected one, but with a steeper slope in the inertial range. This discrepancy could be justified 
     by the presence of quasi solitons, approximate solutions of \eqref{MMTPOS} dissipating in finite time. The study of their impact on stationary states is called 
     quasisolitonic turbulence. \\
-    This considerations show that the range of applicability of WT is quite narrow, and very much influenced by the choerent structures characteristic of the system. 
-    Our goal in this thesis is not to discuss the validity of WT, but instead check the consistency and consequences of higher order terms into the 
+    These considerations show that the range of applicability of WT is quite narrow, and very much influenced by the coherent structures characteristic of the system under analysis. 
+    Our goal in this thesis is not to discuss the validity of WT, but instead check the consistency and study consequences of the presence of higher order terms into the 
     WKE of a simple system. We shall direct the reader looking for a proper discussion of 
-    coherent phenomena in the MMT model to the review \cite{ZAKHAROV2004}. \\
+    coherent phenomena in the MMT model to \cite{ZAKHAROV2004}. \\
     \subsection{The higher order kinetic equation}
 
     By directly substituting our chosen dispersion relation and interaction term into \eqref{NLOkinetic}, the next to leading order kinetic equation for the MMT 
@@ -118,7 +118,7 @@
     The leading order WKE conserves energy and wave action as consequences of the symmetries of $\Tint_{k123}$. To show that even the corrected equation 
     conserves the same quantities, as it is expected, we shall just check that the same symmetries hold for $\sigma$.\\
     The symmetry under the exchange $k_2 \leftrightarrow k_3$ is built-in but not explicit, as already commented in the previous chapter. The contribution of the 
-    first diagram in figure \ref{fig:quarticoneloop} is obviously symmetric and the other two contribution are mapped into each other by the exchange. It was used to make
+    first diagram in figure \ref{fig:quarticoneloop} is obviously symmetric, and the other two contribution are mapped into each other by the exchange. It was used to make
     \eqref{NLOkinetic} more compact. \\
     Recovering it and manipulating the dummy variables, 
     $\sigma$ becomes
@@ -157,13 +157,13 @@
     To assess the validity of a possible stationary solution one should check the convergence of both integrals in all possible regimes of their arguments.\\ One could also
     slightly deform one of solutions \eqref{MMTKZ}, and assess qualitatively the contribution of $\sigma$ to the KZ spectrum. This line of thought 
     was explored for the NLS equation in \cite{Rosenhaus:2025mgj}. We shall not discuss this points here. Even before thinking about specific solutions 
-    the integrals have to converge for a generic $n_k$, allowing for non pathological time evolution.\\
-    In this thesis we shall not concern ourselves with IR and UV divergencies,
+    the integrals have to converge for a generic $n_k$, allowing for non-pathological time evolution.\\
+    In this thesis we shall not concern ourselves with IR and UV divergences,
     as those are easily healed through cutoffs. Those cutoffs may derive from the underlying physics of the system under consideration, for example 
     finite size imposes a natural UV cutoff and granularity of the medium imposes an IR one. They could be even imposed by the interactions of the system with 
     the environment, for example a dissipative interaction in the low $k$ region denies the transfer of energy or wave action across its domain. \\
     We shall instead focus our attention on the denominators of $\sigma$. Their integration should be intended in the principal value sense, but this only allows to 
-    assign a value to usually indeterminate integrals. We have to explicitely check that this value is finite. We shall turn to this problem for the remaining part 
+    assign a value to usually indeterminate integrals. We have to explicitly check that this value is finite. We shall turn to this problem for the remaining part 
     of this section.\\
 
     Let us look at the first term in \eqref{sigma}
@@ -180,7 +180,7 @@
        &= \sqrt{k} + \sqrt{k_1} -\sqrt{q} - \sqrt{k + k_1 - q}.
         \end{aligned}
     \end{equation}
-    It is easy to see that this expression has four zeroes corresponing to $q$ equal to any of the external wavenumbers. \\
+    It is easy to see that this expression has four zeroes corresponding to $q$ equal to any of the external wave vectors. \\
     As long as $k \neq k_1$ or $k_2 \neq k_3$ the zeroes are singles. For example let's look at $q = k$. We rename $p = q-k$ and expand around $p=0$:
     \begin{align*}
       \sqrt{|k|} + \sqrt{|k_1|} -\sqrt{|p+k|} - \sqrt{|k_1 - p|} \underset{p \rightarrow 0}{\approx} \frac{1}{2} p \left(\frac{\text{sign}(k)}{\sqrt{|k|}} - \frac{\text{sign}(k_1)}{\sqrt{k_1}}\right).
@@ -208,7 +208,7 @@
       2|k|^{\alpha} = |k_2|^{\alpha} +|k_3|^{\alpha}.
       \label{frequency}
     \end{equation} 
-    The first equation in \eqref{resmanifold} can be tought of as a line $k_3 = -k_2 + 2k$, with $k_2$ on the $x$ axis, $k_3$ on the $y$ one and $2k$ a constant. The second equation implicitly defines  a curve, specular under both $k_2 \rightarrow -k_2$ and $k_3 \rightarrow -k_3$. The line intersect the deformed sphere in the trivial solution of the system $k_2 = k_3 = k$, that depending on the sign of $k$ can be either in the upper right quadrant or in the lower left one. Using Dini's theorem on implicit functions, we can evaluate the first derivative of $k_3$ as a function of $k_2$. The result is 
+    The first equation in \eqref{resmanifold} can be thought of as a line $k_3 = -k_2 + 2k$, with $k_2$ on the $x$ axis, $k_3$ on the $y$ one and $2k$ a constant. The second equation implicitly defines  a curve, specular under both $k_2 \rightarrow -k_2$ and $k_3 \rightarrow -k_3$. The line intersect the deformed sphere in the trivial solution of the system $k_2 = k_3 = k$, that depending on the sign of $k$ can be either in the upper right quadrant or in the lower left one. Using Dini's theorem on implicit functions, we can evaluate the first derivative of $k_3$ as a function of $k_2$. The result is 
     \begin{equation}
         \frac{d k_2}{dk_3} = -\frac{\text{sign}(k_2)|k_2|^{\alpha-1}}{\text{sign}(k_3)|k_3|^{\alpha-1}}.
         \label{firstderivative}
@@ -219,7 +219,7 @@
     \begin{equation}
         \frac{d^2k_3}{dk_2^2} = \frac{(1-\alpha)k_2^{\alpha-2}k_3^{2\alpha-2} + (1-\alpha)k_3^{\alpha-2}k_2^{2\alpha-2}}{k_3^{3\alpha-3}}.
     \end{equation}   
-    We see from this result that the second derivative sign does not change throughout the quadrant and is positive when $\alpha < 1 $, making the curve concave and allowing nontrivial solutions, and negative when $\alpha > 1$, forbidding solutions other than $k_3 = k_2 = k$ . Since the resonant manifold is empty for $\alpha>1$, the aforementioned divergences are always present for the nontrivial set of MMT models. Our construction is presented in figure \ref{fig:nonlocal}.\\
+    We see from this result that the second derivative sign does not change throughout the quadrant and is positive when $\alpha < 1 $, making the curve concave and allowing nontrivial solutions, and negative when $\alpha > 1$, forbidding solutions other than $k_3 = k_2 = k$. Since the resonant manifold is empty for $\alpha>1$, the aforementioned divergences are always present for the nontrivial set of MMT models. Our construction is presented in figure \ref{fig:nonlocal}.\\
     This line of reasoning does hold for $k_2 = k_3$ as well.\\
     \begin{figure}[ht]
         \centering
@@ -235,30 +235,30 @@
       &= \sqrt{k_3} - \sqrt{k_1} - \sqrt{|q|} + \sqrt{|k_1-k_3 + q|}
         \end{aligned}
     \end{equation}
-    we see that it is null for $q = k_3$ and $q = k$. Recovering the symmetryc part as in \eqref{eqsym} we would find as similar expression with divergencies in $q = k_1$ and $q = k_2$. \\
-    Again when no external wavenumbers collide the divergent part goes as $\int_{-\epsilon}^{+\epsilon}\frac{1}{p}$ and its principal value is null. When $k_1 = k_3$ or $k = k_3$ there is yet another singularity whose principal value diverges. This one is however balanced by the term $\frac{1}{n_k} + \frac{1}{n_1} -\frac{1}{n_2} -\frac{1}{n_3}$ in the kinetic equation, healing the divergence\footnote{
-    when $k = k_3$ the only possible solution to the system defining the resonant manifold is $k_1 = k_2$.
+    we see that it is null for $q = k_3$ and $q = k$. Recovering the symmetry part as in \eqref{eqsym} we would find a similar expression with divergences in $q = k_1$ and $q = k_2$. \\
+    Again when no external wave vectors collide the divergent part goes as $\int_{-\epsilon}^{+\epsilon}\frac{1}{p}$ and its principal value is null. When $k_1 = k_3$ or $k = k_3$ there is yet another singularity whose principal value diverges. This one is however balanced by the term $\frac{1}{n_k} + \frac{1}{n_1} -\frac{1}{n_2} -\frac{1}{n_3}$ in the kinetic equation, healing the divergence\footnote{
+    When $k = k_3$ the only possible solution to the system defining the resonant manifold is $k_1 = k_2$.
     In general any time one of the incoming wave vectors is equal to one of the outgoing ones the other two must be equal}.\\
     We conclude that the only problematic term of $\sigma$ is the first one, associated to the first diagram in figure \ref{fig:quarticoneloop}. \\
     
-    One could ask if accounting for the frequency shift, that we ignored until now, could somewhat help avoiding these uncurable divergencies. In the case
-    $\beta = 0$, mimicking the NLS equation. this is surely not the case, as the frequency shift would be
+    One could ask if accounting for the frequency shift, that we ignored until now, could somewhat help avoid these uncurable divergences. In the case
+    $\beta = 0$, mimicking the NLS equation, this is surely not the case. The frequency shift would be
     \begin{equation}
-        \delta \omga_k = 2\int dk' n_{k'} = 2 \Nwav. 
+        \delta \omga_k = 2\int dk' n_{k'} = 2 \Nwav.
     \end{equation}
-    Aside from the possible presence of IR and UV divergencies, the contribution is a constant factor that would cancel out in all denominators and delta functions.\\
-    We have not undertaken the study of this situation for a generic $\beta$, but our naive intuition is that divergencies would survive. The perturbative nature of the frequency shift should not drastically change the geometrical picture we just presented to the point of forbidding the nontrivial resonances causing the divergencies.\\
+    Aside from the possible presence of IR and UV divergences, this contribution is a constant factor that would cancel out in all denominators and delta functions.\\
+    We have not undertaken the study of this situation for a generic $\beta$, but our naive intuition is that divergences would survive. The perturbative nature of the frequency shift should not drastically change the geometrical picture we just presented to the point of forbidding the nontrivial resonances causing the divergences.\\
     \subsection{Numerical simulations through WavKinS}
 
     Even though analytical stationary solutions are known, simulating the WKE is interesting already at leading order. It allows to verify the convergence of the collision integral, the stability of the KZ solutions and how the system relaxes to such solutions depending on different forcing and dissipating mechanisms. Of course simulating the WKE is different than simulating the underlying nonlinear microscopic theory, and any result is only to be trusted in the regimes where the validity of the kinetic equation is verified. \\
 
     In recent years Krstulovic and Labarre developed WavKinS, a flexible solver for a wide variety of kinetic equations, first used in \cite{Giorgio1} and \cite{Giorgio2}. Our original goal was to use it to 
     simulate equation \eqref{wke_nlo}, in order to check the presence of out of equilibrium stationary states and their deviation from KZ solutions.\\
-    Given the results of our theoretical analysis we were not able to do so, but nonetheless we simulated the leading order equation as a way to get aquainted with the code. In this short section we briefly introduce WavKinS and present the stationary solutions found numerically. \\
+    Given the results of our theoretical analysis we were not able to do so, but nonetheless we simulated the leading order equation as a way to get acquainted with the code. In this short section we briefly introduce WavKinS and present the stationary solutions found numerically. \\
     
-    Looking for the zeroes of the collisional integral as a function of the solutions's exponent is computationally expensive. A better way consists in simulating the kinetic equation with localized forcing and dissipation, and then confront its late time slope in the inertial interval with the expected solution. As it is a better way to represent polynomials, WavKinS directly operates on a logarithmic grid in $k$-space. For each timestep the collisional integral is evaluated. Various schemes can be utilized, in our case an RK2 one for time evolution and the trapezoidal rule for integrations.\\
+    Looking for the zeroes of the collision integral as a function of the solutions's exponent is computationally expensive. A better way consists in simulating the kinetic equation with localized forcing and dissipation, and then confront its late time slope in the inertial interval with the expected solution. As it is a better way to represent polynomials, WavKinS directly operates on a logarithmic grid in $k$-space. For each time step the collision integral is evaluated. Various schemes can be utilized, in our case an RK2 one for time evolution and the trapezoidal rule for integrations.\\
     We chose $\alpha = \frac{1}{2}$, as with this dispersion relation the resonant manifold can be parametrized analytically.
-    We then chose $\beta = 0$, to mimic the NLS equation. Resolving both deltas in the collisional integral, at each timestep only one integration over $k$ is necessary. The equation we simulated is
+    We then chose $\beta = 0$, to mimic the NLS equation. Resolving both deltas in the collision integral, at each time step only one integration over $k$ is necessary. The equation we simulated is
     \begin{equation}
         \pt n_k=4\pi \int_{-\infty}^\infty\frac{1}{\Delta_{12}}n_kn_1n_2n_3\left(\frac{1}{n_k}+\frac{1}{n_1}-\frac{1}{n_2}-\frac{1}{n_3}   \right)dk_3,  
         \label{wke_sim} 
@@ -282,7 +282,7 @@
         \end{array}
     \right.
     \end{equation}
-    As \eqref{wke_sim} is not anymore symmetric under a reflection of $k$, we integrate at each timestep first for $k_3 < 0$ and then $k_3 > 0$, alway assuming $n(k) = n(-k)$. \\
+    As \eqref{wke_sim} is not any more symmetric under a reflection of $k$, we integrate at each time step first for $k_3 < 0$ and then $k_3 > 0$, alway assuming $n(k) = n(-k)$. \\
 
     We analyzed three situations, in all of them the forcing was a localized function and the dissipation was diverging on both ends of the simulated range in $k$-space. This was to reduce, for what is possible, finite size effects.\\
     The first two cases are with one inertial range present only on lower $k$s than the forcing, figure \ref{fig:cascdir}, or only higher ones, figure \ref{fig:cascdir}. In both figures the late time stable spectra we found is represented in blue. In red one can see the forcing term and in green the spectra
@@ -303,14 +303,13 @@
         \caption{Double cascade from WavKinS.}
         \label{fig:cascdouble}
     \end{figure}
-    In the direct cascade the inertial range is smaller, it is however the longest we could reproduce. In the range $10^{-6}$-$10^{-4}$ in figure \ref{fig:cascdir}  the forcing and dissipation terms are not negligible, we had however to distance the forcing term from the lower end of the grid to avoid divergencies during time evolution. \\
-    \hl{REDO direct cascade simulation} \\
+    In the direct cascade the inertial range is smaller, it is however the longest we could reproduce. In the range $10^{-6}$-$10^{-4}$ in figure \ref{fig:cascdir}  the forcing and dissipation terms are not negligible, we had however to distance the forcing term from the lower end of the grid to avoid divergences during time evolution. \\
     As a last example we simulated the situation where an inertial range is present on both sides of the forcing in $k$-space. The results, again in remarkable agreement with theoretical predictions, are in figure \ref{fig:cascdouble}. \\
     \subsection{Future work}
 
     The novel contribution of this thesis consisted in the analysis we presented of the higher order WKE for the MMT model. 
-    Our analysis, however, can be at best called preliminary. There are many other approaches to try. One could include the frequency shift with a generic $\beta$, to see if it influences the presence of divergencies. One could also include higher order diagrams in the derivation, to check if there is any cancellation. On the numerical side one could forcefully impose a cutoff on the diverging denominator, to at least see the qualitative deviation of possible stationary states from the KZ spectra.\\
-    It is an open question wether nontrivial resonances still exists in higher dimensions, and for which dispersion relations they do.\\
-    Another possible route would be to examine the correspective of \eqref{wke_nlo} in three wave systems, and check wether such divergencies appear as well. 
+    Our work, however, can be at best called preliminary. There are many other approaches to try. One could include the frequency shift with a generic $\beta$, to see if it influences the presence of divergences. One could also include higher order diagrams in the derivation, to check if there is any cancellation. On the numerical side one could forcefully impose a cutoff on the diverging denominator, to at least see the qualitative deviation of possible stationary states from the KZ spectra.\\
+    It is an open question whether nontrivial resonances still exists in higher dimensions, and for which dispersion relations they do.\\
+    Another possible route would be to examine the higher order kinetic equation in three wave systems, and check whether such divergences appear as well. 
 
     

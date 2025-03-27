@@ -1,0 +1,1 @@
+{"rule":"ANYMORE_ADVERB","sentence":"^\\QThe final result is \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q where it is not anymore necessary to account in the sum for trivial interactions, as for &\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, &\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q and \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q the r.h.s is null.\\E$"}
