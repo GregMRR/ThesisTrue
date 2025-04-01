@@ -7,9 +7,9 @@
 This chapter is devoted to the derivation and analysis of the wave kinetic equation and its stationary solutions. We deal with a generic system with nonlinearity of the four-wave kind, implying that not only energy cascades may originate, but also wave action ones. Our account mainly draws from \cite{Onorato2020} and 
 \cite{Zakharov}. A more rigorous and modern derivation can be found in \cite{Nazarenko2011}. \\
 First we introduce a general model for nonlinear waves, we later expand it through standard perturbation theory and assume homogeneous statistics over the phases 
-and Gaussian statistics over the free theory action variables. By requiring that said assumptions persist in time we find an asymptotic closure, 
+and Gaussian statistics over the free theory action variables. By requiring that said assumptions persist in time, we find an asymptotic closure, 
 resulting in the aforementioned wave kinetic equation. The conserved quantities in this new statistical description are discussed, and a notion of entropy is introduced. \\
-We then derive the stationary solutions of the equation, both in the case of a closed system and  in the case of an open one.This last case consists in the possible exchange of energy 
+We then derive the stationary solutions of the equation, both in the case of a closed system and  in the case of an open one. This last case consists in the possible exchange of energy 
 and wave action with the environment, through forcing and dissipation terms opportunely separated in k-space.\\ 
 
 \subsection{Waves in continuous media}
@@ -23,15 +23,15 @@ perturbation theory, for small wave amplitudes and in canonical coordinates, to 
     +\frac{1}{2}\sum_{\mathbf{k123}} \Tint_{\mathbf{k123}} \akstar\aonestar\atwo\athree\delta^{k1}_{23},
     \label{HamOrig}
 \end{equation}
-where an opportune canonical transformation was performed in order to make the dispersion relation explicit in the linear term. Said relation must be positive definite 
-as to guarantee the stability of the medium\footnote{A negative dispersion relation would imply the spontaneous growth of oscillations, even when the nonlinear
+where an opportune canonical transformation was performed in order to make the dispersion relation explicit in the linear term. Said relation must be real and positive definite 
+as to guarantee the stability of the medium\footnote{A complex dispersion relation would imply the spontaneous growth of oscillations, even when the nonlinear
 term is null.}, a reasonable physical assumption given we wish to study weak waves. The canonical coordinates are usually obtained from the generalized position
 variables $\Phi_k$ and their conjugate momenta $\pi_k$ by
 \begin{align*}
     \Phi_\mathbf{k} &= \frac{1}{\sqrt{2\omga_{\mathbf{k}}}}\left(\ak + \akstar\right) , \\
     \pi_\mathbf{k} &= \frac{1}{\sqrt{2\omga_{\mathbf{k}}}}\left(\ak - \akstar \right) .
 \end{align*}
-In the Hamiltonian the summations are intended over all wave numbers belonging to the discrete Fourier space 
+In the Hamiltonian, the summations are intended over all wave numbers belonging to the discrete Fourier space 
 \begin{equation}
     \Lambda^* = \frac{2\pi}{L}\mathbb{Z},
 \end{equation}
@@ -48,7 +48,7 @@ settings are dominated by one of this two kind of terms, even if for some notabl
 Langmuir wave turbulence in plasma.}. \\
 
 We assume that another canonical transformation has been performed to obtain \eqref{HamOrig}, a near identity one
-pushing to higher perturbative order all nonresonant interaction terms. In the truly most general fashion all possible combinations of $\anorm$ and $\astar$ 
+pushing to higher perturbative order all nonresonant interaction terms. In the truly most general fashion, all possible combinations of $\anorm$ and $\astar$ 
 would appear at each order in the Hamiltonian, with proper coefficients. The resonance condition for an $N$th power term consists in
 \begin{align}
     &\pm \omga_{\mathbf{k}} \pm \omga_\mathbf{1} \dots \pm \omga_\mathbf{N-1} = 0, \label{resonance}\\
@@ -66,7 +66,7 @@ We will give instead a plausible explanation for this phenomenon. Let us write t
     \dt \ak + i \omga_{\mathbf{k}} \ak = -i\sum_{\mathbf{12}} \left( \Vint_{\mathbf{k12}}^{} \aone \atwo \delta^{k}_{12} + 2 
     \Vint^*_\mathbf{k12}\aone \atwostar \delta^{k2}_{1}  \right).
 \end{equation}
-We shall perform the change of variables $\ak = b_\mathbf{k}^{} e^{-i\omga_{\mathbf{k}} t}$ to the so-called interaction representation
+We shall perform the change of variables $\ak = b_\mathbf{k}^{} e^{-i\omga_{\mathbf{k}} t}$ to the so-called interaction representation.
 This transformation hides the fast phase evolution due to the free oscillation of waves, but keeps the slow phase 
 one due to the nonlinear terms. After also multiplying the equation by $e^{+i\omga_{\mathbf{k}} t}$ and integrating the r.h.s. we find
 \begin{equation}
@@ -108,7 +108,7 @@ To make the expansion clearer we add an explicit $\varepsilon$ factor in front o
 it may be a placeholder for the smallness of the function $\Tint_{\mathbf{k123}}$ in a certain subdomain of k-space (for example the interaction among gravity waves in 
 the small wavenumber limit).}. \\
 
-Following the derivation of \cite{Onorato2020} we transform to the action-angle coordinates of the unperturbed quadratic Hamiltonian
+Following the derivation of \cite{Onorato2020}, we transform to the action-angle coordinates of the unperturbed quadratic Hamiltonian
 \begin{equation}
     \ak = \sqrt{\Ia_\mathbf{k}}e^{-i\theta_\mathbf{k}}
     \label{action_angle}
@@ -158,8 +158,8 @@ This particular choice is better justified in \cite{Nazarenko2011}. \\
 
 We may now develop perturbation theory, we start by expanding the (unknown) solutions as
 \begin{align}
-    \Ia_\mathbf{k} &= \Iaz_\mathbf{k} +  + \varepsilon \Iao_\mathbf{k} + \varepsilon^2 \Iat_\mathbf{k} + \mathcal{O}(\varepsilon^3) \\
-    \tha_\mathbf{k} &= \thaz_\mathbf{k} +  + \varepsilon \thao_\mathbf{k} + \varepsilon^2 \that_\mathbf{k} + \mathcal{O}(\varepsilon^3),
+    \Ia_\mathbf{k} &= \Iaz_\mathbf{k}  + \varepsilon \Iao_\mathbf{k} + \varepsilon^2 \Iat_\mathbf{k} + \mathcal{O}(\varepsilon^3) \\
+    \tha_\mathbf{k} &= \thaz_\mathbf{k} + \varepsilon \thao_\mathbf{k} + \varepsilon^2 \that_\mathbf{k} + \mathcal{O}(\varepsilon^3),
 \end{align}
 and then substituting them into \eqref{Hameq1} and \eqref{Hameq2}. \\
 After reintroducing explicit time dependence, we impose \(\ \Iaz_\mathbf{k}(0) = \bar{\Ia}_\mathbf{k}\) and \(\ \Iao_\mathbf{k}(0) = \Iat_\mathbf{k}(0) = 0\) to fix initial conditions on the $\Ia$s and 
@@ -199,7 +199,7 @@ We should be content with this first nontrivial result, but through the sheer po
 statistical theory of the system, the first nontrivial contribution comes from the $\varepsilon^2$ order.}
 we write also the 
 $\varepsilon^2$ order equations only for the action variables (there is no need to actually solve them). \\
-Looking at \eqref{Hameq1} we seek to obtain an $\varepsilon^2$ equation by substituting $\Ia$ and $\tha$ up to their $\varepsilon$ order terms. By Taylor expanding the square root 
+Looking at \eqref{Hameq1}, we seek to obtain an $\varepsilon^2$ equation by substituting $\Ia$ and $\tha$ up to their $\varepsilon$ order terms. By Taylor expanding the square root 
 we obtain four terms of the form
 \begin{equation}
     \sqrt{(\mathrm{x} +\varepsilon \mathrm{y})\mathrm{\tilde{x}}} \underset{\varepsilon \rightarrow 0}{\sim} 
@@ -234,7 +234,7 @@ initial conditions in infinite dimensional systems
 \footnote{Let us think of the ocean surface for example, measuring its height at a generic instant would be unfeasible.}
 , we shall then renounce the deterministic approach in favor of 
 a probabilistic one.\\
-In general such idea is realized through averaging over infinitely many realizations of the equations of motion with different initial conditions, to then extract 
+In general such idea is realized through averaging over infinitely many realizations of the equations of motion with different initial conditions but same statistics, to then extract 
 average quantities more easily confrontable with experiment. In a nonlinear problem this is again highly nontrivial, to simplify the endeavor we assume that
 a large number of waves is present in the system, in the sense that each mode in Fourier space is highly excited. It is then reasonable to assume that, after a time
 evolution proportional to the minimum value of $\frac{1}{\omga_{\mathbf{k}}}$ in the range of physical interest, the phases $\tha$ would be uniformly distributed in the $\left[0,2\pi\right]$ segment 
@@ -743,9 +743,9 @@ where the two integrals coincide provided that
 \end{equation}
 is satisfied. \\
 
-Let us be clear. As already said we did not prove that \eqref{KZPsol} and \eqref{KZPsol} are solutions to the kinetic equation. We have only shown that if 
+Let us be clear. As already said, we did not prove that \eqref{KZPsol} and \eqref{KZPsol} are solutions to the kinetic equation. We have only shown that if 
 an inertial interval exist, among regions in which energy and wave action are injected and extracted, the only consistent form a solution could take to have constant fluxes of conserved quantities is either \eqref{KZPsol} or \eqref{KZPsol}. \\
-Looking at the formulas \eqref{limP} and \eqref{limQ} we see that in any region where one of the fluxes is constant, the other must be null. This information, coupled 
+Looking at the formulas \eqref{limP} and \eqref{limQ}, we see that in any region where one of the fluxes is constant, the other must be null. This information, coupled 
 with the previously presented Fjortoft's argument, fixes the direction for cascade solutions of theories with $\omga_{\mathbf{k}}$ monotonical. From the expression of the fluxes, 
 we know that each quantity must flow almost completely upward or downward k-space, but Fjortoft's argument prohibits one direction for each of them. Thus, energy
 will be flowing towards high k, whereas wave action will flow towards low k. As historically the first cascade solutions to be discovered where of the first kind, 

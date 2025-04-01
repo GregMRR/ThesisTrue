@@ -9,9 +9,9 @@
     the main phenomenology of nonlinear physics, while at the same time being relatively easy to numerically simulate on a fine grid. Its study was then continued in
     \cite{Cai2001} and \cite{Zakharov2001}, and resulted in a better understanding of how coherent phenomena (like solitons or quasisolitons) influence the applicability 
     of wave turbulence theory. This two parameters family of models has since been a traditional benchmark on which to test new techniques and ideas in the world of turbulence. \\
-    In this chapter we briefly introduce the MMT family of differential equations and discuss its salient features and associated WKE, mainly inspired by the account in 
+    In this chapter, we briefly introduce the MMT family of differential equations and discuss its salient features and associated WKE, mainly inspired by the account in 
     \cite{ZAKHAROV2004}. We then 
-    move to the analysis of its higher order kinetic equation, proving that energy and wave action are still conserved quantities. Unexpectedly  we find 
+    move to the analysis of its higher order kinetic equation, proving that energy and wave action are still conserved quantities. Unexpectedly,  we find 
     ulterior divergences, neither UV nor IR, due to nonlocal interactions. We prove that for all nontrivial members of the MMT family of
     models these divergences exist, and must be accounted for. Our original idea was to perform numerical simulations of the higher order WKE, to check the form of eventual out of equilibrium stationary states. This newly found diverging integrals didn't allow us to do so. Nonetheless, we introduce the basic workings of WavKinS,
     a newly developed solver for WKEs introduced in \cite{Giorgio1} and \cite{Giorgio2} by Krstulovic. We end the chapter by discussing some simulations of the leading order WKE. 
@@ -254,7 +254,7 @@
 
     In recent years Krstulovic and Labarre developed WavKinS, a flexible solver for a wide variety of kinetic equations, first used in \cite{Giorgio1} and \cite{Giorgio2}. Our original goal was to use it to 
     simulate equation \eqref{wke_nlo}, in order to check the presence of out of equilibrium stationary states and their deviation from KZ solutions.\\
-    Given the results of our theoretical analysis we were not able to do so, but nonetheless we simulated the leading order equation as a way to get acquainted with the code. In this short section we briefly introduce WavKinS and present the stationary solutions found numerically. \\
+    Given the results of our theoretical analysis, we were not able to do so, but nonetheless we simulated the leading order equation as a way to get acquainted with the code. In this short section we briefly introduce WavKinS and present the stationary solutions found numerically. \\
     
     Looking for the zeroes of the collision integral as a function of the solutions's exponent is computationally expensive. A better way consists in simulating the kinetic equation with localized forcing and dissipation, and then confront its late time slope in the inertial interval with the expected solution. As it is a better way to represent polynomials, WavKinS directly operates on a logarithmic grid in $k$-space. For each time step the collision integral is evaluated. Various schemes can be utilized, in our case an RK2 one for time evolution and the trapezoidal rule for integrations.\\
     We chose $\alpha = \frac{1}{2}$, as with this dispersion relation the resonant manifold can be parametrized analytically.

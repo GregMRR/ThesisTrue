@@ -324,12 +324,18 @@
 %  in this case  !TEX root = ../../thesis.tex 
 
 %introduction
-%resetting page numbering
-\pagenumbering{arabic}
 %to change the introduction header
 \pagestyle{intro2}
 %to add the introductionto the toc
 \addcontentsline{toc}{section}{\hspace{10mm}Introduction}
+%White page after toc
+\clearpage
+\newpage
+\thispagestyle{empty}
+\
+\newpage
+%resetting page numbering
+\pagenumbering{arabic}
 \thispagestyle{empty}
 \input{body/Introduction/Introduction.tex}
 \newpage

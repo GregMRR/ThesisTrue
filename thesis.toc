@@ -1,5 +1,5 @@
 \thispagestyle {empty}
-\contentsline {section}{\hspace {10mm}Introduction}{1}{Doc-Start}%
+\contentsline {section}{\hspace {10mm}Introduction}{}{Doc-Start}%
 \contentsline {section}{\numberline {I}Statistics of weakly nonlinear waves}{4}{section.0.1}%
 \contentsline {subsection}{\numberline {\textsection 1.1}Waves in continuous media}{4}{subsection.0.1.1}%
 \contentsline {subsection}{\numberline {\textsection 1.2}Perturbation Theory}{7}{subsection.0.1.2}%
@@ -12,7 +12,7 @@
 \contentsline {subsection}{\numberline {\textsection 2.1}Path integral formulation of weak turbulence}{29}{subsection.0.2.1}%
 \contentsline {subsection}{\numberline {\textsection 2.2}Feynman rules}{33}{subsection.0.2.2}%
 \contentsline {subsection}{\numberline {\textsection 2.3}Two points functions}{37}{subsection.0.2.3}%
-\contentsline {subsection}{\numberline {\textsection 2.4}Four points functions}{39}{subsection.0.2.4}%
+\contentsline {subsection}{\numberline {\textsection 2.4}Four points functions}{38}{subsection.0.2.4}%
 \contentsline {subsection}{\numberline {\textsection 2.5}Higher order kinetic equation}{45}{subsection.0.2.5}%
 \contentsline {section}{\numberline {III}A one dimensional model for Wave Turbulence}{48}{section.0.3}%
 \contentsline {subsection}{\numberline {\textsection 3.1}The MMT model}{49}{subsection.0.3.1}%

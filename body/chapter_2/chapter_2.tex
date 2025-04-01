@@ -27,7 +27,7 @@ coupled to a complex Gaussian forcing and a dissipation term, as in \cite{Zakhar
     \label{eoms}
 \end{equation}
 In this chapter we will not represent vectors in boldface, but instead $k$ will stand for all $d$ components. The reason is to at least partially match the 
-notation of the articles we discuss. For the same reason, for the duration of this chapter sums over wave vectors will stand for integrations over all of their components. \\ 
+notation of the articles we discuss.\\ 
 The first step is to impose Gaussian statistics on the forcing
 \begin{equation}
     \langle f_k(t)f_p(t')\rangle = \F_k \delta(k-p)\delta(t-t').
@@ -42,7 +42,7 @@ follow their method in this section.\\
 The basic idea is to reformulate the theory in the language of path integrals, to then move the statistics from the forcing to the canonical variables $a_k^{}$. We start by
 explicitly writing the probability distribution for a given $f_k(t)$ functional form as 
 \begin{equation}  
-    \mathrm{P}[f] \sim e^{-\int dt \sum_k \frac{|f_k(t)|^2}{\F_k}},
+    \mathrm{P}[f] \sim e^{-\int dt dk \frac{|f_k(t)|^2}{\F_k}},
 \end{equation}
 We can then write the expectation value of a general composition of variables $O(a)$ \footnote{
     In general, it could be the composition of various $a_k^{} = ak(t)$ at different wave numbers and different times.
@@ -54,7 +54,7 @@ where the integration measure $\D f$ is a formal sum over all possible functions
 the integration measure would be the product $\prod_{ij}d f_{ij}$, running over all the possible values of the labels. \\
 We want the $a$ variables to satisfy the equations of motion, we may impose so by first defining a function $\Ef$ as
 \begin{equation}
-    \Ef = \pt a_k + i \omga_k a_k +i \sum_{123}\Tint_{k123} a_1^*a_2^{}a_3^{} \delta^{k1}_{23} - f_k(t) + \gamma_k a_k,
+    \Ef = \pt a_k + i \omga_k a_k +i \int dk_1 dk_2 dk_3\Tint_{k123} a_1^*a_2^{}a_3^{} \delta^{k1}_{23} - f_k(t) + \gamma_k a_k,
     \label{Eeffe}
 \end{equation}  
 so that the requirement that $a_k^{}$ is a solution of the e.o.m.s may be expressed through a functional $\delta$ imposing $\Ef = 0$. We also need to add an integration measure
@@ -134,12 +134,12 @@ Given that the determinant of a triangular matrix is equal to the product of its
 allowing us to remove the Jacobian from \eqref{expect1}.\\
 We now use the functional integral representation of $\delta$
 \begin{equation}
-    \delta(\Ef)\delta(\Efstar) = \int \D \eta\D \eta^* e^{i\int dt \sum_{k}\left( \eta_k^{}\Efstar +\eta_k^* \Ef\right)}
+    \delta(\Ef)\delta(\Efstar) = \int \D \eta\D \eta^* e^{i\int dt dk\left( \eta_k^{}\Efstar +\eta_k^* \Ef\right)}
 \end{equation}
 to obtain 
 \begin{equation}
     \langle O(a) \rangle = \frac{1}{\mathrm{Z}}\int \D f \D f^* \D \anorm \D\astar\D \eta\D \eta^*  O(a)
-    e^{-\int dt \sum_k \left( \frac{|f_k(t)|^2}{\F_k} - i\eta_k^{}\Efstar -i\eta_k^* \Ef \right)}.
+    e^{-\int dt dk \left( \frac{|f_k(t)|^2}{\F_k} - i\eta_k^{}\Efstar -i\eta_k^* \Ef \right)}.
     \label{expect2}
 \end{equation}
 $\Ef$ only depends on $f_k$ linearly by construction. To integrate out the forcing from the theory we notice that the exponent's part depending on $f_k$
@@ -156,7 +156,7 @@ from the dynamical variables we are interested in,
 we can just ignore it. This is what we mean by absorbing it into the normalization constant.}  we find
 \begin{equation}
     \langle O(a) \rangle = \frac{1}{\mathrm{Z}}\int\D \anorm \D\astar\D \eta\D \eta^*  O(a)
-    e^{-\int dt \sum_k \left( \eta_k^{}\eta_k^* F_k - i\eta_k^{}\Efstarz -i\eta_k^* \Efz \right)},
+    e^{-\int dt dk \left( \eta_k^{}\eta_k^* F_k - i\eta_k^{}\Efstarz -i\eta_k^* \Efz \right)},
     \label{expect3}
 \end{equation}
 where $\Efz$ corresponds to $\Ef$ without forcing term. In an analogous way, by again completing the square, the integral over $\eta$ and $\eta^*$ may be performed and 
@@ -169,7 +169,7 @@ The result is
 \end{equation} 
 with $\Lag$ defined as 
 \begin{equation}
-    \Lag = \sum_k \frac{|\Efz|^2}{\F_k}.
+    \Lag = \int dk \frac{|\Efz|^2}{\F_k}.
     \label{Lag}
 \end{equation}
 What we have found is a statistical theory of the dynamical variables $\anorm$ and $\astar$ in the continuum limit. Through a Wick rotation $t \rightarrow \tau = it$ we 
@@ -179,15 +179,15 @@ may turn it into a Quantum Field Theory, where the machinery of Feynman diagrams
 
 Our objective is still the kinetic equation. Starting from the original equations of motions \eqref{eoms}, without forcing and dissipation
 \begin{equation}
-    \pt a_k + i \omga_k a_k = -i \sum_{123}\Tint_{k123} a_1^*a_2^{}a_3^{} \delta^{k1}_{23},
+    \pt a_k + i \omga_k a_k = -i \int dk_1 dk_2 dk_3\Tint_{k123} a_1^*a_2^{}a_3^{} \delta^{k1}_{23},
 \end{equation}
 multiplying it for $a_k^*$ and summing its complex conjugate we obtain
 \begin{equation}
-    \pt a_k^{} a_k^* = -2 \text{Im}\left( \sum_{123}\Tint_{k123}a_k^{} a_1^{} a_2^* a_3^* \delta^{k1}_{34} \right).
+    \pt a_k^{} a_k^* = -2 \text{Im}\left( \int dk_1 dk_2 dk_3\Tint_{k123}a_k^{} a_1^{} a_2^* a_3^* \delta^{k1}_{34} \right).
 \end{equation} 
 By averaging over all possible realizations and making the time dependence explicit, we find
 \begin{equation}
-    \pt \langle a_k^{}(t) a_k^*(t) \rangle = -2 \text{Im}\left( \sum_{123}\Tint_{k123}\langle a_k^{}(t) a_1^{} (t)a_2^*(t) a_3^* (t)\rangle\delta^{k1}_{34} \right),
+    \pt \langle a_k^{}(t) a_k^*(t) \rangle = -2 \text{Im}\left( \int dk_1 dk_2 dk_3\Tint_{k123}\langle a_k^{}(t) a_1^{} (t)a_2^*(t) a_3^* (t)\rangle\delta^{k1}_{34} \right),
     \label{kineticprototype}
 \end{equation}
 where on the l.h.s. we can see the definition of $n_k(t)$ given in \eqref{wavdef}. We notice from this equation how any order of the kinetic equation can be obtained 
@@ -200,7 +200,7 @@ the variety of existing books (for example \cite{Bjorken:1965zz}). \\
 
 We start by explicitly writing $\Lag$ as
 \begin{equation}
-    \Lag = \sum_k \frac{|\Efz|^2}{\F_k} = \sum_k \frac{1}{\F_k} \left| \pt a_k + i \omga_k a_k + i \sum_{123}\Tint_{k123} a_1^*a_2^{}a_3^{} \delta^{k1}_{23} \right|^2.
+    \Lag = \int dk \frac{|\Efz|^2}{\F_k} = \int dk \frac{1}{\F_k} \left| \pt a_k + i \omga_k a_k + i \int dk_1 dk_2 dk_3\Tint_{k123} a_1^*a_2^{}a_3^{} \delta^{k1}_{23} \right|^2.
 \end{equation} 
 Regrouping the different terms order by order $\Lag$ becomes 
 \begin{equation}
@@ -208,10 +208,10 @@ Regrouping the different terms order by order $\Lag$ becomes
 \end{equation}
 With, by extensive usage of the symmetries of $\Tint$ and dummy variables, 
 \begin{align}
-    \Lag_0 &= \sum_k\frac{1}{\F_k} \left| \Dcov_k a_k  \right|^2, \\
-    \Lag_1 &= \frac{i}{2}\sum_{k123}\Tint_{k123}\left( \frac{\Dcovd_k}{\F_k} + \frac{\Dcovd_1}{\F_1} - \frac{\Dcov_2}{\F_2} - \frac{\Dcov_3}{\F_3} \right)
+    \Lag_0 &= \int dk\frac{1}{\F_k} \left| \Dcov_k a_k  \right|^2, \\
+    \Lag_1 &= \frac{i}{2}\int dk dk_1 dk_2 dk_3 \Tint_{k123}\left( \frac{\Dcovd_k}{\F_k} + \frac{\Dcovd_1}{\F_1} - \frac{\Dcov_2}{\F_2} - \frac{\Dcov_3}{\F_3} \right)
     a_k^* a_1^* a_2^{} a_3^{}, \\
-    \Lag_2 &= \sum_{k123456} \frac{1}{\F_k}\Tint_{123k}\Tint_{k456}a_1^* a_2^* a_3^{} a_4^* a_5^{} a_6^{}. 
+    \Lag_2 &= \int dk\prod_{j=1}^{6}dk_j \frac{1}{\F_k}\Tint_{123k}\Tint_{k456}a_1^* a_2^* a_3^{} a_4^* a_5^{} a_6^{}. 
 \end{align}
 In this last set of equations we defined 
 \begin{equation}
@@ -312,7 +312,7 @@ The full Feynman rules in frequency space are\\
 
     \draw[->] (2,\y) -- (3,\y);
 
-    \node at (6,\y) {\(\text{-}\sum_{k}\limits\dfrac{\Tint_{123k}\Tint_{k456}}{F_k}2\pi\delta(\delomegatt^{124}_{356})\delta^{12}_{3k}\delta^{k4}_{56}\)};
+    \node at (6,\y) {\(\text{-}\int dk \dfrac{\Tint_{123k}\Tint_{k456}}{F_k}2\pi\delta(\delomegatt^{124}_{356})\delta^{12}_{3k}\delta^{k4}_{56}\)};
   
   \end{tikzpicture}  
 \end{center}
@@ -323,7 +323,7 @@ correlation function one has to draw all topologically inequivalent connected di
 Those diagrams may be assembled only through the vertices present in the Feynman rules. To every line composing a diagram a number $i$ is associated,
 meaning that every mathematical expression represented by that line is a function of $k_i$ and $\omgatt_i$. Every vertex corresponds to the mathematical expressions 
 written above, every external or internal line corresponds to the insertion of a propagator in Fourier space $(k, \omgatt)$. For every internal line bearing a number 
-$i$, an additional integration $\sum_i \int \frac{d\omgatt_i}{2\pi}$ is to be performed. Additionally a numerical factor has to be introduced accounting for all the possible 
+$i$, an additional integration $ \int \frac{d\omgatt_i dk_i}{2\pi}$ is to be performed. Additionally a numerical factor has to be introduced accounting for all the possible 
 ways of attaching the external legs to the vertices and external lines obtaining equivalent diagrams. \\
 The perturbative order of a given diagram\footnote{Thus, also of the mathematical expression it represents.} is equal to $q + 2s$ , where $q$ is the number of quartic vertices 
 and $s$ is the number of sextic ones. In the first case only a coupling $\Tint$ appears in the rules and in the second case two of them are present. 
@@ -346,7 +346,7 @@ with a zero superscript to indicate it was for the free theory, for the full pro
 ignoring the infinity arising from the aforementioned delta. \\
 Using the Feynman rules explained in the last section, the form of the one loop correction to the two points function is
 \begin{equation}
-    \D_1^{1} = -4\frac{i}{2} \D^0_1\D^0_1 \sum_{2} \int \frac{d\omgatt_2}{2\pi} \Tint_{1221}\D^0_2\left[\frac{1}{\F_1}\left( \frac{1}{\G_1^*} - \frac{1}{\G_1}\right) +
+    \D_1^{1} = -4\frac{i}{2} \D^0_1\D^0_1 \int dk_2\frac{d\omgatt_2}{2\pi} \Tint_{1221}\D^0_2\left[\frac{1}{\F_1}\left( \frac{1}{\G_1^*} - \frac{1}{\G_1}\right) +
     \frac{1}{\F_2}\left( \frac{1}{\G_2^*} - \frac{1}{\G_2}\right) 
     \right],
 \end{equation}
@@ -360,13 +360,13 @@ By making the definition of $\G_i$ explicit, it is easy to see that
 The part of the integral where $i=2$ is antisymmetric for the exchange $\omgatt_2 - \omga_2 \rightarrow \omga_2 - \omgatt_2$, and is consequently null. Integrating
 by again exploiting Jordan's lemma and the residue theorem the integral yields
 \begin{equation}
-    \D_1^1 = 4\sum_2 \left( \D_1^0 \right)^2\frac{\omgatt_1 - \omga_1}{\F_1}n_2\Tint_{1212},
+    \D_1^1 = 4\int dk_2 \left( \D_1^0 \right)^2\frac{\omgatt_1 - \omga_1}{\F_1}n_2\Tint_{1212},
 \end{equation}
 where we used the definition of $n_k$ given in \eqref{freenwav}. It is important to remember that in our notation the subscripts indicate functional dependence whereas 
 the superscripts indicate the perturbation order. \\
 What we just obtained is an important result, by defining 
 \begin{equation}
-    \delta \omga_1 = 2\sum_2 n_2 \Tint_{1212} 
+    \delta \omga_1 = 2\int dk_2 n_2 \Tint_{1212} 
     \label{shiftilritorno}
 \end{equation} 
 we write the contributions up to one loop as
@@ -431,7 +431,7 @@ The remaining one is built from one sextic vertex.
 \end{figure} 
 Let us start from the first diagram in figure \ref{fig:quarticoneloop}, it contains four external lines, two internal ones and two vertices. Its corresponding expression is
 \begin{multline}
-    -8\pi^2\sum_{56}\int \frac{d\omgatt_5}{2\pi}\frac{d\omgatt_6}{2\pi}\delta(\delomegatt^{34}_{56})\delta(\delomegatt^{56}_{12})\Tint_{5634}\Tint_{1256}\delta^{56}_{34}
+    -8\pi^2\int dk_5 dk_6\frac{d\omgatt_5}{2\pi}\frac{d\omgatt_6}{2\pi}\delta(\delomegatt^{34}_{56})\delta(\delomegatt^{56}_{12})\Tint_{5634}\Tint_{1256}\delta^{56}_{34}
     \delta^{12}_{56}\D_1^0\D_2^0\D_3^0\D_4^0\D_5^0\D_6^0 \\ 
     \times \left(\dfrac{1}{\G_5^*\F_5^{}}+\dfrac{1}{\G_6^*\F_6^{}}-\dfrac{1}{\G_3^{}\F_3^{}}
     -\dfrac{1}{\G_4^{}\F_4^{}}\right)\left(\dfrac{1}{\G_1^*\F_1^{}}+\dfrac{1}{\G_2^*\F_2^{}}-\dfrac{1}{\G_5^{}\F_5^{}}
@@ -461,15 +461,16 @@ on the upper half plane (UHP) or the lower one (LHP). They are
 \end{align}  
 Now let us move to the full integral. There is a common factor of
 \begin{equation*}
-    -4\pi\delta(\delomegatt^{34}_{12})\sum_{56}\Tint_{5634}\Tint_{1256}\delta^{56}_{34}
+    -4\pi\delta(\delomegatt^{34}_{12})\int dk_5 dk_6 \Tint_{5634}\Tint_{1256}\delta^{56}_{34}
     \delta^{12}_{56}\D_1^0\D_2^0\D_3^0\D_4^0
 \end{equation*}
 in front of the integral. Then there is the $d\omgatt_5$ integration of 16 terms. Integrating them, using identities \eqref{identity1}-\eqref{identity6},
 is a tedious but straightforward process. The complete result is 
 \begin{multline}
     \small
-    -4\pi\delta(\delomegatt^{34}_{12})\sum_{56}\Tint_{5634}\Tint_{1256}\delta^{56}_{34}
-    \delta^{12}_{56}\D_1^0\D_2^0\D_3^0\D_4^0 \left\{ -\frac{n_6}{\F_5}-\frac{n_5}{\F_6}\right. + 
+    -4\pi\delta(\delomegatt^{34}_{12})\int dk_5 dk_6\Tint_{5634}\Tint_{1256}\delta^{56}_{34}
+    \delta^{12}_{56}\D_1^0\D_2^0\D_3^0\D_4^0 \\
+    \times \left\{ -\frac{n_6}{\F_5}-\frac{n_5}{\F_6}\right. + 
     \frac{1}{\left( \omgatt_3 + \omgatt_4 - \omga_5 - \omga_6\right)^2 + \gamma^2_{56}}\\
     \times \left[
     i(n_5 + n_6)\left(\dfrac{1}{\G_1^*\F_1^{}}+\dfrac{1}{\G_2^*\F_2^{}}-\dfrac{1}{\G_3^{}\F_3^{}}
@@ -484,26 +485,28 @@ is a tedious but straightforward process. The complete result is
 \end{multline}
 The second diagram in figure \ref{fig:quarticoneloop} contains the same elements, but with permuted indexes. Its mathematical form is 
 \begin{multline}
-    -16\pi^2\sum_{56}\int \frac{d\omgatt_5}{2\pi}\frac{d\omgatt_6}{2\pi}\delta(\delomegatt^{46}_{52})\delta(\delomegatt^{35}_{16})\Tint_{2546}\Tint_{3516}\delta^{25}_{46}
+    -16\pi^2\int dk_5 dk_6\frac{d\omgatt_5}{2\pi}\frac{d\omgatt_6}{2\pi}\delta(\delomegatt^{46}_{52})\delta(\delomegatt^{35}_{16})\Tint_{2546}\Tint_{3516}\delta^{25}_{46}
     \delta^{35}_{16}\D_1^0\D_2^0\D_3^0\D_4^0\D_5^0\D_6^0 \\ 
     \times \left(\dfrac{1}{\G_5^*\F_5^{}}+\dfrac{1}{\G_2^*\F_2^{}}-\dfrac{1}{\G_6^{}\F_6^{}}
     -\dfrac{1}{\G_4^{}\F_4^{}}\right)\left(\dfrac{1}{\G_1^*\F_1^{}}+\dfrac{1}{\G_6^*\F_6^{}}-\dfrac{1}{\G_5^{}\F_5^{}}
     -\dfrac{1}{\G_3^{}\F_3^{}}\right).
     \label{tchannel}
 \end{multline}
-The ways to compose the diagram are 32, resulting in a symmetry factor of 16. Integrating through 
+There are 32 ways of composing the diagram, resulting in a symmetry factor of 16. Integrating through 
 identities similar to \eqref{identity1}-\eqref{identity6}, the expression becomes
 \begin{multline}
-    -8\pi\delta(\delomegatt^{34}_{12})\sum_{56}\Tint_{2546}\Tint_{6135}\delta^{25}_{46}
-    \delta^{35}_{16}\D_1^0\D_2^0\D_3^0\D_4^0 \left\{ -\frac{n_6}{\F_5}-\frac{n_5}{\F_6}\right. +
+    -8\pi\delta(\delomegatt^{34}_{12})\int dk_5 dk_6\Tint_{2546}\Tint_{6135}\delta^{25}_{46}
+    \delta^{35}_{16}\D_1^0\D_2^0\D_3^0\D_4^0 \\
+    \times\left\{ -\frac{n_6}{\F_5}-\frac{n_5}{\F_6}\right. +
     \frac{1}{\left( \omgatt_1 + \omga_6 - \omgatt_3 - \omga_5\right)^2 + \gamma^2_{56}}\\
     \times \left(
     i(n_6-n_5)\left(\dfrac{1}{\G_1^*\F_1^{}}+\dfrac{1}{\G_2^*\F_2^{}}-\dfrac{1}{\G_3^{}\F_3^{}}
     -\dfrac{1}{\G_4^{}\F_4^{}}\right)\left(\omgatt_1 + \omga_6 - \omgatt_3 - \omga_5\right) + 
     \right.\\
-    \left.\left.
     \gamma_{56}\left[(n_6-n_5 )\left(\dfrac{1}{\G_1^*\F_1^{}}-\dfrac{1}{\G_2^*\F_2^{}}-\dfrac{1}{\G_3^{}\F_3^{}}
-    +\dfrac{1}{\G_4^{}\F_4^{}}\right) + 2n_5n_6 \left(\dfrac{1}{\G_2^*\F_2^{}}-\dfrac{1}{\G_4^{}\F_4^{}}\right)\left(\dfrac{1}{\G_1^*\F_1^{}}-\dfrac{1}{\G_3^{}\F_3^{}}
+    +\dfrac{1}{\G_4^{}\F_4^{}}\right) \right.+ \\
+    \left.\left.\left.
+    2n_5n_6 \left(\dfrac{1}{\G_2^*\F_2^{}}-\dfrac{1}{\G_4^{}\F_4^{}}\right)\left(\dfrac{1}{\G_1^*\F_1^{}}-\dfrac{1}{\G_3^{}\F_3^{}}
     \right)\right)
     \right]\right\}.
     \label{tchannelfullcontribution}
@@ -528,13 +531,13 @@ In the case of figure \ref{fig:sexticoneloop} it is not true that all permutatio
 is made of four external lines, one internal one and a sextic vertex. We exchange labels $4$ and $5$ in the sextic vertex Feynman rules, as to have lines $3$ and 
 $4$ both incoming as in figure \ref{fig:sexticoneloop}. The relative expression is thus  
 \begin{equation}
-    -2\pi \sum_{k5}\int\frac{d\omgatt_5}{2\pi} \frac{1}{\F_k}\left(\Tint_{123k}\Tint_{k545}\delta^{12}_{3k}
+    -2\pi\int dk dk_5\frac{d\omgatt_5}{2\pi} \frac{1}{\F_k}\left(\Tint_{123k}\Tint_{k545}\delta^{12}_{3k}
     \delta^{k5}_{45} + \text{permutations}\right)\delta(\delomegatt^{12}_{34})
     \D_1^0\D_2^0\D_3^0\D_4^0\D_5^0.
 \end{equation}
 We can resolve the integral over $\omgatt_5$, as the only term depending on it is $\D_5$, using identity \eqref{identity5}. The result is
 \begin{equation}
-    -2\pi \delta(\delomegatt^{12}_{34})\D_1^0\D_2^0\D_3^0\D_4^0 \sum_{k5}
+    -2\pi \delta(\delomegatt^{12}_{34})\D_1^0\D_2^0\D_3^0\D_4^0 \int dk dk_5
     \frac{n_5}{\F_k}\left(\Tint_{123k}\Tint_{k545}\delta^{12}_{3k}
     \delta^{k5}_{45} + \text{permutations}\right).
 \end{equation}
@@ -542,9 +545,10 @@ Writing all possible permutations of indexes $(1,2,5)$ and $(3,4,6)$ from $\Tint
 reduces the nonequivalent terms' number to seven. In four of them one of the deltas over wave vectors may be used to eliminate the integration over $k$. After slightly manipulating
 and renaming the dummy indexes, the full result is 
 \begin{multline}
-    -2\pi \delta(\delomegatt^{12}_{34})\D_1^0\D_2^0\D_3^0\D_4^0\left[ 4\sum_5\Tint_{1234}\delta^{12}_{34} \sum_{j=1}^{4}\frac{\Tint_{j5j5}}{\F_j}n_5 + \right.\\ 
-    \left.  2\sum_{56}\left( \frac{n_5}{\F_6} + \frac{n_6}{\F_5} \right)\left( \Tint_{1256}\Tint_{5634}\delta^{12}_{56}\delta^{56}_{34} 
-    + 2\Tint_{2546}\Tint_{6153}\delta^{25}_{46}\delta^{61}_{53}
+    -2\pi \delta(\delomegatt^{12}_{34})\D_1^0\D_2^0\D_3^0\D_4^0\left[ 4\int dk_5 \Tint_{1234}\delta^{12}_{34} \sum_{j=1}^{4}\frac{\Tint_{j5j5}}{\F_j}n_5 + \right.\\ 
+      2\int dk_5 dk_6\left( \frac{n_5}{\F_6} + \frac{n_6}{\F_5} \right)\left( \Tint_{1256}\Tint_{5634}\delta^{12}_{56}\delta^{56}_{34} \right. +
+    \\\left. \vphantom{\frac{\Tint_{j5j5}}{\F_j}} \left. 
+     2\Tint_{2546}\Tint_{6153}\delta^{25}_{46}\delta^{61}_{53}
     + 2\Tint_{5146}\Tint_{6253}\delta^{51}_{46}\delta^{62}_{53} \right) \right].
     \label{sexticfullcontribution}
 \end{multline}
@@ -561,7 +565,7 @@ the frequency shift into the final result. \\
 We notice that the second part of \eqref{sexticfullcontribution} diverges in the $\F_k \rightarrow 0$ limit. Looking at the diverging contributions of 
 \eqref{schannelfullcontribution}, \eqref{tchannelfullcontribution} and \eqref{tchannelfullcontribution}($3 \leftrightarrow 4$), we see that their sum is
 \begin{multline}
-    4\pi\delta(\delomegatt^{12}_{34})\D_1^0\D_2^0\D_3^0\D_4^0\sum_{56}
+    4\pi\delta(\delomegatt^{12}_{34})\D_1^0\D_2^0\D_3^0\D_4^0\int dk_5 dk_6
      \left( \frac{n_5}{\F_6} + \frac{n_6}{\F_5}\right)\\ \times\left(
     \Tint_{5634}\Tint_{1256}\delta^{56}_{34}\delta^{12}_{56} + 2 \Tint_{2546}\Tint_{6135}\delta^{25}_{46}\delta^{61}_{35} + 2\Tint_{2536}\Tint_{6145}\delta^{25}_{36}\delta^{61}_{45}
     \right).
@@ -577,7 +581,7 @@ To recover the original nonlinear theory we remove the forcing and dissipating t
     %-&2\pi i \delta(\delomegatt^{12}_{34})\Tint_{1234}\D^0_1\D^0_2\D^0_3\D^0_4\left(
     %\dfrac{1}{\G_1^*\F_1^{}}+\dfrac{1}{\G_2^*\F_2^{}}-\dfrac{1}{\G_3^{}\F_3^{}}-\dfrac{1}{\G_4^{}\F_4^{}}\right) 
     %\\
-    -4\pi &\delta(\delomegatt^{12}_{34})\D^0_1\D^0_2\D^0_3\D^0_4 \sum_{56} \times
+    -4\pi &\delta(\delomegatt^{12}_{34})\D^0_1\D^0_2\D^0_3\D^0_4 \int dk_5 dk_6 \times
     \\
       &\left[\Tint_{5634}\Tint_{1256}\delta^{56}_{34}\delta^{12}_{56}
     \frac{i(n_5 + n_6)\left(\dfrac{1}{\G_1^*\F_1^{}}+\dfrac{1}{\G_2^*\F_2^{}}-\dfrac{1}{\G_3^{}\F_3^{}}
@@ -597,7 +601,7 @@ To Fourier transform this expression is a rather straightforward but cumbersome 
 By sending them to zero uniformly in $k$-space one can substitute $\gamma_k= \frac{\varepsilon}{4}$ and avoid singularities on the integration path. It is however important 
 to check that the integral is converging without the $\varepsilon$ term. Transforming in the same fashion as \eqref{antitransform4}, we obtain 
 \begin{multline}
-    \langle a_k^{}(t) a_1^{}(t) a_2^*(t)a_3^*(t) \rangle_{1} = 2\sum_{56} \left( \Tint_{5634}\Tint_{1256}\delta^{56}_{34}\delta^{12}_{56}  V(1,2,3,4,5,6) - \right.\\
+    \langle a_k^{}(t) a_1^{}(t) a_2^*(t)a_3^*(t) \rangle_{1} = 2\int dk_5 dk_6 \left( \Tint_{5634}\Tint_{1256}\delta^{56}_{34}\delta^{12}_{56}  V(1,2,3,4,5,6) - \right.\\
     2\Tint_{2546}\Tint_{6135}\delta^{25}_{46}\delta^{61}_{35}
     \left.V(1,-3,-2,4,5,-6) - 2\Tint_{2536}\Tint_{6145}\delta^{25}_{36}\delta^{61}_{45} V(1,-4,-2,3,5,-6)  \right),
     \label{finalfourpoint}
@@ -641,9 +645,9 @@ is null. However it is not possible to assign finite value to
 \end{equation}
 We stress this fact as it will be of importance in the next chapter. \\
 Substituting instead \eqref{transformedfourpoint} into \eqref{kineticprototype}, after some lengthy manipulations described in the appendix of \cite{Rosenhaus2023},
-we obtain Rosenhaus and Smolkin's kinetic equation (we also recover explicit integrations $\sum_5 \rightarrow \int dk_5$)
+we obtain Rosenhaus and Smolkin's kinetic equation 
 \begin{multline}
-        \pt \langle a_k^{}(t) a_k^*(t) \rangle = \pt n_k(t) = 4\pi \int \prod_{j=1}^{3} dk_j|\Tint_{k123}|^2n_kn_1n_2n_3\left(\frac{1}{n_k} +\frac{1}{n_1}-
+        \pt \langle a_k^{}(t) a_k^*(t) \rangle = \pt n_k(t) = \\4\pi \int \prod_{j=1}^{3} dk_j|\Tint_{k123}|^2n_kn_1n_2n_3\left(\frac{1}{n_k} +\frac{1}{n_1}-
         \frac{1}{n_2}-\frac{1}{n_3}\right)\delta(\delomega^{k1}_{23})\delta^{k1}_{23} \\
           + 16\pi\int \prod_{j=1}^{5} dk_j\delta(\delomega^{k1}_{23})n_kn_1n_2n_3n_4n_5 \\
           \times \left\{  \dfrac{\text{Re}(\Tint_{23k1}\Tint_{k145}\Tint_{4523})}{\delomega^{23}_{45}}\delta^{56}_{34}\delta^{12}_{56}

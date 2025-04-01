@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2024.9.26)  27 MAR 2025 23:37
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2024.9.26)  1 APR 2025 16:28
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/home/greg/Desktop/TESI/Scrittura_tesi/ThesisTrue/thesis
@@ -1049,7 +1049,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write5
 
 \openout5 = thesis.toc
- [1] (./body/Introduction/Introduction.tex
+ [1]
+warning  (pdf backend): ignoring duplicate destination with the name 'page.'
+[2
+
+] (./body/Introduction/Introduction.tex
 
 Package fontspec Info: Font family 'erewhon(2)' created for font 'erewhon'
 (fontspec)             with options [Ligatures=TeX,Extension =
@@ -1180,7 +1184,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 227--229
  []
 
 
-Underfull \vbox (badness 2418) has occurred while \output is active []
+Underfull \vbox (badness 2460) has occurred while \output is active []
 
  [11]
 Underfull \hbox (badness 10000) in paragraph at lines 274--277
@@ -1267,7 +1271,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 537--549
  []
 
 Excluding 'comment' comment.
-<images/Fjortoft.pdf, id=351, 425.18332pt x 440.84062pt>
+<images/Fjortoft.pdf, id=355, 425.18332pt x 440.84062pt>
 File: images/Fjortoft.pdf Graphic file (type pdf)
 <use images/Fjortoft.pdf>
 Package luatex.def Info: images/Fjortoft.pdf  used on input line 571.
@@ -1363,9 +1367,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 192--200
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [34]
 Overfull \hbox (12.04199pt too wide) in paragraph at lines 219--222
 \TU/erewhon(0)/m/n/12 and $[]\TU/Erewhon-Math.otf(1)/m/n/12 𝑎[]$ \TU/erewhon(0)/m/n/12 as its com-plex con-ju-gate. More-over, in ev-ery ex-pres-sion like $[]\TU/Erewhon-Math.otf(1)/m/n/12 𝑎[]𝑎[]𝑎[]𝑎[]$
  []
@@ -1376,6 +1377,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 219--222
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [35]
@@ -1399,7 +1403,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 321--331
  []
 
 [36]
-<images/2pointsoneloop.jpg, id=580, 4517.87875pt x 1718.42pt>
+<images/2pointsoneloop.jpg, id=586, 4517.87875pt x 1718.42pt>
 File: images/2pointsoneloop.jpg Graphic file (type jpg)
 <use images/2pointsoneloop.jpg>
 Package luatex.def Info: images/2pointsoneloop.jpg  used on input line 338.
@@ -1414,126 +1418,107 @@ Underfull \hbox (badness 10000) in paragraph at lines 381--388
 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [38]
-<images/quarticvertex.jpg, id=611, 3153.7825pt x 3042.36626pt>
+<images/quarticvertex.jpg, id=606, 3153.7825pt x 3042.36626pt>
 File: images/quarticvertex.jpg Graphic file (type jpg)
 <use images/quarticvertex.jpg>
 Package luatex.def Info: images/quarticvertex.jpg  used on input line 393.
 (luatex.def)             Requested size: 159.33301pt x 153.65916pt.
-
+[38]
 Underfull \hbox (badness 10000) in paragraph at lines 419--421
 
  []
 
-[39<./images/quarticvertex.jpg>]
-<images/schanneloneloop.jpg, id=624, 4517.87875pt x 3651.6425pt>
+<images/schanneloneloop.jpg, id=621, 4517.87875pt x 3651.6425pt>
 File: images/schanneloneloop.jpg Graphic file (type jpg)
 <use images/schanneloneloop.jpg>
 Package luatex.def Info: images/schanneloneloop.jpg  used on input line 426.
 (luatex.def)             Requested size: 159.33301pt x 128.76778pt.
-<images/tchanneloneloop.jpg, id=625, 4517.87875pt x 3651.6425pt>
+<images/tchanneloneloop.jpg, id=622, 4517.87875pt x 3651.6425pt>
 File: images/tchanneloneloop.jpg Graphic file (type jpg)
 <use images/tchanneloneloop.jpg>
 Package luatex.def Info: images/tchanneloneloop.jpg  used on input line 427.
 (luatex.def)             Requested size: 159.33301pt x 128.76778pt.
-<images/uchanneloneloop.jpg, id=626, 4517.87875pt x 3618.51875pt>
+<images/uchanneloneloop.jpg, id=623, 4517.87875pt x 3618.51875pt>
 File: images/uchanneloneloop.jpg Graphic file (type jpg)
 <use images/uchanneloneloop.jpg>
 Package luatex.def Info: images/uchanneloneloop.jpg  used on input line 428.
 (luatex.def)             Requested size: 159.33301pt x 127.59973pt.
- [40<./images/schanneloneloop.jpg><./images/tchanneloneloop.jpg><./images/uchanneloneloop.jpg>]
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 484.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39<./images/quarticvertex.jpg>] [40<./images/schanneloneloop.jpg><./images/tchanneloneloop.jpg><./images/uchanneloneloop.jpg>]
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 485.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 484.
-
-
-Overfull \hbox (20.95143pt too wide) detected at line 484
- []$[]   \TU/Erewhon-Math.otf(1)/m/n/12 − 4𝜋𝛿(Δ[]) [] \TU/erewhon(1)/m/n/12 T[]T[]\TU/Erewhon-Math.otf(1)/m/n/12 𝛿[]𝛿[]\TU/erewhon(1)/m/n/12 D[]D[]D[]D[] [] \TU/Erewhon-Math.otf(1)/m/n/12 + []$ 
- []
+LaTeX Font Warning: Command \small invalid in math mode on input line 485.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [41]
-Overfull \hbox (20.95143pt too wide) detected at line 510
- []$[]   \TU/Erewhon-Math.otf(1)/m/n/12 − 8𝜋𝛿(Δ[]) [] \TU/erewhon(1)/m/n/12 T[]T[]\TU/Erewhon-Math.otf(1)/m/n/12 𝛿[]𝛿[]\TU/erewhon(1)/m/n/12 D[]D[]D[]D[] [] \TU/Erewhon-Math.otf(1)/m/n/12 + []$ 
- []
-
-
-Overfull \hbox (61.01425pt too wide) detected at line 510
- []$[] [] \TU/Erewhon-Math.otf(1)/m/n/12 .$ []  
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 510--513
+Underfull \hbox (badness 10000) in paragraph at lines 513--516
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 514--516
+Underfull \hbox (badness 10000) in paragraph at lines 517--519
 
  []
 
-<images/sexticdiagram.jpg, id=659, 4517.87875pt x 1762.585pt>
+<images/sexticdiagram.jpg, id=664, 4517.87875pt x 1762.585pt>
 File: images/sexticdiagram.jpg Graphic file (type jpg)
 <use images/sexticdiagram.jpg>
-Package luatex.def Info: images/sexticdiagram.jpg  used on input line 519.
+Package luatex.def Info: images/sexticdiagram.jpg  used on input line 522.
 (luatex.def)             Requested size: 199.1693pt x 77.6992pt.
 [42<./images/sexticdiagram.jpg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [43]
-Overfull \hbox (28.10622pt too wide) detected at line 595
+Overfull \hbox (28.10622pt too wide) detected at line 599
 [][][][][]
  []
 
 
-Overfull \hbox (10.2978pt too wide) detected at line 604
+Overfull \hbox (10.2978pt too wide) detected at line 608
  []$[]\TU/Erewhon-Math.otf(1)/m/n/12 2\TU/erewhon(1)/m/n/12 T[]T[]\TU/Erewhon-Math.otf(1)/m/n/12 𝛿[]𝛿[] [] ,$ []  
- []
-
-
-Overfull \hbox (21.9494pt too wide) detected at line 621
-[][][][][]
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [44]
-Underfull \hbox (badness 10000) in paragraph at lines 621--624
+Overfull \hbox (21.9494pt too wide) detected at line 625
+[][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 625--628
 
  []
 
 
-Overfull \hbox (2.1144pt too wide) in paragraph at lines 641--645
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [45]
+Overfull \hbox (2.1144pt too wide) in paragraph at lines 645--649
 \TU/erewhon(0)/m/n/12 scribed in the ap-pendix of [[][]14[][]], we ob-tain Rosen-haus and Smolkin’s ki-netic equa-
  []
 
 
-Overfull \hbox (70.96172pt too wide) detected at line 658
- []$[]  []\TU/Erewhon-Math.otf(1)/m/n/12 ⟨𝑎[](𝑡)𝑎[](𝑡)⟩ = []𝑛[](𝑡) = 4𝜋 [] [] 𝑑𝑘[]|\TU/erewhon(1)/m/n/12 T[]\TU/Erewhon-Math.otf(1)/m/n/12 |[]𝑛[]𝑛[]𝑛[]𝑛[] [] 𝛿(Δ𝜔[])𝛿[]$ 
- []
-
-
-Underfull \vbox (badness 7116) has occurred while \output is active []
-
- [45]
-Overfull \hbox (2.46558pt too wide) in paragraph at lines 658--682
+Overfull \hbox (2.46558pt too wide) in paragraph at lines 662--686
 \TU/erewhon(0)/m/n/12 ques-tion how much in-sight can be ex-tracted about the strong tur-bu-lence regime,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 658--682
+Underfull \hbox (badness 10000) in paragraph at lines 662--686
 
  []
 
-[46]) (./body/chapter_3/chapter_3.tex [47] [48] [49]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46]) (./body/chapter_3/chapter_3.tex [47] [48] [49]
 Underfull \hbox (badness 10000) in paragraph at lines 79--93
 
  []
@@ -1558,12 +1543,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [54]
-<images/nonlocal_resonances_convex.pdf, id=840, 277.98228pt x 274.65486pt>
+<images/nonlocal_resonances_convex.pdf, id=846, 277.98228pt x 274.65486pt>
 File: images/nonlocal_resonances_convex.pdf Graphic file (type pdf)
 <use images/nonlocal_resonances_convex.pdf>
 Package luatex.def Info: images/nonlocal_resonances_convex.pdf  used on input line 226.
 (luatex.def)             Requested size: 159.33301pt x 157.43079pt.
-<images/nonlocal_resonances_concave.pdf, id=841, 277.98228pt x 274.65486pt>
+<images/nonlocal_resonances_concave.pdf, id=847, 277.98228pt x 274.65486pt>
 File: images/nonlocal_resonances_concave.pdf Graphic file (type pdf)
 <use images/nonlocal_resonances_concave.pdf>
 Package luatex.def Info: images/nonlocal_resonances_concave.pdf  used on input line 227.
@@ -1587,8 +1572,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 253--254
  []
 
 [56<./images/nonlocal_resonances_convex.pdf><./images/nonlocal_resonances_concave.pdf>]
-Overfull \hbox (9.96242pt too wide) in paragraph at lines 255--258
-\TU/erewhon(0)/m/n/12 Given the re-sults of our the-o-ret-i-cal anal-y-sis we were not able to do so, but nonethe-
+Overfull \hbox (12.84328pt too wide) in paragraph at lines 255--258
+\TU/erewhon(0)/m/n/12 Given the re-sults of our the-o-ret-i-cal anal-y-sis, we were not able to do so, but nonethe-
  []
 
 
@@ -1604,17 +1589,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 284--286
 
  []
 
-<images/MMT_inverse_256_[1.0e-5-10.0].png, id=925, 401.5pt x 301.125pt>
+<images/MMT_inverse_256_[1.0e-5-10.0].png, id=932, 401.5pt x 301.125pt>
 File: images/MMT_inverse_256_[1.0e-5-10.0].png Graphic file (type png)
 <use images/MMT_inverse_256_[1.0e-5-10.0].png>
 Package luatex.def Info: images/MMT_inverse_256_[1.0e-5-10.0].png  used on input line 293.
 (luatex.def)             Requested size: 159.33301pt x 119.50133pt.
-<images/MMT_direct_256[1.0e-6_1.0].png, id=926, 401.5pt x 301.125pt>
+<images/MMT_direct_256[1.0e-6_1.0].png, id=933, 401.5pt x 301.125pt>
 File: images/MMT_direct_256[1.0e-6_1.0].png Graphic file (type png)
 <use images/MMT_direct_256[1.0e-6_1.0].png>
 Package luatex.def Info: images/MMT_direct_256[1.0e-6_1.0].png  used on input line 294.
 (luatex.def)             Requested size: 159.33301pt x 119.50133pt.
-<images/double_cascade3.jpg, id=927, 401.5pt x 301.125pt>
+<images/double_cascade3.jpg, id=934, 401.5pt x 301.125pt>
 File: images/double_cascade3.jpg Graphic file (type jpg)
 <use images/double_cascade3.jpg>
 Package luatex.def Info: images/double_cascade3.jpg  used on input line 301.
@@ -1636,12 +1621,12 @@ L3 programming layer <2024-01-22>
 Here is how much of LuaTeX's memory you used:
  35691 strings out of 476553
  125016,1977958 words of node,token memory allocated
- 2550 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 46 glue, 4 kern, 30 sub_mlist, 1 glyph, 370 attribute, 92 glue_spec, 370 attribute_list, 2 write nodes
-   avail lists: 1:10,2:2434,3:989,4:90,5:925,6:62,7:8782,8:106,9:1866,10:12,11:744
+ 2566 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 46 glue, 4 kern, 30 sub_mlist, 1 glyph, 374 attribute, 92 glue_spec, 374 attribute_list, 2 write nodes
+   avail lists: 1:9,2:2405,3:987,4:90,5:925,6:62,7:8845,8:106,9:1920,10:12,11:746
  56397 multiletter control sequences out of 65536+600000
- 148 fonts using 33525915 bytes
- 110i,14n,104p,1378b,1885s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 148 fonts using 33525683 bytes
+ 110i,14n,104p,1381b,1885s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 warning  (pdf backend): unreferenced destination with name 'Hfootnote.41'
 
@@ -1725,10 +1710,10 @@ warning  (pdf backend): unreferenced destination with name 'Hfootnote.2'
 
 warning  (pdf backend): unreferenced destination with name 'Hfootnote.1'
 </usr/share/texlive/texmf-dist/fonts/opentype/public/erewhon/Erewhon-Italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/erewhon/Erewhon-Bold.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/erewhon/Erewhon-Regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/erewhon-math/Erewhon-Math.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/erewhon-math/Erewhon-Math.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/erewhon-math/Erewhon-Math.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/erewhon/Erewhon-Regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/erewhon/Erewhon-Bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb>
-Output written on thesis.pdf (64 pages, 6206036 bytes).
+Output written on thesis.pdf (65 pages, 6206008 bytes).
 
-PDF statistics: 1096 PDF objects out of 1200 (max. 8388607)
- 947 compressed objects within 10 object streams
+PDF statistics: 1102 PDF objects out of 1200 (max. 8388607)
+ 952 compressed objects within 10 object streams
  340 named destinations out of 1000 (max. 131072)
  176 words of extra memory for PDF output out of 10000 (max. 100000000)
 
